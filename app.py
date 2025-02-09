@@ -30,30 +30,31 @@ st.markdown(
             padding: 20px;
         }
         .word-box {
-            background-color: white;
             padding: 20px;
             border-radius: 12px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
             text-align: center;
             margin-bottom: 20px;
         }
         .word-title {
-            font-size: 22px;
-            font-weight: 600;
-            color: #222;
-            margin-bottom: 10px;
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 5px;
         }
         .word-definition {
-            font-size: 16px;
-            color: #444;
+            font-size: 18px;
             line-height: 1.5;
             font-weight: 400;
         }
         .word-example {
-            font-size: 14px;
-            color: #666;
+            font-size: 16px;
             font-style: italic;
             margin-top: 10px;
+            color: #555;
+        }
+        .highlight {
+            background-color: #007ACC;
+            color: white;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
         }
         .history-title {
             font-size: 18px;
@@ -61,6 +62,9 @@ st.markdown(
             color: #222;
             margin-top: 30px;
             margin-bottom: 10px;
+        }
+        .history-box {
+            background-color: #f3f3f3;
         }
     </style>
     """,
@@ -70,11 +74,11 @@ st.markdown(
 # Conteneur principal
 st.markdown("<div class='container'>", unsafe_allow_html=True)
 
-# Affichage du mot du jour
+# Affichage du mot du jour avec mise en valeur
 if word_of_the_day:
     st.markdown(
         f"""
-        <div class='word-box'>
+        <div class='word-box highlight'>
             <div class='word-title'>{word_of_the_day['word']}</div>
             <div class='word-definition'>{word_of_the_day['definition']}</div>
             <div class='word-example'>{word_of_the_day['example']}</div>
@@ -85,13 +89,13 @@ if word_of_the_day:
 else:
     st.warning("Aucun mot disponible aujourd’hui.")
 
-# Historique des derniers mots
+# Historique des derniers mots (moins mis en avant)
 if past_words:
     st.markdown("<div class='history-title'>Historique</div>", unsafe_allow_html=True)
     for word in reversed(past_words):  # Afficher du plus récent au plus ancien
         st.markdown(
             f"""
-            <div class='word-box' style='background-color: #f3f3f3;'>
+            <div class='word-box history-box'>
                 <div class='word-title'>{word['word']}</div>
                 <div class='word-definition'>{word['definition']}</div>
                 <div class='word-example'>{word['example']}</div>
