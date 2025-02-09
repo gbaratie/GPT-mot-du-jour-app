@@ -5,13 +5,13 @@ from styles import get_css
 # Configuration de la page Streamlit
 st.set_page_config(page_title="Mot du Jour", layout="wide")
 
+# Appliquer le CSS en premier
+st.markdown(get_css(), unsafe_allow_html=True)
+
 # Charger les mots depuis le JSON
 words = load_words()
 word_of_the_day = get_word_of_the_day(words)
 past_words = get_past_words(words)
-
-# Appliquer le CSS
-st.markdown(get_css(), unsafe_allow_html=True)
 
 # Conteneur principal
 st.markdown("<div class='container'>", unsafe_allow_html=True)
