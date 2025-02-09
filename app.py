@@ -16,7 +16,7 @@ past_words = [w for w in words if w["date"] < today][-5:]
 # Configuration de la page Streamlit
 st.set_page_config(page_title="Mot du Jour", layout="wide")
 
-# CSS pour un design épuré et une mise en page fluide
+# CSS amélioré pour un design optimisé
 st.markdown(
     """
     <style>
@@ -29,45 +29,65 @@ st.markdown(
             margin: auto;
             padding: 0;
         }
+        /* Mot du jour : prend presque tout l'écran */
         .word-box {
             width: 100%;
-            padding: 40px;
-            border-radius: 0;
+            height: 80vh; /* Prend 80% de la hauteur de l'écran */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             text-align: center;
-            margin-bottom: 10px;
+            background-color: white;
+            border-bottom: 3px solid #ddd;
         }
         .word-title {
-            font-size: 26px;
+            font-size: 30px;
             font-weight: 700;
             margin-bottom: 10px;
         }
         .word-definition {
-            font-size: 18px;
-            line-height: 1.5;
+            font-size: 20px;
+            line-height: 1.6;
             font-weight: 400;
+            padding: 0 20px;
         }
         .word-example {
-            font-size: 16px;
+            font-size: 18px;
             font-style: italic;
-            margin-top: 10px;
+            margin-top: 15px;
             color: #555;
+            padding: 0 20px;
         }
-        .highlight {
-            background-color: white;
-            border-bottom: 3px solid #ddd;
-            padding-top: 60px;
-            padding-bottom: 60px;
-        }
+        /* Historique : police plus petite et espacements réduits */
         .history-title {
-            font-size: 20px;
+            font-size: 18px;
             font-weight: 500;
             color: #222;
-            margin: 30px 0 15px;
+            margin-top: 10px;
+            margin-bottom: 10px;
             text-align: center;
         }
         .history-box {
             background-color: #f7f7f7;
-            padding: 30px;
+            padding: 15px;
+            margin-bottom: 5px;
+        }
+        .history-title-word {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        .history-definition {
+            font-size: 14px;
+            line-height: 1.4;
+            font-weight: 400;
+        }
+        .history-example {
+            font-size: 13px;
+            font-style: italic;
+            margin-top: 5px;
+            color: #555;
         }
     </style>
     """,
@@ -77,11 +97,11 @@ st.markdown(
 # Conteneur principal
 st.markdown("<div class='container'>", unsafe_allow_html=True)
 
-# Affichage du mot du jour (grande largeur)
+# Affichage du mot du jour (occupe presque tout l'écran)
 if word_of_the_day:
     st.markdown(
         f"""
-        <div class='word-box highlight'>
+        <div class='word-box'>
             <div class='word-title'>{word_of_the_day['word']}</div>
             <div class='word-definition'>{word_of_the_day['definition']}</div>
             <div class='word-example'>{word_of_the_day['example']}</div>
@@ -92,16 +112,16 @@ if word_of_the_day:
 else:
     st.warning("Aucun mot disponible aujourd’hui.")
 
-# Historique des derniers mots (sans trop d’espace inutile)
+# Historique des derniers mots (plus compact)
 if past_words:
     st.markdown("<div class='history-title'>Historique</div>", unsafe_allow_html=True)
     for word in reversed(past_words):  # Afficher du plus récent au plus ancien
         st.markdown(
             f"""
-            <div class='word-box history-box'>
-                <div class='word-title'>{word['word']}</div>
-                <div class='word-definition'>{word['definition']}</div>
-                <div class='word-example'>{word['example']}</div>
+            <div class='history-box'>
+                <div class='history-title-word'>{word['word']}</div>
+                <div class='history-definition'>{word['definition']}</div>
+                <div class='history-example'>{word['example']}</div>
             </div>
             """,
             unsafe_allow_html=True
