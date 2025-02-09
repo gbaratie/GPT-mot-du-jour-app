@@ -14,9 +14,9 @@ word_of_the_day = next((w for w in words if w["date"] == today), None)
 past_words = [w for w in words if w["date"] < today][-5:]
 
 # Configuration de la page Streamlit
-st.set_page_config(page_title="Mot du Jour", layout="centered")
+st.set_page_config(page_title="Mot du Jour", layout="wide")
 
-# CSS pour un design plus moderne et épuré
+# CSS pour un design épuré et une mise en page fluide
 st.markdown(
     """
     <style>
@@ -25,20 +25,21 @@ st.markdown(
             background-color: #f9f9f9;
         }
         .container {
-            max-width: 380px;
+            max-width: 100%;
             margin: auto;
-            padding: 20px;
+            padding: 0;
         }
         .word-box {
-            padding: 20px;
-            border-radius: 12px;
+            width: 100%;
+            padding: 40px;
+            border-radius: 0;
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
         .word-title {
-            font-size: 24px;
+            font-size: 26px;
             font-weight: 700;
-            margin-bottom: 5px;
+            margin-bottom: 10px;
         }
         .word-definition {
             font-size: 18px;
@@ -52,19 +53,21 @@ st.markdown(
             color: #555;
         }
         .highlight {
-            background-color: #007ACC;
-            color: white;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+            background-color: white;
+            border-bottom: 3px solid #ddd;
+            padding-top: 60px;
+            padding-bottom: 60px;
         }
         .history-title {
-            font-size: 18px;
+            font-size: 20px;
             font-weight: 500;
             color: #222;
-            margin-top: 30px;
-            margin-bottom: 10px;
+            margin: 30px 0 15px;
+            text-align: center;
         }
         .history-box {
-            background-color: #f3f3f3;
+            background-color: #f7f7f7;
+            padding: 30px;
         }
     </style>
     """,
@@ -74,7 +77,7 @@ st.markdown(
 # Conteneur principal
 st.markdown("<div class='container'>", unsafe_allow_html=True)
 
-# Affichage du mot du jour avec mise en valeur
+# Affichage du mot du jour (grande largeur)
 if word_of_the_day:
     st.markdown(
         f"""
@@ -89,7 +92,7 @@ if word_of_the_day:
 else:
     st.warning("Aucun mot disponible aujourd’hui.")
 
-# Historique des derniers mots (moins mis en avant)
+# Historique des derniers mots (sans trop d’espace inutile)
 if past_words:
     st.markdown("<div class='history-title'>Historique</div>", unsafe_allow_html=True)
     for word in reversed(past_words):  # Afficher du plus récent au plus ancien
