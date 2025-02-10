@@ -13,6 +13,8 @@ st.markdown(
             margin: auto;
             padding: 0;
         }
+
+        /* Mot du jour - Fond avec une légère bordure pour le distinguer */
         .word-box {
             width: 100%;
             height: 80vh;
@@ -21,25 +23,49 @@ st.markdown(
             justify-content: center;
             align-items: center;
             text-align: center;
-            background-color: var(--background-color);
-            border-bottom: 3px solid var(--secondary-background-color);
-            color: var(--text-color);
+            background-color: var(--background-color, #1e1e1e);
+            border-bottom: 3px solid var(--secondary-background-color, #333);
+            color: var(--text-color, white);
             padding: 20px;
+            box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
         }
+
+        /* Historique - Ajouter un fond légèrement contrasté */
         .history-title {
             font-size: 18px;
             font-weight: 500;
-            margin-top: 10px;
+            margin-top: 20px;
             margin-bottom: 10px;
             text-align: center;
-            color: var(--text-color);
+            color: var(--text-color, white);
         }
+
         .history-box {
-            background-color: var(--secondary-background-color);
-            color: var(--text-color);
+            background-color: var(--secondary-background-color, #2a2a2a);
+            color: var(--text-color, white);
             padding: 15px;
-            margin-bottom: 5px;
+            margin-bottom: 8px;
             border-radius: 8px;
+            box-shadow: 0px 2px 5px rgba(255, 255, 255, 0.1);
+        }
+
+        .history-title-word {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .history-definition {
+            font-size: 14px;
+            line-height: 1.4;
+            font-weight: 400;
+        }
+
+        .history-example {
+            font-size: 13px;
+            font-style: italic;
+            margin-top: 5px;
+            opacity: 0.8;
         }
     </style>
     """,
