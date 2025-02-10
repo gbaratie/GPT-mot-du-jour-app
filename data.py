@@ -1,7 +1,7 @@
 import requests
 
 # URL de ton API Render (remplace par la tienne)
-API_URL = "https://api-motdujour.onrender.com"
+API_URL = "https://gpt-mot-du-jour-app.onrender.com"
 
 def get_word_of_the_day():
     """Récupère le mot du jour depuis l'API."""
