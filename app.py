@@ -1,33 +1,18 @@
 import streamlit as st
-import json
-import datetime
+from data import get_word_of_the_day, get_past_words
 
-# Charger les mots
-with open("words.json", "r", encoding="utf-8") as file:
-    words = json.load(file)
-
-# Trouver le mot du jour
-today = datetime.date.today().strftime("%Y-%m-%d")
-word_of_the_day = next((w for w in words if w["date"] == today), None)
-
-# Récupérer les mots des 5 derniers jours (sans le jour J)
-past_words = [w for w in words if w["date"] < today][-5:]
-
-# Configuration de la page Streamlit
+# Configuration de la page
 st.set_page_config(page_title="Mot du Jour", layout="wide")
 
-# Appliquer le CSS directement dans app.py
+# Appliquer le CSS
 st.markdown(
     """
     <style>
-        /* Conteneur principal */
         .container {
             max-width: 100%;
             margin: auto;
             padding: 0;
         }
-
-        /* Bloc du mot du jour */
         .word-box {
             width: 100%;
             height: 80vh;
@@ -41,30 +26,6 @@ st.markdown(
             color: var(--text-color);
             padding: 20px;
         }
-
-        .word-title {
-            font-size: 30px;
-            font-weight: 700;
-            margin-bottom: 10px;
-        }
-
-        .word-definition {
-            font-size: 20px;
-            line-height: 1.6;
-            font-weight: 400;
-            padding: 0 20px;
-        }
-
-        .word-example {
-            font-size: 18px;
-            font-style: italic;
-            margin-top: 15px;
-            color: var(--text-color);
-            opacity: 0.8;
-            padding: 0 20px;
-        }
-
-        /* Titre de l'historique */
         .history-title {
             font-size: 18px;
             font-weight: 500;
@@ -73,8 +34,6 @@ st.markdown(
             text-align: center;
             color: var(--text-color);
         }
-
-        /* Bloc de l'historique */
         .history-box {
             background-color: var(--secondary-background-color);
             color: var(--text-color);
@@ -82,36 +41,22 @@ st.markdown(
             margin-bottom: 5px;
             border-radius: 8px;
         }
-
-        .history-title-word {
-            font-size: 18px;
-            font-weight: 600;
-            margin-bottom: 5px;
-        }
-
-        .history-definition {
-            font-size: 14px;
-            line-height: 1.4;
-            font-weight: 400;
-        }
-
-        .history-example {
-            font-size: 13px;
-            font-style: italic;
-            margin-top: 5px;
-            color: var(--text-color);
-            opacity: 0.8;
-        }
     </style>
     """,
     unsafe_allow_html=True
 )
 
+# Récupérer les données depuis l'API
+word_of_the_day = get_word_of_the_day()
+past_words = get_past_words()
+
 # Conteneur principal
 st.markdown("<div class='container'>", unsafe_allow_html=True)
 
 # Affichage du mot du jour
-if word_of_the_day:
+if "error" in word_of_the_day:
+    st.warning(word_of_the_day["error"])
+else:
     st.markdown(
         f"""
         <div class='word-box'>
@@ -122,13 +67,11 @@ if word_of_the_day:
         """,
         unsafe_allow_html=True
     )
-else:
-    st.warning("Aucun mot disponible aujourd’hui.")
 
 # Historique des derniers mots
 if past_words:
     st.markdown("<div class='history-title'>Historique</div>", unsafe_allow_html=True)
-    for word in reversed(past_words):
+    for word in past_words:
         st.markdown(
             f"""
             <div class='history-box'>
