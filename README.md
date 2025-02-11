@@ -9,8 +9,3 @@ Une application web simple qui affiche un **mot du jour** avec sa définition et
 - Accès aux derniers mots récents 🔙
 - Interface simple et épurée 🎨
 
-## 🛠 Installation & Utilisation
-Si tu veux exécuter l’application en local :
-```bash
-pip install streamlit
-streamlit run app.py
