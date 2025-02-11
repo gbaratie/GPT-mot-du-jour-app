@@ -1,4 +1,4 @@
-# 📖 Mot du Jour+
+# 📖 Mot du Jour
 
 Une application web simple qui affiche un **mot du jour** avec sa définition et un exemple d'utilisation.
 
