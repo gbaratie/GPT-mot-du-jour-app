@@ -13,8 +13,8 @@ def load_words():
 @app.get("/motdujour")
 def get_word_of_the_day():
     words = load_words()
-    today = datetime.date.today().strftime("%Y-%m-%d")
-    word_of_the_day = next((w for w in words if w["date"] == today), None)
+    today = datetime.date.today().strftime("%m-%d")  # Format MM-DD
+    word_of_the_day = next((w for w in words if w["date"].endswith(today)), None)  # Ignore l'année
     
     if word_of_the_day:
         return word_of_the_day
@@ -24,7 +24,7 @@ def get_word_of_the_day():
 @app.get("/historique")
 def get_past_words():
     words = load_words()
-    today = datetime.date.today().strftime("%Y-%m-%d")
-    past_words = [w for w in words if w["date"] < today][-5:]
+    today = datetime.date.today().strftime("%m-%d")  # Format MM-DD
+    past_words = [w for w in words if w["date"][-5:] < today][-5:]  # Compare uniquement MM-DD
     
     return past_words

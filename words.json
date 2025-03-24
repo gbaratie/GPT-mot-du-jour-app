@@ -1,206 +1,540 @@
 [
-  {
-    "date": "2025-02-08",
-    "word": "Atermoiement",
-    "definition": "Action de repousser ce qui doit être fait.",
-    "example": "Son atermoiement lui a fait rater une opportunité en or."
-  },
-  {
-    "date": "2025-02-07",
-    "word": "Pugnace",
-    "definition": "Qui montre un esprit combatif et tenace.",
-    "example": "Face aux difficultés, elle est restée pugnace et déterminée."
-  },
-  {
-    "date": "2025-02-06",
-    "word": "Alambiqué",
-    "definition": "Excessivement compliqué et peu clair.",
-    "example": "Son explication était tellement alambiquée que personne n’a compris."
-  },
-  {
-    "date": "2025-02-05",
-    "word": "Édulcorer",
-    "definition": "Atténuer ou adoucir quelque chose.",
-    "example": "Le rapport a été édulcoré pour éviter toute polémique."
-  },
-  {
-    "date": "2025-02-04",
-    "word": "Frugal",
-    "definition": "Simple et peu abondant, notamment en parlant d’un repas.",
-    "example": "Il se contente d’un repas frugal le soir."
-  },
-  {
-    "date": "2025-02-09",
-    "word": "Épiphanie",
-    "definition": "Une prise de conscience soudaine d’une réalité essentielle.",
-    "example": "J’ai eu une épiphanie en lisant ce livre."
-  },
-  {
-    "date": "2025-02-10",
-    "word": "Conciliabule",
-    "definition": "Une conversation secrète ou discrète.",
-    "example": "Ils ont eu un conciliabule avant la réunion."
-  },
-  {
-    "date": "2025-02-11",
-    "word": "Ubiquité",
-    "definition": "Le fait d’être présent partout à la fois.",
-    "example": "Avec le télétravail, il a l’impression d’avoir le don d’ubiquité."
-  },
-  {
-    "date": "2025-02-12",
-    "word": "Effluve",
-    "definition": "Un parfum ou une odeur qui se dégage.",
-    "example": "Les effluves du café embaumaient la pièce."
-  },
-  {
-    "date": "2025-02-13",
-    "word": "Diligent",
-    "definition": "Qui agit avec rapidité et efficacité.",
-    "example": "Il a été très diligent dans l’exécution de sa tâche."
-  },
-  {
-    "date": "2025-02-14",
-    "word": "Pantomime",
-    "definition": "Un spectacle où l’on s’exprime par des gestes.",
-    "example": "Il nous a raconté l’histoire avec une pantomime hilarante."
-  },
-  {
-    "date": "2025-02-15",
-    "word": "Exacerber",
-    "definition": "Rendre plus intense ou plus aigu.",
-    "example": "Le stress exacerbe ses réactions impulsives."
-  },
-  {
-    "date": "2025-02-16",
-    "word": "Inextricable",
-    "definition": "Impossible à démêler ou à comprendre.",
-    "example": "Ce problème administratif est devenu inextricable."
-  },
-  {
-    "date": "2025-02-17",
-    "word": "Pusillanime",
-    "definition": "Manquant de courage ou d’audace.",
-    "example": "Face à l’adversité, il s’est montré pusillanime."
-  },
-  {
-    "date": "2025-02-18",
-    "word": "Véhément",
-    "definition": "Qui exprime une forte intensité d’émotion.",
-    "example": "Son discours était empreint d’une véhémence rare."
-  },
-  {
-    "date": "2025-02-19",
-    "word": "Véniel",
-    "definition": "Se dit d’une faute légère et pardonnable.",
-    "example": "Son erreur était vénielle et sans conséquence."
-  },
-  {
-    "date": "2025-02-20",
-    "word": "Lugubre",
-    "definition": "Qui évoque la tristesse ou la mort.",
-    "example": "L’ambiance de la maison abandonnée était lugubre."
-  },
-  {
-    "date": "2025-02-21",
-    "word": "Arcanes",
-    "definition": "Les secrets profonds d’un domaine ou d’une discipline.",
-    "example": "Il maîtrise les arcanes du droit constitutionnel."
-  },
-  {
-    "date": "2025-02-22",
-    "word": "Soporifique",
-    "definition": "Qui provoque le sommeil.",
-    "example": "Son discours monotone était soporifique."
-  },
-  {
-    "date": "2025-02-23",
-    "word": "Atavisme",
-    "definition": "Un trait hérité des générations passées.",
-    "example": "Son amour pour la musique est un atavisme familial."
-  },
-  {
-    "date": "2025-02-24",
-    "word": "Mercurial",
-    "definition": "Rapide, vif et imprévisible.",
-    "example": "Son esprit mercurial le rend difficile à suivre."
-  },
-  {
-    "date": "2025-02-25",
-    "word": "Fastidieux",
-    "definition": "Qui est long, ennuyeux et répétitif.",
-    "example": "Le remplissage de ces formulaires est fastidieux."
-  },
-  {
-    "date": "2025-02-26",
-    "word": "Ostentatoire",
-    "definition": "Qui est fait pour être remarqué.",
-    "example": "Sa richesse était affichée de manière ostentatoire."
-  },
-  {
-    "date": "2025-02-27",
-    "word": "Inopiné",
-    "definition": "Qui survient de manière imprévue.",
-    "example": "Son arrivée inopinée nous a surpris."
-  },
-  {
-    "date": "2025-02-28",
-    "word": "Retors",
-    "definition": "Rusé et difficile à comprendre.",
-    "example": "Ce politicien est connu pour être retors."
-  },
-  {
-    "date": "2025-03-01",
-    "word": "Sycophante",
-    "definition": "Un flatteur hypocrite.",
-    "example": "Les sycophantes entouraient le roi en quête de faveurs."
-  },
-  {
-    "date": "2025-03-02",
-    "word": "Bucolique",
-    "definition": "Qui évoque la campagne paisible.",
-    "example": "Il rêve d’une vie bucolique loin de la ville."
-  },
-  {
-    "date": "2025-03-03",
-    "word": "Péremptoire",
-    "definition": "Qui ne supporte aucune discussion.",
-    "example": "Il a donné un ordre d’un ton péremptoire."
-  },
-  {
-    "date": "2025-03-04",
-    "word": "Irrévocable",
-    "definition": "Qui ne peut être changé.",
-    "example": "Sa décision de partir est irrévocable."
-  },
-  {
-    "date": "2025-03-05",
-    "word": "Éclectique",
-    "definition": "Qui apprécie des choses variées.",
-    "example": "Il a des goûts musicaux éclectiques."
-  },
-  {
-    "date": "2025-03-06",
-    "word": "Néophyte",
-    "definition": "Un débutant dans un domaine.",
-    "example": "Il est encore néophyte en programmation."
-  },
-  {
-    "date": "2025-03-07",
-    "word": "Sagace",
-    "definition": "Qui fait preuve d’une grande intelligence.",
-    "example": "Son analyse sagace lui a permis de résoudre l’énigme."
-  },
-  {
-    "date": "2025-03-08",
-    "word": "Laconique",
-    "definition": "Qui s’exprime en peu de mots.",
-    "example": "Sa réponse laconique ne laissait place à aucun doute."
-  },
-  {
-    "date": "2025-03-09",
-    "word": "Anachronique",
-    "definition": "Qui appartient à une autre époque.",
-    "example": "Son style vestimentaire est anachronique."
-  }
-]
+    {
+      "date": "2025-01-01",
+      "word": "Pérégrination",
+      "definition": "Voyage en général long et mouvementé.",
+      "example": "Ses pérégrinations à travers l'Asie ont duré plus de six mois."
+    },
+    {
+      "date": "2025-01-02",
+      "word": "Apocryphe",
+      "definition": "Dont l’authenticité est douteuse.",
+      "example": "Ce manuscrit ancien est considéré comme apocryphe par les historiens."
+    },
+    {
+      "date": "2025-01-03",
+      "word": "Pernicieux",
+      "definition": "Dangereux pour la santé ou l’esprit.",
+      "example": "Ce discours pernicieux a semé la confusion parmi les auditeurs."
+    },
+    {
+      "date": "2025-01-04",
+      "word": "Hiatus",
+      "definition": "Interruption dans ce qui devrait être continu.",
+      "example": "Il y a un hiatus entre ses propos et ses actes."
+    },
+    {
+      "date": "2025-01-05",
+      "word": "Disparate",
+      "definition": "Qui est constitué d’éléments très différents, mal assortis.",
+      "example": "Les couleurs de cette tenue sont trop disparates pour être élégantes."
+    },
+    {
+      "date": "2025-01-06",
+      "word": "Suranné",
+      "definition": "Qui appartient à une époque révolue, démodé.",
+      "example": "Ses idées sur l’éducation sont totalement surannées."
+    },
+    {
+      "date": "2025-01-07",
+      "word": "Cacochyme",
+      "definition": "D'une constitution physique déficiente, faible.",
+      "example": "Ce vieil homme cacochyme inspire la compassion."
+    },
+    {
+      "date": "2025-01-08",
+      "word": "Propédeutique",
+      "definition": "Enseignement préparatoire à des études plus approfondies.",
+      "example": "Ce cours de propédeutique en philosophie est essentiel pour les débutants."
+    },
+    {
+      "date": "2025-01-09",
+      "word": "Tutélaire",
+      "definition": "Qui protège, qui a la fonction de protéger.",
+      "example": "Il considérait ce professeur comme une figure tutélaire dans sa vie."
+    },
+    {
+      "date": "2025-01-10",
+      "word": "Grégaire",
+      "definition": "Qui vit en groupe, qui suit docilement les autres.",
+      "example": "L’homme est un être grégaire par nature."
+    },
+    {
+      "date": "2025-01-11",
+      "word": "Obturé",
+      "definition": "Bouché, fermé hermétiquement.",
+      "example": "Le conduit était complètement obturé par la rouille."
+    },
+    {
+      "date": "2025-01-12",
+      "word": "Vilipendé",
+      "definition": "Décrit avec mépris, attaqué dans sa réputation.",
+      "example": "Il a été publiquement vilipendé pour ses idées radicales."
+    },
+    {
+      "date": "2025-01-13",
+      "word": "Ubiquité",
+      "definition": "Faculté d’être présent en plusieurs lieux à la fois.",
+      "example": "Avec internet, l’ubiquité devient presque possible."
+    },
+    {
+      "date": "2025-01-14",
+      "word": "Harangue",
+      "definition": "Discours solennel prononcé devant une assemblée.",
+      "example": "Il a fait une longue harangue pour défendre sa position."
+    },
+    {
+      "date": "2025-01-15",
+      "word": "Frugal",
+      "definition": "Qui se contente de peu, simple et peu abondant.",
+      "example": "Son repas frugal était composé de pain et de fromage."
+    },
+    {
+      "date": "2025-01-16",
+      "word": "Incongru",
+      "definition": "Contraire aux usages, déplacé.",
+      "example": "Sa remarque incongrue a mis tout le monde mal à l’aise."
+    },
+    {
+      "date": "2025-01-17",
+      "word": "Pléonasme",
+      "definition": "Répétition superflue de mots ayant le même sens.",
+      "example": "‘Monter en haut’ est un pléonasme courant."
+    },
+    {
+      "date": "2025-01-18",
+      "word": "Fantasmagorie",
+      "definition": "Suite d’images fantastiques, illusoires.",
+      "example": "Ce roman est une véritable fantasmagorie littéraire."
+    },
+    {
+      "date": "2025-01-19",
+      "word": "Égrillard",
+      "definition": "Un peu osé, mais sans être grossier.",
+      "example": "Il a raconté une blague égrillarde qui a fait rire l’assemblée."
+    },
+    {
+      "date": "2025-01-20",
+      "word": "Fomenter",
+      "definition": "Préparer secrètement (une action néfaste).",
+      "example": "Ils fomentaient une rébellion contre le pouvoir en place."
+    },
+    {
+      "date": "2025-01-21",
+      "word": "Rocailleux",
+      "definition": "Plein de pierres, difficile à pratiquer.",
+      "example": "Le sentier rocailleux rendait la marche pénible."
+    },
+    {
+      "date": "2025-01-22",
+      "word": "Épectase",
+      "definition": "Mort survenant au moment d’un plaisir intense.",
+      "example": "Le pape Jean-Paul Ier serait mort en épectase, selon certains."
+    },
+    {
+      "date": "2025-01-23",
+      "word": "Jocrisse",
+      "definition": "Personnage niais et ridicule.",
+      "example": "Il passe pour un jocrisse auprès de ses collègues."
+    },
+    {
+      "date": "2025-01-24",
+      "word": "Étiologie",
+      "definition": "Étude des causes (notamment en médecine).",
+      "example": "L’étiologie de cette maladie reste inconnue."
+    },
+    {
+      "date": "2025-01-25",
+      "word": "Succédané",
+      "definition": "Substitut de moindre valeur.",
+      "example": "Ce café décaféiné est un succédané pour les amateurs de vrai café."
+    },
+    {
+      "date": "2025-01-26",
+      "word": "Pugnacité",
+      "definition": "Combativité, ténacité dans un combat.",
+      "example": "Elle a fait preuve d’une grande pugnacité durant le procès."
+    },
+    {
+      "date": "2025-01-27",
+      "word": "Panglossien",
+      "definition": "D’un optimisme naïf et exagéré.",
+      "example": "Son discours panglossien ne reflétait pas la réalité."
+    },
+    {
+      "date": "2025-01-28",
+      "word": "Argutie",
+      "definition": "Raisonnement subtil et souvent vain.",
+      "example": "Le débat a été noyé sous des arguties juridiques."
+    },
+    {
+      "date": "2025-01-29",
+      "word": "Cacostomie",
+      "definition": "Mauvaise odeur de la bouche.",
+      "example": "La cacostomie peut être causée par une mauvaise hygiène dentaire."
+    },
+    {
+      "date": "2025-01-30",
+      "word": "Probité",
+      "definition": "Honnêteté scrupuleuse.",
+      "example": "Sa probité est reconnue de tous."
+    },
+    {
+      "date": "2025-01-31",
+      "word": "Mendicité",
+      "definition": "Action de mendier pour vivre.",
+      "example": "La mendicité est très présente dans cette ville."
+    }, {
+        "date": "2025-02-01",
+        "word": "Rémanence",
+        "definition": "Persistance d’un phénomène après la disparition de sa cause.",
+        "example": "La rémanence de l'image sur l'écran était perceptible quelques secondes."
+      },
+      {
+        "date": "2025-02-02",
+        "word": "Anachronique",
+        "definition": "Qui est placé à une époque différente de celle à laquelle il appartient.",
+        "example": "Porter un monocle aujourd’hui semble anachronique."
+      },
+      {
+        "date": "2025-02-03",
+        "word": "Onomastique",
+        "definition": "Étude des noms propres.",
+        "example": "L’onomastique permet de comprendre l’origine des noms de famille."
+      },
+      {
+        "date": "2025-02-04",
+        "word": "Égrégore",
+        "definition": "Énergie issue d’un groupe de personnes unies par une même intention.",
+        "example": "Un puissant égrégore semblait émerger de la foule en liesse."
+      },
+      {
+        "date": "2025-02-05",
+        "word": "Occulte",
+        "definition": "Caché, mystérieux, difficile à comprendre.",
+        "example": "Cette société secrète pratique des rituels occultes."
+      },
+      {
+        "date": "2025-02-06",
+        "word": "Chiasme",
+        "definition": "Figure de style qui consiste à croiser les éléments dans une phrase.",
+        "example": "‘Il faut manger pour vivre et non vivre pour manger’ est un chiasme célèbre."
+      },
+      {
+        "date": "2025-02-07",
+        "word": "Léthargie",
+        "definition": "État de sommeil profond et prolongé, d’inactivité.",
+        "example": "Le patient est resté dans une léthargie de plusieurs heures."
+      },
+      {
+        "date": "2025-02-08",
+        "word": "Fielleux",
+        "definition": "Plein de ressentiment, de méchanceté.",
+        "example": "Il m’a lancé un regard fielleux après ma remarque."
+      },
+      {
+        "date": "2025-02-09",
+        "word": "Inanité",
+        "definition": "Caractère de ce qui est vain, inutile.",
+        "example": "Il a vite compris l’inanité de ses efforts."
+      },
+      {
+        "date": "2025-02-10",
+        "word": "Tautochrone",
+        "definition": "Qui met le même temps à parcourir un trajet, quelle que soit la position de départ.",
+        "example": "La cycloïde est une courbe tautochrone en physique."
+      },
+      {
+        "date": "2025-02-11",
+        "word": "Capillotracté",
+        "definition": "Tiré par les cheveux, peu crédible.",
+        "example": "Son explication capillotractée n’a convaincu personne."
+      },
+      {
+        "date": "2025-02-12",
+        "word": "Panacée",
+        "definition": "Remède universel censé tout guérir.",
+        "example": "Il pensait que ce médicament était une panacée contre tous les maux."
+      },
+      {
+        "date": "2025-02-13",
+        "word": "Zélateur",
+        "definition": "Personne qui soutient une cause avec un zèle excessif.",
+        "example": "Ce zélateur du régime ne tolère aucune critique."
+      },
+      {
+        "date": "2025-02-14",
+        "word": "Fuligineux",
+        "definition": "Qui produit de la suie, obscur et confus.",
+        "example": "Un brouillard fuligineux envahissait la pièce."
+      },
+      {
+        "date": "2025-02-15",
+        "word": "Aboulie",
+        "definition": "Trouble mental caractérisé par une perte de volonté.",
+        "example": "L’aboulie le rendait incapable de prendre une décision."
+      },
+      {
+        "date": "2025-02-16",
+        "word": "Xanthie",
+        "definition": "Terme désignant une pigmentation jaune de la peau ou des plantes.",
+        "example": "La xanthie des feuilles indiquait une carence en nutriments."
+      },
+      {
+        "date": "2025-02-17",
+        "word": "Ploutocratie",
+        "definition": "Système politique où le pouvoir appartient aux plus riches.",
+        "example": "Certains dénoncent la dérive ploutocratique de nos démocraties."
+      },
+      {
+        "date": "2025-02-18",
+        "word": "Latence",
+        "definition": "Temps qui s’écoule entre une stimulation et sa réponse.",
+        "example": "Il y a une certaine latence entre la question et la réponse dans ce système."
+      },
+      {
+        "date": "2025-02-19",
+        "word": "Cinglant",
+        "definition": "Qui blesse par sa brutalité ou sa dureté.",
+        "example": "Elle a répondu d’un ton cinglant à la critique."
+      },
+      {
+        "date": "2025-02-20",
+        "word": "Onirocritique",
+        "definition": "Interprétation des rêves.",
+        "example": "Les anciens pratiquaient l’onirocritique pour prédire l’avenir."
+      },
+      {
+        "date": "2025-02-21",
+        "word": "Sycophante",
+        "definition": "Dénonciateur, calomniateur.",
+        "example": "Ce sycophante passait son temps à médire des autres."
+      },
+      {
+        "date": "2025-02-22",
+        "word": "Apodictique",
+        "definition": "Se dit d’un jugement ou d’une vérité absolument certaine.",
+        "example": "Les axiomes mathématiques sont considérés comme apodictiques."
+      },
+      {
+        "date": "2025-02-23",
+        "word": "Pusillanimité",
+        "definition": "Manque de courage ou de volonté.",
+        "example": "Sa pusillanimité l’empêchait de saisir cette chance."
+      },
+      {
+        "date": "2025-02-24",
+        "word": "Ostentatoire",
+        "definition": "Qui se fait remarquer par excès.",
+        "example": "Il avait un comportement ostentatoire pour attirer l’attention."
+      },
+      {
+        "date": "2025-02-25",
+        "word": "Vitupération",
+        "definition": "Discours violent contre quelqu’un ou quelque chose.",
+        "example": "Il s’est lancé dans une vitupération contre le gouvernement."
+      },
+      {
+        "date": "2025-02-26",
+        "word": "Édulcorer",
+        "definition": "Adoucir une idée ou une réalité choquante.",
+        "example": "Le rapport édulcore la gravité de la situation."
+      },
+      {
+        "date": "2025-02-27",
+        "word": "Histrion",
+        "definition": "Personne qui se donne en spectacle, comédien ridicule.",
+        "example": "Cet histrion monopolisait l’attention avec ses grimaces."
+      },
+      {
+        "date": "2025-02-28",
+        "word": "Miasme",
+        "definition": "Émanation malsaine, souvent liée à la décomposition.",
+        "example": "Des miasmes infectaient l’air de la vieille maison."
+      }, {
+        "date": "2025-03-01",
+        "word": "Antépénultième",
+        "definition": "Avant-avant-dernier dans une série.",
+        "example": "Le mot accentue toujours l’antépénultième syllabe en espagnol."
+      },
+      {
+        "date": "2025-03-02",
+        "word": "Fatuité",
+        "definition": "Suffisance, vanité ridicule.",
+        "example": "Il affichait une fatuité insupportable après sa promotion."
+      },
+      {
+        "date": "2025-03-03",
+        "word": "Nitescence",
+        "definition": "Lueur, éclat brillant.",
+        "example": "La nitescence de la lune illuminait la nuit."
+      },
+      {
+        "date": "2025-03-04",
+        "word": "Idiosyncrasie",
+        "definition": "Manière d’être particulière à chaque individu.",
+        "example": "Son idiosyncrasie rendait difficile toute vie en communauté."
+      },
+      {
+        "date": "2025-03-05",
+        "word": "Méphitique",
+        "definition": "Qui a une odeur répugnante et toxique.",
+        "example": "Les émanations méphitiques du marais étaient insupportables."
+      },
+      {
+        "date": "2025-03-06",
+        "word": "Irrévocable",
+        "definition": "Qu’on ne peut changer ou annuler.",
+        "example": "Le juge a rendu une décision irrévocable."
+      },
+      {
+        "date": "2025-03-07",
+        "word": "Éréthisme",
+        "definition": "Excitation anormale d’un organe ou de l’esprit.",
+        "example": "L’éréthisme nerveux le rendait hypersensible à tout stimulus."
+      },
+      {
+        "date": "2025-03-08",
+        "word": "Histrionisme",
+        "definition": "Comportement théâtral et exagéré visant à attirer l’attention.",
+        "example": "Son histrionisme lassait ses collègues en réunion."
+      },
+      {
+        "date": "2025-03-09",
+        "word": "Paroxysme",
+        "definition": "Le degré le plus élevé d’un sentiment ou d’un phénomène.",
+        "example": "Elle a atteint le paroxysme de la douleur pendant l’intervention."
+      },
+      {
+        "date": "2025-03-10",
+        "word": "Véhément",
+        "definition": "Qui s’exprime avec fougue et passion.",
+        "example": "Il s’est lancé dans une diatribe véhémente contre le projet."
+      },
+      {
+        "date": "2025-03-11",
+        "word": "Farfelu",
+        "definition": "Bizarre, un peu fou.",
+        "example": "Son idée farfelue de construire un igloo à Marseille a fait rire tout le monde."
+      },
+      {
+        "date": "2025-03-12",
+        "word": "Sycomore",
+        "definition": "Espèce d’arbre de la famille des figuiers.",
+        "example": "Un vieux sycomore se dressait au centre de la place."
+      },
+      {
+        "date": "2025-03-13",
+        "word": "Fiel",
+        "definition": "Amertume, rancune.",
+        "example": "Elle déversait tout son fiel dans ses critiques."
+      },
+      {
+        "date": "2025-03-14",
+        "word": "Claudicant",
+        "definition": "Qui boite légèrement.",
+        "example": "Un vieil homme claudicant traversait la rue avec difficulté."
+      },
+      {
+        "date": "2025-03-15",
+        "word": "Indigent",
+        "definition": "Qui manque des choses les plus nécessaires à la vie.",
+        "example": "Il vient en aide aux populations indigentes du quartier."
+      },
+      {
+        "date": "2025-03-16",
+        "word": "Boustrophédon",
+        "definition": "Ancien système d’écriture alternant le sens des lignes.",
+        "example": "Le manuscrit était écrit en boustrophédon, ce qui le rendait difficile à lire."
+      },
+      {
+        "date": "2025-03-17",
+        "word": "Conciliabule",
+        "definition": "Entretien secret ou chuchoté entre plusieurs personnes.",
+        "example": "Les élèves étaient en conciliabule avant l’interrogation."
+      },
+      {
+        "date": "2025-03-18",
+        "word": "Truculent",
+        "definition": "Qui étonne ou amuse par son caractère haut en couleur.",
+        "example": "Ce personnage truculent animait toutes les soirées."
+      },
+      {
+        "date": "2025-03-19",
+        "word": "Fugacité",
+        "definition": "Caractère de ce qui dure peu.",
+        "example": "La fugacité des beaux moments les rend encore plus précieux."
+      },
+      {
+        "date": "2025-03-20",
+        "word": "Syllepse",
+        "definition": "Figure de style utilisant un mot dans deux sens différents à la fois.",
+        "example": "Il jouait sur la syllepse du mot 'lumière'."
+      },
+      {
+        "date": "2025-03-21",
+        "word": "Pugnace",
+        "definition": "Combatif, qui ne lâche rien.",
+        "example": "C’est une journaliste pugnace, toujours en quête de vérité."
+      },
+      {
+        "date": "2025-03-22",
+        "word": "Prévarication",
+        "definition": "Grave manquement d’un fonctionnaire aux devoirs de sa charge.",
+        "example": "L’affaire de prévarication a conduit le maire à la démission."
+      },
+      {
+        "date": "2025-03-23",
+        "word": "Ulcération",
+        "definition": "Formation d’une plaie, ou irritation morale profonde.",
+        "example": "Son attitude a causé une véritable ulcération chez ses proches."
+      },
+      {
+        "date": "2025-03-24",
+        "word": "Grimaud",
+        "definition": "Élève peu doué ou écrivain médiocre.",
+        "example": "Ce roman semble avoir été écrit par un grimaud sans inspiration."
+      },
+      {
+        "date": "2025-03-25",
+        "word": "Truculence",
+        "definition": "Caractère de ce qui est haut en couleur, pittoresque.",
+        "example": "Sa truculence naturelle mettait tout le monde de bonne humeur."
+      },
+      {
+        "date": "2025-03-26",
+        "word": "Lugubre",
+        "definition": "Triste, sombre, évoquant la mort.",
+        "example": "Une musique lugubre s’élevait de la cathédrale."
+      },
+      {
+        "date": "2025-03-27",
+        "word": "Stochastique",
+        "definition": "Qui relève du hasard, probabiliste.",
+        "example": "Ce phénomène stochastique nécessite une modélisation mathématique."
+      },
+      {
+        "date": "2025-03-28",
+        "word": "Zoïle",
+        "definition": "Critique injuste et malveillant.",
+        "example": "Un zoïle s’est encore attaqué à son dernier livre."
+      },
+      {
+        "date": "2025-03-29",
+        "word": "Impéritie",
+        "definition": "Incapacité à remplir sa fonction, incompétence.",
+        "example": "Son impéritie a mené l’entreprise à la faillite."
+      },
+      {
+        "date": "2025-03-30",
+        "word": "Lugubrité",
+        "definition": "Caractère lugubre, tristesse excessive.",
+        "example": "La lugubrité du décor glaçait les visiteurs."
+      },
+      {
+        "date": "2025-03-31",
+        "word": "Hiémal",
+        "definition": "Relatif à l’hiver.",
+        "example": "Le vent hiémal fouettait les vitres de la cabane."
+      }
+  ]
