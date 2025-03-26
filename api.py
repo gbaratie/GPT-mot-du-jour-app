@@ -14,7 +14,7 @@ def load_words():
 def get_word_of_the_day():
     words = load_words()
     today = datetime.date.today().strftime("%m-%d")  # Format MM-DD
-    word_of_the_day = next((w for w in words if w["date"].endswith(today)), None)  # Ignore l'année
+    word_of_the_day = next((w for w in words if w["date"][-5:] == today), None)  # Compare MM-DD
     
     if word_of_the_day:
         return word_of_the_day
