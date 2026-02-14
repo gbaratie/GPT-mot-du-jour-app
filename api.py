@@ -1,13 +1,24 @@
+from pathlib import Path
+
 from fastapi import FastAPI
 import json
 import datetime
 
 app = FastAPI()
 
-# Charger les mots depuis le fichier JSON
+# Chemin vers words.json (relatif au fichier api.py, pas au CWD)
+WORDS_PATH = Path(__file__).parent / "words.json"
+
+_words_cache = None
+
+
 def load_words():
-    with open("words.json", "r", encoding="utf-8") as file:
-        return json.load(file)
+    """Charge les mots depuis le JSON, avec cache en mémoire."""
+    global _words_cache
+    if _words_cache is None:
+        with open(WORDS_PATH, "r", encoding="utf-8") as file:
+            _words_cache = json.load(file)
+    return _words_cache
 
 # Endpoint pour récupérer le mot du jour
 @app.get("/motdujour")

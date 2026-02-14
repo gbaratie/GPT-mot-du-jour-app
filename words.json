@@ -1084,7 +1084,194 @@
     "word": "Escarbille",
     "definition": "Fragment incandescent provenant d’un feu.",
     "example": "Une escarbille s’est échappée de la cheminée."
-  },  {
+  },
+  {
+    "date": "2025-07-01",
+    "word": "Estival",
+    "definition": "Relatif à l'été.",
+    "example": "La chaleur estivale incitait à la sieste."
+  },
+  {
+    "date": "2025-07-02",
+    "word": "Intégrité",
+    "definition": "Honnêteté, probité morale.",
+    "example": "Son intégrité lui a valu le respect de tous."
+  },
+  {
+    "date": "2025-07-03",
+    "word": "Persistance",
+    "definition": "Fait de durer, de se maintenir.",
+    "example": "La persistance de l'image sur l'écran était visible."
+  },
+  {
+    "date": "2025-07-04",
+    "word": "Cohorte",
+    "definition": "Groupe de personnes partageant une même caractéristique.",
+    "example": "Une cohorte d'étudiants a participé à l'étude."
+  },
+  {
+    "date": "2025-07-05",
+    "word": "Séquelle",
+    "definition": "Conséquence durable d'un événement passé.",
+    "example": "L'accident lui a laissé des séquelles permanentes."
+  },
+  {
+    "date": "2025-07-06",
+    "word": "Léthargie",
+    "definition": "État d'engourdissement, d'inactivité.",
+    "example": "La canicule plongeait la ville dans une léthargie."
+  },
+  {
+    "date": "2025-07-07",
+    "word": "Éphémère",
+    "definition": "De très courte durée.",
+    "example": "Le bonheur des vacances est souvent éphémère."
+  },
+  {
+    "date": "2025-07-08",
+    "word": "Cathartique",
+    "definition": "Qui purifie, qui libère des émotions.",
+    "example": "Pleurer peut avoir un effet cathartique."
+  },
+  {
+    "date": "2025-07-09",
+    "word": "Ténacité",
+    "definition": "Persévérance, obstination.",
+    "example": "Sa ténacité a fini par payer."
+  },
+  {
+    "date": "2025-07-10",
+    "word": "Magnanime",
+    "definition": "Généreux, indulgent envers les autres.",
+    "example": "Il a fait preuve d'une décision magnanime."
+  },
+  {
+    "date": "2025-07-11",
+    "word": "Proscrit",
+    "definition": "Exclu, interdit par la loi ou l'usage.",
+    "example": "Ce comportement est proscrit dans l'entreprise."
+  },
+  {
+    "date": "2025-07-12",
+    "word": "Inanition",
+    "definition": "État d'affaiblissement par manque de nourriture.",
+    "example": "Le prisonnier était en état d'inanition."
+  },
+  {
+    "date": "2025-07-13",
+    "word": "Soporifique",
+    "definition": "Qui provoque le sommeil, ennuyeux.",
+    "example": "Son discours soporifique endormait l'auditoire."
+  },
+  {
+    "date": "2025-07-14",
+    "word": "Concis",
+    "definition": "Qui s'exprime en peu de mots.",
+    "example": "Sa réponse concise en disait long."
+  },
+  {
+    "date": "2025-07-15",
+    "word": "Vétuste",
+    "definition": "Très vieux, délabré.",
+    "example": "Le bâtiment vétuste menaçait de s'effondrer."
+  },
+  {
+    "date": "2025-07-16",
+    "word": "Prodigalité",
+    "definition": "Dépense excessive, gaspillage.",
+    "example": "Sa prodigalité l'a conduit à la ruine."
+  },
+  {
+    "date": "2025-07-17",
+    "word": "Invective",
+    "definition": "Parole violente pour attaquer quelqu'un.",
+    "example": "Il s'est lancé dans une invective contre son adversaire."
+  },
+  {
+    "date": "2025-07-18",
+    "word": "Récréance",
+    "definition": "Manquement à un engagement, faiblesse.",
+    "example": "Sa récréance a déçu ses partisans."
+  },
+  {
+    "date": "2025-07-19",
+    "word": "Sagace",
+    "definition": "Perspicace, qui fait preuve de jugement.",
+    "example": "Un critique sagace a relevé les faiblesses du livre."
+  },
+  {
+    "date": "2025-07-20",
+    "word": "Dilatoire",
+    "definition": "Qui retarde, qui cherche à gagner du temps.",
+    "example": "Ces manœuvres dilatoires ont irrité le tribunal."
+  },
+  {
+    "date": "2025-07-21",
+    "word": "Élégiaque",
+    "definition": "Qui exprime la mélancolie, la nostalgie.",
+    "example": "Le film se termine sur une note élégiaque."
+  },
+  {
+    "date": "2025-07-22",
+    "word": "Prosaïque",
+    "definition": "Banal, sans poésie.",
+    "example": "La réalité prosaïque a tempéré son enthousiasme."
+  },
+  {
+    "date": "2025-07-23",
+    "word": "Incommensurable",
+    "definition": "Sans mesure commune, immense.",
+    "example": "Sa gratitude était incommensurable."
+  },
+  {
+    "date": "2025-07-24",
+    "word": "Rétif",
+    "definition": "Qui résiste, refuse d'obéir.",
+    "example": "Le cheval rétif refusait d'avancer."
+  },
+  {
+    "date": "2025-07-25",
+    "word": "Séditieux",
+    "definition": "Qui incite à la révolte contre l'autorité.",
+    "example": "Des tracts séditieux circulaient dans la ville."
+  },
+  {
+    "date": "2025-07-26",
+    "word": "Taciturne",
+    "definition": "Peu enclin à parler, silencieux.",
+    "example": "Ce collègue taciturne reste mystérieux."
+  },
+  {
+    "date": "2025-07-27",
+    "word": "Velléité",
+    "definition": "Intention vague sans passage à l'acte.",
+    "example": "Il n'eut que des velléités de révolte."
+  },
+  {
+    "date": "2025-07-28",
+    "word": "Usurpateur",
+    "definition": "Personne qui s'empare du pouvoir illégitimement.",
+    "example": "L'usurpateur a été chassé du trône."
+  },
+  {
+    "date": "2025-07-29",
+    "word": "Xénophile",
+    "definition": "Qui aime les étrangers, les cultures lointaines.",
+    "example": "Son esprit xénophile l'a poussé à voyager."
+  },
+  {
+    "date": "2025-07-30",
+    "word": "Zénith",
+    "definition": "Point le plus haut ; apogée.",
+    "example": "Sa carrière était alors à son zénith."
+  },
+  {
+    "date": "2025-07-31",
+    "word": "Amène",
+    "definition": "Agréable, doux envers les autres.",
+    "example": "Il avait des manières amènes qui rassuraient."
+  },
+  {
     "date": "2025-08-01",
     "word": "Grimaçant",
     "definition": "Qui fait une grimace, souvent de manière exagérée ou caricaturale.",
@@ -1269,5 +1456,737 @@
     "word": "Patibulaire",
     "definition": "À l’air inquiétant, suspect.",
     "example": "Ce type patibulaire rôdait autour du café."
+  },
+  {
+    "date": "2025-09-01",
+    "word": "Béat",
+    "definition": "Qui exprime une satisfaction naïve.",
+    "example": "Un sourire béat illuminait son visage."
+  },
+  {
+    "date": "2025-09-02",
+    "word": "Cabalistique",
+    "definition": "Mystérieux, incompréhensible pour les non-initiés.",
+    "example": "Des formules cabalistiques ornaient le manuscrit."
+  },
+  {
+    "date": "2025-09-03",
+    "word": "Dégingandé",
+    "definition": "Dont les mouvements sont mal coordonnés.",
+    "example": "Un adolescent dégingandé traversait la cour."
+  },
+  {
+    "date": "2025-09-04",
+    "word": "Égrillard",
+    "definition": "Légèrement grivois, un peu osé.",
+    "example": "Il a raconté une anecdote égrillarde."
+  },
+  {
+    "date": "2025-09-05",
+    "word": "Fébrile",
+    "definition": "Agité, nerveux, fiévreux.",
+    "example": "L'attente fébrile du résultat l'épuisait."
+  },
+  {
+    "date": "2025-09-06",
+    "word": "Gouaille",
+    "definition": "Moquerie familière, esprit facétieux.",
+    "example": "Il répondait avec sa gouaille habituelle."
+  },
+  {
+    "date": "2025-09-07",
+    "word": "Hétéroclite",
+    "definition": "Formé d'éléments disparates.",
+    "example": "Une foule hétéroclite se pressait au marché."
+  },
+  {
+    "date": "2025-09-08",
+    "word": "Iconoclaste",
+    "definition": "Qui s'attaque aux idées reçues.",
+    "example": "Ce penseur iconoclaste bouscule les conventions."
+  },
+  {
+    "date": "2025-09-09",
+    "word": "Jérémiade",
+    "definition": "Plainte longue et monotone.",
+    "example": "Il nous a assommés de ses jérémiades."
+  },
+  {
+    "date": "2025-09-10",
+    "word": "Kafkaïen",
+    "definition": "Absurde, angoissant, comme dans l'univers de Kafka.",
+    "example": "La situation était kafkaïenne."
+  },
+  {
+    "date": "2025-09-11",
+    "word": "Infime",
+    "definition": "Extrêmement petit.",
+    "example": "Des détails infimes ont retardé le projet."
+  },
+  {
+    "date": "2025-09-12",
+    "word": "Melliflu",
+    "definition": "Doux et fluide en parlant de la voix.",
+    "example": "Une voix melliflue récitait le poème."
+  },
+  {
+    "date": "2025-09-13",
+    "word": "Nébulieux",
+    "definition": "Flou, peu clair.",
+    "example": "Ses explications restaient nébuleuses."
+  },
+  {
+    "date": "2025-09-14",
+    "word": "Ostensible",
+    "definition": "Montré de façon visible, volontaire.",
+    "example": "Il évitait ostensiblement son regard."
+  },
+  {
+    "date": "2025-09-15",
+    "word": "Péjoratif",
+    "definition": "Qui déprécie, qui a une connotation négative.",
+    "example": "Ce terme est péjoratif dans ce contexte."
+  },
+  {
+    "date": "2025-09-16",
+    "word": "Quiddité",
+    "definition": "Nature propre d'une chose, essence.",
+    "example": "La quiddité du bien fait débat en philosophie."
+  },
+  {
+    "date": "2025-09-17",
+    "word": "Réprobation",
+    "definition": "Désapprobation forte.",
+    "example": "Son acte a suscité la réprobation générale."
+  },
+  {
+    "date": "2025-09-18",
+    "word": "Stratégème",
+    "definition": "Ruse, manœuvre habile.",
+    "example": "Il a utilisé un stratagème pour les convaincre."
+  },
+  {
+    "date": "2025-09-19",
+    "word": "Truculent",
+    "definition": "Haut en couleur, pittoresque.",
+    "example": "Un personnage truculent animait la soirée."
+  },
+  {
+    "date": "2025-09-20",
+    "word": "Ubuesque",
+    "definition": "Grotesque, démesuré comme le Père Ubu.",
+    "example": "La réunion avait tourné à l'ubuesque."
+  },
+  {
+    "date": "2025-09-21",
+    "word": "Vindicatif",
+    "definition": "Porté à la vengeance.",
+    "example": "Il est devenu vindicatif après l'affront."
+  },
+  {
+    "date": "2025-09-22",
+    "word": "Wagnérien",
+    "definition": "Grandiose, emphatique comme l'œuvre de Wagner.",
+    "example": "Une mise en scène wagnérienne."
+  },
+  {
+    "date": "2025-09-23",
+    "word": "Xérophyte",
+    "definition": "Plante adaptée à la sécheresse.",
+    "example": "Les xérophytes peuplent les déserts."
+  },
+  {
+    "date": "2025-09-24",
+    "word": "Yiddish",
+    "definition": "Langue des juifs d'Europe centrale et orientale.",
+    "example": "Il parlait le yiddish avec sa grand-mère."
+  },
+  {
+    "date": "2025-09-25",
+    "word": "Zénithal",
+    "definition": "Relatif au zénith, au point le plus haut.",
+    "example": "Le soleil était à son point zénithal."
+  },
+  {
+    "date": "2025-09-26",
+    "word": "Abyssal",
+    "definition": "Très profond, insondable.",
+    "example": "Un silence abyssal régnait dans la grotte."
+  },
+  {
+    "date": "2025-09-27",
+    "word": "Belligérant",
+    "definition": "En état de guerre ; agressif.",
+    "example": "Un ton belligérant a envenimé le débat."
+  },
+  {
+    "date": "2025-09-28",
+    "word": "Cynique",
+    "definition": "Qui méprise les valeurs, désabusé.",
+    "example": "Une remarque cynique a glacé l'assemblée."
+  },
+  {
+    "date": "2025-09-29",
+    "word": "Diaphane",
+    "definition": "Très transparent, délicat.",
+    "example": "Une peau diaphane laissait voir ses veines."
+  },
+  {
+    "date": "2025-09-30",
+    "word": "Éthéré",
+    "definition": "Immatériel, léger comme l'éther.",
+    "example": "Une musique éthérée baignait la salle."
+  },
+  {
+    "date": "2025-10-01",
+    "word": "Fructueux",
+    "definition": "Qui produit des résultats.",
+    "example": "L'entretien a été fructueux."
+  },
+  {
+    "date": "2025-10-02",
+    "word": "Géhenne",
+    "definition": "Souffrance intense, enfer.",
+    "example": "Ces semaines furent une véritable géhenne."
+  },
+  {
+    "date": "2025-10-03",
+    "word": "Hédoniste",
+    "definition": "Qui recherche le plaisir.",
+    "example": "Une philosophie hédoniste guide sa vie."
+  },
+  {
+    "date": "2025-10-04",
+    "word": "Idiosyncrasie",
+    "definition": "Caractéristique propre à un individu.",
+    "example": "Son idiosyncrasie le rendait imprévisible."
+  },
+  {
+    "date": "2025-10-05",
+    "word": "Jubilatoire",
+    "definition": "Qui provoque la joie.",
+    "example": "Une fin jubilatoire a conclu le spectacle."
+  },
+  {
+    "date": "2025-10-06",
+    "word": "Képi",
+    "definition": "Coiffure militaire à visière.",
+    "example": "Le gendarme ajusta son képi."
+  },
+  {
+    "date": "2025-10-07",
+    "word": "Lénifiant",
+    "definition": "Qui endort, qui apaise excessivement.",
+    "example": "Un discours lénifiant ne règle pas les problèmes."
+  },
+  {
+    "date": "2025-10-08",
+    "word": "Métaphore",
+    "definition": "Figure de style par comparaison implicite.",
+    "example": "La métaphore du navire pour l'État est classique."
+  },
+  {
+    "date": "2025-10-09",
+    "word": "Néologisme",
+    "definition": "Mot ou sens nouveau.",
+    "example": "Ce néologisme est entré dans le dictionnaire."
+  },
+  {
+    "date": "2025-10-10",
+    "word": "Ostracisme",
+    "definition": "Exclusion d'un groupe.",
+    "example": "Il a subi l'ostracisme de ses pairs."
+  },
+  {
+    "date": "2025-10-11",
+    "word": "Palingénésie",
+    "definition": "Renaissance, régénération.",
+    "example": "La palingénésie de la nature au printemps."
+  },
+  {
+    "date": "2025-10-12",
+    "word": "Quintessence",
+    "definition": "Ce qu'il y a de plus pur, de plus parfait.",
+    "example": "Elle incarnait la quintessence de l'élégance."
+  },
+  {
+    "date": "2025-10-13",
+    "word": "Rhapsodie",
+    "definition": "Œuvre musicale ou littéraire libre de forme.",
+    "example": "Une rhapsodie en hommage à la ville."
+  },
+  {
+    "date": "2025-10-14",
+    "word": "Syllogisme",
+    "definition": "Raisonnement en deux prémisses et une conclusion.",
+    "example": "Le syllogisme peut conduire à l'erreur si les prémisses sont fausses."
+  },
+  {
+    "date": "2025-10-15",
+    "word": "Tautologique",
+    "definition": "Qui répète la même idée autrement.",
+    "example": "Cette phrase est tautologique."
+  },
+  {
+    "date": "2025-10-16",
+    "word": "Utopique",
+    "definition": "Irréaliste, idéal mais irréalisable.",
+    "example": "Un projet utopique mais séduisant."
+  },
+  {
+    "date": "2025-10-17",
+    "word": "Verbeux",
+    "definition": "Qui use de trop de mots.",
+    "example": "Un orateur verbeux a ennuyé l'audience."
+  },
+  {
+    "date": "2025-10-18",
+    "word": "Wattman",
+    "definition": "Conducteur de tramway (vieilli).",
+    "example": "Le wattman annonça la prochaine station."
+  },
+  {
+    "date": "2025-10-19",
+    "word": "Xénophobe",
+    "definition": "Qui craint ou rejette les étrangers.",
+    "example": "Un discours xénophobe a choqué l'assemblée."
+  },
+  {
+    "date": "2025-10-20",
+    "word": "Yole",
+    "definition": "Embarcation légère à rames.",
+    "example": "Une yole glissait sur l'étang."
+  },
+  {
+    "date": "2025-10-21",
+    "word": "Zénonien",
+    "definition": "Relatif à Zénon, paradoxal.",
+    "example": "Un raisonnement zénonien sur l'infini."
+  },
+  {
+    "date": "2025-10-22",
+    "word": "Apathie",
+    "definition": "Manque d'émotion, d'énergie.",
+    "example": "L'apathie des électeurs inquiète."
+  },
+  {
+    "date": "2025-10-23",
+    "word": "Borborygme",
+    "definition": "Bruit produit par le tube digestif.",
+    "example": "Un borborygme trahit sa faim."
+  },
+  {
+    "date": "2025-10-24",
+    "word": "Cacographie",
+    "definition": "Mauvaise orthographe.",
+    "example": "La cacographie de ce texte le rend illisible."
+  },
+  {
+    "date": "2025-10-25",
+    "word": "Déontologie",
+    "definition": "Ensemble des devoirs professionnels.",
+    "example": "La déontologie médicale impose le secret."
+  },
+  {
+    "date": "2025-10-26",
+    "word": "Éristique",
+    "definition": "Art de la controverse.",
+    "example": "Il excellait dans l'éristique."
+  },
+  {
+    "date": "2025-10-27",
+    "word": "Fulminant",
+    "definition": "Très rapide ; qui exprime une colère violente.",
+    "example": "Une réaction fulminante a suivi l'annonce."
+  },
+  {
+    "date": "2025-10-28",
+    "word": "Gymnastique",
+    "definition": "Exercice du corps ; ici au figuré : exercice intellectuel.",
+    "example": "Une gymnastique mentale s'imposait."
+  },
+  {
+    "date": "2025-10-29",
+    "word": "Hapax",
+    "definition": "Mot ou forme n'apparaissant qu'une fois.",
+    "example": "Ce mot est un hapax dans la littérature."
+  },
+  {
+    "date": "2025-10-30",
+    "word": "Idylle",
+    "definition": "Relation amoureuse harmonieuse.",
+    "example": "Une idylle d'été s'était nouée."
+  },
+  {
+    "date": "2025-10-31",
+    "word": "Jactance",
+    "definition": "Vantardise, arrogance.",
+    "example": "Sa jactance finissait par agacer."
+  },
+  {
+    "date": "2025-11-01",
+    "word": "Kermesse",
+    "definition": "Fête populaire, souvent de bienfaisance.",
+    "example": "La kermesse du village a réuni tout le monde."
+  },
+  {
+    "date": "2025-11-02",
+    "word": "Minuscule",
+    "definition": "Extrêmement petit.",
+    "example": "Des économies minuscules."
+  },
+  {
+    "date": "2025-11-03",
+    "word": "Allégorie",
+    "definition": "Image développée à valeur symbolique.",
+    "example": "L'allégorie filée structure le poème."
+  },
+  {
+    "date": "2025-11-04",
+    "word": "Néophyte",
+    "definition": "Débutant dans une discipline.",
+    "example": "Un néophyte en œnologie."
+  },
+  {
+    "date": "2025-11-05",
+    "word": "Oligarchie",
+    "definition": "Gouvernement d'un petit nombre.",
+    "example": "Certains dénoncent une oligarchie financière."
+  },
+  {
+    "date": "2025-11-06",
+    "word": "Pandémonium",
+    "definition": "Désordre bruyant, chaos.",
+    "example": "Le pandémonium régnait dans la salle."
+  },
+  {
+    "date": "2025-11-07",
+    "word": "Quenelle",
+    "definition": "Préparation culinaire ; geste de défi (contemporain).",
+    "example": "Il a osé une quenelle en public."
+  },
+  {
+    "date": "2025-11-08",
+    "word": "Récusation",
+    "definition": "Refus de participer pour cause de partialité.",
+    "example": "La récusation du juge a été acceptée."
+  },
+  {
+    "date": "2025-11-09",
+    "word": "Syllabe",
+    "definition": "Unité phonétique du mot.",
+    "example": "Ce mot compte trois syllabes."
+  },
+  {
+    "date": "2025-11-10",
+    "word": "Redondant",
+    "definition": "Qui répète inutilement la même idée.",
+    "example": "Cette définition est redondante."
+  },
+  {
+    "date": "2025-11-11",
+    "word": "Utopiste",
+    "definition": "Qui croit en un idéal irréalisable.",
+    "example": "Un utopiste visionnaire."
+  },
+  {
+    "date": "2025-11-12",
+    "word": "Vexatoire",
+    "definition": "Qui humilie, qui vexe.",
+    "example": "Une remarque vexatoire l'a blessé."
+  },
+  {
+    "date": "2025-11-13",
+    "word": "Wisigoth",
+    "definition": "Relatif aux Wisigoths.",
+    "example": "L'art wisigoth marque l'Espagne."
+  },
+  {
+    "date": "2025-11-14",
+    "word": "Xylophone",
+    "definition": "Instrument de musique à lames.",
+    "example": "L'enfant jouait du xylophone."
+  },
+  {
+    "date": "2025-11-15",
+    "word": "Yoga",
+    "definition": "Discipline corporelle et mentale.",
+    "example": "Le yoga l'aidait à se détendre."
+  },
+  {
+    "date": "2025-11-16",
+    "word": "Paradoxal",
+    "definition": "Qui contient ou soulève un paradoxe.",
+    "example": "Un débat paradoxal."
+  },
+  {
+    "date": "2025-11-17",
+    "word": "Aboulie",
+    "definition": "Perte de la volonté.",
+    "example": "L'aboulie le paralysait."
+  },
+  {
+    "date": "2025-11-18",
+    "word": "Béatitude",
+    "definition": "Bonheur parfait, état de félicité.",
+    "example": "Une expression de béatitude illuminait son visage."
+  },
+  {
+    "date": "2025-11-19",
+    "word": "Cohésion",
+    "definition": "Lien qui unit les parties.",
+    "example": "La cohésion du groupe s'est renforcée."
+  },
+  {
+    "date": "2025-11-20",
+    "word": "Déférence",
+    "definition": "Respect, considération.",
+    "example": "Il a traité son aîné avec déférence."
+  },
+  {
+    "date": "2025-11-21",
+    "word": "Élision",
+    "definition": "Suppression d'une voyelle en fin de mot.",
+    "example": "L'élision est courante en poésie."
+  },
+  {
+    "date": "2025-11-22",
+    "word": "Frugalité",
+    "definition": "Modération dans la nourriture.",
+    "example": "La frugalité était de mise."
+  },
+  {
+    "date": "2025-11-23",
+    "word": "Gratuité",
+    "definition": "Caractère de ce qui est gratuit.",
+    "example": "La gratuité des musées le dimanche."
+  },
+  {
+    "date": "2025-11-24",
+    "word": "Hédonisme",
+    "definition": "Philosophie du plaisir.",
+    "example": "L'hédonisme antique prône la mesure."
+  },
+  {
+    "date": "2025-11-25",
+    "word": "Inanition",
+    "definition": "Épuisement par manque de nourriture.",
+    "example": "Il était en état d'inanition."
+  },
+  {
+    "date": "2025-11-26",
+    "word": "Jovial",
+    "definition": "Gai, enjoué.",
+    "example": "Un convive jovial animait la table."
+  },
+  {
+    "date": "2025-11-27",
+    "word": "Kakemphaton",
+    "definition": "Jeu de mots involontairement comique.",
+    "example": "Un kakemphaton a fait rire la classe."
+  },
+  {
+    "date": "2025-11-28",
+    "word": "Lapidaire",
+    "definition": "Concis, incisif.",
+    "example": "Une formule lapidaire a résumé le débat."
+  },
+  {
+    "date": "2025-11-29",
+    "word": "Métonymie",
+    "definition": "Figure par laquelle on désigne un concept par un autre lié.",
+    "example": "La couronne pour la royauté est une métonymie."
+  },
+  {
+    "date": "2025-11-30",
+    "word": "Népotisme",
+    "definition": "Favoritisme envers sa famille.",
+    "example": "Le népotisme a miné l'institution."
+  },
+  {
+    "date": "2025-12-01",
+    "word": "Onomatopée",
+    "definition": "Mot qui imite un bruit.",
+    "example": "Bang est une onomatopée."
+  },
+  {
+    "date": "2025-12-02",
+    "word": "Paradigme",
+    "definition": "Modèle, cadre de pensée.",
+    "example": "Un changement de paradigme s'impose."
+  },
+  {
+    "date": "2025-12-03",
+    "word": "Quolibet",
+    "definition": "Moquerie, trait d'esprit.",
+    "example": "Il lançait des quolibets à la cantonade."
+  },
+  {
+    "date": "2025-12-04",
+    "word": "Réticence",
+    "definition": "Réserve, hésitation à dire.",
+    "example": "Sa réticence en disait long."
+  },
+  {
+    "date": "2025-12-05",
+    "word": "Synecdoque",
+    "definition": "Figure où la partie désigne le tout.",
+    "example": "Une voile pour un bateau : synecdoque."
+  },
+  {
+    "date": "2025-12-06",
+    "word": "Tautologie",
+    "definition": "Répétition inutile du même sens.",
+    "example": "C'est une tautologie évidente."
+  },
+  {
+    "date": "2025-12-07",
+    "word": "Univoque",
+    "definition": "Qui n'a qu'un seul sens.",
+    "example": "Une réponse univoque était attendue."
+  },
+  {
+    "date": "2025-12-08",
+    "word": "Verbose",
+    "definition": "Trop bavard.",
+    "example": "Une prose verbose."
+  },
+  {
+    "date": "2025-12-09",
+    "word": "Wisigothique",
+    "definition": "Relatif aux Wisigoths.",
+    "example": "L'architecture wisigothique."
+  },
+  {
+    "date": "2025-12-10",
+    "word": "Xénoglossie",
+    "definition": "Capacité à parler une langue non apprise.",
+    "example": "La xénoglossie intrigue les scientifiques."
+  },
+  {
+    "date": "2025-12-11",
+    "word": "Yin",
+    "definition": "Principe féminin, passif (taoïsme).",
+    "example": "L'équilibre entre le yin et le yang."
+  },
+  {
+    "date": "2025-12-12",
+    "word": "Zéro",
+    "definition": "Rien ; symbole numérique.",
+    "example": "Repartir de zéro."
+  },
+  {
+    "date": "2025-12-13",
+    "word": "Abysse",
+    "definition": "Profondeur extrême.",
+    "example": "Les abysses océaniques restent mystérieux."
+  },
+  {
+    "date": "2025-12-14",
+    "word": "Bénédiction",
+    "definition": "Parole ou geste qui appelle le bien.",
+    "example": "La bénédiction du prêtre."
+  },
+  {
+    "date": "2025-12-15",
+    "word": "Célérité",
+    "definition": "Rapidité.",
+    "example": "Il a agi avec célérité."
+  },
+  {
+    "date": "2025-12-16",
+    "word": "Décrépitude",
+    "definition": "État de grande vieillesse.",
+    "example": "La décrépitude du bâtiment."
+  },
+  {
+    "date": "2025-12-17",
+    "word": "Élégance",
+    "definition": "Grace, raffinement.",
+    "example": "L'élégance de la solution."
+  },
+  {
+    "date": "2025-12-18",
+    "word": "Faste",
+    "definition": "Luxe, magnificence.",
+    "example": "Un dîner fastueux."
+  },
+  {
+    "date": "2025-12-19",
+    "word": "Gravité",
+    "definition": "Sérieux, importance.",
+    "example": "La gravité de la situation."
+  },
+  {
+    "date": "2025-12-20",
+    "word": "Humilité",
+    "definition": "Modestie, absence d'orgueil.",
+    "example": "Il a accepté avec humilité."
+  },
+  {
+    "date": "2025-12-21",
+    "word": "Incipit",
+    "definition": "Début d'un texte.",
+    "example": "L'incipit du roman est célèbre."
+  },
+  {
+    "date": "2025-12-22",
+    "word": "Jubilation",
+    "definition": "Joie intense.",
+    "example": "La jubilation de la foule."
+  },
+  {
+    "date": "2025-12-23",
+    "word": "Kitsch",
+    "definition": "De mauvais goût, tape-à-l'œil.",
+    "example": "Une décoration kitsch."
+  },
+  {
+    "date": "2025-12-24",
+    "word": "Lucidité",
+    "definition": "Clarté de l'esprit.",
+    "example": "Garder sa lucidité en toute circonstance."
+  },
+  {
+    "date": "2025-12-25",
+    "word": "Melliflu",
+    "definition": "Doux et coulant.",
+    "example": "Une voix melliflue."
+  },
+  {
+    "date": "2025-12-26",
+    "word": "Nostalgie",
+    "definition": "Regret du passé.",
+    "example": "La nostalgie des vacances."
+  },
+  {
+    "date": "2025-12-27",
+    "word": "Ovation",
+    "definition": "Applaudissement chaleureux.",
+    "example": "Une ovation debout."
+  },
+  {
+    "date": "2025-12-28",
+    "word": "Pédagogue",
+    "definition": "Qui sait enseigner.",
+    "example": "Un pédagogue hors pair."
+  },
+  {
+    "date": "2025-12-29",
+    "word": "Quintessence",
+    "definition": "Ce qu'il y a de plus pur.",
+    "example": "La quintessence de l'art."
+  },
+  {
+    "date": "2025-12-30",
+    "word": "Révérence",
+    "definition": "Salut respectueux.",
+    "example": "Il s'inclina avec révérence."
+  },
+  {
+    "date": "2025-12-31",
+    "word": "Sagesse",
+    "definition": "Savoir vivre, discernement.",
+    "example": "La sagesse des anciens."
   }
 ]
