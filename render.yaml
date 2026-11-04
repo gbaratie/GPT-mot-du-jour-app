@@ -1,0 +1,22 @@
+# Pre-deploy commands require a paid Render instance (starter).
+# Review docs/DEPLOYMENT.md before applying this Blueprint.
+services:
+  - type: web
+    name: daily-collections-api
+    runtime: python
+    plan: starter
+    branch: Main-refacto
+    autoDeployTrigger: "off"
+    buildCommand: pip install -e ./apps/api
+    preDeployCommand: alembic -c apps/api/alembic.ini upgrade head && daily-content sync
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.14
+      - key: DATABASE_URL
+        sync: false
+      - key: CORS_ORIGINS
+        sync: false
+      - key: APP_TIMEZONE
+        value: Europe/Paris

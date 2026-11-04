@@ -1,0 +1,27 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "term": {
+      "minLength": 1,
+      "title": "Term",
+      "type": "string"
+    },
+    "definition": {
+      "minLength": 1,
+      "title": "Definition",
+      "type": "string"
+    },
+    "example": {
+      "minLength": 1,
+      "title": "Example",
+      "type": "string"
+    }
+  },
+  "required": [
+    "term",
+    "definition",
+    "example"
+  ],
+  "title": "WordPayload",
+  "type": "object"
+}

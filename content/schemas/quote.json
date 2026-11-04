@@ -1,0 +1,34 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "text": {
+      "minLength": 1,
+      "title": "Text",
+      "type": "string"
+    },
+    "author": {
+      "minLength": 1,
+      "title": "Author",
+      "type": "string"
+    },
+    "source": {
+      "anyOf": [
+        {
+          "minLength": 1,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Source"
+    }
+  },
+  "required": [
+    "text",
+    "author"
+  ],
+  "title": "QuotePayload",
+  "type": "object"
+}

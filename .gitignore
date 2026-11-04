@@ -18,3 +18,16 @@ env/
 .DS_Store
 *.swp
 *.swo
+
+# Build, outils et données locales
+work/
+node_modules/
+.next/
+out/
+coverage/
+*.tsbuildinfo
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.env.*
+!.env.example

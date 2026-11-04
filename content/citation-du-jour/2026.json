@@ -1,0 +1,26 @@
+[
+  {
+    "publication_date": "2026-11-04",
+    "payload": {
+      "text": "On ne voit bien qu’avec le cœur. L’essentiel est invisible pour les yeux.",
+      "author": "Antoine de Saint-Exupéry",
+      "source": "Le Petit Prince, chapitre XXI (1943)"
+    }
+  },
+  {
+    "publication_date": "2026-11-05",
+    "payload": {
+      "text": "Il faut cultiver notre jardin.",
+      "author": "Voltaire",
+      "source": "Candide, chapitre XXX (1759)"
+    }
+  },
+  {
+    "publication_date": "2026-11-06",
+    "payload": {
+      "text": "Science sans conscience n’est que ruine de l’âme.",
+      "author": "François Rabelais",
+      "source": "Pantagruel, chapitre VIII (1532), orthographe modernisée"
+    }
+  }
+]
