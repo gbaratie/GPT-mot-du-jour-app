@@ -19,17 +19,19 @@ La CI fournit une base éphémère sans contacter Neon.
 
 Le Blueprint `render.yaml` utilise la racine du dépôt : ne pas définir `rootDir: apps/api`,
 car `content/` doit être disponible. L'installation éditable conserve cet accès au monorepo.
-Le pré-déploiement migre le schéma puis synchronise le contenu :
+Le script `scripts/start-api` migre le schéma puis synchronise le contenu avant Uvicorn :
 
 ```sh
 alembic -c apps/api/alembic.ini upgrade head
 daily-content sync
 ```
 
-Le service démarre avec `uvicorn app.main:app --host 0.0.0.0 --port "$PORT"`.
-`preDeployCommand` nécessite une instance payante : le Blueprint déclare `plan: starter`.
-Ne l'appliquer qu'après choix du plan. Sur une instance gratuite, retirer ce champ et lancer
-migration et synchronisation depuis un environnement autorisé avant le déploiement.
+Le service utilise `plan: free` dans la région de Francfort. Les commandes de démarrage
+exigent `DATABASE_URL` et `CORS_ORIGINS`, puis lancent Uvicorn sur le port fourni par Render.
+Le script est répétable : il s'exécute aussi lors d'un redémarrage ou d'une sortie de veille.
+Sur une offre payante, les migrations et la synchronisation peuvent être déplacées dans
+`preDeployCommand`. Le mode actuel prévoit un seul processus ; avant de multiplier les
+instances, déplacer ces opérations dans une étape de déploiement unique.
 
 | Variable | Valeur |
 | --- | --- |
