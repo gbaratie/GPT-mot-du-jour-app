@@ -61,8 +61,8 @@ nécessitent une opération dédiée. Désactiver une collection avec `active: f
 3. Exécuter `Deploy web to GitHub Pages` ou publier sur `Main-refacto` / `main`.
 
 Le workflow de déploiement accepte aussi les entrées manuelles `api_url` et `base_path`.
-Un push sans variable `NEXT_PUBLIC_API_URL` ignore le déploiement ; la CI s'exécute quand même.
-Une exécution manuelle exige une URL API valide (entrée `api_url` ou variable du dépôt).
+Sans surcharge, il utilise l'API de cette refonte : `https://daily-collections-api.onrender.com`.
+L'ordre de priorité est entrée manuelle, variable du dépôt, puis cette URL publique.
 La première exécution manuelle peut nécessiter que le workflow existe sur la branche par
 défaut ; la publication par push sur `Main-refacto` fonctionne dès que les variables sont prêtes.
 
@@ -93,3 +93,15 @@ Sources : [Blueprint Render](https://render.com/docs/blueprint-spec),
 [export Next.js](https://nextjs.org/docs/app/guides/static-exports),
 [GitHub Pages Actions](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages),
 [connexion Neon](https://neon.tech/docs/connect/connect-from-any-app).
+
+## Ressources de la refonte
+
+- API : `daily-collections-api`, région Francfort, offre gratuite, branche `Main-refacto`.
+  [Tableau de bord Render](https://dashboard.render.com/web/srv-dblr8n3bc2fs73a735gg).
+- Base : projet Neon `GPT-mot-du-jour-app`, PostgreSQL 17, région `aws-eu-central-1`,
+  branche `production`, base `daily_collections`.
+  [Console Neon](https://console.neon.tech/app/projects/quiet-truth-97113248).
+- Le service historique `gpt-mot-du-jour-app.onrender.com` reste sur `main`.
+- Le service de la refonte a le déploiement automatique désactivé : après un changement API,
+  valider la CI puis lancer un déploiement depuis le tableau de bord Render ou son outil.
+- L'URL de connexion Neon est enregistrée uniquement dans l'environnement Render.

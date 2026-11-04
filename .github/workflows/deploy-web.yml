@@ -23,13 +23,12 @@ concurrency:
 
 jobs:
   build:
-    if: github.event_name == 'workflow_dispatch' || vars.NEXT_PUBLIC_API_URL != ''
     runs-on: ubuntu-latest
     permissions:
       contents: read
       pages: write
     env:
-      NEXT_PUBLIC_API_URL: ${{ inputs.api_url || vars.NEXT_PUBLIC_API_URL }}
+      NEXT_PUBLIC_API_URL: ${{ inputs.api_url || vars.NEXT_PUBLIC_API_URL || 'https://daily-collections-api.onrender.com' }}
       NEXT_PUBLIC_BASE_PATH: ${{ inputs.base_path || vars.NEXT_PUBLIC_BASE_PATH || format('/{0}', github.event.repository.name) }}
       NEXT_TELEMETRY_DISABLED: "1"
     steps:
