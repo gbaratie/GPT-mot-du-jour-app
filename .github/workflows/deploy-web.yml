@@ -68,9 +68,22 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+      - name: Inspect Pages configuration
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api "repos/$GITHUB_REPOSITORY/pages" --jq '{status, build_type, html_url, source, https_enforced}'
+          test "$(gh api "repos/$GITHUB_REPOSITORY/pages" --jq .build_type)" = workflow
       - name: Publish
         id: deployment
         uses: actions/deploy-pages@v4
+      - name: Diagnose failed Pages publication
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api "repos/$GITHUB_REPOSITORY/pages" --jq '{status, build_type, html_url, source}'
+          gh api "repos/$GITHUB_REPOSITORY/pages/deployments/$GITHUB_SHA" --jq '{status, error}'
       - name: Verify published application
         env:
           DEPLOY_API_URL: ${{ inputs.api_url || vars.NEXT_PUBLIC_API_URL || 'https://daily-collections-api.onrender.com' }}
