@@ -1,0 +1,458 @@
+[
+  {
+    "publication_date": "2026-11-05",
+    "payload": {
+      "term": "Oligarchie",
+      "definition": "Gouvernement d'un petit nombre.",
+      "example": "Certains dénoncent une oligarchie financière."
+    }
+  },
+  {
+    "publication_date": "2026-11-06",
+    "payload": {
+      "term": "Pandémonium",
+      "definition": "Désordre bruyant, chaos.",
+      "example": "Le pandémonium régnait dans la salle."
+    }
+  },
+  {
+    "publication_date": "2026-11-07",
+    "payload": {
+      "term": "Quenelle",
+      "definition": "Préparation culinaire ; geste de défi (contemporain).",
+      "example": "Il a osé une quenelle en public."
+    }
+  },
+  {
+    "publication_date": "2026-11-08",
+    "payload": {
+      "term": "Récusation",
+      "definition": "Refus de participer pour cause de partialité.",
+      "example": "La récusation du juge a été acceptée."
+    }
+  },
+  {
+    "publication_date": "2026-11-09",
+    "payload": {
+      "term": "Syllabe",
+      "definition": "Unité phonétique du mot.",
+      "example": "Ce mot compte trois syllabes."
+    }
+  },
+  {
+    "publication_date": "2026-11-10",
+    "payload": {
+      "term": "Redondant",
+      "definition": "Qui répète inutilement la même idée.",
+      "example": "Cette définition est redondante."
+    }
+  },
+  {
+    "publication_date": "2026-11-11",
+    "payload": {
+      "term": "Utopiste",
+      "definition": "Qui croit en un idéal irréalisable.",
+      "example": "Un utopiste visionnaire."
+    }
+  },
+  {
+    "publication_date": "2026-11-12",
+    "payload": {
+      "term": "Vexatoire",
+      "definition": "Qui humilie, qui vexe.",
+      "example": "Une remarque vexatoire l'a blessé."
+    }
+  },
+  {
+    "publication_date": "2026-11-13",
+    "payload": {
+      "term": "Wisigoth",
+      "definition": "Relatif aux Wisigoths.",
+      "example": "L'art wisigoth marque l'Espagne."
+    }
+  },
+  {
+    "publication_date": "2026-11-14",
+    "payload": {
+      "term": "Xylophone",
+      "definition": "Instrument de musique à lames.",
+      "example": "L'enfant jouait du xylophone."
+    }
+  },
+  {
+    "publication_date": "2026-11-15",
+    "payload": {
+      "term": "Yoga",
+      "definition": "Discipline corporelle et mentale.",
+      "example": "Le yoga l'aidait à se détendre."
+    }
+  },
+  {
+    "publication_date": "2026-11-16",
+    "payload": {
+      "term": "Paradoxal",
+      "definition": "Qui contient ou soulève un paradoxe.",
+      "example": "Un débat paradoxal."
+    }
+  },
+  {
+    "publication_date": "2026-11-17",
+    "payload": {
+      "term": "Aboulie",
+      "definition": "Perte de la volonté.",
+      "example": "L'aboulie le paralysait."
+    }
+  },
+  {
+    "publication_date": "2026-11-18",
+    "payload": {
+      "term": "Béatitude",
+      "definition": "Bonheur parfait, état de félicité.",
+      "example": "Une expression de béatitude illuminait son visage."
+    }
+  },
+  {
+    "publication_date": "2026-11-19",
+    "payload": {
+      "term": "Cohésion",
+      "definition": "Lien qui unit les parties.",
+      "example": "La cohésion du groupe s'est renforcée."
+    }
+  },
+  {
+    "publication_date": "2026-11-20",
+    "payload": {
+      "term": "Déférence",
+      "definition": "Respect, considération.",
+      "example": "Il a traité son aîné avec déférence."
+    }
+  },
+  {
+    "publication_date": "2026-11-21",
+    "payload": {
+      "term": "Élision",
+      "definition": "Suppression d'une voyelle en fin de mot.",
+      "example": "L'élision est courante en poésie."
+    }
+  },
+  {
+    "publication_date": "2026-11-22",
+    "payload": {
+      "term": "Frugalité",
+      "definition": "Modération dans la nourriture.",
+      "example": "La frugalité était de mise."
+    }
+  },
+  {
+    "publication_date": "2026-11-23",
+    "payload": {
+      "term": "Gratuité",
+      "definition": "Caractère de ce qui est gratuit.",
+      "example": "La gratuité des musées le dimanche."
+    }
+  },
+  {
+    "publication_date": "2026-11-24",
+    "payload": {
+      "term": "Hédonisme",
+      "definition": "Philosophie du plaisir.",
+      "example": "L'hédonisme antique prône la mesure."
+    }
+  },
+  {
+    "publication_date": "2026-11-25",
+    "payload": {
+      "term": "Inanition",
+      "definition": "Épuisement par manque de nourriture.",
+      "example": "Il était en état d'inanition."
+    }
+  },
+  {
+    "publication_date": "2026-11-26",
+    "payload": {
+      "term": "Jovial",
+      "definition": "Gai, enjoué.",
+      "example": "Un convive jovial animait la table."
+    }
+  },
+  {
+    "publication_date": "2026-11-27",
+    "payload": {
+      "term": "Kakemphaton",
+      "definition": "Jeu de mots involontairement comique.",
+      "example": "Un kakemphaton a fait rire la classe."
+    }
+  },
+  {
+    "publication_date": "2026-11-28",
+    "payload": {
+      "term": "Lapidaire",
+      "definition": "Concis, incisif.",
+      "example": "Une formule lapidaire a résumé le débat."
+    }
+  },
+  {
+    "publication_date": "2026-11-29",
+    "payload": {
+      "term": "Métonymie",
+      "definition": "Figure par laquelle on désigne un concept par un autre lié.",
+      "example": "La couronne pour la royauté est une métonymie."
+    }
+  },
+  {
+    "publication_date": "2026-11-30",
+    "payload": {
+      "term": "Népotisme",
+      "definition": "Favoritisme envers sa famille.",
+      "example": "Le népotisme a miné l'institution."
+    }
+  },
+  {
+    "publication_date": "2026-12-01",
+    "payload": {
+      "term": "Onomatopée",
+      "definition": "Mot qui imite un bruit.",
+      "example": "Bang est une onomatopée."
+    }
+  },
+  {
+    "publication_date": "2026-12-02",
+    "payload": {
+      "term": "Paradigme",
+      "definition": "Modèle, cadre de pensée.",
+      "example": "Un changement de paradigme s'impose."
+    }
+  },
+  {
+    "publication_date": "2026-12-03",
+    "payload": {
+      "term": "Quolibet",
+      "definition": "Moquerie, trait d'esprit.",
+      "example": "Il lançait des quolibets à la cantonade."
+    }
+  },
+  {
+    "publication_date": "2026-12-04",
+    "payload": {
+      "term": "Réticence",
+      "definition": "Réserve, hésitation à dire.",
+      "example": "Sa réticence en disait long."
+    }
+  },
+  {
+    "publication_date": "2026-12-05",
+    "payload": {
+      "term": "Synecdoque",
+      "definition": "Figure où la partie désigne le tout.",
+      "example": "Une voile pour un bateau : synecdoque."
+    }
+  },
+  {
+    "publication_date": "2026-12-06",
+    "payload": {
+      "term": "Tautologie",
+      "definition": "Répétition inutile du même sens.",
+      "example": "C'est une tautologie évidente."
+    }
+  },
+  {
+    "publication_date": "2026-12-07",
+    "payload": {
+      "term": "Univoque",
+      "definition": "Qui n'a qu'un seul sens.",
+      "example": "Une réponse univoque était attendue."
+    }
+  },
+  {
+    "publication_date": "2026-12-08",
+    "payload": {
+      "term": "Verbose",
+      "definition": "Trop bavard.",
+      "example": "Une prose verbose."
+    }
+  },
+  {
+    "publication_date": "2026-12-09",
+    "payload": {
+      "term": "Wisigothique",
+      "definition": "Relatif aux Wisigoths.",
+      "example": "L'architecture wisigothique."
+    }
+  },
+  {
+    "publication_date": "2026-12-10",
+    "payload": {
+      "term": "Xénoglossie",
+      "definition": "Capacité à parler une langue non apprise.",
+      "example": "La xénoglossie intrigue les scientifiques."
+    }
+  },
+  {
+    "publication_date": "2026-12-11",
+    "payload": {
+      "term": "Yin",
+      "definition": "Principe féminin, passif (taoïsme).",
+      "example": "L'équilibre entre le yin et le yang."
+    }
+  },
+  {
+    "publication_date": "2026-12-12",
+    "payload": {
+      "term": "Zéro",
+      "definition": "Rien ; symbole numérique.",
+      "example": "Repartir de zéro."
+    }
+  },
+  {
+    "publication_date": "2026-12-13",
+    "payload": {
+      "term": "Abysse",
+      "definition": "Profondeur extrême.",
+      "example": "Les abysses océaniques restent mystérieux."
+    }
+  },
+  {
+    "publication_date": "2026-12-14",
+    "payload": {
+      "term": "Bénédiction",
+      "definition": "Parole ou geste qui appelle le bien.",
+      "example": "La bénédiction du prêtre."
+    }
+  },
+  {
+    "publication_date": "2026-12-15",
+    "payload": {
+      "term": "Célérité",
+      "definition": "Rapidité.",
+      "example": "Il a agi avec célérité."
+    }
+  },
+  {
+    "publication_date": "2026-12-16",
+    "payload": {
+      "term": "Décrépitude",
+      "definition": "État de grande vieillesse.",
+      "example": "La décrépitude du bâtiment."
+    }
+  },
+  {
+    "publication_date": "2026-12-17",
+    "payload": {
+      "term": "Élégance",
+      "definition": "Grace, raffinement.",
+      "example": "L'élégance de la solution."
+    }
+  },
+  {
+    "publication_date": "2026-12-18",
+    "payload": {
+      "term": "Faste",
+      "definition": "Luxe, magnificence.",
+      "example": "Un dîner fastueux."
+    }
+  },
+  {
+    "publication_date": "2026-12-19",
+    "payload": {
+      "term": "Gravité",
+      "definition": "Sérieux, importance.",
+      "example": "La gravité de la situation."
+    }
+  },
+  {
+    "publication_date": "2026-12-20",
+    "payload": {
+      "term": "Humilité",
+      "definition": "Modestie, absence d'orgueil.",
+      "example": "Il a accepté avec humilité."
+    }
+  },
+  {
+    "publication_date": "2026-12-21",
+    "payload": {
+      "term": "Incipit",
+      "definition": "Début d'un texte.",
+      "example": "L'incipit du roman est célèbre."
+    }
+  },
+  {
+    "publication_date": "2026-12-22",
+    "payload": {
+      "term": "Jubilation",
+      "definition": "Joie intense.",
+      "example": "La jubilation de la foule."
+    }
+  },
+  {
+    "publication_date": "2026-12-23",
+    "payload": {
+      "term": "Kitsch",
+      "definition": "De mauvais goût, tape-à-l'œil.",
+      "example": "Une décoration kitsch."
+    }
+  },
+  {
+    "publication_date": "2026-12-24",
+    "payload": {
+      "term": "Lucidité",
+      "definition": "Clarté de l'esprit.",
+      "example": "Garder sa lucidité en toute circonstance."
+    }
+  },
+  {
+    "publication_date": "2026-12-25",
+    "payload": {
+      "term": "Melliflu",
+      "definition": "Doux et coulant.",
+      "example": "Une voix melliflue."
+    }
+  },
+  {
+    "publication_date": "2026-12-26",
+    "payload": {
+      "term": "Nostalgie",
+      "definition": "Regret du passé.",
+      "example": "La nostalgie des vacances."
+    }
+  },
+  {
+    "publication_date": "2026-12-27",
+    "payload": {
+      "term": "Ovation",
+      "definition": "Applaudissement chaleureux.",
+      "example": "Une ovation debout."
+    }
+  },
+  {
+    "publication_date": "2026-12-28",
+    "payload": {
+      "term": "Pédagogue",
+      "definition": "Qui sait enseigner.",
+      "example": "Un pédagogue hors pair."
+    }
+  },
+  {
+    "publication_date": "2026-12-29",
+    "payload": {
+      "term": "Quintessence",
+      "definition": "Ce qu'il y a de plus pur.",
+      "example": "La quintessence de l'art."
+    }
+  },
+  {
+    "publication_date": "2026-12-30",
+    "payload": {
+      "term": "Révérence",
+      "definition": "Salut respectueux.",
+      "example": "Il s'inclina avec révérence."
+    }
+  },
+  {
+    "publication_date": "2026-12-31",
+    "payload": {
+      "term": "Sagesse",
+      "definition": "Savoir vivre, discernement.",
+      "example": "La sagesse des anciens."
+    }
+  }
+]
