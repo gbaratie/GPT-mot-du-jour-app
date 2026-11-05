@@ -14,7 +14,7 @@
 
 Exemple : `mot-anglais-du-jour`, `kind: word`, `locale: en-US` réutilise WordPayload et son
 renderer sans nouvelle table. Les collections déjà implémentées sont `mot-du-jour` et
-`citation-du-jour` ; les autres slugs sont créés uniquement lorsqu'un contenu existe.
+`citation-du-jour` et `enigme-du-jour` ; les autres slugs sont créés uniquement lorsqu'un contenu existe.
 
 ## Introduire un kind
 

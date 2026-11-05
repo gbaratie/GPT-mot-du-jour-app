@@ -7,7 +7,16 @@
     "locale": "fr-FR",
     "active": true,
     "sort_order": 0,
-    "coverage": [{ "start": "2025-01-01", "end": "2025-12-31" }]
+    "coverage": [
+      {
+        "start": "2025-01-01",
+        "end": "2025-12-31"
+      },
+      {
+        "start": "2026-11-05",
+        "end": "2026-12-31"
+      }
+    ]
   },
   {
     "slug": "citation-du-jour",
@@ -17,6 +26,26 @@
     "locale": "fr-FR",
     "active": true,
     "sort_order": 1,
-    "coverage": [{ "start": "2026-11-04", "end": "2026-11-06" }]
+    "coverage": [
+      {
+        "start": "2026-11-04",
+        "end": "2026-11-06"
+      }
+    ]
+  },
+  {
+    "slug": "enigme-du-jour",
+    "name": "Énigme du jour",
+    "description": "Une énigme quotidienne de logique, de calcul ou d’observation. La réponse se révèle à la demande.",
+    "kind": "riddle",
+    "locale": "fr-FR",
+    "active": true,
+    "sort_order": 2,
+    "coverage": [
+      {
+        "start": "2026-11-05",
+        "end": "2026-12-31"
+      }
+    ]
   }
 ]

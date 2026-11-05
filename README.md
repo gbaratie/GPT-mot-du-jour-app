@@ -1,6 +1,6 @@
 # Chaque jour · Mot du jour
 
-Une application de découvertes quotidiennes : mots français et citations, avec consultation par date et archives. Monorepo léger inspiré de [gb](https://github.com/gbaratie/gb) et [kahin](https://github.com/gbaratie/kahin).
+Une application de découvertes quotidiennes : mots français, citations et énigmes, avec consultation par date et archives. Monorepo léger inspiré de [gb](https://github.com/gbaratie/gb) et [kahin](https://github.com/gbaratie/kahin).
 
 | Composant | Stack | Hébergement cible |
 | --- | --- | --- |
@@ -52,7 +52,7 @@ Dates exactes ; `before` exclusif ; historique du plus récent au plus ancien ; 
 
 ## Contenu migré
 
-Les **365 mots de 2025** sont conservés dans `content/mot-du-jour/2025.json`. Ils ne se répètent plus automatiquement en 2026. `citation-du-jour` contient trois exemples du 4 au 6 novembre 2026. Aucune publication n'est inventée pour les autres dates.
+Les **365 mots de 2025** sont conservés dans `content/mot-du-jour/2025.json`. Ils ne se répètent plus automatiquement en 2026. À la demande de réutilisation des mots existants, les 57 mots du 5 novembre au 31 décembre ont été republiés aux dates exactes de 2026, sans changer leurs textes ni les archives de 2025. `citation-du-jour` contient trois exemples du 4 au 6 novembre 2026. Les 57 énoncés approuvés de `enigme-du-jour` couvrent le 5 novembre au 31 décembre 2026, avec réponse et explication dans le champ `answer`, masquées jusqu’à révélation. Les autres dates restent sans publication.
 Archives : `/mot-du-jour/?date=2025-01-01`.
 
 Streamlit et les anciennes routes `/motdujour`, `/historique` sont remplacés. Le code précédent reste dans l'historique Git. L'import réutilisable :
@@ -72,3 +72,10 @@ Il refuse les années incomplètes, les doublons et l'écrasement des fichiers d
 - [Instructions pour les agents](AGENTS.md)
 
 Les configurations de déploiement sont fournies ; aucun service ni secret n'est créé par les commandes de développement.
+
+## Skills éditoriaux
+
+- [Compléter les contenus du jour](.agents/skills/completer-contenus-du-jour/SKILL.md) : auditer les jours manquants, proposer uniquement dates et sujets à validation, puis ajouter les contenus complets après accord. Fonctionne pour tous les thèmes et respecte les schémas et la couverture.
+- [Créer un thème du jour](.agents/skills/creer-theme-du-jour/SKILL.md) : créer une collection ou un kind avec ses données, son API et son rendu, puis utiliser le premier skill pour les contenus.
+
+Exemples : « Utilise completer-contenus-du-jour pour remplir les énigmes de janvier » ; « Utilise creer-theme-du-jour pour ajouter la recette du jour ».

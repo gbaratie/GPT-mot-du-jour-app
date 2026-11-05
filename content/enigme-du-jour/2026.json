@@ -1,0 +1,401 @@
+[
+  {
+    "publication_date": "2026-11-05",
+    "payload": {
+      "question": "Je suis un nombre entier positif de deux chiffres. La somme de mes chiffres vaut 9 et mon chiffre des dizaines est le double de celui des unités. Quel nombre suis-je ?",
+      "answer": "63\n\nSi le chiffre des unités est u, celui des dizaines est 2u. Ainsi, 3u = 9, donc u = 3 et le chiffre des dizaines vaut 6."
+    }
+  },
+  {
+    "publication_date": "2026-11-06",
+    "payload": {
+      "question": "Dans une course sans ex æquo, tu dépasses la personne en deuxième position. Quelle place occupes-tu immédiatement après ?",
+      "answer": "La deuxième place.\n\nTu prends la place de la personne que tu dépasses. La personne en première position reste devant toi."
+    }
+  },
+  {
+    "publication_date": "2026-11-07",
+    "payload": {
+      "question": "Un escargot doit atteindre le sommet d'un poteau de 10 mètres. Chaque journée, il monte de 3 mètres ; chaque nuit, il redescend de 2 mètres. Il commence au pied du poteau le premier matin. Quel jour atteint-il le sommet ?",
+      "answer": "Le huitième jour.\n\nAprès sept journées suivies de sept nuits, il est à 7 mètres. Le huitième jour, il monte de 7 à 10 mètres et atteint le sommet avant de redescendre."
+    }
+  },
+  {
+    "publication_date": "2026-11-08",
+    "payload": {
+      "question": "Trois boîtes contiennent respectivement deux pommes, deux oranges, et une pomme avec une orange. Elles portent les étiquettes « pommes », « oranges » et « mélange », toutes fausses. Dans quelle boîte suffit-il de prendre un fruit sans regarder pour pouvoir identifier le contenu des trois boîtes ?",
+      "answer": "La boîte étiquetée « mélange ».\n\nPuisque son étiquette est fausse, elle contient deux fruits identiques. Si tu y trouves une pomme, elle contient les pommes : la boîte étiquetée « oranges » doit alors contenir le mélange, et celle étiquetée « pommes » les oranges. Si tu y trouves une orange, on applique le raisonnement symétrique."
+    }
+  },
+  {
+    "publication_date": "2026-11-09",
+    "payload": {
+      "question": "Deux pères et deux fils mangent chacun un biscuit. Ils n'ont mangé que trois biscuits au total, sans partager. Comment est-ce possible ?",
+      "answer": "Ce sont un grand-père, son fils et son petit-fils.\n\nLe grand-père et son fils sont les deux pères ; le fils et le petit-fils sont les deux fils. Il n'y a que trois personnes : le fils compte dans les deux catégories."
+    }
+  },
+  {
+    "publication_date": "2026-11-10",
+    "payload": {
+      "question": "Un rectangle a un périmètre de 30 cm. Sa longueur mesure 3 cm de plus que sa largeur. Quelles sont ses dimensions ?",
+      "answer": "9 cm de longueur et 6 cm de largeur.\n\nLe demi-périmètre vaut 15 cm. Si la largeur est l, la longueur est l + 3 : 2l + 3 = 15, donc l = 6 et la longueur vaut 9."
+    }
+  },
+  {
+    "publication_date": "2026-11-11",
+    "payload": {
+      "question": "Quel nombre vient ensuite dans cette suite, où chaque terme est la somme des deux précédents : 1, 1, 2, 3, 5, 8, 13, … ?",
+      "answer": "21.\n\nLa règle donnée impose d'ajouter les deux termes précédents : 8 + 13 = 21."
+    }
+  },
+  {
+    "publication_date": "2026-11-12",
+    "payload": {
+      "question": "Un sac contient 5 chaussettes rouges et 5 chaussettes bleues. Combien faut-il en prendre au minimum dans le noir pour être certain d'en avoir deux de la même couleur ?",
+      "answer": "3 chaussettes.\n\nDeux chaussettes peuvent être de couleurs différentes. Avec la troisième, une couleur est nécessairement représentée au moins deux fois, puisqu'il n'y a que deux couleurs."
+    }
+  },
+  {
+    "publication_date": "2026-11-13",
+    "payload": {
+      "question": "Deux portes mènent l'une à la sortie et l'autre à une impasse. Deux gardiens connaissent les chemins : l'un dit toujours vrai, l'autre ment toujours. Tu ignores lequel est lequel. Quelle unique question peux-tu poser à un seul gardien pour identifier avec certitude la porte de sortie ?",
+      "answer": "« Quelle porte l'autre gardien me désignerait-il si je lui demandais la sortie ? » Puis choisir l'autre porte.\n\nLe gardien sincère rapporte le mensonge de l'autre ; le menteur inverse la réponse sincère de l'autre. Tous deux désignent donc l'impasse. Il suffit de prendre la porte opposée."
+    }
+  },
+  {
+    "publication_date": "2026-11-14",
+    "payload": {
+      "question": "Un train électrique roule vers le nord et le vent souffle vers l'ouest. Dans quelle direction part la fumée produite par sa locomotive ?",
+      "answer": "Elle ne produit pas de fumée.\n\nUne locomotive électrique ne brûle pas de combustible pour sa propulsion. La question suppose à tort qu'elle émet de la fumée."
+    }
+  },
+  {
+    "publication_date": "2026-11-15",
+    "payload": {
+      "question": "Si cinq machines identiques fabriquent cinq pièces en cinq minutes, combien de minutes faut-il à cent machines pour fabriquer cent pièces, au même rythme et en parallèle ?",
+      "answer": "5 minutes.\n\nLes cinq machines produisent ensemble cinq pièces en cinq minutes, donc chaque machine produit une pièce dans ce temps. Cent machines en parallèle produisent ainsi cent pièces en cinq minutes."
+    }
+  },
+  {
+    "publication_date": "2026-11-16",
+    "payload": {
+      "question": "Quel est le plus petit entier positif divisible à la fois par 4, 6 et 9 ?",
+      "answer": "36.\n\nLes facteurs premiers nécessaires sont 2² et 3². Leur produit, 36, est le plus petit multiple commun de 4, 6 et 9."
+    }
+  },
+  {
+    "publication_date": "2026-11-17",
+    "payload": {
+      "question": "Une horloge à aiguilles indique exactement 3 h 30. Quel est le plus petit angle entre ses deux aiguilles ?",
+      "answer": "75 degrés.\n\nÀ 3 h 30, la grande aiguille est à 180 degrés depuis le 12. La petite est à 3,5 × 30 = 105 degrés. Leur plus petit écart est donc de 75 degrés."
+    }
+  },
+  {
+    "publication_date": "2026-11-18",
+    "payload": {
+      "question": "Dans un tiroir, 4 clés ouvrent une serrure et 6 ne l'ouvrent pas. Combien de clés distinctes faut-il essayer au maximum pour être certain d'en avoir trouvé une qui ouvre ?",
+      "answer": "7 clés.\n\nDans le pire cas, les six premières clés essayées sont les six mauvaises. La septième ouvre nécessairement la serrure. Six essais ne suffisent donc pas à garantir le succès."
+    }
+  },
+  {
+    "publication_date": "2026-11-19",
+    "payload": {
+      "question": "J'ai deux fois l'âge que tu avais quand j'avais ton âge actuel. La somme de nos âges actuels est 63 ans. Quels sont nos âges ?",
+      "answer": "J'ai 36 ans et tu as 27 ans.\n\nNotre différence d'âge est de 9 ans. Quand j'avais 27 ans, il y a 9 ans, tu en avais 18. Mon âge actuel, 36, est bien le double de 18, et 36 + 27 = 63. En général, avec mes x ans et tes y ans, x = 2(y − (x − y)) et x + y = 63 donnent ces valeurs."
+    }
+  },
+  {
+    "publication_date": "2026-11-20",
+    "payload": {
+      "question": "On retire un petit cube de chacun des huit coins d'un grand cube composé de 27 petits cubes identiques. Combien de petits cubes restent-ils ?",
+      "answer": "19 petits cubes.\n\nDans un cube de 3 petits cubes de côté, les huit coins correspondent à huit petits cubes distincts. Il en reste 27 − 8 = 19."
+    }
+  },
+  {
+    "publication_date": "2026-11-21",
+    "payload": {
+      "question": "On lance deux dés classiques équilibrés à six faces. Quelle somme a le plus de chances d'apparaître ?",
+      "answer": "La somme 7.\n\nLes six couples ordonnés (1,6), (2,5), (3,4), (4,3), (5,2) et (6,1) donnent 7. Aucune autre somme n'a autant de combinaisons parmi les 36 issues équiprobables."
+    }
+  },
+  {
+    "publication_date": "2026-11-22",
+    "payload": {
+      "question": "On dispose de huit billes visuellement identiques ; une seule est plus lourde que les autres. Comment la trouver en au plus deux pesées avec une balance à deux plateaux ?",
+      "answer": "Peser trois billes contre trois, puis une contre une dans le groupe suspect.\n\nSi la première pesée penche, la bille lourde est parmi les trois du plateau le plus lourd. Une pesée de deux de ces trois billes l'identifie : le côté lourd, ou la troisième en cas d'équilibre. Si la première pesée est équilibrée, comparer les deux billes laissées de côté."
+    }
+  },
+  {
+    "publication_date": "2026-11-23",
+    "payload": {
+      "question": "Une bouteille et son bouchon coûtent ensemble 1,10 €. La bouteille coûte 1 € de plus que le bouchon. Combien coûte le bouchon ?",
+      "answer": "0,05 €, soit 5 centimes.\n\nSi le bouchon coûte x euro, la bouteille coûte x + 1. Leur total donne 2x + 1 = 1,10, donc x = 0,05. La bouteille coûte 1,05 €."
+    }
+  },
+  {
+    "publication_date": "2026-11-24",
+    "payload": {
+      "question": "Dans un groupe de six personnes, chacun serre une fois la main de chacun des autres. Combien de poignées de main cela fait-il ?",
+      "answer": "15 poignées de main.\n\nChacune des six personnes serre cinq mains, mais ce calcul compte chaque rencontre deux fois. Le nombre de poignées est donc 6 × 5 ÷ 2 = 15."
+    }
+  },
+  {
+    "publication_date": "2026-11-25",
+    "payload": {
+      "question": "Une feuille est pliée en deux, puis encore en deux, puis encore en deux. Combien de couches de papier sont superposées après ces trois pliages, en supposant chaque pliage complet ?",
+      "answer": "8 couches.\n\nChaque pliage complet double le nombre de couches : 1, puis 2, puis 4, puis 8."
+    }
+  },
+  {
+    "publication_date": "2026-11-26",
+    "payload": {
+      "question": "Trois amis, Alice, Bilal et Chloé, portent chacun un chapeau de couleur différente : rouge, bleu ou vert. Alice n'a ni le rouge ni le bleu. Bilal n'a pas le rouge. Quelle couleur porte chacun ?",
+      "answer": "Alice : vert ; Bilal : bleu ; Chloé : rouge.\n\nAlice ne peut porter que le vert. Bilal ne porte pas le rouge et le vert est déjà pris : il porte le bleu. Il reste le rouge pour Chloé."
+    }
+  },
+  {
+    "publication_date": "2026-11-27",
+    "payload": {
+      "question": "Quel est le plus petit entier positif qui laisse un reste de 1 lorsqu'on le divise par 2, 3, 4 ou 5, et qui est divisible par 7 ?",
+      "answer": "301.\n\nLe nombre moins 1 doit être multiple de 2, 3, 4 et 5, donc de leur plus petit multiple commun, 60. On cherche 60k + 1 divisible par 7. Puisque 60 vaut 4 modulo 7, il faut 4k + 1 divisible par 7. Le plus petit k positif possible est 5, donnant 301."
+    }
+  },
+  {
+    "publication_date": "2026-11-28",
+    "payload": {
+      "question": "Une mare de nénuphars double de surface couverte chaque jour et devient entièrement couverte au jour 30. À quel jour était-elle à moitié couverte ?",
+      "answer": "Au jour 29.\n\nLa surface couverte double entre le jour 29 et le jour 30. Elle occupait donc la moitié de la mare la veille de la couverture complète."
+    }
+  },
+  {
+    "publication_date": "2026-11-29",
+    "payload": {
+      "question": "J'ai des villes mais aucun habitant, des routes mais aucune voiture, des rivières mais aucune eau. Quel objet de papier puis-je être ?",
+      "answer": "Une carte géographique.\n\nLes villes, les routes et les rivières y sont représentées par des signes ou des dessins, sans contenir leurs habitants, leurs véhicules ni leur eau."
+    }
+  },
+  {
+    "publication_date": "2026-11-30",
+    "payload": {
+      "question": "Un nombre entier positif devient 45 unités plus petit quand on inverse ses deux chiffres. La somme de ses chiffres est 9. Quel est ce nombre ?",
+      "answer": "72.\n\nAvec a pour les dizaines et b pour les unités, la différence avec le nombre inversé vaut 9(a − b) = 45, donc a − b = 5. Comme a + b = 9, on obtient a = 7 et b = 2."
+    }
+  },
+  {
+    "publication_date": "2026-12-01",
+    "payload": {
+      "question": "Une famille doit traverser un pont de nuit avec une seule lampe. Au maximum deux personnes traversent ensemble et la lampe doit accompagner chaque traversée. Leurs temps de traversée sont 1, 2, 5 et 10 minutes ; à deux, elles vont à la vitesse de la plus lente. Quel est le temps total minimal et comment l'obtenir ?",
+      "answer": "17 minutes.\n\nLes personnes de 1 et 2 minutes traversent (2 min), celle de 1 revient (1 min), celles de 5 et 10 traversent (10 min), celle de 2 revient (2 min), puis celles de 1 et 2 traversent (2 min). Total : 17. Si les deux plus lentes traversent séparément, leurs traversées coûtent au moins 15 minutes, plus une troisième traversée et deux retours d'au moins une minute chacun, soit au moins 18. Si elles traversent ensemble, les deux autres doivent organiser l'acheminement et le retour de la lampe ; le coût minimal de ces trajets supplémentaires est 2 + 1 + 2 + 2 = 7 minutes, soit 17 au total."
+    }
+  },
+  {
+    "publication_date": "2026-12-02",
+    "payload": {
+      "question": "Tu as deux récipients non gradués de 3 litres et de 5 litres, un robinet et un évier. Comment mesurer exactement 4 litres en remplissant, vidant ou transvasant ces récipients ?",
+      "answer": "Remplir le récipient de 5 litres, transvaser, puis recommencer en conservant les restes.\n\nRemplir le 5 litres et verser dans le 3 litres : il reste 2 litres dans le grand. Vider le petit, puis y verser ces 2 litres. Remplir à nouveau le grand et compléter le petit avec 1 litre. Le grand contient alors exactement 4 litres."
+    }
+  },
+  {
+    "publication_date": "2026-12-03",
+    "payload": {
+      "question": "Combien de fois le chiffre 9 apparaît-il dans l'écriture de tous les entiers de 1 à 100 inclus ?",
+      "answer": "20 fois.\n\nLe 9 apparaît dix fois comme chiffre des unités, de 9 à 99, et dix fois comme chiffre des dizaines, de 90 à 99. Le nombre 99 contribue deux occurrences. Le nombre 100 n'en ajoute aucune."
+    }
+  },
+  {
+    "publication_date": "2026-12-04",
+    "payload": {
+      "question": "Un cube a toutes ses faces peintes, puis est découpé en 64 petits cubes identiques. Combien de petits cubes ont exactement deux faces peintes ?",
+      "answer": "24 petits cubes.\n\nLe grand cube comporte 4 petits cubes par arête. Ceux qui ont exactement deux faces peintes sont sur les arêtes, hors des coins. Il y en a 4 − 2 = 2 sur chacune des 12 arêtes, soit 24."
+    }
+  },
+  {
+    "publication_date": "2026-12-05",
+    "payload": {
+      "question": "Un berger possède 17 moutons. Tous sauf 9 quittent l'enclos. Combien de moutons restent dans l'enclos ?",
+      "answer": "9 moutons.\n\n« Tous sauf 9 » signifie précisément que neuf moutons n'ont pas quitté l'enclos."
+    }
+  },
+  {
+    "publication_date": "2026-12-06",
+    "payload": {
+      "question": "Je suis un nombre de trois chiffres. Mon chiffre des centaines est 2, celui des dizaines est trois fois celui des unités, et la somme de mes chiffres est 10. Quel nombre suis-je ?",
+      "answer": "262.\n\nSi le chiffre des unités est u, celui des dizaines est 3u. La somme des chiffres donne 2 + 3u + u = 10, donc u = 2. Le chiffre des dizaines vaut 6."
+    }
+  },
+  {
+    "publication_date": "2026-12-07",
+    "payload": {
+      "question": "Tu dois répartir 10 pièces de monnaie en trois verres pour que chaque verre contienne un nombre impair de pièces, en comptant aussi les pièces des verres qu'il contient. Tu peux emboîter les verres. Comment faire ?",
+      "answer": "Mettre 3 pièces dans un verre, 5 dans un deuxième et 2 dans un troisième qui contient aussi le deuxième verre.\n\nLes trois verres contiennent alors respectivement 3, 5 et 7 pièces lorsqu'on compte les pièces du verre intérieur. Le total de pièces distinctes reste bien 3 + 5 + 2 = 10 ; on compte certaines pièces dans deux verres emboîtés."
+    }
+  },
+  {
+    "publication_date": "2026-12-08",
+    "payload": {
+      "question": "On coupe une corde en quatre morceaux avec des coupes droites. Sans plier ni superposer la corde, combien de coupes sont nécessaires ?",
+      "answer": "3 coupes.\n\nChaque coupe sur une corde non superposée augmente le nombre de morceaux d'une unité. En partant d'un morceau, il faut donc trois coupes pour en obtenir quatre."
+    }
+  },
+  {
+    "publication_date": "2026-12-09",
+    "payload": {
+      "question": "Un code de trois chiffres distincts utilise seulement 1, 2 et 3. Le 1 n'est pas en première position ; le 2 est immédiatement à gauche du 1. Le 3 n'est pas en dernière position. Quel est le code ?",
+      "answer": "321.\n\nLe bloc « 21 » doit rester consécutif. Avec le chiffre 3, les seules possibilités sont 213 et 321. Puisque le 3 ne peut pas être en dernière position, le code est 321."
+    }
+  },
+  {
+    "publication_date": "2026-12-10",
+    "payload": {
+      "question": "Tu disposes de deux cordes qui mettent chacune exactement une heure à brûler entièrement, mais à une vitesse irrégulière le long de leur longueur. Comment mesurer 45 minutes en n'allumant que leurs extrémités ?",
+      "answer": "Allumer la première corde aux deux extrémités et la seconde à une seule ; quand la première est consumée, allumer l'autre extrémité de la seconde.\n\nLa première corde est consumée en 30 minutes, même si sa combustion est irrégulière. La seconde a alors encore 30 minutes de combustion à une extrémité. Allumée aussi de l'autre côté, elle termine en 15 minutes supplémentaires : 45 minutes au total."
+    }
+  },
+  {
+    "publication_date": "2026-12-11",
+    "payload": {
+      "question": "Un livre comporte 120 pages numérotées de 1 à 120. Combien de chiffres a-t-on imprimés pour écrire tous ces numéros de page ?",
+      "answer": "252 chiffres.\n\nLes pages 1 à 9 utilisent 9 chiffres ; les pages 10 à 99, 90 × 2 = 180 ; les pages 100 à 120, 21 × 3 = 63. Le total vaut 9 + 180 + 63 = 252."
+    }
+  },
+  {
+    "publication_date": "2026-12-12",
+    "payload": {
+      "question": "Marie a autant de frères que de sœurs. Son frère Paul a deux fois plus de sœurs que de frères. Combien y a-t-il de filles et de garçons dans cette fratrie ?",
+      "answer": "4 filles et 3 garçons.\n\nSi f est le nombre de filles et g celui des garçons, Marie a g frères et f − 1 sœurs, donc g = f − 1. Paul a f sœurs et g − 1 frères, donc f = 2(g − 1). On trouve g = 3 et f = 4."
+    }
+  },
+  {
+    "publication_date": "2026-12-13",
+    "payload": {
+      "question": "Sur une île, chacun dit toujours la vérité ou ment toujours. A dit : « B et moi sommes tous les deux des menteurs. » A et B disent-ils la vérité ou mentent-ils ?",
+      "answer": "A ment et B dit la vérité.\n\nSi A disait vrai, sa phrase affirmerait qu'il ment, ce qui est impossible. A est donc menteur, et son affirmation selon laquelle ils mentent tous les deux est fausse. Comme A ment bien, c'est B qui doit dire la vérité."
+    }
+  },
+  {
+    "publication_date": "2026-12-14",
+    "payload": {
+      "question": "Quel nombre faut-il ajouter au numérateur et au dénominateur de la fraction 1/3 pour obtenir 1/2 ?",
+      "answer": "1.\n\nOn résout (1 + x)/(3 + x) = 1/2 : 2 + 2x = 3 + x, donc x = 1. On obtient bien 2/4 = 1/2."
+    }
+  },
+  {
+    "publication_date": "2026-12-15",
+    "payload": {
+      "question": "Combien de carrés de toutes tailles contient une grille carrée de 3 cases sur 3 ?",
+      "answer": "14 carrés.\n\nIl y a 9 carrés d'une case de côté, 4 carrés de deux cases de côté et 1 carré de trois cases de côté, soit 9 + 4 + 1 = 14."
+    }
+  },
+  {
+    "publication_date": "2026-12-16",
+    "payload": {
+      "question": "Dans une boîte, il y a 3 boules rouges, 4 bleues et 5 vertes. Combien faut-il tirer de boules sans regarder pour être certain d'avoir au moins une boule de chaque couleur ?",
+      "answer": "10 boules.\n\nLe plus grand tirage qui peut encore manquer une couleur est constitué des 4 bleues et des 5 vertes, soit 9 boules sans rouge. À la dixième boule, aucune couleur ne peut encore manquer."
+    }
+  },
+  {
+    "publication_date": "2026-12-17",
+    "payload": {
+      "question": "Avant-hier, Léa avait 17 ans ; l'année prochaine, elle aura 20 ans. Quel jour et quel mois sommes-nous, et quel jour et quel mois est son anniversaire ?",
+      "answer": "Nous sommes le 1er janvier ; son anniversaire est le 31 décembre.\n\nLe 30 décembre, avant-hier, Léa avait 17 ans. Elle a eu 18 ans hier, le 31 décembre. Elle aura 19 ans le 31 décembre de l'année qui commence et 20 ans le 31 décembre de l'année prochaine."
+    }
+  },
+  {
+    "publication_date": "2026-12-18",
+    "payload": {
+      "question": "Deux cyclistes partent au même instant de deux villes distantes de 90 km et roulent l'un vers l'autre, à 20 km/h et à 25 km/h. Après combien de temps se rencontrent-ils ?",
+      "answer": "2 heures.\n\nIls réduisent la distance qui les sépare à la vitesse de 20 + 25 = 45 km/h. Il faut donc 90 ÷ 45 = 2 heures pour se rencontrer."
+    }
+  },
+  {
+    "publication_date": "2026-12-19",
+    "payload": {
+      "question": "Je suis un entier entre 1 et 100. Je suis un carré parfait et un multiple de 9, et mon chiffre des unités est 6. Qui suis-je ?",
+      "answer": "36.\n\nLes carrés parfaits entre 1 et 100 qui sont multiples de 9 sont 9, 36 et 81. Seul 36 se termine par 6."
+    }
+  },
+  {
+    "publication_date": "2026-12-20",
+    "payload": {
+      "question": "Tu as 12 pièces identiques en apparence, dont une seule est fausse et plus légère. Comment trouver cette pièce en au plus trois pesées avec une balance à deux plateaux ?",
+      "answer": "Répartir en trois groupes de quatre, puis isoler la pièce légère en deux pesées supplémentaires.\n\nComparer deux groupes de quatre : si les plateaux sont équilibrés, la fausse est dans le troisième groupe ; sinon, elle est dans le groupe le plus léger. Partager les quatre suspectes en deux paires et les comparer. Comparer enfin les deux pièces de la paire la plus légère : la plus légère est la fausse."
+    }
+  },
+  {
+    "publication_date": "2026-12-21",
+    "payload": {
+      "question": "Un panier contient 6 pommes. Comment donner une pomme à chacun de 6 enfants tout en laissant une pomme dans le panier ?",
+      "answer": "Donner une pomme aux cinq premiers enfants et le panier avec la dernière pomme au sixième.\n\nChaque enfant reçoit bien une pomme. Celle du sixième reste dans le panier qu'il reçoit également."
+    }
+  },
+  {
+    "publication_date": "2026-12-22",
+    "payload": {
+      "question": "Combien de diagonales un hexagone convexe possède-t-il ?",
+      "answer": "9 diagonales.\n\nDepuis chaque sommet, une diagonale peut rejoindre trois sommets non voisins. Cela donne 6 × 3 connexions, mais chaque diagonale est comptée deux fois : 18 ÷ 2 = 9."
+    }
+  },
+  {
+    "publication_date": "2026-12-23",
+    "payload": {
+      "question": "Le produit de trois entiers positifs consécutifs est 210. Quels sont ces trois entiers ?",
+      "answer": "5, 6 et 7.\n\nOn a 5 × 6 × 7 = 210. Le produit de trois entiers positifs consécutifs augmente strictement avec le premier entier : cette solution est donc unique."
+    }
+  },
+  {
+    "publication_date": "2026-12-24",
+    "payload": {
+      "question": "Un voyageur part d'un point, marche 3 km vers l'est puis 4 km vers le nord. À quelle distance en ligne droite de son point de départ se trouve-t-il, sur un terrain plat ?",
+      "answer": "5 kilomètres.\n\nLes deux déplacements sont perpendiculaires. Le théorème de Pythagore donne une distance de √(3² + 4²) = √25 = 5 kilomètres."
+    }
+  },
+  {
+    "publication_date": "2026-12-25",
+    "payload": {
+      "question": "Une seule des trois affirmations suivantes est vraie : « Le trésor est dans le coffre A » ; « Le trésor n'est pas dans le coffre B » ; « Le trésor n'est pas dans le coffre A ». Le trésor se trouve dans un seul des coffres A, B ou C. Où est-il ?",
+      "answer": "Dans le coffre B.\n\nLa première et la troisième affirmations sont contradictoires : exactement l'une des deux est toujours vraie. Pour qu'il n'y ait qu'une seule affirmation vraie au total, la deuxième doit être fausse. Le trésor est donc dans B."
+    }
+  },
+  {
+    "publication_date": "2026-12-26",
+    "payload": {
+      "question": "On écrit les nombres de 1 à 20 sur des cartes, une carte par nombre. Combien de cartes faut-il tirer au minimum sans regarder pour être certain d'obtenir deux nombres dont la somme est 21 ?",
+      "answer": "11 cartes.\n\nLes nombres se répartissent en dix paires : (1,20), (2,19), jusqu'à (10,11). Avec dix cartes, on peut encore n'avoir qu'un nombre de chaque paire. Avec onze, une paire est nécessairement complète."
+    }
+  },
+  {
+    "publication_date": "2026-12-27",
+    "payload": {
+      "question": "Un marchand achète un objet 70 €, le revend 80 €, le rachète 90 € puis le revend 100 €. Quel bénéfice total réalise-t-il ?",
+      "answer": "20 €.\n\nLa première vente rapporte 80 − 70 = 10 €. La seconde rapporte 100 − 90 = 10 €. Le bénéfice total est de 20 €, ce que confirme le bilan −70 + 80 − 90 + 100."
+    }
+  },
+  {
+    "publication_date": "2026-12-28",
+    "payload": {
+      "question": "Avec exactement quatre chiffres 4, les opérations +, −, ×, ÷ et des parenthèses, comment obtenir 7, sans concaténer les chiffres ?",
+      "answer": "4 + 4 − 4 ÷ 4 = 7.\n\nOn effectue d'abord la division : 4 ÷ 4 = 1. Il reste 4 + 4 − 1 = 7, en utilisant exactement quatre chiffres 4."
+    }
+  },
+  {
+    "publication_date": "2026-12-29",
+    "payload": {
+      "question": "Trois interrupteurs commandent trois ampoules à incandescence dans une pièce fermée, toutes initialement éteintes et froides. Tu peux manipuler les interrupteurs puis entrer une seule fois dans la pièce, sans revenir aux interrupteurs. Comment identifier quelle ampoule correspond à chaque interrupteur, en utilisant aussi leur température ?",
+      "answer": "Laisser le premier interrupteur allumé un moment, l'éteindre, allumer le deuxième puis entrer.\n\nL'ampoule allumée correspond au deuxième interrupteur. Parmi les deux ampoules éteintes, celle qui est encore chaude correspond au premier, et celle qui est restée froide au troisième. La chaleur résiduelle distingue les deux ampoules éteintes."
+    }
+  },
+  {
+    "publication_date": "2026-12-30",
+    "payload": {
+      "question": "Un sac contient uniquement des jetons de 2 points et de 5 points. Il contient 11 jetons totalisant 40 points. Combien y a-t-il de jetons de chaque sorte ?",
+      "answer": "5 jetons de 2 points et 6 jetons de 5 points.\n\nSi les onze jetons valaient tous 2 points, le total serait de 22. Chaque jeton de 5 points ajoute 3 points à cette base. Les 18 points supplémentaires nécessitent donc 6 jetons de 5 points ; il reste 5 jetons de 2 points."
+    }
+  },
+  {
+    "publication_date": "2026-12-31",
+    "payload": {
+      "question": "Le 1er janvier d'une année non bissextile tombe un jeudi. Quel jour de la semaine tombe le 31 décembre de cette même année ?",
+      "answer": "Un jeudi.\n\nLe 31 décembre est situé 364 jours après le 1er janvier dans une année de 365 jours. Comme 364 est un multiple de 7, ces deux dates tombent le même jour de la semaine."
+    }
+  }
+]
