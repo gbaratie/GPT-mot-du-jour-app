@@ -5,8 +5,8 @@ services:
     runtime: python
     plan: free
     region: frankfurt
-    branch: Main-refacto
-    autoDeployTrigger: "off"
+    branch: main
+    autoDeployTrigger: commit
     buildCommand: pip install -e ./apps/api
     startCommand: sh scripts/start-api
     healthCheckPath: /health

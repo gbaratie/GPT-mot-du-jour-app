@@ -42,8 +42,8 @@ instances, déplacer ces opérations dans une étape de déploiement unique.
 Plusieurs origines sont séparées par des virgules ou fournies comme tableau JSON. Ne pas
 ajouter `/GPT-mot-du-jour-app` à CORS. Pour un domaine personnalisé, ajouter son origine exacte.
 
-Le Blueprint pointe sur `Main-refacto` et désactive le déploiement automatique (`autoDeployTrigger: off`).
-La refonte peut être déployée sans fusionner `main`. Vérifier `/health`, `/docs`,
+Le Blueprint pointe sur `main` et active le déploiement automatique (`autoDeployTrigger: commit`).
+Le service Render doit suivre cette même configuration. Vérifier `/health`, `/docs`,
 `/api/v1/today` et une archive datée après déploiement.
 
 La synchronisation est répétable et transactionnelle. Pour publier/corriger : versionner
@@ -58,13 +58,13 @@ nécessitent une opération dédiée. Désactiver une collection avec `active: f
    `NEXT_PUBLIC_API_URL` = URL HTTPS Render (sans `/api/v1`) ;
    `NEXT_PUBLIC_BASE_PATH` = `/GPT-mot-du-jour-app` (valeur par défaut du workflow).
    Pour servir à la racine d'un domaine, donner `/`, normalisé en chemin vide.
-3. Exécuter `Deploy web to GitHub Pages` ou publier sur `Main-refacto` / `main`.
+3. Exécuter `Deploy web to GitHub Pages` ou publier sur `main`.
 
 Le workflow de déploiement accepte aussi les entrées manuelles `api_url` et `base_path`.
 Sans surcharge, il utilise l'API de cette refonte : `https://daily-collections-api.onrender.com`.
 L'ordre de priorité est entrée manuelle, variable du dépôt, puis cette URL publique.
 La première exécution manuelle peut nécessiter que le workflow existe sur la branche par
-défaut ; la publication par push sur `Main-refacto` fonctionne dès que les variables sont prêtes.
+défaut ; la publication par push sur `main` fonctionne dès que les variables sont prêtes.
 
 Le workflow refuse une URL API absente ou locale. Il publie `apps/web/out/` via les actions
 officielles configure-pages, upload-pages-artifact et deploy-pages. Les variables publiques
@@ -96,12 +96,12 @@ Sources : [Blueprint Render](https://render.com/docs/blueprint-spec),
 
 ## Ressources de la refonte
 
-- API : `daily-collections-api`, région Francfort, offre gratuite, branche `Main-refacto`.
+- API : `daily-collections-api`, région Francfort, offre gratuite, branche `main`.
   [Tableau de bord Render](https://dashboard.render.com/web/srv-dblr8n3bc2fs73a735gg).
 - Base : projet Neon `GPT-mot-du-jour-app`, PostgreSQL 17, région `aws-eu-central-1`,
   branche `production`, base `daily_collections`.
   [Console Neon](https://console.neon.tech/app/projects/quiet-truth-97113248).
 - Le service historique `gpt-mot-du-jour-app.onrender.com` reste sur `main`.
-- Le service de la refonte a le déploiement automatique désactivé : après un changement API,
-  valider la CI puis lancer un déploiement depuis le tableau de bord Render ou son outil.
+- Le service de la refonte suit `main` avec déploiement automatique à chaque commit.
+  Valider la CI avant de fusionner les changements sur `main`.
 - L'URL de connexion Neon est enregistrée uniquement dans l'environnement Render.
