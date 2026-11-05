@@ -1,68 +1,74 @@
-# 📖 Mot du Jour
+# Chaque jour · Mot du jour
 
-Une application web qui affiche un **mot du jour** avec sa définition et un exemple d'utilisation.
+Une application de découvertes quotidiennes : mots français et citations, avec consultation par date et archives. Monorepo léger inspiré de [gb](https://github.com/gbaratie/gb) et [kahin](https://github.com/gbaratie/kahin).
 
-🚀 **Démo en ligne** : [mot-du-jour.streamlit.app](https://mot-du-jour.streamlit.app)
+| Composant | Stack | Hébergement cible |
+| --- | --- | --- |
+| `apps/web` | Next.js, React, TypeScript, MUI, export statique | GitHub Pages |
+| `apps/api` | FastAPI, Pydantic, SQLAlchemy, Alembic | Render |
+| Base | PostgreSQL / JSONB | Neon |
+| `content/` | JSON versionné et validé | Source éditoriale |
 
----
+## Démarrage local
 
-## 🏗️ Architecture
+Prérequis : Python 3.12+, Node 22+, npm, make.
 
-Le projet est conçu pour tourner avec **Streamlit** (interface) et **Render** (API) :
+```sh
+make install
+make migrate
+make sync-content
+make dev-api
+# Autre terminal :
+make dev-web
+```
 
-| Composant | Rôle | Hébergement |
-|------------|------|-------------|
-| **API** (`api.py`) | Sert le mot du jour et l'historique depuis `words.json` | Render |
-| **App** (`app.py` + `data.py`) | Interface utilisateur qui appelle l'API | Streamlit Community Cloud |
+Front : http://localhost:3000 ; API : http://localhost:8000/docs.
+Sans `DATABASE_URL`, le développement utilise SQLite dans `work/daily.db`.
+Pour PostgreSQL/Neon, exporter `DATABASE_URL` avant les migrations, la synchronisation et le démarrage. Voir `.env.example` ; le shell doit exporter ses valeurs.
+La production utilise PostgreSQL avec TLS et JSONB ; SQLite est une facilité locale.
 
-L'app Streamlit appelle l'URL de l'API Render pour afficher les données. Les deux services peuvent être déployés séparément.
+```sh
+make check          # Contenu, Ruff, TypeScript et ESLint
+make test           # API + composants React
+make build          # apps/web/out/ ; aucun appel API au build
+make add-entry COLLECTION=mot-du-jour DATE=2026-11-05
+```
 
----
+La dernière commande crée un brouillon dans `work/drafts/`. Le compléter puis relancer avec `PAYLOAD=work/drafts/mot-du-jour-2026-11-05.json` pour ajouter l'entrée validée.
 
-## 🚀 Déploiement
+## API de lecture
 
-### 1. Déployer l'API sur Render
+```text
+GET /health
+GET /api/v1/collections
+GET /api/v1/today
+GET /api/v1/collections/{slug}
+GET /api/v1/collections/{slug}/today
+GET /api/v1/collections/{slug}/entries?limit=30&before=2026-11-04
+GET /api/v1/collections/{slug}/entries/{date}
+```
 
-1. Crée un compte sur [render.com](https://render.com) et connecte ton dépôt GitHub.
-2. **New** → **Web Service**.
-3. Choisis ce dépôt et configure :
-   - **Name** : `gpt-mot-du-jour-app` (ou autre).
-   - **Runtime** : **Python 3**.
-   - **Build command** : `pip install -r requirements.txt`
-   - **Start command** : `uvicorn api:app --host 0.0.0.0 --port $PORT`
-4. Render utilise le **répertoire racine** du repo : le fichier `words.json` doit être à la racine (il est bien versionné dans le dépôt).
-5. Déploie. Render te donne une URL du type `https://ton-app.onrender.com`.
+Dates exactes ; `before` exclusif ; historique du plus récent au plus ancien ; `limit` de 1 à 100. Le jour courant suit Europe/Paris. Une publication absente renvoie 404, une date invalide 422, une base indisponible 503. `/today` garde les collections sans publication avec `entry: null`.
 
-> **Note** : Sur le plan gratuit, le service peut s’endormir après inactivité ; le premier appel après une pause peut être lent.
+## Contenu migré
 
-### 2. Déployer l'app sur Streamlit Community Cloud
+Les **365 mots de 2025** sont conservés dans `content/mot-du-jour/2025.json`. Ils ne se répètent plus automatiquement en 2026. `citation-du-jour` contient trois exemples du 4 au 6 novembre 2026. Aucune publication n'est inventée pour les autres dates.
+Archives : `/mot-du-jour/?date=2025-01-01`.
 
-1. Crée un compte sur [share.streamlit.io](https://share.streamlit.io) (connexion GitHub).
-2. **New app** → choisis ce dépôt, branche `main`, fichier **`app.py`**.
-3. Dans **Advanced settings**, ajoute la variable d'environnement :
-   - **Key** : `MOT_DU_JOUR_API_URL`
-   - **Value** : l’URL de ton API Render (ex. `https://gpt-mot-du-jour-app.onrender.com`)
-4. Déploie. L’app sera accessible à une adresse du type `https://ton-app.streamlit.app`.
+Streamlit et les anciennes routes `/motdujour`, `/historique` sont remplacés. Le code précédent reste dans l'historique Git. L'import réutilisable :
 
-### 3. Ordre conseillé
+```sh
+scripts/import-legacy-words --source /chemin/words.json
+```
 
-Déploie d’abord l’**API sur Render** pour obtenir l’URL, puis l’**app sur Streamlit** en renseignant `MOT_DU_JOUR_API_URL`. Sans cette variable, l’app utilise par défaut l’URL d’exemple (celle de la démo).
+Il refuse les années incomplètes, les doublons et l'écrasement des fichiers déjà migrés.
 
----
+## Documentation
 
-## ⚙️ Configuration
+- [Architecture](docs/ARCHITECTURE.md)
+- [Déploiement Render, Neon et GitHub Pages](docs/DEPLOYMENT.md)
+- [Ajouter des entrées](docs/agents/ADD_ENTRIES.md)
+- [Ajouter une collection ou un kind](docs/agents/ADD_COLLECTION.md)
+- [Instructions pour les agents](AGENTS.md)
 
-| Variable | Où | Description |
-|----------|-----|-------------|
-| `MOT_DU_JOUR_API_URL` | Streamlit (Cloud ou local) | URL de l’API (ex. Render). Par défaut : API de la démo. |
-
-En local, tu peux lancer l’API avec `uvicorn api:app --reload` puis l’app avec `streamlit run app.py` après avoir défini `MOT_DU_JOUR_API_URL=http://localhost:8000`.
-
----
-
-## 🌟 Fonctionnalités
-
-- Un nouveau mot chaque jour 📆
-- Définition et exemple d'utilisation 📖
-- Accès aux derniers mots récents 🔙
-- Interface simple et épurée 🎨
+Les configurations de déploiement sont fournies ; aucun service ni secret n'est créé par les commandes de développement.

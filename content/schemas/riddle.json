@@ -1,0 +1,34 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "question": {
+      "minLength": 1,
+      "title": "Question",
+      "type": "string"
+    },
+    "answer": {
+      "minLength": 1,
+      "title": "Answer",
+      "type": "string"
+    },
+    "hint": {
+      "anyOf": [
+        {
+          "minLength": 1,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Hint"
+    }
+  },
+  "required": [
+    "question",
+    "answer"
+  ],
+  "title": "RiddlePayload",
+  "type": "object"
+}

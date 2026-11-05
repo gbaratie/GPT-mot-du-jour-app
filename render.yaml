@@ -1,0 +1,21 @@
+# Free instance: migrations and content sync run before Uvicorn at startup.
+services:
+  - type: web
+    name: daily-collections-api
+    runtime: python
+    plan: free
+    region: frankfurt
+    branch: main
+    autoDeployTrigger: commit
+    buildCommand: pip install -e ./apps/api
+    startCommand: sh scripts/start-api
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.14
+      - key: DATABASE_URL
+        sync: false
+      - key: CORS_ORIGINS
+        sync: false
+      - key: APP_TIMEZONE
+        value: Europe/Paris
