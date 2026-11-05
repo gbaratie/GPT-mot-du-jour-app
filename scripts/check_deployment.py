@@ -85,13 +85,49 @@ def check_web(web_url: str, origin: str):
     print("Front : accueil, routes de collections et assets sous le basePath vérifiés.")
 
 
+def check_legacy(legacy_url: str, api_url: str, origin: str):
+    def legacy_word(entry):
+        return {
+            "date": entry["publication_date"],
+            "word": entry["payload"]["term"],
+            "definition": entry["payload"]["definition"],
+            "example": entry["payload"]["example"],
+        }
+
+    # Both free Render services can still be rolling out when Pages finishes.
+    for attempt in range(12):
+        try:
+            body, _ = fetch(f"{legacy_url}/health", origin)
+            assert json.loads(body) == {"status": "ok"}, "Passerelle indisponible"
+            try:
+                body, _ = fetch(f"{api_url}/api/v1/collections/mot-du-jour/today", origin)
+                expected = legacy_word(json.loads(body))
+            except HTTPError as exc:
+                if exc.code != 404:
+                    raise
+                expected = {"error": "Aucun mot disponible aujourd'hui"}
+            body, _ = fetch(f"{legacy_url}/motdujour", origin)
+            assert json.loads(body) == expected, "Le mot historique diffère de l'API principale"
+            body, _ = fetch(f"{api_url}/api/v1/collections/mot-du-jour/entries?limit=5", origin)
+            expected_history = [legacy_word(entry) for entry in reversed(json.loads(body))]
+            body, _ = fetch(f"{legacy_url}/historique", origin)
+            assert json.loads(body) == expected_history, "L'historique de la passerelle diffère"
+            print("Passerelle : santé, mot du jour et historique comparés à l'API principale.")
+            return
+        except (URLError, TimeoutError, AssertionError):
+            if attempt == 11:
+                raise
+            time.sleep(5)
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--api-url", required=True)
     parser.add_argument("--origin")
     parser.add_argument("--web-url")
+    parser.add_argument("--legacy-api-url")
     args = parser.parse_args()
-    for url in [args.api_url, args.web_url]:
+    for url in [args.api_url, args.web_url, args.legacy_api_url]:
         if url:
             parsed = urlsplit(url)
             if parsed.scheme not in {"http", "https"} or not parsed.netloc or parsed.username:
@@ -102,6 +138,8 @@ def main():
         check_api(args.api_url.rstrip("/"), origin)
         if args.web_url:
             check_web(args.web_url, origin)
+        if args.legacy_api_url:
+            check_legacy(args.legacy_api_url.rstrip("/"), args.api_url.rstrip("/"), origin)
     except (AssertionError, HTTPError, URLError, TimeoutError, ValueError, KeyError) as exc:
         raise SystemExit(f"Vérification du déploiement échouée : {exc}") from exc
 

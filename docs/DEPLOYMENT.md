@@ -85,9 +85,19 @@ L'API doit autoriser `http://localhost:3000` dans CORS.
 
 ## Transition
 
-`streamlit run app.py` et `uvicorn api:app` ne s'appliquent plus à cette branche. Mettre à jour
-Render et publier le front lors de la bascule vers `/api/v1`. Les anciennes routes sont retirées.
-L'application existante déployée conserve son code tant que cette branche n'est pas publiée.
+Le front Streamlit est remplacé par GitHub Pages. L'API principale utilise
+`sh scripts/start-api` et `/api/v1`.
+
+Le service historique conserve sa configuration `pip install -r requirements.txt` puis
+`uvicorn api:app --host 0.0.0.0 --port 10000`, compatible Python 3.11+. Les fichiers racine
+`requirements.txt` et `api.py` servent uniquement de passerelle : `/` redirige vers le site,
+`/motdujour` et `/historique` adaptent les réponses de l'API principale à l'ancien format,
+`/api/v1/*` et `/docs` redirigent vers celle-ci. `/health` vérifie sa disponibilité.
+Cette passerelle n'a ni base de données, ni calendrier, ni secret Neon ; elle ne remplace
+pas l'installation de `apps/api`. La synchronisation reste limitée à l'API principale.
+
+Les échecs Pages antérieurs restent visibles dans l'historique Actions après une publication
+réussie. Vérifier le dernier workflow et son étape `Verify published application`.
 
 Sources : [Blueprint Render](https://render.com/docs/blueprint-spec),
 [export Next.js](https://nextjs.org/docs/app/guides/static-exports),
@@ -101,7 +111,8 @@ Sources : [Blueprint Render](https://render.com/docs/blueprint-spec),
 - Base : projet Neon `GPT-mot-du-jour-app`, PostgreSQL 17, région `aws-eu-central-1`,
   branche `production`, base `daily_collections`.
   [Console Neon](https://console.neon.tech/app/projects/quiet-truth-97113248).
-- Le service historique `gpt-mot-du-jour-app.onrender.com` reste sur `main`.
+- Le service historique `gpt-mot-du-jour-app.onrender.com` reste sur `main` avec sa passerelle
+  de compatibilité. Son build ne doit pas installer le monorepo Python 3.12.
 - Le service de la refonte suit `main` avec déploiement automatique à chaque commit.
   Valider la CI avant de fusionner les changements sur `main`.
 - L'URL de connexion Neon est enregistrée uniquement dans l'environnement Render.

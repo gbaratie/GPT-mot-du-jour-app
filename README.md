@@ -55,7 +55,7 @@ Dates exactes ; `before` exclusif ; historique du plus récent au plus ancien ; 
 Les **365 mots de 2025** sont conservés dans `content/mot-du-jour/2025.json`. Ils ne se répètent plus automatiquement en 2026. À la demande de réutilisation des mots existants, les 57 mots du 5 novembre au 31 décembre ont été republiés aux dates exactes de 2026, sans changer leurs textes ni les archives de 2025. `citation-du-jour` contient trois exemples du 4 au 6 novembre 2026. Les 57 énoncés approuvés de `enigme-du-jour` couvrent le 5 novembre au 31 décembre 2026, avec réponse et explication dans le champ `answer`, masquées jusqu’à révélation. Les autres dates restent sans publication.
 Archives : `/mot-du-jour/?date=2025-01-01`.
 
-Streamlit et les anciennes routes `/motdujour`, `/historique` sont remplacés. Le code précédent reste dans l'historique Git. L'import réutilisable :
+Streamlit est remplacé par le front Next.js et les nouvelles routes `/api/v1` sont utilisées. Une passerelle sur l'ancien service Render conserve `/motdujour` et `/historique` pour les anciens clients, en lisant l'API principale. Voir [la transition](docs/DEPLOYMENT.md#transition). L'import réutilisable :
 
 ```sh
 scripts/import-legacy-words --source /chemin/words.json
