@@ -19,8 +19,8 @@ test:
 	$(NPM) run test --workspace apps/web
 
 check: validate
-	$(PYTHON) -m ruff check --config apps/api/pyproject.toml apps/api scripts
-	$(PYTHON) -m ruff format --config apps/api/pyproject.toml --check apps/api scripts
+	$(PYTHON) -m ruff check --config apps/api/pyproject.toml apps/api scripts api.py
+	$(PYTHON) -m ruff format --config apps/api/pyproject.toml --check apps/api scripts api.py
 	$(NPM) run typecheck --workspace apps/web
 	$(NPM) run lint --workspace apps/web
 	$(NPM) run format:check --workspace apps/web

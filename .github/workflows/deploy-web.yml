@@ -88,4 +88,4 @@ jobs:
         env:
           DEPLOY_API_URL: ${{ inputs.api_url || vars.NEXT_PUBLIC_API_URL || 'https://daily-collections-api.onrender.com' }}
           WEB_URL: ${{ steps.deployment.outputs.page_url }}
-        run: python3 scripts/check_deployment.py --api-url "$DEPLOY_API_URL" --web-url "$WEB_URL"
+        run: python3 scripts/check_deployment.py --api-url "$DEPLOY_API_URL" --web-url "$WEB_URL" --legacy-api-url https://gpt-mot-du-jour-app.onrender.com

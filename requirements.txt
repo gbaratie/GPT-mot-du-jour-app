@@ -1,0 +1,5 @@
+# Compatibility gateway for the historical Render service (Python 3.11+).
+# The primary API is installed separately from apps/api/pyproject.toml.
+fastapi>=0.115,<1
+httpx>=0.28,<1
+uvicorn>=0.34,<1
