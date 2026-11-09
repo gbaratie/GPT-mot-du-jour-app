@@ -9,16 +9,21 @@ import {
   Card,
   CardContent,
   Chip,
+  IconButton,
   Skeleton,
+  ToggleButton,
+  ToggleButtonGroup,
   Stack,
   Typography,
 } from "@mui/material";
 import { api } from "@/lib/api/client";
 import type { TodayResponse } from "@/lib/api/types";
-import { EntryRenderer } from "@/collections/EntryRenderer";
+import CardIcon from "./CardIcon";
+import DiscoveryDeck from "./DiscoveryDeck";
 import { formatDate } from "@/lib/dates";
 
 export default function Home() {
+  const [selected, setSelected] = useState(0);
   const [today, setToday] = useState<TodayResponse | null>(null);
   const [error, setError] = useState(false);
   const [attempt, setAttempt] = useState(0);
@@ -34,15 +39,13 @@ export default function Home() {
   }, [attempt]);
 
   return (
-    <Stack spacing={5}>
-      <Box>
+    <Stack spacing={{ xs: 2.5, md: 4 }} className="home-view">
+      <Box className="home-intro">
         <Typography variant="overline" color="primary">
           Le plaisir de découvrir
         </Typography>
-        <Typography variant="h1" sx={{ mt: 1, mb: 2 }}>
-          Un jour.
-          <br />
-          Une nouvelle idée.
+        <Typography variant="h1" sx={{ mt: 0.5, mb: 1.5 }}>
+          Un jour. Une nouvelle idée.
         </Typography>
         <Typography color="text.secondary" sx={{ maxWidth: 520 }}>
           Un mot à apprivoiser, une pensée à emporter. Prenez un instant pour nourrir votre
@@ -54,6 +57,27 @@ export default function Home() {
           </Typography>
         )}
       </Box>
+      {today && today.items.length > 1 && (
+        <ToggleButtonGroup
+          className="collection-picker"
+          exclusive
+          value={selected}
+          onChange={(_, value: number | null) => {
+            if (value !== null) setSelected(value);
+          }}
+          aria-label="Choisir une découverte"
+        >
+          {today.items.map(({ collection }, index) => (
+            <ToggleButton
+              key={collection.slug}
+              value={index}
+              aria-controls={`discovery-${collection.slug}`}
+            >
+              {collection.name}
+            </ToggleButton>
+          ))}
+        </ToggleButtonGroup>
+      )}
       {error ? (
         <Alert
           severity="warning"
@@ -78,40 +102,50 @@ export default function Home() {
       ) : today.items.length === 0 ? (
         <Alert severity="info">Aucune collection disponible pour le moment.</Alert>
       ) : (
-        today.items.map(({ collection, entry }) => (
-          <Card key={collection.slug}>
-            <CardContent sx={{ p: { xs: 3, sm: 4 } }}>
-              <Stack spacing={3}>
-                <Stack
-                  direction="row"
-                  sx={{ justifyContent: "space-between", alignItems: "center", gap: 2 }}
-                >
-                  <Typography variant="h2" component="h2" sx={{ fontSize: "1.1rem" }}>
-                    {collection.name}
-                  </Typography>
-                  <Chip
-                    size="small"
-                    variant="outlined"
-                    label={collection.locale === "fr-FR" ? "Français" : collection.locale}
+        <Box className="discoveries">
+          {today.items.map(({ collection, entry }, index) => (
+            <Card
+              component="article"
+              id={`discovery-${collection.slug}`}
+              className={`discovery ${index === selected ? "is-selected" : ""}`}
+              key={collection.slug}
+            >
+              <CardContent className="discovery-content" sx={{ p: { xs: 2.5, sm: 3 } }}>
+                <Stack spacing={2.5} sx={{ height: "100%" }}>
+                  <Stack
+                    direction="row"
+                    sx={{ justifyContent: "space-between", alignItems: "center", gap: 1 }}
+                  >
+                    <Typography variant="h2" component="h2" sx={{ fontSize: "1.1rem" }}>
+                      {collection.name}
+                    </Typography>
+                    <Stack direction="row" sx={{ alignItems: "center", gap: 0.5 }}>
+                      <Chip
+                        size="small"
+                        variant="outlined"
+                        label={collection.locale === "fr-FR" ? "Français" : collection.locale}
+                      />
+                      <IconButton
+                        component={Link}
+                        href={`/${collection.slug}/`}
+                        aria-label={`Explorer ${collection.name.toLowerCase()} : archives`}
+                        title="Explorer les archives"
+                        sx={{ width: 44, height: 44, color: "text.secondary" }}
+                      >
+                        <CardIcon name="archive" />
+                      </IconButton>
+                    </Stack>
+                  </Stack>
+                  <DiscoveryDeck
+                    slug={collection.slug}
+                    locale={collection.locale}
+                    initial={entry}
                   />
                 </Stack>
-                {entry ? (
-                  <EntryRenderer entry={entry} />
-                ) : (
-                  <Typography color="text.secondary">
-                    Aucun contenu publié aujourd’hui. Retrouvez les publications précédentes dans
-                    les archives.
-                  </Typography>
-                )}
-                <Box>
-                  <Button component={Link} href={`/${collection.slug}/`} variant="outlined">
-                    Explorer {collection.name.toLowerCase()} →
-                  </Button>
-                </Box>
-              </Stack>
-            </CardContent>
-          </Card>
-        ))
+              </CardContent>
+            </Card>
+          ))}
+        </Box>
       )}
     </Stack>
   );

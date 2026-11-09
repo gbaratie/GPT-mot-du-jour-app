@@ -32,6 +32,17 @@ def collection_today(slug: str, service: Service, day: Today):
     return service.entry(slug, day)
 
 
+@router.get("/collections/{slug}/discover", response_model=list[EntryRead])
+def discover(
+    slug: str,
+    service: Service,
+    day: Today,
+    exclude: Annotated[list[date] | None, Query(max_length=100)] = None,
+    limit: Annotated[int, Query(ge=1, le=20)] = 12,
+):
+    return service.discover(slug, day, exclude or [], limit)
+
+
 @router.get("/collections/{slug}/entries", response_model=list[EntryRead])
 def entries(
     slug: str,

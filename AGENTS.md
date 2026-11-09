@@ -25,3 +25,7 @@ avant de changer leurs contrats, puis le guide adapté dans `docs/agents/`.
 
 Ajouts de contenu : `docs/agents/ADD_ENTRIES.md`. Ajouts de collection :
 `docs/agents/ADD_COLLECTION.md`. Hébergement : `docs/DEPLOYMENT.md`.
+
+Pour une refonte du front ou un travail d’ergonomie mobile/ordinateur, lire
+`.agents/skills/adaptive-interface-design/SKILL.md`. Ce skill est autonome et peut
+être copié dans d’autres projets.
