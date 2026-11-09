@@ -119,19 +119,30 @@ pointeur restaure sa position. Couverture éditoriale 2026 : voir `docs/content/
 
 ## Pile de cartes
 
-Le composant de découverte prépare la prochaine publication dès que la pile est
-visible. La prévisualisation est une vraie publication du lot aléatoire, rendue
-sous la carte active, sans la marquer comme vue. Elle est `inert` et masquée aux
-lecteurs d’écran pour éviter des commandes et annonces en double.
+`DiscoveryDeck` gère les publications et leur historique ; `SwipeStack` gère
+les gestes et le mouvement avec Motion (`motion/react`). Les deux couches sont
+indexées par date : la carte préchargée conserve son élément DOM et son contenu
+quand elle passe au premier plan. Elle reste `inert`, masquée aux lecteurs
+d’écran et non comptée comme vue tant qu’elle n’est qu’une prévisualisation.
 
-Le déplacement suit le pointeur. À 24 % de la largeur de la carte (seuil borné
-entre 56 et 96 px), la sortie est engagée immédiatement, même si le doigt reste
-posé. Un geste rapide d’au moins 30 px peut aussi déclencher la sortie au
-relâchement. La carte sort latéralement pendant 260 ms puis la suivante est
-promue. Une perte de capture ou une annulation après engagement ne ramène pas
-la carte en place. Sur la première carte, sans historique, les deux directions
-affichent une nouvelle découverte ; ensuite, la droite revient dans le parcours. La prévisualisation de droite correspond au retour dans le parcours.
-Un geste court, vertical ou interrompu restaure la position. Sans publication
-préparée, la navigation attend la requête avant de lancer la sortie ; une erreur
-conserve la carte. Les boutons et le clavier utilisent le même parcours. La
-préférence de réduction des animations supprime la transition de sortie.
+Motion gère le suivi horizontal, la rotation, le retour par ressort et la sortie
+latérale. À 24 % de la largeur (seuil borné entre 56 et 96 px), le geste engage la
+sortie même si le doigt reste posé ; un geste rapide d’au moins 30 px peut aussi
+la déclencher au relâchement. L’opacité reste à 1 jusqu’à la sortie complète des
+coins de la carte hors du viewport. Le reset du déplacement intervient dans un
+effet de layout après promotion, pour éviter de réafficher l’ancienne carte.
+
+Les deux couches partagent une hauteur calculée depuis leur contenu naturel,
+avec les mêmes emplacements réservés pour les commandes et le texte d’aide.
+Cette hauteur est figée pendant le geste et la sortie. Les ajustements suivants
+(contenu long, réponse d’énigme, changement de largeur) sont animés par ressort,
+sans étirer le texte. L’échelle et le décalage de la carte dessous rejoignent
+progressivement leur valeur finale à mesure que celle du dessus s’éloigne.
+
+Sur la première carte sans historique, les deux directions découvrent une
+publication. Ensuite, la droite revient dans le parcours. Les gestes courts,
+verticaux ou interrompus ramènent la carte en place ; une interruption après
+engagement ne révoque pas la navigation. La requête doit réussir avant de lancer
+la sortie ; un échec conserve la carte. Les boutons et le clavier utilisent le
+même parcours. La préférence de réduction des animations supprime les ressorts
+et la sortie animée.

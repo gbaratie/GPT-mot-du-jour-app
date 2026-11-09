@@ -5,7 +5,6 @@ import {
   Alert,
   Box,
   Button,
-  Card,
   CardContent,
   CircularProgress,
   IconButton,
@@ -14,6 +13,7 @@ import {
   Typography,
 } from "@mui/material";
 import CardIcon from "./CardIcon";
+import SwipeStack, { type SwipeStackHandle } from "./SwipeStack";
 import { EntryRenderer } from "@/collections/EntryRenderer";
 import { api } from "@/lib/api/client";
 import type { DailyEntry } from "@/lib/api/types";
@@ -35,10 +35,9 @@ export default function DiscoveryDeck({ slug, locale, initial, heading }: Props)
   const pending = useRef<Promise<DailyEntry | null> | null>(null);
   const candidate = useRef<DailyEntry | null>(null);
   const lock = useRef(false);
-  const surface = useRef<HTMLDivElement>(null);
+  const stack = useRef<SwipeStackHandle>(null);
   const root = useRef<HTMLDivElement>(null);
-  const motion = useRef<Animation | null>(null);
-  const start = useRef<{ x: number; y: number; time: number } | null>(null);
+  const mounted = useRef(true);
   const current = trail[position] ?? null;
   const forward = trail[position + 1] ?? prepared;
   const underneath = direction === "previous" ? trail[position - 1] : forward;
@@ -85,13 +84,13 @@ export default function DiscoveryDeck({ slug, locale, initial, heading }: Props)
     return pending.current;
   }
 
-  useEffect(
-    () => () => {
+  useEffect(() => {
+    mounted.current = true;
+    return () => {
+      mounted.current = false;
       controller.current?.abort();
-      motion.current?.cancel();
-    },
-    [],
-  );
+    };
+  }, []);
   useEffect(() => {
     const node = root.current;
     if (!node) return;
@@ -115,29 +114,13 @@ export default function DiscoveryDeck({ slug, locale, initial, heading }: Props)
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [current, position, trail.length]);
 
-  function swipeDirection(dx: number): "next" | "previous" {
-    // A first card has no history: either side can reveal a new discovery.
-    return dx > 0 && position > 0 ? "previous" : "next";
-  }
-  function commitThreshold() {
-    return Math.max(56, Math.min(96, (surface.current?.offsetWidth ?? 320) * 0.24));
-  }
-
-  function resetDrag() {
-    start.current = null;
-    if (lock.current) return;
-    if (surface.current) {
-      surface.current.style.transform = "";
-      delete surface.current.dataset.dragging;
-    }
-  }
   async function advance(targetDirection: "next" | "previous", restart = false, exitSide?: number) {
-    if (lock.current || (targetDirection === "previous" && position <= 0)) {
-      resetDrag();
+    if (lock.current) return;
+    if (targetDirection === "previous" && position <= 0) {
+      stack.current?.reset();
       return;
     }
     lock.current = true;
-    start.current = null;
     setDirection(targetDirection);
     setError(false);
     if (restart) {
@@ -155,29 +138,12 @@ export default function DiscoveryDeck({ slug, locale, initial, heading }: Props)
     if (!target || controller.current?.signal.aborted) {
       lock.current = false;
       setBusy(false);
-      resetDrag();
+      stack.current?.reset();
       return;
     }
     setBusy(false);
-    const card = surface.current;
-    const reduced = window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
-    if (card && card.animate && !reduced) {
-      const sign = exitSide ?? (targetDirection === "next" ? -1 : 1);
-      const distance = window.innerWidth + card.getBoundingClientRect().width;
-      motion.current = card.animate(
-        [
-          { transform: card.style.transform || "translateX(0) rotate(0deg)", opacity: 1 },
-          { transform: `translateX(${sign * distance}px) rotate(${sign * 18}deg)`, opacity: 0 },
-        ],
-        { duration: 260, easing: "cubic-bezier(.2,.7,.3,1)", fill: "forwards" },
-      );
-      try {
-        await motion.current.finished;
-      } catch {
-        return;
-      }
-    }
-    if (controller.current?.signal.aborted) return;
+    await stack.current?.dismiss(exitSide ?? (targetDirection === "next" ? -1 : 1));
+    if (!mounted.current) return;
     if (targetDirection === "previous") setPosition((p) => p - 1);
     else if (position < trail.length - 1) setPosition((p) => p + 1);
     else {
@@ -188,12 +154,6 @@ export default function DiscoveryDeck({ slug, locale, initial, heading }: Props)
       setTrail((old) => [...old, target]);
       setPosition((p) => p + 1);
     }
-    if (card) {
-      card.style.transform = "";
-      delete card.dataset.dragging;
-    }
-    motion.current?.cancel();
-    motion.current = null;
     lock.current = false;
     setDirection("next");
   }
@@ -214,136 +174,72 @@ export default function DiscoveryDeck({ slug, locale, initial, heading }: Props)
           >
             {entry ? formatDate(entry.publication_date, locale) : "Au fil des jours"}
           </Typography>
-          {!preview && (
-            <Stack direction="row" sx={{ flexShrink: 0 }}>
-              <IconButton
-                onClick={() => void advance("previous")}
-                disabled={position <= 0 || busy}
-                aria-label="Découverte précédente"
-                title="Découverte précédente"
-                sx={{ width: 44, height: 44 }}
-              >
-                <CardIcon name="back" />
-              </IconButton>
-              <IconButton
-                onClick={() => void advance("next")}
-                disabled={busy}
-                aria-label={busy ? "Recherche en cours" : "Autre découverte"}
-                title="Autre découverte"
-                color="primary"
-                sx={{ width: 44, height: 44 }}
-              >
-                {busy ? <CircularProgress size={18} color="inherit" /> : <CardIcon name="next" />}
-              </IconButton>
-            </Stack>
-          )}
+          <Stack direction="row" sx={{ flexShrink: 0, visibility: preview ? "hidden" : "visible" }}>
+            <IconButton
+              onClick={() => void advance("previous")}
+              disabled={position <= 0 || busy}
+              aria-label="Découverte précédente"
+              title="Découverte précédente"
+              sx={{ width: 44, height: 44 }}
+            >
+              <CardIcon name="back" />
+            </IconButton>
+            <IconButton
+              onClick={() => void advance("next")}
+              disabled={busy}
+              aria-label={busy ? "Recherche en cours" : "Autre découverte"}
+              title="Autre découverte"
+              color="primary"
+              sx={{ width: 44, height: 44 }}
+            >
+              {busy ? <CircularProgress size={18} color="inherit" /> : <CardIcon name="next" />}
+            </IconButton>
+          </Stack>
         </Stack>
         {!preview && busy ? (
           <Box role="status" aria-label="Chargement de la découverte">
             <Skeleton variant="rounded" height={180} />
           </Box>
         ) : entry ? (
-          <EntryRenderer key={`${slug}:${entry.publication_date}:${preview}`} entry={entry} />
+          <EntryRenderer key={`${slug}:${entry.publication_date}`} entry={entry} />
         ) : (
           <Typography color="text.secondary">
             Aucun contenu publié aujourd’hui. Retrouvez les publications précédentes dans les
             archives ou découvrez un autre jour.
           </Typography>
         )}
-        {!preview && (
-          <Typography
-            variant="caption"
-            color="text.secondary"
-            className="swipe-hint"
-            sx={{ mt: 2, fontSize: ".7rem", lineHeight: 1.5 }}
-          >
-            {position > 0
-              ? "Glissez à gauche pour découvrir, à droite pour revenir."
-              : "Glissez sur le côté pour découvrir."}
-          </Typography>
-        )}
+        <Typography
+          variant="caption"
+          color="text.secondary"
+          className="swipe-hint"
+          sx={{
+            mt: 2,
+            fontSize: ".7rem",
+            lineHeight: 1.5,
+            visibility: preview ? "hidden" : "visible",
+            minHeight: "3em",
+          }}
+        >
+          {position > 0
+            ? "Glissez à gauche pour découvrir, à droite pour revenir."
+            : "Glissez sur le côté pour découvrir."}
+        </Typography>
       </CardContent>
     );
   }
 
   return (
     <Box ref={root} className="discovery-deck">
-      <Box className="deck-stack">
-        {underneath && (
-          <Card className="deck-card deck-underneath" aria-hidden="true" inert>
-            {content(underneath, true)}
-          </Card>
-        )}
-        <Card
-          ref={surface}
-          className="deck-card deck-foreground"
-          tabIndex={0}
-          role="group"
-          aria-label="Carte découverte. Flèche droite : autre découverte. Flèche gauche : précédente."
-          onKeyDown={(e) => {
-            if (e.target !== e.currentTarget) return;
-            if (e.key === "ArrowRight") {
-              e.preventDefault();
-              void advance("next");
-            }
-            if (e.key === "ArrowLeft") {
-              e.preventDefault();
-              void advance("previous");
-            }
-          }}
-          onPointerDown={(e) => {
-            if (
-              (e.target as HTMLElement).closest("button, a, input") ||
-              !e.isPrimary ||
-              (e.pointerType === "mouse" && e.button !== 0) ||
-              lock.current ||
-              busy
-            )
-              return;
-            motion.current?.cancel();
-            start.current = { x: e.clientX, y: e.clientY, time: performance.now() };
-            e.currentTarget.setPointerCapture(e.pointerId);
-          }}
-          onPointerMove={(e) => {
-            const origin = start.current;
-            if (!origin || lock.current) return;
-            const dx = e.clientX - origin.x;
-            const dy = e.clientY - origin.y;
-            if (Math.abs(dy) > Math.abs(dx) && Math.abs(dy) > 10) {
-              resetDrag();
-              return;
-            }
-            if (Math.abs(dx) > Math.abs(dy)) {
-              const targetDirection = swipeDirection(dx);
-              setDirection(targetDirection);
-              e.currentTarget.dataset.dragging = "true";
-              e.currentTarget.style.transform = `translate3d(${dx}px, ${dy * 0.12}px, 0) rotate(${dx * 0.025}deg)`;
-              // Commit while the finger is still down. Pointer-up/cancel must no
-              // longer turn a committed swipe into a return animation.
-              if (Math.abs(dx) >= commitThreshold() && Math.abs(dx) > Math.abs(dy) * 1.5) {
-                void advance(targetDirection, false, Math.sign(dx));
-              }
-            }
-          }}
-          onPointerCancel={resetDrag}
-          onLostPointerCapture={resetDrag}
-          onPointerUp={(e) => {
-            const origin = start.current;
-            start.current = null;
-            if (!origin) return;
-            const dx = e.clientX - origin.x;
-            const dy = e.clientY - origin.y;
-            const velocity = Math.abs(dx) / Math.max(1, performance.now() - origin.time);
-            const enough =
-              Math.abs(dx) >= commitThreshold() || (Math.abs(dx) >= 30 && velocity > 0.5);
-            if (enough && Math.abs(dx) > Math.abs(dy) * 1.5)
-              void advance(swipeDirection(dx), false, Math.sign(dx));
-            else resetDrag();
-          }}
-        >
-          {content(current)}
-        </Card>
-      </Box>
+      <SwipeStack
+        ref={stack}
+        current={current}
+        underneath={underneath}
+        canGoBack={position > 0}
+        busy={busy}
+        onDirection={setDirection}
+        onAdvance={advance}
+        renderCard={content}
+      />
       {error && (
         <Alert
           severity="warning"
