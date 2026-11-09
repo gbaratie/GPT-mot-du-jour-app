@@ -61,3 +61,14 @@ it("sert une ancienne réponse en cas de panne mais ne masque pas une erreur 404
   vi.stubGlobal("fetch", vi.fn().mockResolvedValue({ ok: false, status: 404 }));
   await expect(api.entry("mot-du-jour", "2026-11-06")).rejects.toMatchObject({ status: 404 });
 });
+
+it("revalide aujourd’hui même si une ancienne réponse est en cache", async () => {
+  const fetch = vi
+    .fn()
+    .mockResolvedValueOnce({ ok: true, json: async () => ({ date: "2026-11-08", items: [] }) })
+    .mockResolvedValueOnce({ ok: true, json: async () => ({ date: "2026-11-09", items: [] }) });
+  vi.stubGlobal("fetch", fetch);
+  await api.today();
+  expect((await api.today()).date).toBe("2026-11-09");
+  expect(fetch).toHaveBeenCalledTimes(2);
+});

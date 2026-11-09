@@ -1,5 +1,2461 @@
 [
   {
+    "publication_date": "2026-01-01",
+    "payload": {
+      "text": "Nous essayons de nous faire honneur des défauts que nous ne voulons pas corriger.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 442 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-01-02",
+    "payload": {
+      "text": "Pendant que la paresse et la timidité nous retiennent dans notre devoir, notre vertu en a souvent tout l'honneur.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 169 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-01-03",
+    "payload": {
+      "text": "Le vrai moyen d'être trompé, c'est de se croire plus fin que les autres.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 127 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-01-04",
+    "payload": {
+      "text": "Il vaut mieux employer notre esprit à supporter les infortunes qui nous arrivent qu'à prévoir celles qui nous peuvent arriver.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 174 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-01-05",
+    "payload": {
+      "text": "Il n'y a point d'accidents si malheureux dont les habiles gens ne tirent quelque avantage, ni de si heureux que les imprudents ne puissent tourner à leur préjudice.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 59 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-01-06",
+    "payload": {
+      "text": "Il y a plusieurs remèdes qui guérissent de l'amour, mais il n'y en a point d'infaillibles.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 459 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-01-07",
+    "payload": {
+      "text": "La jalousie est le plus grand de tous les maux, et celui qui fait le moins de pitié aux personnes qui le causent.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 503 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-01-08",
+    "payload": {
+      "text": "Détromper un homme préoccupé de son mérite est lui rendre un aussi mauvais office que celui que l'on rendit à ce fou d'Athènes, qui croyait que tous les vaisseaux qui arrivaient dans le port étaient à lui.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 92 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-01-09",
+    "payload": {
+      "text": "Nous nous persuadons souvent d'aimer les gens plus puissants que nous; et néanmoins c'est l'intérêt seul qui produit notre amitié. Nous ne nous donnons pas à eux pour le bien que nous leur voulons faire, mais pour celui que nous en voulons recevoir.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 85 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-01-10",
+    "payload": {
+      "text": "Si nous n'avions point de défauts, nous ne prendrions pas tant de plaisir à en remarquer dans les autres.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 31 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-01-11",
+    "payload": {
+      "text": "On s'ennuie presque toujours avec les gens avec qui il n'est pas permis de s'ennuyer.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 352 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-01-12",
+    "payload": {
+      "text": "Un esprit droit a moins de peine de se soumettre aux esprits de travers que de les conduire.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 448 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-01-13",
+    "payload": {
+      "text": "L'envie de parler de nous, et de faire voir nos défauts du côté que nous voulons bien les montrer, fait une grande partie de notre sincérité.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 383 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-01-14",
+    "payload": {
+      "text": "Il y a deux sortes de constance en amour: l'une vient de ce que l'on trouve sans cesse dans la personne que l'on aime de nouveaux sujets d'aimer, et l'autre vient de ce que l'on se fait un honneur d'être constant.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 176 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-01-15",
+    "payload": {
+      "text": "Peu de gens connaissent la mort. On ne la souffre pas ordinairement par résolution, mais par stupidité et par coutume; et la plupart des hommes meurent parce qu'on ne peut s'empêcher de mourir.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 23 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-01-16",
+    "payload": {
+      "text": "Il y a souvent plus d'orgueil que de bonté à plaindre les malheurs de nos ennemis; c'est pour leur faire sentir que nous sommes au-dessus d'eux que nous leur donnons des marques de compassion.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 463 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-01-17",
+    "payload": {
+      "text": "Il y a plus de défauts dans l'humeur que dans l'esprit.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 290 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-01-18",
+    "payload": {
+      "text": "Lorsque notre haine est trop vive, elle nous met au-dessous de ceux que nous haïssons.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 338 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-01-19",
+    "payload": {
+      "text": "On ne veut point perdre la vie, et on veut acquérir de la gloire; ce qui fait que les braves ont plus d'adresse et d'esprit pour éviter la mort que les gens de chicane n'en ont pour conserver leur bien.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 221 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-01-20",
+    "payload": {
+      "text": "La vivacité qui augmente en vieillissant ne va pas loin de la folie.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 416 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-01-21",
+    "payload": {
+      "text": "La constance des sages n'est que l'art de renfermer leur agitation dans le coeur.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 20 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-01-22",
+    "payload": {
+      "text": "Il n'y a point d'éloges qu'on ne donne à la prudence. Cependant elle ne saurait nous assurer du moindre événement.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 65 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-01-23",
+    "payload": {
+      "text": "On s'est trompé lorsqu'on a cru que l'esprit et le jugement étaient deux choses différentes. Le jugement n'est que la grandeur de la lumière de l'esprit; cette lumière pénètre le fond des choses; elle y remarque tout ce qu'il faut remarquer et aperçoit celles qui semblent imperceptibles. Ainsi il faut demeurer d'accord que c'est l'étendue de la lumière de l'esprit qui produit tous les effets qu'on attribue au jugement.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 97 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-01-24",
+    "payload": {
+      "text": "Quelque soin que l'on prenne de couvrir ses passions par des apparences de piété et d'honneur, elles paraissent toujours au travers de ces voiles.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 12 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-01-25",
+    "payload": {
+      "text": "Ce qui paraît générosité n'est souvent qu'une ambition déguisée qui méprise de petits intérêts, pour aller à de plus grands.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 246 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-01-26",
+    "payload": {
+      "text": "Les esprits médiocres condamnent d'ordinaire tout ce qui passe leur portée.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 375 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-01-27",
+    "payload": {
+      "text": "Le refus des louanges est un désir d'être loué deux fois.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 149 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-01-28",
+    "payload": {
+      "text": "On incommode souvent les autres quand on croit ne les pouvoir jamais incommoder.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 242 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-01-29",
+    "payload": {
+      "text": "La folie nous suit dans tous les temps de la vie. Si quelqu'un paraît sage, c'est seulement parce que ses folies sont proportionnées à son âge et à sa fortune.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 207 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-01-30",
+    "payload": {
+      "text": "Peu d'esprit avec de la droiture ennuie moins, à la longue, que beaucoup d'esprit avec du travers.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 502 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-01-31",
+    "payload": {
+      "text": "Nous nous faisons honneur des défauts opposés à ceux que nous avons: quand nous sommes faibles, nous nous vantons d'être opiniâtres.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 424 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-02-01",
+    "payload": {
+      "text": "On parle peu quand la vanité ne fait pas parler.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 137 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-02-02",
+    "payload": {
+      "text": "Les passions en engendrent souvent qui leur sont contraires. L'avarice produit quelquefois la prodigalité, et la prodigalité l'avarice; on est souvent ferme par faiblesse, et audacieux par timidité.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 11 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-02-03",
+    "payload": {
+      "text": "Le nom de la vertu sert à l'intérêt aussi utilement que les vices.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 187 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-02-04",
+    "payload": {
+      "text": "Ce qui se trouve le moins dans la galanterie, c'est de l'amour.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 402 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-02-05",
+    "payload": {
+      "text": "La plupart des gens ne jugent des hommes que par la vogue qu'ils ont, ou par leur fortune.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 212 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-02-06",
+    "payload": {
+      "text": "La politesse de l'esprit consiste à penser des choses honnêtes et délicates.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 99 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-02-07",
+    "payload": {
+      "text": "On pardonne tant que l'on aime.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 330 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-02-08",
+    "payload": {
+      "text": "Il semble que la nature, qui a si sagement disposé les organes de notre corps pour nous rendre heureux; nous ait aussi donné l'orgueil pour nous épargner la douleur de connaître nos imperfections.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 36 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-02-09",
+    "payload": {
+      "text": "De tous nos défauts, celui dont nous demeurons le plus aisément d'accord, c'est de la paresse; nous nous persuadons qu'elle tient à toutes les vertus paisibles et que, sans détruire entièrement les autres, elle en suspend seulement les fonctions.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 398 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-02-10",
+    "payload": {
+      "text": "Les vieux fous sont plus fous que les jeunes.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 444 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-02-11",
+    "payload": {
+      "text": "La galanterie de l'esprit est de dire des choses flatteuses d'une manière agréable.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 100 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-02-12",
+    "payload": {
+      "text": "Ce qui nous rend la vanité des autres insupportable, c'est qu'elle blesse la nôtre.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 389 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-02-13",
+    "payload": {
+      "text": "C'est en quelque sorte se donner part aux belles actions, que de les louer de bon coeur.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 432 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-02-14",
+    "payload": {
+      "text": "Quelque bien qu'on nous dise de nous, on ne nous apprend rien de nouveau.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 303 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-02-15",
+    "payload": {
+      "text": "On peut dire de l'agrément séparé de la beauté que c'est une symétrie dont on ne sait point les règles, et un rapport secret des traits ensemble, et des traits avec les couleurs et avec l'air de la personne.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 240 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-02-16",
+    "payload": {
+      "text": "Le bon naturel, qui se vante d'être si sensible, est souvent étouffé par le moindre intérêt.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 275 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-02-17",
+    "payload": {
+      "text": "L'orgueil a ses bizarreries, comme les autres passions; on a honte d'avouer que l'on ait de la jalousie, et on se fait honneur d'en avoir eu, et d'être capable d'en avoir.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 472 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-02-18",
+    "payload": {
+      "text": "Les petits esprits sont trop blessés des petites choses; les grands esprits les voient toutes, et n'en sont point blessés.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 357 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-02-19",
+    "payload": {
+      "text": "Rien n'est si contagieux que l'exemple, et nous ne faisons jamais de grands biens ni de grands maux qui n'en produisent de semblables. Nous imitons les bonnes actions par émulation, et les mauvaises par la malignité de notre nature que la honte retenait prisonnière, et que l'exemple met en liberté.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 230 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-02-20",
+    "payload": {
+      "text": "Nous nous consolons souvent par faiblesse des maux dont la raison n'a pas la force de nous consoler.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 325 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-02-21",
+    "payload": {
+      "text": "Il est de la reconnaissance comme de la bonne foi des marchands: elle entretient le commerce; et nous ne payons pas parce qu'il est juste de nous acquitter, mais pour trouver plus facilement des gens qui nous prêtent.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 223 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-02-22",
+    "payload": {
+      "text": "Ceux qu'on condamne au supplice affectent quelquefois une constance et un mépris de la mort qui n'est en effet que la crainte de l'envisager. De sorte qu'on peut dire que cette constance et ce mépris sont à leur esprit ce que le bandeau est à leurs yeux.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 21 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-02-23",
+    "payload": {
+      "text": "La vieillesse est un tyran qui défend sur peine de la vie tous les plaisirs de la jeunesse.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 461 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-02-24",
+    "payload": {
+      "text": "On est d'ordinaire plus médisant par vanité que par malice.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 483 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-02-25",
+    "payload": {
+      "text": "La jeunesse change ses goûts par l'ardeur du sang, et la vieillesse conserve les siens par l'accoutumance.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 109 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-02-26",
+    "payload": {
+      "text": "Il est aussi honnête d'être glorieux avec soi-même qu'il est ridicule de l'être avec les autres.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 307 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-02-27",
+    "payload": {
+      "text": "Il est plus aisé d'être sage pour les autres que de l'être pour soi-même.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 132 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-02-28",
+    "payload": {
+      "text": "On est quelquefois un sot avec de l'esprit, mais on ne l'est jamais avec du jugement.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 456 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-03-01",
+    "payload": {
+      "text": "La modération ne peut avoir le mérite de combattre l'ambition et de la soumettre: elles ne se trouvent jamais ensemble. La modération est la langueur et la paresse de l'âme, comme l'ambition en est l'activité et l'ardeur.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 293 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-03-02",
+    "payload": {
+      "text": "On a fait une vertu de la modération pour borner l'ambition des grands hommes, et pour consoler les gens médiocres de leur peu de fortune, et de leur peu de mérite.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 308 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-03-03",
+    "payload": {
+      "text": "La bonne grâce est au corps ce que le bon sens est à l'esprit.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 67 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-03-04",
+    "payload": {
+      "text": "On ne se peut consoler d'être trompé par ses ennemis, et trahi par ses amis; et l'on est souvent satisfait de l'être par soi-même.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 114 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-03-05",
+    "payload": {
+      "text": "Le calme ou l'agitation de notre humeur ne dépend pas tant de ce qui nous arrive de plus considérable dans la vie, que d'un arrangement commode ou désagréable de petites choses qui arrivent tous les jours.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 488 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-03-06",
+    "payload": {
+      "text": "Cette clémence dont on fait une vertu se pratique tantôt par vanité, quelquefois par paresse, souvent par crainte, et presque toujours par tous les trois ensemble.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 16 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-03-07",
+    "payload": {
+      "text": "Chacun dit du bien de son coeur, et personne n'en ose dire de son esprit.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 98 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-03-08",
+    "payload": {
+      "text": "Il y a des affaires et des maladies que les remèdes aigrissent en certains temps; et la grande habileté consiste à connaître quand _il est dangereux d'en user.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 288 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-03-09",
+    "payload": {
+      "text": "On ne loue d'ordinaire que pour être loué.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 146 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-03-10",
+    "payload": {
+      "text": "Les finesses et les trahisons ne viennent que de manque d'habileté.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 126 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-03-11",
+    "payload": {
+      "text": "La marque d'un mérite extraordinaire est de voir que ceux qui l'envient le plus sont contraints de le louer.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 95 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-03-12",
+    "payload": {
+      "text": "Quand on a le coeur encore agité par les restes d'une passion, on est plus près d'en prendre une nouvelle que quand on est entièrement guéri.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 484 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-03-13",
+    "payload": {
+      "text": "L'intérêt, qui aveugle les uns, fait la lumière des autres.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 40 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-03-14",
+    "payload": {
+      "text": "L'amour-propre nous augmente ou nous diminue les bonnes qualités de nos amis à proportion de la satisfaction que nous avons d'eux; et nous jugeons de leur mérite par la manière dont ils vivent avec nous.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 88 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-03-15",
+    "payload": {
+      "text": "Il s'en faut bien que ceux qui s'attrapent à nos finesses ne nous paraissent aussi ridicules que nous nous le paraissons à nous-mêmes quand les finesses des autres nous ont attrapés.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 407 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-03-16",
+    "payload": {
+      "text": "La fortune et l'humeur gouvernent le monde.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 435 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-03-17",
+    "payload": {
+      "text": "Nous promettons selon nos espérances, et nous tenons selon nos craintes.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 38 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-03-18",
+    "payload": {
+      "text": "La durée de nos passions ne dépend pas plus de nous que la durée de notre vie.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 5 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-03-19",
+    "payload": {
+      "text": "L'art de savoir bien mettre en oeuvre de médiocres qualités dérobe l'estime et donne souvent plus de réputation que le véritable mérite.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 162 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-03-20",
+    "payload": {
+      "text": "Ce n'est pas tant la fertilité de l'esprit qui nous fait trouver plusieurs expédients sur une même affaire, que c'est le défaut de lumière qui nous fait arrêter à tout ce qui se présente à notre imagination, et qui nous empêche de discerner d'abord ce qui est le meilleur.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 287 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-03-21",
+    "payload": {
+      "text": "Il y a peu de choses impossibles d'elles-mêmes; et l'application pour les faire réussir nous manque plus que les moyens.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 243 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-03-22",
+    "payload": {
+      "text": "Notre orgueil s'augmente souvent de ce que nous retranchons de nos autres défauts.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 450 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-03-23",
+    "payload": {
+      "text": "Notre sagesse n'est pas moins à la merci de la fortune que nos biens.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 323 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-03-24",
+    "payload": {
+      "text": "La constance en amour est une inconstance perpétuelle, qui fait que notre coeur s'attache successivement à toutes les qualités de la personne que nous aimons, donnant tantôt la préférence à l'une, tantôt à l'autre; de sorte que cette constance n'est qu'une inconstance arrêtée et renfermée dans un même sujet.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 175 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-03-25",
+    "payload": {
+      "text": "Un habile homme doit régler le rang de ses intérêts et les conduire chacun dans son ordre. Notre avidité le trouble souvent en nous faisant courir à tant de choses à la fois que, pour désirer trop les moins importantes, on manque les plus considérables.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 66 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-03-26",
+    "payload": {
+      "text": "Nous récusons des juges pour les plus petits intérêts et nous voulons bien que notre réputation et notre gloire dépendent du jugement des hommes, qui nous sont tous contraires, ou par leur jalousie, ou par leur préoccupation, ou par leur peu de lumière; et ce n'est que pour les faire prononcer en notre faveur que nous exposons en tant de manières notre repos et notre vie.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 268 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-03-27",
+    "payload": {
+      "text": "C'est être véritablement honnête homme que de vouloir être toujours exposé à la vue des honnêtes gens.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 206 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-03-28",
+    "payload": {
+      "text": "Les passions de la jeunesse ne sont guère plus opposées au salut que la tiédeur des vieilles gens.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 341 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-03-29",
+    "payload": {
+      "text": "Les passions les plus violentes nous laissent quelquefois du relâche, mais la vanité nous agite toujours.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 443 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-03-30",
+    "payload": {
+      "text": "Ce qui nous fait aimer les nouvelles connaissances n'est pas tant la lassitude que nous avons des vieilles ou le plaisir de changer, que le dégoût de n'être pas assez admirés de ceux qui nous connaissent trop, et l'espérance de l'être davantage de ceux qui ne nous connaissent pas tant.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 178 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-03-31",
+    "payload": {
+      "text": "On ne plaît pas longtemps quand on n'a que d'une sorte d'esprit.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 413 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-04-01",
+    "payload": {
+      "text": "On a bien de la peine à rompre, quand on ne s'aime plus.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 351 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-04-02",
+    "payload": {
+      "text": "Ceux qui ont eu de grandes passions se trouvent toute leur vie heureux, et malheureux, d'en être guéris.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 485 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-04-03",
+    "payload": {
+      "text": "Rien ne flatte plus notre orgueil que la confiance des grands, parce que nous la regardons comme un effet de notre mérite, sans considérer qu'elle ne vient le plus souvent que de vanité, ou d'impuissance de garder le secret.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 239 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-04-04",
+    "payload": {
+      "text": "Quelques grands avantages que la nature donne, ce n'est pas elle seule, mais la fortune avec elle qui fait les héros.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 53 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-04-05",
+    "payload": {
+      "text": "Il y a de bonnes qualités qui dégénèrent en défauts quand elles sont naturelles, et d'autres qui ne sont jamais parfaites quand elles sont acquises. Il faut, par exemple, que la raison nous fasse ménagers de notre bien et de notre confiance; et il faut, au contraire, que la nature nous donne la bonté et la valeur.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 365 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-04-06",
+    "payload": {
+      "text": "Le désir de paraître habile empêche souvent de le devenir.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 199 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-04-07",
+    "payload": {
+      "text": "Il faut gouverner la fortune comme la santé: en jouir quand elle est bonne, prendre patience quand elle est mauvaise, et ne faire jamais de grands remèdes sans un extrême besoin.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 392 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-04-08",
+    "payload": {
+      "text": "Nous aimons toujours ceux qui nous admirent; et nous n'aimons pas toujours ceux que nous admirons.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 294 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-04-09",
+    "payload": {
+      "text": "Il y a des rechutes dans les maladies de l'âme, comme dans celles du corps. Ce que nous prenons pour notre guérison n'est le plus souvent qu'un relâche ou un changement de mal.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 193 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-04-10",
+    "payload": {
+      "text": "La promptitude à croire le mal sans l'avoir assez examiné est un effet de l'orgueil et de la paresse. On veut trouver des coupables; et on ne veut pas se donner la peine d'examiner les crimes.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 267 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-04-11",
+    "payload": {
+      "text": "La fortune tourne tout à l'avantage de ceux qu'elle favorise.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 60 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-04-12",
+    "payload": {
+      "text": "Ce qu'on nomme libéralité n'est le plus souvent que la vanité de donner, que nous aimons mieux que ce que nous donnons.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 263 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-04-13",
+    "payload": {
+      "text": "Il n'y a pas moins d'éloquence dans le ton de la voix, dans les yeux et dans l'air de la personne, que dans le choix des paroles.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 249 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-04-14",
+    "payload": {
+      "text": "Rien n'empêche tant d'être naturel que l'envie de le paraître.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 431 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-04-15",
+    "payload": {
+      "text": "On peut dire que les vices nous attendent dans le cours de la vie comme des hôtes chez qui il faut successivement loger; et je doute que l'expérience nous les fît éviter s'il nous était permis de faire deux fois le même chemin.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 191 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-04-16",
+    "payload": {
+      "text": "Quelque éclatante que soit une action, elle ne doit pas passer pour grande lorsqu'elle n'est pas l'effet d'un grand dessein.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 160 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-04-17",
+    "payload": {
+      "text": "Nous plaisons plus souvent dans le commerce de la vie par nos défauts que par nos bonnes qualités.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 90 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-04-18",
+    "payload": {
+      "text": "L'intention de ne jamais tromper nous expose à être souvent trompés.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 118 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-04-19",
+    "payload": {
+      "text": "Le vrai honnête homme est celui qui ne se pique de rien.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 203 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-04-20",
+    "payload": {
+      "text": "On est presque également difficile à contenter quand on a beaucoup d'amour et quand on n'en a plus guère.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 385 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-04-21",
+    "payload": {
+      "text": "Nos actions sont comme les bouts-rimés, que chacun fait rapporter à ce qu'il lui plaît.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 382 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-04-22",
+    "payload": {
+      "text": "Nous avouons nos défauts pour réparer par notre sincérité le tort qu'ils nous font dans l'esprit des autres.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 184 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-04-23",
+    "payload": {
+      "text": "On croit quelquefois haïr la flatterie, mais on ne hait que la manière de flatter.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 329 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-04-24",
+    "payload": {
+      "text": "L'approbation que l'on donne à ceux qui entrent dans le monde vient souvent de l'envie secrète que l'on porte à ceux qui y sont établis.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 280 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-04-25",
+    "payload": {
+      "text": "Il ne sert de rien d'être jeune sans être belle, ni d'être belle sans être jeune.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 497 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-04-26",
+    "payload": {
+      "text": "La haine pour les favoris n'est autre chose que l'amour de la faveur. Le dépit de ne la pas posséder se console et s'adoucit par le mépris que l'on témoigne de ceux qui la possèdent; et nous leur refusons nos hommages, ne pouvant pas leur ôter ce qui leur attire ceux de tout le monde.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 55 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-04-27",
+    "payload": {
+      "text": "La faiblesse est le seul défaut que l'on ne saurait corriger.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 130 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-04-28",
+    "payload": {
+      "text": "Il y a des gens niais qui se connaissent, et qui emploient habilement leur niaiserie.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 208 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-04-29",
+    "payload": {
+      "text": "La timidité est un défaut dont il est dangereux de reprendre les personnes qu'on en veut corriger.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 480 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-04-30",
+    "payload": {
+      "text": "Les humeurs du corps ont un cours ordinaire et réglé, qui meut et qui tourne imperceptiblement notre volonté; elles roulent ensemble et exercent successivement un empire secret en nous: de sorte qu'elles ont une part considérable à toutes nos actions, sans que nous le puissions connaître.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 297 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-05-01",
+    "payload": {
+      "text": "Il est aussi facile de se tromper soi-même sans s'en apercevoir qu'il est difficile de tromper les autres sans qu'ils s'en aperçoivent.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 115 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-05-02",
+    "payload": {
+      "text": "Il y a des personnes à qui les défauts siéent bien, et d'autres qui sont disgraciées avec leurs bonnes qualités.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 251 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-05-03",
+    "payload": {
+      "text": "En vieillissant on devient plus fou, et plus sage.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 210 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-05-04",
+    "payload": {
+      "text": "L'imagination ne saurait inventer tant de diverses contrariétés qu'il y en a naturellement dans le coeur de chaque personne.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 478 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-05-05",
+    "payload": {
+      "text": "Nous n'avouons de petits défauts que pour persuader que nous n'en avons pas de grands.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 327 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-05-06",
+    "payload": {
+      "text": "Quand notre mérite baisse, notre goût baisse aussi.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 379 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-05-07",
+    "payload": {
+      "text": "On n'a guère de défauts qui ne soient plus pardonnables que les moyens dont on se sert pour les cacher.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 411 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-05-08",
+    "payload": {
+      "text": "On aime mieux dire du mal de soi-même que de n'en point parler.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 138 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-05-09",
+    "payload": {
+      "text": "Louer les princes des vertus qu'ils n'ont pas, c'est leur dire impunément des injures.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 320 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-05-10",
+    "payload": {
+      "text": "Les violences qu'on nous fait nous font souvent moins de peine que celles que nous nous faisons à nous-mêmes.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 363 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-05-11",
+    "payload": {
+      "text": "Il est impossible d'aimer une seconde fois ce qu'on a véritablement cessé d'aimer.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 286 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-05-12",
+    "payload": {
+      "text": "Ce que les hommes ont nommé amitié n'est qu'une société, qu'un ménagement réciproque d'intérêts, et qu'un échange de bons offices; ce n'est enfin qu'un commerce où l'amour-propre se propose toujours quelque chose à gagner.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 83 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-05-13",
+    "payload": {
+      "text": "Il y a des gens qui n'auraient jamais été amoureux s'ils n'avaient jamais entendu parler de l'amour.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 136 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-05-14",
+    "payload": {
+      "text": "Il y a une infinité de conduites qui paraissent ridicules, et dont les raisons cachées sont très sages et très solides.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 163 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-05-15",
+    "payload": {
+      "text": "Nous élevons la gloire des uns pour abaisser celle des autres. Et quelquefois on louerait moins Monsieur le Prince et M. de Turenne si on ne les voulait point blâmer tous deux.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 198 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-05-16",
+    "payload": {
+      "text": "Les grands noms abaissent, au lieu d'élever, ceux qui ne les savent pas soutenir.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 94 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-05-17",
+    "payload": {
+      "text": "La modération des personnes heureuses vient du calme que la bonne fortune donne à leur humeur.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 17 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-05-18",
+    "payload": {
+      "text": "Le mal que nous faisons ne nous attire pas tant de persécution et de haine que nos bonnes qualités.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 29 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-05-19",
+    "payload": {
+      "text": "Tous les sentiments ont chacun un ton de voix, des gestes et des mines qui leur sont propres. Et ce rapport bon ou mauvais, agréable ou désagréable, est ce qui fait que les personnes plaisent ou déplaisent.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 255 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-05-20",
+    "payload": {
+      "text": "Nous pardonnons aisément à nos amis les défauts qui ne nous regardent pas.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 428 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-05-21",
+    "payload": {
+      "text": "Notre repentir n'est pas tant un regret du mal que nous avons fait, qu'une crainte de celui qui nous en peut arriver.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 180 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-05-22",
+    "payload": {
+      "text": "Ce qui nous empêche souvent de nous abandonner à un seul vice est que nous en avons plusieurs.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 195 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-05-23",
+    "payload": {
+      "text": "L'élévation est au mérite ce que la parure est aux belles personnes.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 401 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-05-24",
+    "payload": {
+      "text": "La plupart des hommes s'exposent assez dans la guerre pour sauver leur honneur. Mais peu se veulent toujours exposer autant qu'il est nécessaire pour faire réussir le dessein pour lequel ils s'exposent.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 219 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-05-25",
+    "payload": {
+      "text": "L'intérêt met en oeuvre toutes sortes de vertus et de vices.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 253 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-05-26",
+    "payload": {
+      "text": "Il n'y a point de déguisement qui puisse longtemps cacher l'amour où il est, ni le feindre où il n'est pas.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 70 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-05-27",
+    "payload": {
+      "text": "Si nous ne nous flattions point nous-mêmes, la flatterie des autres ne nous pourrait nuire.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 152 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-05-28",
+    "payload": {
+      "text": "L'amour de la justice n'est en la plupart des hommes que la crainte de souffrir l'injustice.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 78 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-05-29",
+    "payload": {
+      "text": "Les violences qu'on se fait pour s'empêcher d'aimer sont souvent plus cruelles que les rigueurs de ce qu'on aime.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 369 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-05-30",
+    "payload": {
+      "text": "Nous nous plaignons quelquefois légèrement de nos amis pour justifier par avance notre légèreté.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 179 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-05-31",
+    "payload": {
+      "text": "La nature fait le mérite, et la fortune le met en oeuvre.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 153 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-06-01",
+    "payload": {
+      "text": "Le désir de mériter les louanges qu'on nous donne fortifie notre vertu; et celles que l'on donne à l'esprit, à la valeur, et à la beauté contribuent à les augmenter.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 150 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-06-02",
+    "payload": {
+      "text": "Il n'y a que d'une sorte d'amour, mais il y en a mille différentes copies.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 74 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-06-03",
+    "payload": {
+      "text": "Nous avons plus de force que de volonté; et c'est souvent pour nous excuser à nous-mêmes que nous nous imaginons que les choses sont impossibles.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 30 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-06-04",
+    "payload": {
+      "text": "La plupart des jeunes gens croient être naturels, lorsqu'ils ne sont que mal polis et grossiers.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 372 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-06-05",
+    "payload": {
+      "text": "L'intérêt que l'on accuse de tous nos crimes mérite souvent d'être loué de nos bonnes actions.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 305 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-06-06",
+    "payload": {
+      "text": "Le bon goût vient plus du jugement que de l'esprit.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 258 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-06-07",
+    "payload": {
+      "text": "Il est plus difficile de s'empêcher d'être gouverné que de gouverner les autres.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 151 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-06-08",
+    "payload": {
+      "text": "Les occasions nous font connaître aux autres, et encore plus à nous-mêmes.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 345 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-06-09",
+    "payload": {
+      "text": "Nous n'avons pas assez de force pour suivre toute notre raison.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 42 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-06-10",
+    "payload": {
+      "text": "Les vieillards aiment à donner de bons préceptes, pour se consoler de n'être plus en état de donner de mauvais exemples.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 93 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-06-11",
+    "payload": {
+      "text": "Les passions sont les seuls orateurs qui persuadent toujours. Elles sont comme un art de la nature dont les règles sont infaillibles; et l'homme le plus simple qui a de la passion persuade mieux que le plus éloquent qui n'en a point.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 8 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-06-12",
+    "payload": {
+      "text": "La grâce de la nouveauté et la longue habitude, quelque opposées qu'elles soient, nous empêchent également de sentir les défauts de nos amis.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 426 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-06-13",
+    "payload": {
+      "text": "On est quelquefois moins malheureux d'être trompé de ce qu'on aime, que d'en être détrompé.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 395 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-06-14",
+    "payload": {
+      "text": "L'esprit ne saurait jouer longtemps le personnage du coeur.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 108 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-06-15",
+    "payload": {
+      "text": "Les hommes ne vivraient pas longtemps en société s'ils n'étaient les dupes les uns des autres.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 87 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-06-16",
+    "payload": {
+      "text": "L'hypocrisie est un hommage que le vice rend à la vertu.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 218 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-06-17",
+    "payload": {
+      "text": "Si nous résistons à nos passions, c'est plus par leur faiblesse que par notre force.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 122 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-06-18",
+    "payload": {
+      "text": "Il faut de plus grandes vertus pour soutenir la bonne fortune que la mauvaise.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 25 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-06-19",
+    "payload": {
+      "text": "Notre envie dure toujours plus longtemps que le bonheur de ceux que nous envions.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 476 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-06-20",
+    "payload": {
+      "text": "Ce qui nous empêche d'ordinaire de faire voir le fond de notre coeur à nos amis, n'est pas tant la défiance que nous avons d'eux, que celle que nous avons de nous-mêmes.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 315 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-06-21",
+    "payload": {
+      "text": "Il est de certaines bonnes qualités comme des sens: ceux qui en sont entièrement privés ne les peuvent apercevoir ni les comprendre.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 337 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-06-22",
+    "payload": {
+      "text": "Le soleil ni la mort ne se peuvent regarder fixement.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 26 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-06-23",
+    "payload": {
+      "text": "Si on juge de l'amour par la plupart de ses effets, il ressemble plus à la haine qu'à l'amitié.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 72 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-06-24",
+    "payload": {
+      "text": "Il faut demeurer d'accord à l'honneur de la vertu que les plus grands malheurs des hommes sont ceux où ils tombent par les crimes.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 183 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-06-25",
+    "payload": {
+      "text": "Comme c'est le caractère des grands esprits de faire entendre en peu de paroles beaucoup de choses, les petits esprits au contraire ont le don de beaucoup parler, et de ne rien dire.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 142 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-06-26",
+    "payload": {
+      "text": "La jalousie se nourrit dans les doutes, et elle devient fureur, ou elle finit, sitôt qu'on passe du doute à la certitude.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 32 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-06-27",
+    "payload": {
+      "text": "Nous sommes si accoutumés à nous déguiser aux autres qu'enfin nous nous déguisons à nous-mêmes.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 119 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-06-28",
+    "payload": {
+      "text": "Tous ceux qui s'acquittent des devoirs de la reconnaissance ne peuvent pas pour cela se flatter d'être reconnaissants.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 224 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-06-29",
+    "payload": {
+      "text": "Les fous et les sottes gens ne voient que par leur humeur.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 414 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-06-30",
+    "payload": {
+      "text": "Nous ne louons d'ordinaire de bon coeur que ceux qui nous admirent.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 356 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-07-01",
+    "payload": {
+      "text": "Il n'y a guère d'occasion où l'on fît un méchant marché de renoncer au bien qu'on dit de nous, à condition de n'en dire point de mal.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 454 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-07-02",
+    "payload": {
+      "text": "L'envie est plus irréconciliable que la haine.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 328 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-07-03",
+    "payload": {
+      "text": "Il est du véritable amour comme de l'apparition des esprits: tout le monde en parle, mais peu de gens en ont vu.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 76 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-07-04",
+    "payload": {
+      "text": "Les faux honnêtes gens sont ceux qui déguisent leurs défauts aux autres et à eux-mêmes. Les vrais honnêtes gens sont ceux qui les connaissent parfaitement et les confessent.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 202 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-07-05",
+    "payload": {
+      "text": "L'éducation que l'on donne d'ordinaire aux jeunes gens est un second amour-propre qu'on leur inspire.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 261 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-07-06",
+    "payload": {
+      "text": "Les plus habiles affectent toute leur vie de blâmer les finesses pour s'en servir en quelque grande occasion et pour quelque grand intérêt.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 124 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-07-07",
+    "payload": {
+      "text": "La reconnaissance de la plupart des hommes n'est qu'une secrète envie de recevoir de plus grands bienfaits.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 298 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-07-08",
+    "payload": {
+      "text": "Nous ne trouvons guère de gens de bon sens, que ceux qui sont de notre avis.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 347 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-07-09",
+    "payload": {
+      "text": "La plus grande ambition n'en a pas la moindre apparence lorsqu'elle se rencontre dans une impossibilité absolue d'arriver où elle aspire.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 91 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-07-10",
+    "payload": {
+      "text": "Le plus dangereux ridicule des vieilles personnes qui ont été aimables, c'est d'oublier qu'elles ne le sont plus.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 408 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-07-11",
+    "payload": {
+      "text": "Nous ne pouvons rien aimer que par rapport à nous, et nous ne faisons que suivre notre goût et notre plaisir quand nous préférons nos amis à nous-mêmes; c'est néanmoins par cette préférence seule que l'amitié peut être vraie et parfaite.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 81 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-07-12",
+    "payload": {
+      "text": "Il arrive souvent que des choses se présentent plus achevées à notre esprit qu'il ne les pourrait faire avec beaucoup d'art.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 101 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-07-13",
+    "payload": {
+      "text": "La philosophie triomphe aisément des maux passés et des maux à venir. Mais les maux présents triomphent d'elle.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 22 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-07-14",
+    "payload": {
+      "text": "On ne donne rien si libéralement que ses conseils.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 110 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-07-15",
+    "payload": {
+      "text": "Le ridicule déshonore plus que le déshonneur.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 326 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-07-16",
+    "payload": {
+      "text": "Il y a de bons mariages, mais il n'y en a point de délicieux.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 113 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-07-17",
+    "payload": {
+      "text": "La simplicité affectée est une imposture délicate.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 289 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-07-18",
+    "payload": {
+      "text": "On se décrie beaucoup plus auprès de nous par les moindres infidélités qu'on nous fait, que par les plus grandes qu'on fait aux autres.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 360 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-07-19",
+    "payload": {
+      "text": "Il n'y a que les personnes qui ont de la fermeté qui puissent avoir une véritable douceur; celles qui paraissent douces n'ont d'ordinaire que de la faiblesse, qui se convertit aisément en aigreur.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 479 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-07-20",
+    "payload": {
+      "text": "La persévérance n'est digne ni de blâme ni de louange, parce qu'elle n'est que la durée des goûts et des sentiments, qu'on ne s'ôte et qu'on ne se donne point.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 177 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-07-21",
+    "payload": {
+      "text": "Quelque rare que soit le véritable amour, il l'est encore moins que la véritable amitié.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 473 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-07-22",
+    "payload": {
+      "text": "L'orgueil a plus de part que la bonté aux remontrances que nous faisons à ceux qui commettent des fautes; et nous ne les reprenons pas tant pour les en corriger que pour leur persuader que nous en sommes exempts.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 37 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-07-23",
+    "payload": {
+      "text": "Il y a une certaine sorte d'amour dont l'excès empêche la jalousie.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 336 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-07-24",
+    "payload": {
+      "text": "Il y a des gens qui ressemblent aux vaudevilles, qu'on ne chante qu'un certain temps.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 211 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-07-25",
+    "payload": {
+      "text": "Quoique les hommes se flattent de leurs grandes actions, elles ne sont pas souvent les effets d'un grand dessein, mais des effets du hasard.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 57 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-07-26",
+    "payload": {
+      "text": "C'est plutôt par l'estime de nos propres sentiments que nous exagérons les bonnes qualités des autres, que par l'estime de leur mérite; et nous voulons nous attirer des louanges, lorsqu'il semble que nous leur en donnons.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 143 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-07-27",
+    "payload": {
+      "text": "Quelque prétexte que nous donnions à nos afflictions, ce n'est souvent que l'intérêt et la vanité qui les causent.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 232 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-07-28",
+    "payload": {
+      "text": "L'orgueil est égal dans tous les hommes, et il n'y a de différence qu'aux moyens et à la manière de le mettre au jour.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 35 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-07-29",
+    "payload": {
+      "text": "Il y a encore plus de gens sans intérêt que sans envie.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 486 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-07-30",
+    "payload": {
+      "text": "On ne saurait conserver longtemps les sentiments qu'on doit avoir pour ses amis et pour ses bienfaiteurs, si on se laisse la liberté de parler souvent de leurs défauts.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 319 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-07-31",
+    "payload": {
+      "text": "Le plus grand effort de l'amitié n'est pas de montrer nos défauts à un ami; c'est de lui faire voir les siens.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 410 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-08-01",
+    "payload": {
+      "text": "Il suffit quelquefois d'être grossier pour n'être pas trompé par un habile homme.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 129 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-08-02",
+    "payload": {
+      "text": "Ceux qui croient avoir du mérite se font un honneur d'être malheureux, pour persuader aux autres et à eux-mêmes qu'ils sont dignes d'être en butte à la fortune.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 50 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-08-03",
+    "payload": {
+      "text": "Si on examine bien les divers effets de l'ennui, on trouvera qu'il fait manquer à plus de devoirs que l'intérêt.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 172 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-08-04",
+    "payload": {
+      "text": "Celui qui croit pouvoir trouver en soi-même de quoi se passer de tout le monde se trompe fort; mais celui qui croit qu'on ne peut se passer de lui se trompe encore davantage.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 201 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-08-05",
+    "payload": {
+      "text": "L'extrême avarice se méprend presque toujours; il n'y a point de passion qui s'éloigne plus souvent de son but, ni sur qui le présent ait tant de pouvoir au préjudice de l'avenir.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 491 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-08-06",
+    "payload": {
+      "text": "Nous arrivons tout nouveaux aux divers âges de la vie, et nous y manquons souvent d'expérience malgré le nombre des années.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 405 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-08-07",
+    "payload": {
+      "text": "Le trop grand empressement qu'on a de s'acquitter d'une obligation est une espèce d'ingratitude.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 226 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-08-08",
+    "payload": {
+      "text": "Peu de gens sont assez sages pour préférer le blâme qui leur est utile à la louange qui les trahit.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 147 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-08-09",
+    "payload": {
+      "text": "Il semble que l'amour-propre soit la dupe de la bonté, et qu'il s'oublie lui-même lorsque nous travaillons pour l'avantage des autres. Cependant c'est prendre le chemin le plus assuré pour arriver à ses fins; c'est prêter à usure sous prétexte de donner; c'est enfin s'acquérir tout le monde par un moyen subtil et délicat.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 236 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-08-10",
+    "payload": {
+      "text": "Notre amour-propre souffre plus impatiemment la condamnation de nos goûts que de nos opinions.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 13 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-08-11",
+    "payload": {
+      "text": "L'attachement ou l'indifférence que les philosophes avaient pour la vie n'était qu'un goût de leur amour-propre, dont on ne doit non plus disputer que du goût de la langue ou du choix des couleurs.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 46 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-08-12",
+    "payload": {
+      "text": "Il y a diverses sortes de curiosité: l'une d'intérêt, qui nous porte à désirer d'apprendre ce qui nous peut être utile, et l'autre d'orgueil, qui vient du désir de savoir ce que les autres ignorent.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 173 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-08-13",
+    "payload": {
+      "text": "Il est plus aisé de connaître l'homme en général que de connaître un homme en particulier.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 436 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-08-14",
+    "payload": {
+      "text": "Il y a dans le coeur humain une génération perpétuelle de passions, en sorte que la ruine de l'une est presque toujours l'établissement d'une autre.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 10 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-08-15",
+    "payload": {
+      "text": "Il y a une certaine reconnaissance vive qui ne nous acquitte pas seulement des bienfaits que nous avons reçus, mais qui fait même que nos amis nous doivent en leur payant ce que nous leur devons.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 438 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-08-16",
+    "payload": {
+      "text": "Il y a des reproches qui louent, et des louanges qui médisent.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 148 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-08-17",
+    "payload": {
+      "text": "La plupart des hommes ont comme les plantes des propriétés cachées, que le hasard fait découvrir.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 344 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-08-18",
+    "payload": {
+      "text": "Il semble que la nature ait prescrit à chaque homme dès sa naissance des bornes pour les vertus et pour les vices.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 189 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-08-19",
+    "payload": {
+      "text": "Il y a une inconstance qui vient de la légèreté de l'esprit ou de sa faiblesse, qui lui fait recevoir toutes les opinions d'autrui, et il y en a une autre, qui est plus excusable, qui vient du dégoût des choses.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 181 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-08-20",
+    "payload": {
+      "text": "La confiance fournit plus à la conversation que l'esprit.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 421 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-08-21",
+    "payload": {
+      "text": "Il doit y avoir une certaine proportion entre les actions et les desseins si on en veut tirer tous les effets qu'elles peuvent produire.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 161 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-08-22",
+    "payload": {
+      "text": "La fortune ne paraît jamais si aveugle qu'à ceux à qui elle ne fait pas de bien.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 391 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-08-23",
+    "payload": {
+      "text": "Tout le monde se plaint de sa mémoire, et personne ne se plaint de son jugement.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 89 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-08-24",
+    "payload": {
+      "text": "L'avarice est plus opposée à l'économie que la libéralité.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 167 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-08-25",
+    "payload": {
+      "text": "La plus subtile de toutes les finesses est de savoir bien feindre de tomber dans les pièges que l'on nous tend, et on n'est jamais si aisément trompé que quand on songe à tromper les autres.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 117 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-08-26",
+    "payload": {
+      "text": "Nous n'avons pas le courage de dire en général que nous n'avons point de défauts, et que nos ennemis n'ont point de bonnes qualités; mais en détail nous ne sommes pas trop éloignés de le croire.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 397 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-08-27",
+    "payload": {
+      "text": "Un honnête homme peut être amoureux comme un fou, mais non pas comme un sot.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 353 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-08-28",
+    "payload": {
+      "text": "Ce n'est pas assez d'avoir de grandes qualités; il en faut avoir l'économie.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 159 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-08-29",
+    "payload": {
+      "text": "Lorsque la fortune nous surprend en nous donnant une grande place sans nous y avoir conduits par degrés, ou sans que nous nous y soyons élevés par nos espérances, il est presque impossible de s'y bien soutenir, et de paraître digne de l'occuper.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 449 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-08-30",
+    "payload": {
+      "text": "On peut dire de l'humeur des hommes, comme de la plupart des bâtiments, qu'elle a diverses faces, les unes agréables, et les autres désagréables.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 292 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-08-31",
+    "payload": {
+      "text": "L'intrépidité est une force extraordinaire de l'âme qui l'élève au-dessus des troubles, des désordres et des émotions que la vue des grands périls pourrait exciter en elle; et c'est par cette force que les héros se maintiennent en un état paisible, et conservent l'usage libre de leur raison dans les accidents les plus surprenants et les plus terribles.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 217 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-09-01",
+    "payload": {
+      "text": "Il faut que les jeunes gens qui entrent dans le monde soient honteux ou étourdis: un air capable et composé se tourne d'ordinaire en impertinence.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 495 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-09-02",
+    "payload": {
+      "text": "La fortune nous corrige de plusieurs défauts que la raison ne saurait corriger.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 154 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-09-03",
+    "payload": {
+      "text": "L'usage ordinaire de la finesse est la marque d'un petit esprit, et il arrive presque toujours que celui qui s'en sert pour se couvrir en un endroit, se découvre en un autre.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 125 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-09-04",
+    "payload": {
+      "text": "On donne des conseils mais on n'inspire point de conduite.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 378 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-09-05",
+    "payload": {
+      "text": "On n'est jamais si ridicule par les qualités que l'on a que par celles que l'on affecte d'avoir.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 134 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-09-06",
+    "payload": {
+      "text": "L'orgueil se dédommage toujours et ne perd rien lors même qu'il renonce à la vanité.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 33 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-09-07",
+    "payload": {
+      "text": "Un sot n'a pas assez d'étoffe pour être bon.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 387 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-09-08",
+    "payload": {
+      "text": "Quand on aime, on doute souvent de ce qu'on croit le plus.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 348 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-09-09",
+    "payload": {
+      "text": "On fait souvent du bien pour pouvoir impunément faire du mal.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 121 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-09-10",
+    "payload": {
+      "text": "Ce qui nous rend si changeants dans nos amitiés, c'est qu'il est difficile de connaître les qualités de l'âme, et facile de connaître celles de l'esprit.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 80 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-09-11",
+    "payload": {
+      "text": "La bienséance est la moindre de toutes les lois, et la plus suivie.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 447 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-09-12",
+    "payload": {
+      "text": "Notre défiance justifie la tromperie d'autrui.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 86 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-09-13",
+    "payload": {
+      "text": "La gravité est un mystère du corps inventé pour cacher les défauts de l'esprit.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 257 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-09-14",
+    "payload": {
+      "text": "L'amour, tout agréable qu'il est, plaît encore plus par les manières dont il se montre que par lui-même.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 501 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-09-15",
+    "payload": {
+      "text": "La clémence des princes n'est souvent qu'une politique pour gagner l'affection des peuples.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 15 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-09-16",
+    "payload": {
+      "text": "La santé de l'âme n'est pas plus assurée que celle du corps; et quoique l'on paraisse éloigné des passions, on n'est pas moins en danger de s'y laisser emporter que de tomber malade quand on se porte bien.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 188 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-09-17",
+    "payload": {
+      "text": "Il y a des héros en mal comme en bien.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 185 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-09-18",
+    "payload": {
+      "text": "La jalousie est en quelque manière juste et raisonnable, puisqu'elle ne tend qu'à conserver un bien qui nous appartient, ou que nous croyons nous appartenir; au lieu que l'envie est une fureur qui ne peut souffrir le bien des autres.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 28 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-09-19",
+    "payload": {
+      "text": "L'intérêt parle toutes sortes de langues, et joue toutes sortes de personnages, même celui de désintéressé.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 39 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-09-20",
+    "payload": {
+      "text": "La magnanimité est assez définie par son nom; néanmoins on pourrait dire que c'est le bon sens de l'orgueil, et la voie la plus noble pour recevoir des louanges.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 285 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-09-21",
+    "payload": {
+      "text": "Pour s'établir dans le monde, on fait tout ce que l'on peut pour y paraître établi.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 56 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-09-22",
+    "payload": {
+      "text": "On trouve des moyens pour guérir de la folie, mais on n'en trouve point pour redresser un esprit de travers.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 318 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-09-23",
+    "payload": {
+      "text": "Dans les grandes affaires on doit moins s'appliquer à faire naître des occasions qu'à profiter de celles qui se présentent.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 453 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-09-24",
+    "payload": {
+      "text": "Tous ceux qui connaissent leur esprit ne connaissent pas leur coeur.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 103 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-09-25",
+    "payload": {
+      "text": "Il y a des faussetés déguisées qui représentent si bien la vérité que ce serait mal juger que de ne s'y pas laisser tromper.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 282 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-09-26",
+    "payload": {
+      "text": "La jalousie naît toujours avec l'amour, mais elle ne meurt pas toujours avec lui.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 361 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-09-27",
+    "payload": {
+      "text": "Qui vit sans folie n'est pas si sage qu'il croit.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 209 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-09-28",
+    "payload": {
+      "text": "Nous sommes plus près d'aimer ceux qui nous haïssent que ceux qui nous aiment plus que nous ne voulons.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 321 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-09-29",
+    "payload": {
+      "text": "Nous pouvons paraître grands dans un emploi au-dessous de notre mérite, mais nous paraissons souvent petits dans un emploi plus grand que nous.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 419 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-09-30",
+    "payload": {
+      "text": "Il est plus facile de paraître digne des emplois qu'on n'a pas que de ceux que l'on exerce.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 164 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-10-01",
+    "payload": {
+      "text": "Peu de gens savent être vieux.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 423 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-10-02",
+    "payload": {
+      "text": "Il est plus honteux de se défier de ses amis que d'en être trompé.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 84 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-10-03",
+    "payload": {
+      "text": "Ce qui fait le mécompte dans la reconnaissance qu'on attend des grâces que l'on a faites, c'est que l'orgueil de celui qui donne, et l'orgueil de celui qui reçoit, ne peuvent convenir du prix du bienfait.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 225 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-10-04",
+    "payload": {
+      "text": "Le caprice de notre humeur est encore plus bizarre que celui de la fortune.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 45 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-10-05",
+    "payload": {
+      "text": "Pour être un grand homme, il faut savoir profiter de toute sa fortune.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 343 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-10-06",
+    "payload": {
+      "text": "Il y a des gens qu'on approuve dans le monde, qui n'ont pour tout mérite que les vices qui servent au commerce de la vie.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 273 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-10-07",
+    "payload": {
+      "text": "S'il y a un amour pur et exempt du mélange de nos autres passions, c'est celui qui est caché au fond du coeur, et que nous ignorons nous-mêmes.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 69 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-10-08",
+    "payload": {
+      "text": "Dans toutes les professions chacun affecte une mine et un extérieur pour paraître ce qu'il veut qu'on le croie. Ainsi on peut dire que le monde n'est composé que de mines.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 256 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-10-09",
+    "payload": {
+      "text": "La fortune se sert quelquefois de nos défauts pour nous élever, et il y a des gens incommodes dont le mérite serait mal récompensé si on ne voulait acheter leur absence.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 403 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-10-10",
+    "payload": {
+      "text": "On ne trouve guère d'ingrats tant qu'on est en état de faire du bien.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 306 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-10-11",
+    "payload": {
+      "text": "Il n'y a guère de gens qui ne soient honteux de s'être aimés quand ils ne s'aiment plus.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 71 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-10-12",
+    "payload": {
+      "text": "En amour celui qui est guéri le premier est toujours le mieux guéri.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 417 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-10-13",
+    "payload": {
+      "text": "Il s'en faut bien que nous connaissions tout ce que nos passions nous font faire.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 460 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-10-14",
+    "payload": {
+      "text": "L'amour-propre est plus habile que le plus habile homme du monde.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 4 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-10-15",
+    "payload": {
+      "text": "La réconciliation avec nos ennemis n'est qu'un désir de rendre notre condition meilleure, une lassitude de la guerre, et une crainte de quelque mauvais événement.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 82 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-10-16",
+    "payload": {
+      "text": "Quelque disposition qu'ait le monde à mal juger, il fait encore plus souvent grâce au faux mérite qu'il ne fait injustice au véritable.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 455 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-10-17",
+    "payload": {
+      "text": "Quelque défiance que nous ayons de la sincérité de ceux qui nous parlent, nous croyons toujours qu'ils nous disent plus vrai qu'aux autres.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 366 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-10-18",
+    "payload": {
+      "text": "Pourquoi faut-il que nous ayons assez de mémoire pour retenir jusqu'aux moindres particularités de ce qui nous est arrivé, et que nous n'en ayons pas assez pour nous souvenir combien de fois nous les avons contées à une même personne?",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 313 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-10-19",
+    "payload": {
+      "text": "Lorsque les grands hommes se laissent abattre par la longueur de leurs infortunes, ils font voir qu'ils ne les soutenaient que par la force de leur ambition, et non par celle de leur âme, et qu'à une grande vanité près les héros sont faits comme les autres hommes.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 24 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-10-20",
+    "payload": {
+      "text": "L'aversion du mensonge est souvent une imperceptible ambition de rendre nos témoignages considérables, et d'attirer à nos paroles un respect de religion.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 63 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-10-21",
+    "payload": {
+      "text": "Les seules bonnes copies sont celles qui nous font voir le ridicule des méchants originaux.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 133 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-10-22",
+    "payload": {
+      "text": "Les hommes et les affaires ont leur point de perspective. Il y en a qu'il faut voir de près pour en bien juger, et d'autres dont on ne juge jamais si bien que quand on en est éloigné.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 104 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-10-23",
+    "payload": {
+      "text": "La force et la faiblesse de l'esprit sont mal nommées; elles ne sont en effet que la bonne ou la mauvaise disposition des organes du corps.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 44 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-10-24",
+    "payload": {
+      "text": "On ne devrait s'étonner que de pouvoir encore s'étonner.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 384 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-10-25",
+    "payload": {
+      "text": "L'extrême plaisir que nous prenons à parler de nous-mêmes nous doit faire craindre de n'en donner guère à ceux qui nous écoutent.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 314 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-10-26",
+    "payload": {
+      "text": "L'envie d'être plaint, ou d'être admiré, fait souvent la plus grande partie de notre confiance.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 475 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-10-27",
+    "payload": {
+      "text": "L'amour-propre est le plus grand de tous les flatteurs.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 2 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-10-28",
+    "payload": {
+      "text": "On n'est jamais si heureux ni si malheureux qu'on s'imagine.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 49 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-10-29",
+    "payload": {
+      "text": "Les passions ont une injustice et un propre intérêt qui fait qu'il est dangereux de les suivre, et qu'on s'en doit défier lors même qu'elles paraissent les plus raisonnables.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 9 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-10-30",
+    "payload": {
+      "text": "La vanité nous fait faire plus de choses contre notre goût que la raison.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 467 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-10-31",
+    "payload": {
+      "text": "L'amour prête son nom à un nombre infini de commerces qu'on lui attribue, et où il n'a non plus de part que le Doge à ce qui se fait à Venise.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 77 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-11-01",
+    "payload": {
+      "text": "Il n'y a guère de personnes qui dans le premier penchant de l'âge ne fassent connaître par où leur corps et leur esprit doivent défaillir.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 222 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-11-02",
+    "payload": {
+      "text": "L'esprit est toujours la dupe du coeur.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 102 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-11-03",
+    "payload": {
+      "text": "Rien ne doit tant diminuer la satisfaction que nous avons de nous-mêmes, que de voir que nous désapprouvons dans un temps ce que nous approuvions dans un autre.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 51 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
     "publication_date": "2026-11-04",
     "payload": {
       "text": "On ne voit bien qu’avec le cœur. L’essentiel est invisible pour les yeux.",
@@ -21,6 +2477,446 @@
       "text": "Science sans conscience n’est que ruine de l’âme.",
       "author": "François Rabelais",
       "source": "Pantagruel, chapitre VIII (1532), orthographe modernisée"
+    }
+  },
+  {
+    "publication_date": "2026-11-07",
+    "payload": {
+      "text": "Il y a des gens de qui l'on peut ne jamais croire du mal sans l'avoir vu; mais il n'y en a point en qui il nous doive surprendre en le voyant.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 197 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-11-08",
+    "payload": {
+      "text": "Toutes les passions nous font faire des fautes, mais l'amour nous en fait faire de plus ridicules.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 422 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-11-09",
+    "payload": {
+      "text": "On n'aime point à louer, et on ne loue jamais personne sans intérêt. La louange est une flatterie habile, cachée, et délicate, qui satisfait différemment celui qui la donne, et celui qui la reçoit. L'un la prend comme une récompense de son mérite; l'autre la donne pour faire remarquer son équité et son discernement.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 144 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-11-10",
+    "payload": {
+      "text": "Si nous n'avions point d'orgueil, nous ne nous plaindrions pas de celui des autres.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 34 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-11-11",
+    "payload": {
+      "text": "Il n'y a point de gens qui aient plus souvent tort que ceux qui ne peuvent souffrir d'en avoir.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 386 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-11-12",
+    "payload": {
+      "text": "Nous croyons souvent avoir de la constance dans les malheurs, lorsque nous n'avons que de l'abattement, et nous les souffrons sans oser les regarder comme les poltrons se laissent tuer de peur de se défendre.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 420 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-11-13",
+    "payload": {
+      "text": "Tel homme est ingrat, qui est moins coupable de son ingratitude que celui qui lui a fait du bien.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 96 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-11-14",
+    "payload": {
+      "text": "C'est une grande habileté que de savoir cacher son habileté.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 245 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-11-15",
+    "payload": {
+      "text": "On ne souhaite jamais ardemment ce qu'on ne souhaite que par raison.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 469 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-11-16",
+    "payload": {
+      "text": "Quand nous exagérons la tendresse que nos amis ont pour nous, c'est souvent moins par reconnaissance que par le désir de faire juger de notre mérite.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 279 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-11-17",
+    "payload": {
+      "text": "Nul ne mérite d'être loué de bonté, s'il n'a pas la force d'être méchant: toute autre bonté n'est le plus souvent qu'une paresse ou une impuissance de la volonté.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 237 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-11-18",
+    "payload": {
+      "text": "Il y a de méchantes qualités qui font de grands talents.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 468 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-11-19",
+    "payload": {
+      "text": "L'humilité est la véritable preuve des vertus chrétiennes: sans elle nous conservons tous nos défauts, et ils sont seulement couverts par l'orgueil qui les cache aux autres, et souvent à nous-mêmes.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 358 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-11-20",
+    "payload": {
+      "text": "Il est difficile de juger si un procédé net, sincère et honnête est un effet de probité ou d'habileté.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 170 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-11-21",
+    "payload": {
+      "text": "Il y a des gens dont tout le mérite consiste à dire et à faire des sottises utilement, et qui gâteraient tout s'ils changeaient de conduite.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 156 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-11-22",
+    "payload": {
+      "text": "Nous avons tous assez de force pour supporter les maux d'autrui.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 19 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-11-23",
+    "payload": {
+      "text": "La faiblesse est plus opposée à la vertu que le vice.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 445 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-11-24",
+    "payload": {
+      "text": "Nous nous consolons aisément des disgrâces de nos amis lorsqu'elles servent à signaler notre tendresse pour eux.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 235 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-11-25",
+    "payload": {
+      "text": "Il n'y a guère d'homme assez habile pour connaître tout le mal qu'il fait.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 269 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-11-26",
+    "payload": {
+      "text": "L'absence diminue les médiocres passions, et augmente les grandes, comme le vent éteint les bougies et allume le feu.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 276 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-11-27",
+    "payload": {
+      "text": "Il est aussi ordinaire de voir changer les goûts qu'il est extraordinaire de voir changer les inclinations.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 252 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-11-28",
+    "payload": {
+      "text": "Il n'y a point de passion où l'amour de soi-même règne si puissamment que dans l'amour; et on est toujours plus disposé à sacrifier le repos de ce qu'on aime qu'à perdre le sien.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 262 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-11-29",
+    "payload": {
+      "text": "Nous nous vantons souvent de ne nous point ennuyer; et nous sommes si glorieux que nous ne voulons pas nous trouver de mauvaise compagnie.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 141 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-11-30",
+    "payload": {
+      "text": "Celui-là n'est pas raisonnable à qui le hasard fait trouver la raison, mais celui qui la connaît, qui la discerne, et qui la goûte.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 105 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-12-01",
+    "payload": {
+      "text": "Quand les vices nous quittent, nous nous flattons de la créance que c'est nous qui les quittons.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 192 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-12-02",
+    "payload": {
+      "text": "La pitié est souvent un sentiment de nos propres maux dans les maux d'autrui. C'est une habile prévoyance des malheurs où nous pouvons tomber; nous donnons du secours aux autres pour les engager à nous en donner en de semblables occasions; et ces services que nous leur rendons sont à proprement parler des biens que nous nous faisons à nous-mêmes par avance.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 264 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-12-03",
+    "payload": {
+      "text": "Il y a une élévation qui ne dépend point de la fortune: c'est un certain air qui nous distingue et qui semble nous destiner aux grandes choses; c'est un prix que nous nous donnons imperceptiblement à nous-mêmes; c'est par cette qualité que nous usurpons les déférences des autres hommes, et c'est elle d'ordinaire qui nous met plus au-dessus d'eux que la naissance, les dignités, et le mérite même.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 399 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-12-04",
+    "payload": {
+      "text": "Dans l'amitié comme dans l'amour on est souvent plus heureux par les choses qu'on ignore que par celles que l'on sait.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 441 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-12-05",
+    "payload": {
+      "text": "Il n'y a que ceux qui sont méprisables qui craignent d'être méprisés.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 322 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-12-06",
+    "payload": {
+      "text": "Les infidélités devraient éteindre l'amour, et il ne faudrait point être jaloux quand on a sujet de l'être. Il n'y a que les personnes qui évitent de donner de la jalousie qui soient dignes qu'on en ait pour elles.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 359 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-12-07",
+    "payload": {
+      "text": "Le silence est le parti le plus sûr de celui qui se défie de soi-même.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 79 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-12-08",
+    "payload": {
+      "text": "La modération est une crainte de tomber dans l'envie et dans le mépris que méritent ceux qui s'enivrent de leur bonheur; c'est une vaine ostentation de la force de notre esprit; et enfin la modération des hommes dans leur plus haute élévation est un désir de paraître plus grands que leur fortune.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 18 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-12-09",
+    "payload": {
+      "text": "La passion fait souvent un fou du plus habile homme, et rend souvent les plus sots habiles.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 6 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-12-10",
+    "payload": {
+      "text": "Nous choisissons souvent des louanges empoisonnées qui font voir par contrecoup en ceux que nous louons des défauts que nous n'osons découvrir d'une autre sorte.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 145 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-12-11",
+    "payload": {
+      "text": "La flatterie est une fausse monnaie qui n'a de cours que par notre vanité.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 158 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-12-12",
+    "payload": {
+      "text": "Pour bien savoir les choses, il en faut savoir le détail; et comme il est presque infini, nos connaissances sont toujours superficielles et imparfaites.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 106 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-12-13",
+    "payload": {
+      "text": "C'est plus souvent par orgueil que par défaut de lumières qu'on s'oppose avec tant d'opiniâtreté aux opinions les plus suivies: on trouve les premières places prises dans le bon parti, et on ne veut point des dernières.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 234 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-12-14",
+    "payload": {
+      "text": "La violence qu'on se fait pour demeurer fidèle à ce qu'on aime ne vaut guère mieux qu'une infidélité.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 381 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-12-15",
+    "payload": {
+      "text": "Nous aurions souvent honte de nos plus belles actions si le monde voyait tous les motifs qui les produisent.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 409 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-12-16",
+    "payload": {
+      "text": "La jeunesse est une ivresse continuelle: c'est la fièvre de la raison.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 271 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-12-17",
+    "payload": {
+      "text": "Il y a des personnes si légères et si frivoles qu'elles sont aussi éloignées d'avoir de véritables défauts que des qualités solides.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 498 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-12-18",
+    "payload": {
+      "text": "Nous avons plus de paresse dans l'esprit que dans le corps.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 487 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-12-19",
+    "payload": {
+      "text": "Notre mérite nous attire l'estime des honnêtes gens, et notre étoile celle du public.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 165 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-12-20",
+    "payload": {
+      "text": "Il n'y a guère de poltrons qui connaissent toujours toute leur peur.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 370 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-12-21",
+    "payload": {
+      "text": "La parfaite valeur est de faire sans témoins ce qu'on serait capable de faire devant tout le monde.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 216 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-12-22",
+    "payload": {
+      "text": "Ce n'est d'ordinaire que dans de petits intérêts où nous prenons le hasard de ne pas croire aux apparences.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 302 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-12-23",
+    "payload": {
+      "text": "Nous gagnerions plus de nous laisser voir tels que nous sommes, que d'essayer de paraître ce que nous ne sommes pas.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 457 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-12-24",
+    "payload": {
+      "text": "Il s'en faut bien que nous ne connaissions toutes nos volontés.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 295 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-12-25",
+    "payload": {
+      "text": "On peut être plus fin qu'un autre, mais non pas plus fin que tous les autres.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 394 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-12-26",
+    "payload": {
+      "text": "Il y a de certaines larmes qui nous trompent souvent nous-mêmes après avoir trompé les autres.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 373 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-12-27",
+    "payload": {
+      "text": "La fidélité qui paraît en la plupart des hommes n'est qu'une invention de l'amour-propre pour attirer la confiance. C'est un moyen de nous élever au-dessus des autres, et de nous rendre dépositaires des choses les plus importantes.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 247 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-12-28",
+    "payload": {
+      "text": "Si la vanité ne renverse pas entièrement les vertus, du moins elle les ébranle toutes.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 388 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-12-29",
+    "payload": {
+      "text": "L'accent du pays où l'on est né demeure dans l'esprit et dans le coeur, comme dans le langage.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 342 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-12-30",
+    "payload": {
+      "text": "La vérité ne fait pas tant de bien dans le monde que ses apparences y font de mal.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 64 (texte : https://www.gutenberg.org/ebooks/14913)"
+    }
+  },
+  {
+    "publication_date": "2026-12-31",
+    "payload": {
+      "text": "On n'aurait guère de plaisir si on ne se flattait jamais.",
+      "author": "François de La Rochefoucauld",
+      "source": "Réflexions ou sentences et maximes morales, maxime 123 (texte : https://www.gutenberg.org/ebooks/14913)"
     }
   }
 ]

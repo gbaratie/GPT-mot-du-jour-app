@@ -218,3 +218,18 @@ input {
     margin-top: 8px;
   }
 }
+.discovery,
+.publication-card {
+  touch-action: pan-y pinch-zoom;
+}
+.discovery[data-dragging],
+.publication-card[data-dragging] {
+  transition: none;
+  user-select: none;
+}
+.discovery-deck .MuiAlert-root {
+  flex-wrap: wrap;
+}
+.discovery-deck .MuiAlert-action {
+  margin-left: auto;
+}

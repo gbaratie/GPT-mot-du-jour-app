@@ -22,7 +22,7 @@ async function get<T>(path: string, signal?: AbortSignal, random = false): Promi
   signal?.throwIfAborted();
   const key = `${API_URL}${path}`;
   const maxAge = path.includes("today") || path.includes("?limit=") ? 60000 : cacheAge;
-  const hit = random ? undefined : cached<T>(key, maxAge);
+  const hit = random || path.endsWith("today") ? undefined : cached<T>(key, maxAge);
   if (hit !== undefined) return hit;
   let slow = false;
   const timer = setTimeout(() => {

@@ -1,5 +1,2469 @@
 [
   {
+    "publication_date": "2026-01-01",
+    "payload": {
+      "question": "Dans une salle, 33 personnes se serrent chacune la main une fois avec toutes les autres. Combien de poignées de main sont échangées ?",
+      "answer": "528. Chaque personne salue 32 autres personnes ; on divise le produit par deux pour ne pas compter chaque paire deux fois.",
+      "hint": "Comptez les paires sans tenir compte de leur ordre."
+    }
+  },
+  {
+    "publication_date": "2026-01-02",
+    "payload": {
+      "question": "Un rectangle a un périmètre de 108 cm. Sa longueur dépasse sa largeur de 2 cm. Quelle est son aire ?",
+      "answer": "728 cm². La demi-somme des côtés vaut 54 ; les côtés mesurent 26 et 28 cm.",
+      "hint": "Cherchez deux nombres dont la somme et la différence sont connues."
+    }
+  },
+  {
+    "publication_date": "2026-01-03",
+    "payload": {
+      "question": "Une corde de 48 mètres est découpée en morceaux de 3 mètres. Une coupe ne traverse qu’une seule épaisseur. Combien de coupes faut-il ?",
+      "answer": "15 coupes. Il faut 16 morceaux ; chaque coupe augmente leur nombre de un.",
+      "hint": "Le premier morceau existe avant la première coupe."
+    }
+  },
+  {
+    "publication_date": "2026-01-04",
+    "payload": {
+      "question": "Un sac contient 18 billes rouges et 20 billes bleues. Sans regarder, combien faut-il en tirer au minimum pour être certain d’en avoir deux de la même couleur ?",
+      "answer": "3 billes. Les deux premières peuvent être de couleurs différentes ; la troisième partage nécessairement sa couleur avec l’une des deux.",
+      "hint": "Il n’y a que deux couleurs."
+    }
+  },
+  {
+    "publication_date": "2026-01-05",
+    "payload": {
+      "question": "Une urne contient 15 jetons numérotés de 1 à 15. On en tire un au hasard, avec la même chance pour chaque jeton. Quelle est la probabilité de tirer le numéro 14 ?",
+      "answer": "1/15. Un seul jeton porte le numéro demandé parmi 15 jetons équiprobables.",
+      "hint": "Comptez les issues favorables et le nombre total d’issues."
+    }
+  },
+  {
+    "publication_date": "2026-01-06",
+    "payload": {
+      "question": "Dans une salle, 4 personnes se serrent chacune la main une fois avec toutes les autres. Combien de poignées de main sont échangées ?",
+      "answer": "6. Chaque personne salue 3 autres personnes ; on divise le produit par deux pour ne pas compter chaque paire deux fois.",
+      "hint": "Comptez les paires sans tenir compte de leur ordre."
+    }
+  },
+  {
+    "publication_date": "2026-01-07",
+    "payload": {
+      "question": "Une urne contient 19 jetons numérotés de 1 à 19. On en tire un au hasard, avec la même chance pour chaque jeton. Quelle est la probabilité de tirer le numéro 18 ?",
+      "answer": "1/19. Un seul jeton porte le numéro demandé parmi 19 jetons équiprobables.",
+      "hint": "Comptez les issues favorables et le nombre total d’issues."
+    }
+  },
+  {
+    "publication_date": "2026-01-08",
+    "payload": {
+      "question": "Un rectangle a un périmètre de 60 cm. Sa longueur dépasse sa largeur de 2 cm. Quelle est son aire ?",
+      "answer": "224 cm². La demi-somme des côtés vaut 30 ; les côtés mesurent 14 et 16 cm.",
+      "hint": "Cherchez deux nombres dont la somme et la différence sont connues."
+    }
+  },
+  {
+    "publication_date": "2026-01-09",
+    "payload": {
+      "question": "Un cycliste parcourt 22 km à l’aller puis la même distance au retour. Il roule à 12 km/h à l’aller et à 24 km/h au retour, sans pause. Quelle est sa vitesse moyenne sur l’ensemble du trajet ?",
+      "answer": "16 km/h. Pour une distance d à chaque étape, le temps total vaut d/12 + d/24 = d/8. La distance totale 2d divisée par ce temps donne 16.",
+      "hint": "La moyenne des vitesses n’est pas la moyenne arithmétique quand les durées diffèrent."
+    }
+  },
+  {
+    "publication_date": "2026-01-10",
+    "payload": {
+      "question": "Je suis un entier positif. Mon triple augmenté de 14 vaut 62. Qui suis-je ?",
+      "answer": "16. En soustrayant 14, on obtient 48, puis on divise par trois.",
+      "hint": "Effectuez les opérations inverses dans l’ordre inverse."
+    }
+  },
+  {
+    "publication_date": "2026-01-11",
+    "payload": {
+      "question": "Deux nombres entiers positifs consécutifs ont pour somme 55. Quel est le plus petit ?",
+      "answer": "27. Si le premier vaut x, le second vaut x + 1 : 2x + 1 = 55.",
+      "hint": "Soustrayez un à la somme, puis divisez par deux."
+    }
+  },
+  {
+    "publication_date": "2026-01-12",
+    "payload": {
+      "question": "Une boîte contient 19 chaussettes noires et autant de blanches. Dans le noir, combien de chaussettes faut-il prendre au minimum pour être certain d’obtenir une paire de même couleur ?",
+      "answer": "3. Avec deux chaussettes, les couleurs peuvent différer. Avec trois, deux ont nécessairement la même couleur.",
+      "hint": "Raisonnez dans le cas le moins favorable."
+    }
+  },
+  {
+    "publication_date": "2026-01-13",
+    "payload": {
+      "question": "Une boîte contient 13 chaussettes noires et autant de blanches. Dans le noir, combien de chaussettes faut-il prendre au minimum pour être certain d’obtenir une paire de même couleur ?",
+      "answer": "3. Avec deux chaussettes, les couleurs peuvent différer. Avec trois, deux ont nécessairement la même couleur.",
+      "hint": "Raisonnez dans le cas le moins favorable."
+    }
+  },
+  {
+    "publication_date": "2026-01-14",
+    "payload": {
+      "question": "Deux nombres entiers positifs consécutifs ont pour somme 11. Quel est le plus petit ?",
+      "answer": "5. Si le premier vaut x, le second vaut x + 1 : 2x + 1 = 11.",
+      "hint": "Soustrayez un à la somme, puis divisez par deux."
+    }
+  },
+  {
+    "publication_date": "2026-01-15",
+    "payload": {
+      "question": "Un objet coûte 60 euros. Son prix augmente de 20 %, puis diminue de 20 % sur le nouveau prix. Le prix final est-il revenu au prix initial ?",
+      "answer": "Non, il vaut 57,60 euros, soit 96 % du prix initial, Les coefficients 1,20 et 0,80 ont pour produit 0,96,",
+      "hint": "Multipliez les coefficients plutôt que d’additionner les pourcentages."
+    }
+  },
+  {
+    "publication_date": "2026-01-16",
+    "payload": {
+      "question": "Je suis un entier positif. Mon triple augmenté de 17 vaut 74. Qui suis-je ?",
+      "answer": "19. En soustrayant 17, on obtient 57, puis on divise par trois.",
+      "hint": "Effectuez les opérations inverses dans l’ordre inverse."
+    }
+  },
+  {
+    "publication_date": "2026-01-17",
+    "payload": {
+      "question": "Un rectangle a un périmètre de 132 cm. Sa longueur dépasse sa largeur de 2 cm. Quelle est son aire ?",
+      "answer": "1088 cm². La demi-somme des côtés vaut 66 ; les côtés mesurent 32 et 34 cm.",
+      "hint": "Cherchez deux nombres dont la somme et la différence sont connues."
+    }
+  },
+  {
+    "publication_date": "2026-01-18",
+    "payload": {
+      "question": "Une suite commence par 6, 9, 14, 21. On ajoute successivement les nombres impairs 3, 5, 7, puis 9. Quel est le terme suivant ?",
+      "answer": "30, car 21 + 9 = 30.",
+      "hint": "La règle d’addition est donnée : poursuivez-la."
+    }
+  },
+  {
+    "publication_date": "2026-01-19",
+    "payload": {
+      "question": "Dans une salle, 12 personnes se serrent chacune la main une fois avec toutes les autres. Combien de poignées de main sont échangées ?",
+      "answer": "66. Chaque personne salue 11 autres personnes ; on divise le produit par deux pour ne pas compter chaque paire deux fois.",
+      "hint": "Comptez les paires sans tenir compte de leur ordre."
+    }
+  },
+  {
+    "publication_date": "2026-01-20",
+    "payload": {
+      "question": "Une urne contient 32 jetons numérotés de 1 à 32. On en tire un au hasard, avec la même chance pour chaque jeton. Quelle est la probabilité de tirer le numéro 31 ?",
+      "answer": "1/32. Un seul jeton porte le numéro demandé parmi 32 jetons équiprobables.",
+      "hint": "Comptez les issues favorables et le nombre total d’issues."
+    }
+  },
+  {
+    "publication_date": "2026-01-21",
+    "payload": {
+      "question": "Une boîte contient 7 chaussettes noires et autant de blanches. Dans le noir, combien de chaussettes faut-il prendre au minimum pour être certain d’obtenir une paire de même couleur ?",
+      "answer": "3. Avec deux chaussettes, les couleurs peuvent différer. Avec trois, deux ont nécessairement la même couleur.",
+      "hint": "Raisonnez dans le cas le moins favorable."
+    }
+  },
+  {
+    "publication_date": "2026-01-22",
+    "payload": {
+      "question": "Deux nombres entiers positifs consécutifs ont pour somme 23. Quel est le plus petit ?",
+      "answer": "11. Si le premier vaut x, le second vaut x + 1 : 2x + 1 = 23.",
+      "hint": "Soustrayez un à la somme, puis divisez par deux."
+    }
+  },
+  {
+    "publication_date": "2026-01-23",
+    "payload": {
+      "question": "Dans une salle, 29 personnes se serrent chacune la main une fois avec toutes les autres. Combien de poignées de main sont échangées ?",
+      "answer": "406. Chaque personne salue 28 autres personnes ; on divise le produit par deux pour ne pas compter chaque paire deux fois.",
+      "hint": "Comptez les paires sans tenir compte de leur ordre."
+    }
+  },
+  {
+    "publication_date": "2026-01-24",
+    "payload": {
+      "question": "Deux nombres entiers positifs consécutifs ont pour somme 51. Quel est le plus petit ?",
+      "answer": "25. Si le premier vaut x, le second vaut x + 1 : 2x + 1 = 51.",
+      "hint": "Soustrayez un à la somme, puis divisez par deux."
+    }
+  },
+  {
+    "publication_date": "2026-01-25",
+    "payload": {
+      "question": "Un objet coûte 260 euros. Son prix augmente de 20 %, puis diminue de 20 % sur le nouveau prix. Le prix final est-il revenu au prix initial ?",
+      "answer": "Non, il vaut 249,60 euros, soit 96 % du prix initial, Les coefficients 1,20 et 0,80 ont pour produit 0,96,",
+      "hint": "Multipliez les coefficients plutôt que d’additionner les pourcentages."
+    }
+  },
+  {
+    "publication_date": "2026-01-26",
+    "payload": {
+      "question": "Une boîte contient 10 chaussettes noires et autant de blanches. Dans le noir, combien de chaussettes faut-il prendre au minimum pour être certain d’obtenir une paire de même couleur ?",
+      "answer": "3. Avec deux chaussettes, les couleurs peuvent différer. Avec trois, deux ont nécessairement la même couleur.",
+      "hint": "Raisonnez dans le cas le moins favorable."
+    }
+  },
+  {
+    "publication_date": "2026-01-27",
+    "payload": {
+      "question": "Une urne contient 18 jetons numérotés de 1 à 18. On en tire un au hasard, avec la même chance pour chaque jeton. Quelle est la probabilité de tirer le numéro 17 ?",
+      "answer": "1/18. Un seul jeton porte le numéro demandé parmi 18 jetons équiprobables.",
+      "hint": "Comptez les issues favorables et le nombre total d’issues."
+    }
+  },
+  {
+    "publication_date": "2026-01-28",
+    "payload": {
+      "question": "Une boîte contient 21 chaussettes noires et autant de blanches. Dans le noir, combien de chaussettes faut-il prendre au minimum pour être certain d’obtenir une paire de même couleur ?",
+      "answer": "3. Avec deux chaussettes, les couleurs peuvent différer. Avec trois, deux ont nécessairement la même couleur.",
+      "hint": "Raisonnez dans le cas le moins favorable."
+    }
+  },
+  {
+    "publication_date": "2026-01-29",
+    "payload": {
+      "question": "Une boîte contient 15 chaussettes noires et autant de blanches. Dans le noir, combien de chaussettes faut-il prendre au minimum pour être certain d’obtenir une paire de même couleur ?",
+      "answer": "3. Avec deux chaussettes, les couleurs peuvent différer. Avec trois, deux ont nécessairement la même couleur.",
+      "hint": "Raisonnez dans le cas le moins favorable."
+    }
+  },
+  {
+    "publication_date": "2026-01-30",
+    "payload": {
+      "question": "Deux nombres entiers positifs consécutifs ont pour somme 45. Quel est le plus petit ?",
+      "answer": "22. Si le premier vaut x, le second vaut x + 1 : 2x + 1 = 45.",
+      "hint": "Soustrayez un à la somme, puis divisez par deux."
+    }
+  },
+  {
+    "publication_date": "2026-01-31",
+    "payload": {
+      "question": "Un escalier compte 25 marches. Combien de façons différentes permettent d’atteindre la deuxième marche en faisant uniquement des pas de une ou de deux marches, sans redescendre ?",
+      "answer": "2 façons : deux pas de une marche, ou un pas de deux marches. La hauteur totale de l’escalier ne change pas la question.",
+      "hint": "Arrêtez-vous à la deuxième marche, sans monter davantage."
+    }
+  },
+  {
+    "publication_date": "2026-02-01",
+    "payload": {
+      "question": "Deux nombres entiers positifs consécutifs ont pour somme 13. Quel est le plus petit ?",
+      "answer": "6. Si le premier vaut x, le second vaut x + 1 : 2x + 1 = 13.",
+      "hint": "Soustrayez un à la somme, puis divisez par deux."
+    }
+  },
+  {
+    "publication_date": "2026-02-02",
+    "payload": {
+      "question": "Un cycliste parcourt 36 km à l’aller puis la même distance au retour. Il roule à 12 km/h à l’aller et à 24 km/h au retour, sans pause. Quelle est sa vitesse moyenne sur l’ensemble du trajet ?",
+      "answer": "16 km/h. Pour une distance d à chaque étape, le temps total vaut d/12 + d/24 = d/8. La distance totale 2d divisée par ce temps donne 16.",
+      "hint": "La moyenne des vitesses n’est pas la moyenne arithmétique quand les durées diffèrent."
+    }
+  },
+  {
+    "publication_date": "2026-02-03",
+    "payload": {
+      "question": "Un sac contient 11 billes rouges et 13 billes bleues. Sans regarder, combien faut-il en tirer au minimum pour être certain d’en avoir deux de la même couleur ?",
+      "answer": "3 billes. Les deux premières peuvent être de couleurs différentes ; la troisième partage nécessairement sa couleur avec l’une des deux.",
+      "hint": "Il n’y a que deux couleurs."
+    }
+  },
+  {
+    "publication_date": "2026-02-04",
+    "payload": {
+      "question": "Un sac contient 10 billes rouges et 12 billes bleues. Sans regarder, combien faut-il en tirer au minimum pour être certain d’en avoir deux de la même couleur ?",
+      "answer": "3 billes. Les deux premières peuvent être de couleurs différentes ; la troisième partage nécessairement sa couleur avec l’une des deux.",
+      "hint": "Il n’y a que deux couleurs."
+    }
+  },
+  {
+    "publication_date": "2026-02-05",
+    "payload": {
+      "question": "Un escalier compte 35 marches. Combien de façons différentes permettent d’atteindre la deuxième marche en faisant uniquement des pas de une ou de deux marches, sans redescendre ?",
+      "answer": "2 façons : deux pas de une marche, ou un pas de deux marches. La hauteur totale de l’escalier ne change pas la question.",
+      "hint": "Arrêtez-vous à la deuxième marche, sans monter davantage."
+    }
+  },
+  {
+    "publication_date": "2026-02-06",
+    "payload": {
+      "question": "Un rectangle a un périmètre de 128 cm. Sa longueur dépasse sa largeur de 2 cm. Quelle est son aire ?",
+      "answer": "1023 cm². La demi-somme des côtés vaut 64 ; les côtés mesurent 31 et 33 cm.",
+      "hint": "Cherchez deux nombres dont la somme et la différence sont connues."
+    }
+  },
+  {
+    "publication_date": "2026-02-07",
+    "payload": {
+      "question": "Je suis un entier positif. Mon triple augmenté de 25 vaut 106. Qui suis-je ?",
+      "answer": "27. En soustrayant 25, on obtient 81, puis on divise par trois.",
+      "hint": "Effectuez les opérations inverses dans l’ordre inverse."
+    }
+  },
+  {
+    "publication_date": "2026-02-08",
+    "payload": {
+      "question": "Un rectangle a un périmètre de 68 cm. Sa longueur dépasse sa largeur de 2 cm. Quelle est son aire ?",
+      "answer": "288 cm². La demi-somme des côtés vaut 34 ; les côtés mesurent 16 et 18 cm.",
+      "hint": "Cherchez deux nombres dont la somme et la différence sont connues."
+    }
+  },
+  {
+    "publication_date": "2026-02-09",
+    "payload": {
+      "question": "Dans une salle, 6 personnes se serrent chacune la main une fois avec toutes les autres. Combien de poignées de main sont échangées ?",
+      "answer": "15. Chaque personne salue 5 autres personnes ; on divise le produit par deux pour ne pas compter chaque paire deux fois.",
+      "hint": "Comptez les paires sans tenir compte de leur ordre."
+    }
+  },
+  {
+    "publication_date": "2026-02-10",
+    "payload": {
+      "question": "Je suis un entier positif. Mon triple augmenté de 26 vaut 110. Qui suis-je ?",
+      "answer": "28. En soustrayant 26, on obtient 84, puis on divise par trois.",
+      "hint": "Effectuez les opérations inverses dans l’ordre inverse."
+    }
+  },
+  {
+    "publication_date": "2026-02-11",
+    "payload": {
+      "question": "Un escalier compte 9 marches. Combien de façons différentes permettent d’atteindre la deuxième marche en faisant uniquement des pas de une ou de deux marches, sans redescendre ?",
+      "answer": "2 façons : deux pas de une marche, ou un pas de deux marches. La hauteur totale de l’escalier ne change pas la question.",
+      "hint": "Arrêtez-vous à la deuxième marche, sans monter davantage."
+    }
+  },
+  {
+    "publication_date": "2026-02-12",
+    "payload": {
+      "question": "Une corde de 90 mètres est découpée en morceaux de 3 mètres. Une coupe ne traverse qu’une seule épaisseur. Combien de coupes faut-il ?",
+      "answer": "29 coupes. Il faut 30 morceaux ; chaque coupe augmente leur nombre de un.",
+      "hint": "Le premier morceau existe avant la première coupe."
+    }
+  },
+  {
+    "publication_date": "2026-02-13",
+    "payload": {
+      "question": "Dans une salle, 26 personnes se serrent chacune la main une fois avec toutes les autres. Combien de poignées de main sont échangées ?",
+      "answer": "325. Chaque personne salue 25 autres personnes ; on divise le produit par deux pour ne pas compter chaque paire deux fois.",
+      "hint": "Comptez les paires sans tenir compte de leur ordre."
+    }
+  },
+  {
+    "publication_date": "2026-02-14",
+    "payload": {
+      "question": "Une corde de 36 mètres est découpée en morceaux de 3 mètres. Une coupe ne traverse qu’une seule épaisseur. Combien de coupes faut-il ?",
+      "answer": "11 coupes. Il faut 12 morceaux ; chaque coupe augmente leur nombre de un.",
+      "hint": "Le premier morceau existe avant la première coupe."
+    }
+  },
+  {
+    "publication_date": "2026-02-15",
+    "payload": {
+      "question": "Une suite commence par 23, 26, 31, 38. On ajoute successivement les nombres impairs 3, 5, 7, puis 9. Quel est le terme suivant ?",
+      "answer": "47, car 38 + 9 = 47.",
+      "hint": "La règle d’addition est donnée : poursuivez-la."
+    }
+  },
+  {
+    "publication_date": "2026-02-16",
+    "payload": {
+      "question": "Un objet coûte 190 euros. Son prix augmente de 20 %, puis diminue de 20 % sur le nouveau prix. Le prix final est-il revenu au prix initial ?",
+      "answer": "Non, il vaut 182,40 euros, soit 96 % du prix initial, Les coefficients 1,20 et 0,80 ont pour produit 0,96,",
+      "hint": "Multipliez les coefficients plutôt que d’additionner les pourcentages."
+    }
+  },
+  {
+    "publication_date": "2026-02-17",
+    "payload": {
+      "question": "Une boîte contient 34 chaussettes noires et autant de blanches. Dans le noir, combien de chaussettes faut-il prendre au minimum pour être certain d’obtenir une paire de même couleur ?",
+      "answer": "3. Avec deux chaussettes, les couleurs peuvent différer. Avec trois, deux ont nécessairement la même couleur.",
+      "hint": "Raisonnez dans le cas le moins favorable."
+    }
+  },
+  {
+    "publication_date": "2026-02-18",
+    "payload": {
+      "question": "Une urne contient 8 jetons numérotés de 1 à 8. On en tire un au hasard, avec la même chance pour chaque jeton. Quelle est la probabilité de tirer le numéro 7 ?",
+      "answer": "1/8. Un seul jeton porte le numéro demandé parmi 8 jetons équiprobables.",
+      "hint": "Comptez les issues favorables et le nombre total d’issues."
+    }
+  },
+  {
+    "publication_date": "2026-02-19",
+    "payload": {
+      "question": "Un objet coûte 170 euros. Son prix augmente de 20 %, puis diminue de 20 % sur le nouveau prix. Le prix final est-il revenu au prix initial ?",
+      "answer": "Non, il vaut 163,20 euros, soit 96 % du prix initial, Les coefficients 1,20 et 0,80 ont pour produit 0,96,",
+      "hint": "Multipliez les coefficients plutôt que d’additionner les pourcentages."
+    }
+  },
+  {
+    "publication_date": "2026-02-20",
+    "payload": {
+      "question": "Deux nombres entiers positifs consécutifs ont pour somme 43. Quel est le plus petit ?",
+      "answer": "21. Si le premier vaut x, le second vaut x + 1 : 2x + 1 = 43.",
+      "hint": "Soustrayez un à la somme, puis divisez par deux."
+    }
+  },
+  {
+    "publication_date": "2026-02-21",
+    "payload": {
+      "question": "Une corde de 15 mètres est découpée en morceaux de 3 mètres. Une coupe ne traverse qu’une seule épaisseur. Combien de coupes faut-il ?",
+      "answer": "4 coupes. Il faut 5 morceaux ; chaque coupe augmente leur nombre de un.",
+      "hint": "Le premier morceau existe avant la première coupe."
+    }
+  },
+  {
+    "publication_date": "2026-02-22",
+    "payload": {
+      "question": "Une suite commence par 24, 27, 32, 39. On ajoute successivement les nombres impairs 3, 5, 7, puis 9. Quel est le terme suivant ?",
+      "answer": "48, car 39 + 9 = 48.",
+      "hint": "La règle d’addition est donnée : poursuivez-la."
+    }
+  },
+  {
+    "publication_date": "2026-02-23",
+    "payload": {
+      "question": "Un escalier compte 20 marches. Combien de façons différentes permettent d’atteindre la deuxième marche en faisant uniquement des pas de une ou de deux marches, sans redescendre ?",
+      "answer": "2 façons : deux pas de une marche, ou un pas de deux marches. La hauteur totale de l’escalier ne change pas la question.",
+      "hint": "Arrêtez-vous à la deuxième marche, sans monter davantage."
+    }
+  },
+  {
+    "publication_date": "2026-02-24",
+    "payload": {
+      "question": "Une suite commence par 9, 12, 17, 24. On ajoute successivement les nombres impairs 3, 5, 7, puis 9. Quel est le terme suivant ?",
+      "answer": "33, car 24 + 9 = 33.",
+      "hint": "La règle d’addition est donnée : poursuivez-la."
+    }
+  },
+  {
+    "publication_date": "2026-02-25",
+    "payload": {
+      "question": "Une suite commence par 8, 11, 16, 23. On ajoute successivement les nombres impairs 3, 5, 7, puis 9. Quel est le terme suivant ?",
+      "answer": "32, car 23 + 9 = 32.",
+      "hint": "La règle d’addition est donnée : poursuivez-la."
+    }
+  },
+  {
+    "publication_date": "2026-02-26",
+    "payload": {
+      "question": "Je suis un entier positif. Mon triple augmenté de 5 vaut 26. Qui suis-je ?",
+      "answer": "7. En soustrayant 5, on obtient 21, puis on divise par trois.",
+      "hint": "Effectuez les opérations inverses dans l’ordre inverse."
+    }
+  },
+  {
+    "publication_date": "2026-02-27",
+    "payload": {
+      "question": "Un sac contient 23 billes rouges et 25 billes bleues. Sans regarder, combien faut-il en tirer au minimum pour être certain d’en avoir deux de la même couleur ?",
+      "answer": "3 billes. Les deux premières peuvent être de couleurs différentes ; la troisième partage nécessairement sa couleur avec l’une des deux.",
+      "hint": "Il n’y a que deux couleurs."
+    }
+  },
+  {
+    "publication_date": "2026-02-28",
+    "payload": {
+      "question": "Un rectangle a un périmètre de 96 cm. Sa longueur dépasse sa largeur de 2 cm. Quelle est son aire ?",
+      "answer": "575 cm². La demi-somme des côtés vaut 48 ; les côtés mesurent 23 et 25 cm.",
+      "hint": "Cherchez deux nombres dont la somme et la différence sont connues."
+    }
+  },
+  {
+    "publication_date": "2026-03-01",
+    "payload": {
+      "question": "Une urne contient 27 jetons numérotés de 1 à 27. On en tire un au hasard, avec la même chance pour chaque jeton. Quelle est la probabilité de tirer le numéro 26 ?",
+      "answer": "1/27. Un seul jeton porte le numéro demandé parmi 27 jetons équiprobables.",
+      "hint": "Comptez les issues favorables et le nombre total d’issues."
+    }
+  },
+  {
+    "publication_date": "2026-03-02",
+    "payload": {
+      "question": "Je suis un entier positif. Mon triple augmenté de 8 vaut 38. Qui suis-je ?",
+      "answer": "10. En soustrayant 8, on obtient 30, puis on divise par trois.",
+      "hint": "Effectuez les opérations inverses dans l’ordre inverse."
+    }
+  },
+  {
+    "publication_date": "2026-03-03",
+    "payload": {
+      "question": "Une suite commence par 17, 20, 25, 32. On ajoute successivement les nombres impairs 3, 5, 7, puis 9. Quel est le terme suivant ?",
+      "answer": "41, car 32 + 9 = 41.",
+      "hint": "La règle d’addition est donnée : poursuivez-la."
+    }
+  },
+  {
+    "publication_date": "2026-03-04",
+    "payload": {
+      "question": "Un objet coûte 330 euros. Son prix augmente de 20 %, puis diminue de 20 % sur le nouveau prix. Le prix final est-il revenu au prix initial ?",
+      "answer": "Non, il vaut 316,80 euros, soit 96 % du prix initial, Les coefficients 1,20 et 0,80 ont pour produit 0,96,",
+      "hint": "Multipliez les coefficients plutôt que d’additionner les pourcentages."
+    }
+  },
+  {
+    "publication_date": "2026-03-05",
+    "payload": {
+      "question": "Une boîte contient 32 chaussettes noires et autant de blanches. Dans le noir, combien de chaussettes faut-il prendre au minimum pour être certain d’obtenir une paire de même couleur ?",
+      "answer": "3. Avec deux chaussettes, les couleurs peuvent différer. Avec trois, deux ont nécessairement la même couleur.",
+      "hint": "Raisonnez dans le cas le moins favorable."
+    }
+  },
+  {
+    "publication_date": "2026-03-06",
+    "payload": {
+      "question": "Dans une salle, 27 personnes se serrent chacune la main une fois avec toutes les autres. Combien de poignées de main sont échangées ?",
+      "answer": "351. Chaque personne salue 26 autres personnes ; on divise le produit par deux pour ne pas compter chaque paire deux fois.",
+      "hint": "Comptez les paires sans tenir compte de leur ordre."
+    }
+  },
+  {
+    "publication_date": "2026-03-07",
+    "payload": {
+      "question": "Un escalier compte 13 marches. Combien de façons différentes permettent d’atteindre la deuxième marche en faisant uniquement des pas de une ou de deux marches, sans redescendre ?",
+      "answer": "2 façons : deux pas de une marche, ou un pas de deux marches. La hauteur totale de l’escalier ne change pas la question.",
+      "hint": "Arrêtez-vous à la deuxième marche, sans monter davantage."
+    }
+  },
+  {
+    "publication_date": "2026-03-08",
+    "payload": {
+      "question": "Dans une salle, 13 personnes se serrent chacune la main une fois avec toutes les autres. Combien de poignées de main sont échangées ?",
+      "answer": "78. Chaque personne salue 12 autres personnes ; on divise le produit par deux pour ne pas compter chaque paire deux fois.",
+      "hint": "Comptez les paires sans tenir compte de leur ordre."
+    }
+  },
+  {
+    "publication_date": "2026-03-09",
+    "payload": {
+      "question": "Un objet coûte 130 euros. Son prix augmente de 20 %, puis diminue de 20 % sur le nouveau prix. Le prix final est-il revenu au prix initial ?",
+      "answer": "Non, il vaut 124,80 euros, soit 96 % du prix initial, Les coefficients 1,20 et 0,80 ont pour produit 0,96,",
+      "hint": "Multipliez les coefficients plutôt que d’additionner les pourcentages."
+    }
+  },
+  {
+    "publication_date": "2026-03-10",
+    "payload": {
+      "question": "Dans une salle, 24 personnes se serrent chacune la main une fois avec toutes les autres. Combien de poignées de main sont échangées ?",
+      "answer": "276. Chaque personne salue 23 autres personnes ; on divise le produit par deux pour ne pas compter chaque paire deux fois.",
+      "hint": "Comptez les paires sans tenir compte de leur ordre."
+    }
+  },
+  {
+    "publication_date": "2026-03-11",
+    "payload": {
+      "question": "Un cycliste parcourt 28 km à l’aller puis la même distance au retour. Il roule à 12 km/h à l’aller et à 24 km/h au retour, sans pause. Quelle est sa vitesse moyenne sur l’ensemble du trajet ?",
+      "answer": "16 km/h. Pour une distance d à chaque étape, le temps total vaut d/12 + d/24 = d/8. La distance totale 2d divisée par ce temps donne 16.",
+      "hint": "La moyenne des vitesses n’est pas la moyenne arithmétique quand les durées diffèrent."
+    }
+  },
+  {
+    "publication_date": "2026-03-12",
+    "payload": {
+      "question": "Une corde de 93 mètres est découpée en morceaux de 3 mètres. Une coupe ne traverse qu’une seule épaisseur. Combien de coupes faut-il ?",
+      "answer": "30 coupes. Il faut 31 morceaux ; chaque coupe augmente leur nombre de un.",
+      "hint": "Le premier morceau existe avant la première coupe."
+    }
+  },
+  {
+    "publication_date": "2026-03-13",
+    "payload": {
+      "question": "Je suis un entier positif. Mon triple augmenté de 7 vaut 34. Qui suis-je ?",
+      "answer": "9. En soustrayant 7, on obtient 27, puis on divise par trois.",
+      "hint": "Effectuez les opérations inverses dans l’ordre inverse."
+    }
+  },
+  {
+    "publication_date": "2026-03-14",
+    "payload": {
+      "question": "Dans une salle, 20 personnes se serrent chacune la main une fois avec toutes les autres. Combien de poignées de main sont échangées ?",
+      "answer": "190. Chaque personne salue 19 autres personnes ; on divise le produit par deux pour ne pas compter chaque paire deux fois.",
+      "hint": "Comptez les paires sans tenir compte de leur ordre."
+    }
+  },
+  {
+    "publication_date": "2026-03-15",
+    "payload": {
+      "question": "Un escalier compte 34 marches. Combien de façons différentes permettent d’atteindre la deuxième marche en faisant uniquement des pas de une ou de deux marches, sans redescendre ?",
+      "answer": "2 façons : deux pas de une marche, ou un pas de deux marches. La hauteur totale de l’escalier ne change pas la question.",
+      "hint": "Arrêtez-vous à la deuxième marche, sans monter davantage."
+    }
+  },
+  {
+    "publication_date": "2026-03-16",
+    "payload": {
+      "question": "Dans une salle, 5 personnes se serrent chacune la main une fois avec toutes les autres. Combien de poignées de main sont échangées ?",
+      "answer": "10. Chaque personne salue 4 autres personnes ; on divise le produit par deux pour ne pas compter chaque paire deux fois.",
+      "hint": "Comptez les paires sans tenir compte de leur ordre."
+    }
+  },
+  {
+    "publication_date": "2026-03-17",
+    "payload": {
+      "question": "Une corde de 30 mètres est découpée en morceaux de 3 mètres. Une coupe ne traverse qu’une seule épaisseur. Combien de coupes faut-il ?",
+      "answer": "9 coupes. Il faut 10 morceaux ; chaque coupe augmente leur nombre de un.",
+      "hint": "Le premier morceau existe avant la première coupe."
+    }
+  },
+  {
+    "publication_date": "2026-03-18",
+    "payload": {
+      "question": "Deux nombres entiers positifs consécutifs ont pour somme 35. Quel est le plus petit ?",
+      "answer": "17. Si le premier vaut x, le second vaut x + 1 : 2x + 1 = 35.",
+      "hint": "Soustrayez un à la somme, puis divisez par deux."
+    }
+  },
+  {
+    "publication_date": "2026-03-19",
+    "payload": {
+      "question": "Un sac contient 9 billes rouges et 11 billes bleues. Sans regarder, combien faut-il en tirer au minimum pour être certain d’en avoir deux de la même couleur ?",
+      "answer": "3 billes. Les deux premières peuvent être de couleurs différentes ; la troisième partage nécessairement sa couleur avec l’une des deux.",
+      "hint": "Il n’y a que deux couleurs."
+    }
+  },
+  {
+    "publication_date": "2026-03-20",
+    "payload": {
+      "question": "Un escalier compte 11 marches. Combien de façons différentes permettent d’atteindre la deuxième marche en faisant uniquement des pas de une ou de deux marches, sans redescendre ?",
+      "answer": "2 façons : deux pas de une marche, ou un pas de deux marches. La hauteur totale de l’escalier ne change pas la question.",
+      "hint": "Arrêtez-vous à la deuxième marche, sans monter davantage."
+    }
+  },
+  {
+    "publication_date": "2026-03-21",
+    "payload": {
+      "question": "Un cycliste parcourt 32 km à l’aller puis la même distance au retour. Il roule à 12 km/h à l’aller et à 24 km/h au retour, sans pause. Quelle est sa vitesse moyenne sur l’ensemble du trajet ?",
+      "answer": "16 km/h. Pour une distance d à chaque étape, le temps total vaut d/12 + d/24 = d/8. La distance totale 2d divisée par ce temps donne 16.",
+      "hint": "La moyenne des vitesses n’est pas la moyenne arithmétique quand les durées diffèrent."
+    }
+  },
+  {
+    "publication_date": "2026-03-22",
+    "payload": {
+      "question": "Un cycliste parcourt 21 km à l’aller puis la même distance au retour. Il roule à 12 km/h à l’aller et à 24 km/h au retour, sans pause. Quelle est sa vitesse moyenne sur l’ensemble du trajet ?",
+      "answer": "16 km/h. Pour une distance d à chaque étape, le temps total vaut d/12 + d/24 = d/8. La distance totale 2d divisée par ce temps donne 16.",
+      "hint": "La moyenne des vitesses n’est pas la moyenne arithmétique quand les durées diffèrent."
+    }
+  },
+  {
+    "publication_date": "2026-03-23",
+    "payload": {
+      "question": "Un escalier compte 32 marches. Combien de façons différentes permettent d’atteindre la deuxième marche en faisant uniquement des pas de une ou de deux marches, sans redescendre ?",
+      "answer": "2 façons : deux pas de une marche, ou un pas de deux marches. La hauteur totale de l’escalier ne change pas la question.",
+      "hint": "Arrêtez-vous à la deuxième marche, sans monter davantage."
+    }
+  },
+  {
+    "publication_date": "2026-03-24",
+    "payload": {
+      "question": "Un rectangle a un périmètre de 76 cm. Sa longueur dépasse sa largeur de 2 cm. Quelle est son aire ?",
+      "answer": "360 cm². La demi-somme des côtés vaut 38 ; les côtés mesurent 18 et 20 cm.",
+      "hint": "Cherchez deux nombres dont la somme et la différence sont connues."
+    }
+  },
+  {
+    "publication_date": "2026-03-25",
+    "payload": {
+      "question": "Une suite commence par 10, 13, 18, 25. On ajoute successivement les nombres impairs 3, 5, 7, puis 9. Quel est le terme suivant ?",
+      "answer": "34, car 25 + 9 = 34.",
+      "hint": "La règle d’addition est donnée : poursuivez-la."
+    }
+  },
+  {
+    "publication_date": "2026-03-26",
+    "payload": {
+      "question": "Un objet coûte 110 euros. Son prix augmente de 20 %, puis diminue de 20 % sur le nouveau prix. Le prix final est-il revenu au prix initial ?",
+      "answer": "Non, il vaut 105,60 euros, soit 96 % du prix initial, Les coefficients 1,20 et 0,80 ont pour produit 0,96,",
+      "hint": "Multipliez les coefficients plutôt que d’additionner les pourcentages."
+    }
+  },
+  {
+    "publication_date": "2026-03-27",
+    "payload": {
+      "question": "Une suite commence par 16, 19, 24, 31. On ajoute successivement les nombres impairs 3, 5, 7, puis 9. Quel est le terme suivant ?",
+      "answer": "40, car 31 + 9 = 40.",
+      "hint": "La règle d’addition est donnée : poursuivez-la."
+    }
+  },
+  {
+    "publication_date": "2026-03-28",
+    "payload": {
+      "question": "Un cycliste parcourt 14 km à l’aller puis la même distance au retour. Il roule à 12 km/h à l’aller et à 24 km/h au retour, sans pause. Quelle est sa vitesse moyenne sur l’ensemble du trajet ?",
+      "answer": "16 km/h. Pour une distance d à chaque étape, le temps total vaut d/12 + d/24 = d/8. La distance totale 2d divisée par ce temps donne 16.",
+      "hint": "La moyenne des vitesses n’est pas la moyenne arithmétique quand les durées diffèrent."
+    }
+  },
+  {
+    "publication_date": "2026-03-29",
+    "payload": {
+      "question": "Une urne contient 9 jetons numérotés de 1 à 9. On en tire un au hasard, avec la même chance pour chaque jeton. Quelle est la probabilité de tirer le numéro 8 ?",
+      "answer": "1/9. Un seul jeton porte le numéro demandé parmi 9 jetons équiprobables.",
+      "hint": "Comptez les issues favorables et le nombre total d’issues."
+    }
+  },
+  {
+    "publication_date": "2026-03-30",
+    "payload": {
+      "question": "Une urne contient 7 jetons numérotés de 1 à 7. On en tire un au hasard, avec la même chance pour chaque jeton. Quelle est la probabilité de tirer le numéro 6 ?",
+      "answer": "1/7. Un seul jeton porte le numéro demandé parmi 7 jetons équiprobables.",
+      "hint": "Comptez les issues favorables et le nombre total d’issues."
+    }
+  },
+  {
+    "publication_date": "2026-03-31",
+    "payload": {
+      "question": "Je suis un entier positif. Mon triple augmenté de 12 vaut 54. Qui suis-je ?",
+      "answer": "14. En soustrayant 12, on obtient 42, puis on divise par trois.",
+      "hint": "Effectuez les opérations inverses dans l’ordre inverse."
+    }
+  },
+  {
+    "publication_date": "2026-04-01",
+    "payload": {
+      "question": "Une corde de 75 mètres est découpée en morceaux de 3 mètres. Une coupe ne traverse qu’une seule épaisseur. Combien de coupes faut-il ?",
+      "answer": "24 coupes. Il faut 25 morceaux ; chaque coupe augmente leur nombre de un.",
+      "hint": "Le premier morceau existe avant la première coupe."
+    }
+  },
+  {
+    "publication_date": "2026-04-02",
+    "payload": {
+      "question": "Une suite commence par 3, 6, 11, 18. On ajoute successivement les nombres impairs 3, 5, 7, puis 9. Quel est le terme suivant ?",
+      "answer": "27, car 18 + 9 = 27.",
+      "hint": "La règle d’addition est donnée : poursuivez-la."
+    }
+  },
+  {
+    "publication_date": "2026-04-03",
+    "payload": {
+      "question": "Un escalier compte 19 marches. Combien de façons différentes permettent d’atteindre la deuxième marche en faisant uniquement des pas de une ou de deux marches, sans redescendre ?",
+      "answer": "2 façons : deux pas de une marche, ou un pas de deux marches. La hauteur totale de l’escalier ne change pas la question.",
+      "hint": "Arrêtez-vous à la deuxième marche, sans monter davantage."
+    }
+  },
+  {
+    "publication_date": "2026-04-04",
+    "payload": {
+      "question": "Dans une salle, 15 personnes se serrent chacune la main une fois avec toutes les autres. Combien de poignées de main sont échangées ?",
+      "answer": "105. Chaque personne salue 14 autres personnes ; on divise le produit par deux pour ne pas compter chaque paire deux fois.",
+      "hint": "Comptez les paires sans tenir compte de leur ordre."
+    }
+  },
+  {
+    "publication_date": "2026-04-05",
+    "payload": {
+      "question": "Une corde de 45 mètres est découpée en morceaux de 3 mètres. Une coupe ne traverse qu’une seule épaisseur. Combien de coupes faut-il ?",
+      "answer": "14 coupes. Il faut 15 morceaux ; chaque coupe augmente leur nombre de un.",
+      "hint": "Le premier morceau existe avant la première coupe."
+    }
+  },
+  {
+    "publication_date": "2026-04-06",
+    "payload": {
+      "question": "Un sac contient 17 billes rouges et 19 billes bleues. Sans regarder, combien faut-il en tirer au minimum pour être certain d’en avoir deux de la même couleur ?",
+      "answer": "3 billes. Les deux premières peuvent être de couleurs différentes ; la troisième partage nécessairement sa couleur avec l’une des deux.",
+      "hint": "Il n’y a que deux couleurs."
+    }
+  },
+  {
+    "publication_date": "2026-04-07",
+    "payload": {
+      "question": "Deux nombres entiers positifs consécutifs ont pour somme 21. Quel est le plus petit ?",
+      "answer": "10. Si le premier vaut x, le second vaut x + 1 : 2x + 1 = 21.",
+      "hint": "Soustrayez un à la somme, puis divisez par deux."
+    }
+  },
+  {
+    "publication_date": "2026-04-08",
+    "payload": {
+      "question": "Je suis un entier positif. Mon triple augmenté de 2 vaut 14. Qui suis-je ?",
+      "answer": "4. En soustrayant 2, on obtient 12, puis on divise par trois.",
+      "hint": "Effectuez les opérations inverses dans l’ordre inverse."
+    }
+  },
+  {
+    "publication_date": "2026-04-09",
+    "payload": {
+      "question": "Je suis un entier positif. Mon triple augmenté de 29 vaut 122. Qui suis-je ?",
+      "answer": "31. En soustrayant 29, on obtient 93, puis on divise par trois.",
+      "hint": "Effectuez les opérations inverses dans l’ordre inverse."
+    }
+  },
+  {
+    "publication_date": "2026-04-10",
+    "payload": {
+      "question": "Un sac contient 8 billes rouges et 10 billes bleues. Sans regarder, combien faut-il en tirer au minimum pour être certain d’en avoir deux de la même couleur ?",
+      "answer": "3 billes. Les deux premières peuvent être de couleurs différentes ; la troisième partage nécessairement sa couleur avec l’une des deux.",
+      "hint": "Il n’y a que deux couleurs."
+    }
+  },
+  {
+    "publication_date": "2026-04-11",
+    "payload": {
+      "question": "Une boîte contient 25 chaussettes noires et autant de blanches. Dans le noir, combien de chaussettes faut-il prendre au minimum pour être certain d’obtenir une paire de même couleur ?",
+      "answer": "3. Avec deux chaussettes, les couleurs peuvent différer. Avec trois, deux ont nécessairement la même couleur.",
+      "hint": "Raisonnez dans le cas le moins favorable."
+    }
+  },
+  {
+    "publication_date": "2026-04-12",
+    "payload": {
+      "question": "Une boîte contient 33 chaussettes noires et autant de blanches. Dans le noir, combien de chaussettes faut-il prendre au minimum pour être certain d’obtenir une paire de même couleur ?",
+      "answer": "3. Avec deux chaussettes, les couleurs peuvent différer. Avec trois, deux ont nécessairement la même couleur.",
+      "hint": "Raisonnez dans le cas le moins favorable."
+    }
+  },
+  {
+    "publication_date": "2026-04-13",
+    "payload": {
+      "question": "Un escalier compte 17 marches. Combien de façons différentes permettent d’atteindre la deuxième marche en faisant uniquement des pas de une ou de deux marches, sans redescendre ?",
+      "answer": "2 façons : deux pas de une marche, ou un pas de deux marches. La hauteur totale de l’escalier ne change pas la question.",
+      "hint": "Arrêtez-vous à la deuxième marche, sans monter davantage."
+    }
+  },
+  {
+    "publication_date": "2026-04-14",
+    "payload": {
+      "question": "Un sac contient 12 billes rouges et 14 billes bleues. Sans regarder, combien faut-il en tirer au minimum pour être certain d’en avoir deux de la même couleur ?",
+      "answer": "3 billes. Les deux premières peuvent être de couleurs différentes ; la troisième partage nécessairement sa couleur avec l’une des deux.",
+      "hint": "Il n’y a que deux couleurs."
+    }
+  },
+  {
+    "publication_date": "2026-04-15",
+    "payload": {
+      "question": "Un rectangle a un périmètre de 32 cm. Sa longueur dépasse sa largeur de 2 cm. Quelle est son aire ?",
+      "answer": "63 cm². La demi-somme des côtés vaut 16 ; les côtés mesurent 7 et 9 cm.",
+      "hint": "Cherchez deux nombres dont la somme et la différence sont connues."
+    }
+  },
+  {
+    "publication_date": "2026-04-16",
+    "payload": {
+      "question": "Une urne contient 12 jetons numérotés de 1 à 12. On en tire un au hasard, avec la même chance pour chaque jeton. Quelle est la probabilité de tirer le numéro 11 ?",
+      "answer": "1/12. Un seul jeton porte le numéro demandé parmi 12 jetons équiprobables.",
+      "hint": "Comptez les issues favorables et le nombre total d’issues."
+    }
+  },
+  {
+    "publication_date": "2026-04-17",
+    "payload": {
+      "question": "Une corde de 33 mètres est découpée en morceaux de 3 mètres. Une coupe ne traverse qu’une seule épaisseur. Combien de coupes faut-il ?",
+      "answer": "10 coupes. Il faut 11 morceaux ; chaque coupe augmente leur nombre de un.",
+      "hint": "Le premier morceau existe avant la première coupe."
+    }
+  },
+  {
+    "publication_date": "2026-04-18",
+    "payload": {
+      "question": "Deux nombres entiers positifs consécutifs ont pour somme 49. Quel est le plus petit ?",
+      "answer": "24. Si le premier vaut x, le second vaut x + 1 : 2x + 1 = 49.",
+      "hint": "Soustrayez un à la somme, puis divisez par deux."
+    }
+  },
+  {
+    "publication_date": "2026-04-19",
+    "payload": {
+      "question": "Une corde de 60 mètres est découpée en morceaux de 3 mètres. Une coupe ne traverse qu’une seule épaisseur. Combien de coupes faut-il ?",
+      "answer": "19 coupes. Il faut 20 morceaux ; chaque coupe augmente leur nombre de un.",
+      "hint": "Le premier morceau existe avant la première coupe."
+    }
+  },
+  {
+    "publication_date": "2026-04-20",
+    "payload": {
+      "question": "Une urne contient 14 jetons numérotés de 1 à 14. On en tire un au hasard, avec la même chance pour chaque jeton. Quelle est la probabilité de tirer le numéro 13 ?",
+      "answer": "1/14. Un seul jeton porte le numéro demandé parmi 14 jetons équiprobables.",
+      "hint": "Comptez les issues favorables et le nombre total d’issues."
+    }
+  },
+  {
+    "publication_date": "2026-04-21",
+    "payload": {
+      "question": "Deux nombres entiers positifs consécutifs ont pour somme 39. Quel est le plus petit ?",
+      "answer": "19. Si le premier vaut x, le second vaut x + 1 : 2x + 1 = 39.",
+      "hint": "Soustrayez un à la somme, puis divisez par deux."
+    }
+  },
+  {
+    "publication_date": "2026-04-22",
+    "payload": {
+      "question": "Une urne contient 4 jetons numérotés de 1 à 4. On en tire un au hasard, avec la même chance pour chaque jeton. Quelle est la probabilité de tirer le numéro 3 ?",
+      "answer": "1/4. Un seul jeton porte le numéro demandé parmi 4 jetons équiprobables.",
+      "hint": "Comptez les issues favorables et le nombre total d’issues."
+    }
+  },
+  {
+    "publication_date": "2026-04-23",
+    "payload": {
+      "question": "Une boîte contient 16 chaussettes noires et autant de blanches. Dans le noir, combien de chaussettes faut-il prendre au minimum pour être certain d’obtenir une paire de même couleur ?",
+      "answer": "3. Avec deux chaussettes, les couleurs peuvent différer. Avec trois, deux ont nécessairement la même couleur.",
+      "hint": "Raisonnez dans le cas le moins favorable."
+    }
+  },
+  {
+    "publication_date": "2026-04-24",
+    "payload": {
+      "question": "Une urne contient 25 jetons numérotés de 1 à 25. On en tire un au hasard, avec la même chance pour chaque jeton. Quelle est la probabilité de tirer le numéro 24 ?",
+      "answer": "1/25. Un seul jeton porte le numéro demandé parmi 25 jetons équiprobables.",
+      "hint": "Comptez les issues favorables et le nombre total d’issues."
+    }
+  },
+  {
+    "publication_date": "2026-04-25",
+    "payload": {
+      "question": "Un escalier compte 24 marches. Combien de façons différentes permettent d’atteindre la deuxième marche en faisant uniquement des pas de une ou de deux marches, sans redescendre ?",
+      "answer": "2 façons : deux pas de une marche, ou un pas de deux marches. La hauteur totale de l’escalier ne change pas la question.",
+      "hint": "Arrêtez-vous à la deuxième marche, sans monter davantage."
+    }
+  },
+  {
+    "publication_date": "2026-04-26",
+    "payload": {
+      "question": "Un objet coûte 250 euros. Son prix augmente de 20 %, puis diminue de 20 % sur le nouveau prix. Le prix final est-il revenu au prix initial ?",
+      "answer": "Non, il vaut 240,00 euros, soit 96 % du prix initial, Les coefficients 1,20 et 0,80 ont pour produit 0,96,",
+      "hint": "Multipliez les coefficients plutôt que d’additionner les pourcentages."
+    }
+  },
+  {
+    "publication_date": "2026-04-27",
+    "payload": {
+      "question": "Une urne contient 3 jetons numérotés de 1 à 3. On en tire un au hasard, avec la même chance pour chaque jeton. Quelle est la probabilité de tirer le numéro 2 ?",
+      "answer": "1/3. Un seul jeton porte le numéro demandé parmi 3 jetons équiprobables.",
+      "hint": "Comptez les issues favorables et le nombre total d’issues."
+    }
+  },
+  {
+    "publication_date": "2026-04-28",
+    "payload": {
+      "question": "Un sac contient 15 billes rouges et 17 billes bleues. Sans regarder, combien faut-il en tirer au minimum pour être certain d’en avoir deux de la même couleur ?",
+      "answer": "3 billes. Les deux premières peuvent être de couleurs différentes ; la troisième partage nécessairement sa couleur avec l’une des deux.",
+      "hint": "Il n’y a que deux couleurs."
+    }
+  },
+  {
+    "publication_date": "2026-04-29",
+    "payload": {
+      "question": "Une suite commence par 5, 8, 13, 20. On ajoute successivement les nombres impairs 3, 5, 7, puis 9. Quel est le terme suivant ?",
+      "answer": "29, car 20 + 9 = 29.",
+      "hint": "La règle d’addition est donnée : poursuivez-la."
+    }
+  },
+  {
+    "publication_date": "2026-04-30",
+    "payload": {
+      "question": "Dans une salle, 21 personnes se serrent chacune la main une fois avec toutes les autres. Combien de poignées de main sont échangées ?",
+      "answer": "210. Chaque personne salue 20 autres personnes ; on divise le produit par deux pour ne pas compter chaque paire deux fois.",
+      "hint": "Comptez les paires sans tenir compte de leur ordre."
+    }
+  },
+  {
+    "publication_date": "2026-05-01",
+    "payload": {
+      "question": "Un cycliste parcourt 15 km à l’aller puis la même distance au retour. Il roule à 12 km/h à l’aller et à 24 km/h au retour, sans pause. Quelle est sa vitesse moyenne sur l’ensemble du trajet ?",
+      "answer": "16 km/h. Pour une distance d à chaque étape, le temps total vaut d/12 + d/24 = d/8. La distance totale 2d divisée par ce temps donne 16.",
+      "hint": "La moyenne des vitesses n’est pas la moyenne arithmétique quand les durées diffèrent."
+    }
+  },
+  {
+    "publication_date": "2026-05-02",
+    "payload": {
+      "question": "Une suite commence par 28, 31, 36, 43. On ajoute successivement les nombres impairs 3, 5, 7, puis 9. Quel est le terme suivant ?",
+      "answer": "52, car 43 + 9 = 52.",
+      "hint": "La règle d’addition est donnée : poursuivez-la."
+    }
+  },
+  {
+    "publication_date": "2026-05-03",
+    "payload": {
+      "question": "Un sac contient 22 billes rouges et 24 billes bleues. Sans regarder, combien faut-il en tirer au minimum pour être certain d’en avoir deux de la même couleur ?",
+      "answer": "3 billes. Les deux premières peuvent être de couleurs différentes ; la troisième partage nécessairement sa couleur avec l’une des deux.",
+      "hint": "Il n’y a que deux couleurs."
+    }
+  },
+  {
+    "publication_date": "2026-05-04",
+    "payload": {
+      "question": "Un objet coûte 350 euros. Son prix augmente de 20 %, puis diminue de 20 % sur le nouveau prix. Le prix final est-il revenu au prix initial ?",
+      "answer": "Non, il vaut 336,00 euros, soit 96 % du prix initial, Les coefficients 1,20 et 0,80 ont pour produit 0,96,",
+      "hint": "Multipliez les coefficients plutôt que d’additionner les pourcentages."
+    }
+  },
+  {
+    "publication_date": "2026-05-05",
+    "payload": {
+      "question": "Je suis un entier positif. Mon triple augmenté de 24 vaut 102. Qui suis-je ?",
+      "answer": "26. En soustrayant 24, on obtient 78, puis on divise par trois.",
+      "hint": "Effectuez les opérations inverses dans l’ordre inverse."
+    }
+  },
+  {
+    "publication_date": "2026-05-06",
+    "payload": {
+      "question": "Un rectangle a un périmètre de 48 cm. Sa longueur dépasse sa largeur de 2 cm. Quelle est son aire ?",
+      "answer": "143 cm². La demi-somme des côtés vaut 24 ; les côtés mesurent 11 et 13 cm.",
+      "hint": "Cherchez deux nombres dont la somme et la différence sont connues."
+    }
+  },
+  {
+    "publication_date": "2026-05-07",
+    "payload": {
+      "question": "Une corde de 12 mètres est découpée en morceaux de 3 mètres. Une coupe ne traverse qu’une seule épaisseur. Combien de coupes faut-il ?",
+      "answer": "3 coupes. Il faut 4 morceaux ; chaque coupe augmente leur nombre de un.",
+      "hint": "Le premier morceau existe avant la première coupe."
+    }
+  },
+  {
+    "publication_date": "2026-05-08",
+    "payload": {
+      "question": "Un escalier compte 8 marches. Combien de façons différentes permettent d’atteindre la deuxième marche en faisant uniquement des pas de une ou de deux marches, sans redescendre ?",
+      "answer": "2 façons : deux pas de une marche, ou un pas de deux marches. La hauteur totale de l’escalier ne change pas la question.",
+      "hint": "Arrêtez-vous à la deuxième marche, sans monter davantage."
+    }
+  },
+  {
+    "publication_date": "2026-05-09",
+    "payload": {
+      "question": "Deux nombres entiers positifs consécutifs ont pour somme 19. Quel est le plus petit ?",
+      "answer": "9. Si le premier vaut x, le second vaut x + 1 : 2x + 1 = 19.",
+      "hint": "Soustrayez un à la somme, puis divisez par deux."
+    }
+  },
+  {
+    "publication_date": "2026-05-10",
+    "payload": {
+      "question": "Deux nombres entiers positifs consécutifs ont pour somme 41. Quel est le plus petit ?",
+      "answer": "20. Si le premier vaut x, le second vaut x + 1 : 2x + 1 = 41.",
+      "hint": "Soustrayez un à la somme, puis divisez par deux."
+    }
+  },
+  {
+    "publication_date": "2026-05-11",
+    "payload": {
+      "question": "Un escalier compte 33 marches. Combien de façons différentes permettent d’atteindre la deuxième marche en faisant uniquement des pas de une ou de deux marches, sans redescendre ?",
+      "answer": "2 façons : deux pas de une marche, ou un pas de deux marches. La hauteur totale de l’escalier ne change pas la question.",
+      "hint": "Arrêtez-vous à la deuxième marche, sans monter davantage."
+    }
+  },
+  {
+    "publication_date": "2026-05-12",
+    "payload": {
+      "question": "Je suis un entier positif. Mon triple augmenté de 11 vaut 50. Qui suis-je ?",
+      "answer": "13. En soustrayant 11, on obtient 39, puis on divise par trois.",
+      "hint": "Effectuez les opérations inverses dans l’ordre inverse."
+    }
+  },
+  {
+    "publication_date": "2026-05-13",
+    "payload": {
+      "question": "Un rectangle a un périmètre de 36 cm. Sa longueur dépasse sa largeur de 2 cm. Quelle est son aire ?",
+      "answer": "80 cm². La demi-somme des côtés vaut 18 ; les côtés mesurent 8 et 10 cm.",
+      "hint": "Cherchez deux nombres dont la somme et la différence sont connues."
+    }
+  },
+  {
+    "publication_date": "2026-05-14",
+    "payload": {
+      "question": "Un escalier compte 18 marches. Combien de façons différentes permettent d’atteindre la deuxième marche en faisant uniquement des pas de une ou de deux marches, sans redescendre ?",
+      "answer": "2 façons : deux pas de une marche, ou un pas de deux marches. La hauteur totale de l’escalier ne change pas la question.",
+      "hint": "Arrêtez-vous à la deuxième marche, sans monter davantage."
+    }
+  },
+  {
+    "publication_date": "2026-05-15",
+    "payload": {
+      "question": "Une boîte contient 29 chaussettes noires et autant de blanches. Dans le noir, combien de chaussettes faut-il prendre au minimum pour être certain d’obtenir une paire de même couleur ?",
+      "answer": "3. Avec deux chaussettes, les couleurs peuvent différer. Avec trois, deux ont nécessairement la même couleur.",
+      "hint": "Raisonnez dans le cas le moins favorable."
+    }
+  },
+  {
+    "publication_date": "2026-05-16",
+    "payload": {
+      "question": "Une suite commence par 18, 21, 26, 33. On ajoute successivement les nombres impairs 3, 5, 7, puis 9. Quel est le terme suivant ?",
+      "answer": "42, car 33 + 9 = 42.",
+      "hint": "La règle d’addition est donnée : poursuivez-la."
+    }
+  },
+  {
+    "publication_date": "2026-05-17",
+    "payload": {
+      "question": "Une corde de 18 mètres est découpée en morceaux de 3 mètres. Une coupe ne traverse qu’une seule épaisseur. Combien de coupes faut-il ?",
+      "answer": "5 coupes. Il faut 6 morceaux ; chaque coupe augmente leur nombre de un.",
+      "hint": "Le premier morceau existe avant la première coupe."
+    }
+  },
+  {
+    "publication_date": "2026-05-18",
+    "payload": {
+      "question": "Un cycliste parcourt 27 km à l’aller puis la même distance au retour. Il roule à 12 km/h à l’aller et à 24 km/h au retour, sans pause. Quelle est sa vitesse moyenne sur l’ensemble du trajet ?",
+      "answer": "16 km/h. Pour une distance d à chaque étape, le temps total vaut d/12 + d/24 = d/8. La distance totale 2d divisée par ce temps donne 16.",
+      "hint": "La moyenne des vitesses n’est pas la moyenne arithmétique quand les durées diffèrent."
+    }
+  },
+  {
+    "publication_date": "2026-05-19",
+    "payload": {
+      "question": "Une corde de 9 mètres est découpée en morceaux de 3 mètres. Une coupe ne traverse qu’une seule épaisseur. Combien de coupes faut-il ?",
+      "answer": "2 coupes. Il faut 3 morceaux ; chaque coupe augmente leur nombre de un.",
+      "hint": "Le premier morceau existe avant la première coupe."
+    }
+  },
+  {
+    "publication_date": "2026-05-20",
+    "payload": {
+      "question": "Un cycliste parcourt 35 km à l’aller puis la même distance au retour. Il roule à 12 km/h à l’aller et à 24 km/h au retour, sans pause. Quelle est sa vitesse moyenne sur l’ensemble du trajet ?",
+      "answer": "16 km/h. Pour une distance d à chaque étape, le temps total vaut d/12 + d/24 = d/8. La distance totale 2d divisée par ce temps donne 16.",
+      "hint": "La moyenne des vitesses n’est pas la moyenne arithmétique quand les durées diffèrent."
+    }
+  },
+  {
+    "publication_date": "2026-05-21",
+    "payload": {
+      "question": "Une corde de 42 mètres est découpée en morceaux de 3 mètres. Une coupe ne traverse qu’une seule épaisseur. Combien de coupes faut-il ?",
+      "answer": "13 coupes. Il faut 14 morceaux ; chaque coupe augmente leur nombre de un.",
+      "hint": "Le premier morceau existe avant la première coupe."
+    }
+  },
+  {
+    "publication_date": "2026-05-22",
+    "payload": {
+      "question": "Un objet coûte 320 euros. Son prix augmente de 20 %, puis diminue de 20 % sur le nouveau prix. Le prix final est-il revenu au prix initial ?",
+      "answer": "Non, il vaut 307,20 euros, soit 96 % du prix initial, Les coefficients 1,20 et 0,80 ont pour produit 0,96,",
+      "hint": "Multipliez les coefficients plutôt que d’additionner les pourcentages."
+    }
+  },
+  {
+    "publication_date": "2026-05-23",
+    "payload": {
+      "question": "Une boîte contient 30 chaussettes noires et autant de blanches. Dans le noir, combien de chaussettes faut-il prendre au minimum pour être certain d’obtenir une paire de même couleur ?",
+      "answer": "3. Avec deux chaussettes, les couleurs peuvent différer. Avec trois, deux ont nécessairement la même couleur.",
+      "hint": "Raisonnez dans le cas le moins favorable."
+    }
+  },
+  {
+    "publication_date": "2026-05-24",
+    "payload": {
+      "question": "Un sac contient 24 billes rouges et 26 billes bleues. Sans regarder, combien faut-il en tirer au minimum pour être certain d’en avoir deux de la même couleur ?",
+      "answer": "3 billes. Les deux premières peuvent être de couleurs différentes ; la troisième partage nécessairement sa couleur avec l’une des deux.",
+      "hint": "Il n’y a que deux couleurs."
+    }
+  },
+  {
+    "publication_date": "2026-05-25",
+    "payload": {
+      "question": "Dans une salle, 11 personnes se serrent chacune la main une fois avec toutes les autres. Combien de poignées de main sont échangées ?",
+      "answer": "55. Chaque personne salue 10 autres personnes ; on divise le produit par deux pour ne pas compter chaque paire deux fois.",
+      "hint": "Comptez les paires sans tenir compte de leur ordre."
+    }
+  },
+  {
+    "publication_date": "2026-05-26",
+    "payload": {
+      "question": "Je suis un entier positif. Mon triple augmenté de 10 vaut 46. Qui suis-je ?",
+      "answer": "12. En soustrayant 10, on obtient 36, puis on divise par trois.",
+      "hint": "Effectuez les opérations inverses dans l’ordre inverse."
+    }
+  },
+  {
+    "publication_date": "2026-05-27",
+    "payload": {
+      "question": "Un escalier compte 29 marches. Combien de façons différentes permettent d’atteindre la deuxième marche en faisant uniquement des pas de une ou de deux marches, sans redescendre ?",
+      "answer": "2 façons : deux pas de une marche, ou un pas de deux marches. La hauteur totale de l’escalier ne change pas la question.",
+      "hint": "Arrêtez-vous à la deuxième marche, sans monter davantage."
+    }
+  },
+  {
+    "publication_date": "2026-05-28",
+    "payload": {
+      "question": "Un rectangle a un périmètre de 80 cm. Sa longueur dépasse sa largeur de 2 cm. Quelle est son aire ?",
+      "answer": "399 cm². La demi-somme des côtés vaut 40 ; les côtés mesurent 19 et 21 cm.",
+      "hint": "Cherchez deux nombres dont la somme et la différence sont connues."
+    }
+  },
+  {
+    "publication_date": "2026-05-29",
+    "payload": {
+      "question": "Un objet coûte 220 euros. Son prix augmente de 20 %, puis diminue de 20 % sur le nouveau prix. Le prix final est-il revenu au prix initial ?",
+      "answer": "Non, il vaut 211,20 euros, soit 96 % du prix initial, Les coefficients 1,20 et 0,80 ont pour produit 0,96,",
+      "hint": "Multipliez les coefficients plutôt que d’additionner les pourcentages."
+    }
+  },
+  {
+    "publication_date": "2026-05-30",
+    "payload": {
+      "question": "Deux nombres entiers positifs consécutifs ont pour somme 17. Quel est le plus petit ?",
+      "answer": "8. Si le premier vaut x, le second vaut x + 1 : 2x + 1 = 17.",
+      "hint": "Soustrayez un à la somme, puis divisez par deux."
+    }
+  },
+  {
+    "publication_date": "2026-05-31",
+    "payload": {
+      "question": "Dans une salle, 16 personnes se serrent chacune la main une fois avec toutes les autres. Combien de poignées de main sont échangées ?",
+      "answer": "120. Chaque personne salue 15 autres personnes ; on divise le produit par deux pour ne pas compter chaque paire deux fois.",
+      "hint": "Comptez les paires sans tenir compte de leur ordre."
+    }
+  },
+  {
+    "publication_date": "2026-06-01",
+    "payload": {
+      "question": "Un escalier compte 15 marches. Combien de façons différentes permettent d’atteindre la deuxième marche en faisant uniquement des pas de une ou de deux marches, sans redescendre ?",
+      "answer": "2 façons : deux pas de une marche, ou un pas de deux marches. La hauteur totale de l’escalier ne change pas la question.",
+      "hint": "Arrêtez-vous à la deuxième marche, sans monter davantage."
+    }
+  },
+  {
+    "publication_date": "2026-06-02",
+    "payload": {
+      "question": "Une boîte contient 24 chaussettes noires et autant de blanches. Dans le noir, combien de chaussettes faut-il prendre au minimum pour être certain d’obtenir une paire de même couleur ?",
+      "answer": "3. Avec deux chaussettes, les couleurs peuvent différer. Avec trois, deux ont nécessairement la même couleur.",
+      "hint": "Raisonnez dans le cas le moins favorable."
+    }
+  },
+  {
+    "publication_date": "2026-06-03",
+    "payload": {
+      "question": "Deux nombres entiers positifs consécutifs ont pour somme 15. Quel est le plus petit ?",
+      "answer": "7. Si le premier vaut x, le second vaut x + 1 : 2x + 1 = 15.",
+      "hint": "Soustrayez un à la somme, puis divisez par deux."
+    }
+  },
+  {
+    "publication_date": "2026-06-04",
+    "payload": {
+      "question": "Un rectangle a un périmètre de 112 cm. Sa longueur dépasse sa largeur de 2 cm. Quelle est son aire ?",
+      "answer": "783 cm². La demi-somme des côtés vaut 56 ; les côtés mesurent 27 et 29 cm.",
+      "hint": "Cherchez deux nombres dont la somme et la différence sont connues."
+    }
+  },
+  {
+    "publication_date": "2026-06-05",
+    "payload": {
+      "question": "Une boîte contient 23 chaussettes noires et autant de blanches. Dans le noir, combien de chaussettes faut-il prendre au minimum pour être certain d’obtenir une paire de même couleur ?",
+      "answer": "3. Avec deux chaussettes, les couleurs peuvent différer. Avec trois, deux ont nécessairement la même couleur.",
+      "hint": "Raisonnez dans le cas le moins favorable."
+    }
+  },
+  {
+    "publication_date": "2026-06-06",
+    "payload": {
+      "question": "Une suite commence par 7, 10, 15, 22. On ajoute successivement les nombres impairs 3, 5, 7, puis 9. Quel est le terme suivant ?",
+      "answer": "31, car 22 + 9 = 31.",
+      "hint": "La règle d’addition est donnée : poursuivez-la."
+    }
+  },
+  {
+    "publication_date": "2026-06-07",
+    "payload": {
+      "question": "Un escalier compte 12 marches. Combien de façons différentes permettent d’atteindre la deuxième marche en faisant uniquement des pas de une ou de deux marches, sans redescendre ?",
+      "answer": "2 façons : deux pas de une marche, ou un pas de deux marches. La hauteur totale de l’escalier ne change pas la question.",
+      "hint": "Arrêtez-vous à la deuxième marche, sans monter davantage."
+    }
+  },
+  {
+    "publication_date": "2026-06-08",
+    "payload": {
+      "question": "Un objet coûte 210 euros. Son prix augmente de 20 %, puis diminue de 20 % sur le nouveau prix. Le prix final est-il revenu au prix initial ?",
+      "answer": "Non, il vaut 201,60 euros, soit 96 % du prix initial, Les coefficients 1,20 et 0,80 ont pour produit 0,96,",
+      "hint": "Multipliez les coefficients plutôt que d’additionner les pourcentages."
+    }
+  },
+  {
+    "publication_date": "2026-06-09",
+    "payload": {
+      "question": "Une urne contient 13 jetons numérotés de 1 à 13. On en tire un au hasard, avec la même chance pour chaque jeton. Quelle est la probabilité de tirer le numéro 12 ?",
+      "answer": "1/13. Un seul jeton porte le numéro demandé parmi 13 jetons équiprobables.",
+      "hint": "Comptez les issues favorables et le nombre total d’issues."
+    }
+  },
+  {
+    "publication_date": "2026-06-10",
+    "payload": {
+      "question": "Une suite commence par 14, 17, 22, 29. On ajoute successivement les nombres impairs 3, 5, 7, puis 9. Quel est le terme suivant ?",
+      "answer": "38, car 29 + 9 = 38.",
+      "hint": "La règle d’addition est donnée : poursuivez-la."
+    }
+  },
+  {
+    "publication_date": "2026-06-11",
+    "payload": {
+      "question": "Un cycliste parcourt 11 km à l’aller puis la même distance au retour. Il roule à 12 km/h à l’aller et à 24 km/h au retour, sans pause. Quelle est sa vitesse moyenne sur l’ensemble du trajet ?",
+      "answer": "16 km/h. Pour une distance d à chaque étape, le temps total vaut d/12 + d/24 = d/8. La distance totale 2d divisée par ce temps donne 16.",
+      "hint": "La moyenne des vitesses n’est pas la moyenne arithmétique quand les durées diffèrent."
+    }
+  },
+  {
+    "publication_date": "2026-06-12",
+    "payload": {
+      "question": "Un cycliste parcourt 18 km à l’aller puis la même distance au retour. Il roule à 12 km/h à l’aller et à 24 km/h au retour, sans pause. Quelle est sa vitesse moyenne sur l’ensemble du trajet ?",
+      "answer": "16 km/h. Pour une distance d à chaque étape, le temps total vaut d/12 + d/24 = d/8. La distance totale 2d divisée par ce temps donne 16.",
+      "hint": "La moyenne des vitesses n’est pas la moyenne arithmétique quand les durées diffèrent."
+    }
+  },
+  {
+    "publication_date": "2026-06-13",
+    "payload": {
+      "question": "Une boîte contient 12 chaussettes noires et autant de blanches. Dans le noir, combien de chaussettes faut-il prendre au minimum pour être certain d’obtenir une paire de même couleur ?",
+      "answer": "3. Avec deux chaussettes, les couleurs peuvent différer. Avec trois, deux ont nécessairement la même couleur.",
+      "hint": "Raisonnez dans le cas le moins favorable."
+    }
+  },
+  {
+    "publication_date": "2026-06-14",
+    "payload": {
+      "question": "Un sac contient 4 billes rouges et 6 billes bleues. Sans regarder, combien faut-il en tirer au minimum pour être certain d’en avoir deux de la même couleur ?",
+      "answer": "3 billes. Les deux premières peuvent être de couleurs différentes ; la troisième partage nécessairement sa couleur avec l’une des deux.",
+      "hint": "Il n’y a que deux couleurs."
+    }
+  },
+  {
+    "publication_date": "2026-06-15",
+    "payload": {
+      "question": "Un cycliste parcourt 12 km à l’aller puis la même distance au retour. Il roule à 12 km/h à l’aller et à 24 km/h au retour, sans pause. Quelle est sa vitesse moyenne sur l’ensemble du trajet ?",
+      "answer": "16 km/h. Pour une distance d à chaque étape, le temps total vaut d/12 + d/24 = d/8. La distance totale 2d divisée par ce temps donne 16.",
+      "hint": "La moyenne des vitesses n’est pas la moyenne arithmétique quand les durées diffèrent."
+    }
+  },
+  {
+    "publication_date": "2026-06-16",
+    "payload": {
+      "question": "Une suite commence par 15, 18, 23, 30. On ajoute successivement les nombres impairs 3, 5, 7, puis 9. Quel est le terme suivant ?",
+      "answer": "39, car 30 + 9 = 39.",
+      "hint": "La règle d’addition est donnée : poursuivez-la."
+    }
+  },
+  {
+    "publication_date": "2026-06-17",
+    "payload": {
+      "question": "Je suis un entier positif. Mon triple augmenté de 3 vaut 18. Qui suis-je ?",
+      "answer": "5. En soustrayant 3, on obtient 15, puis on divise par trois.",
+      "hint": "Effectuez les opérations inverses dans l’ordre inverse."
+    }
+  },
+  {
+    "publication_date": "2026-06-18",
+    "payload": {
+      "question": "Deux nombres entiers positifs consécutifs ont pour somme 47. Quel est le plus petit ?",
+      "answer": "23. Si le premier vaut x, le second vaut x + 1 : 2x + 1 = 47.",
+      "hint": "Soustrayez un à la somme, puis divisez par deux."
+    }
+  },
+  {
+    "publication_date": "2026-06-19",
+    "payload": {
+      "question": "Un rectangle a un périmètre de 52 cm. Sa longueur dépasse sa largeur de 2 cm. Quelle est son aire ?",
+      "answer": "168 cm². La demi-somme des côtés vaut 26 ; les côtés mesurent 12 et 14 cm.",
+      "hint": "Cherchez deux nombres dont la somme et la différence sont connues."
+    }
+  },
+  {
+    "publication_date": "2026-06-20",
+    "payload": {
+      "question": "Un objet coûte 230 euros. Son prix augmente de 20 %, puis diminue de 20 % sur le nouveau prix. Le prix final est-il revenu au prix initial ?",
+      "answer": "Non, il vaut 220,80 euros, soit 96 % du prix initial, Les coefficients 1,20 et 0,80 ont pour produit 0,96,",
+      "hint": "Multipliez les coefficients plutôt que d’additionner les pourcentages."
+    }
+  },
+  {
+    "publication_date": "2026-06-21",
+    "payload": {
+      "question": "Un objet coûte 270 euros. Son prix augmente de 20 %, puis diminue de 20 % sur le nouveau prix. Le prix final est-il revenu au prix initial ?",
+      "answer": "Non, il vaut 259,20 euros, soit 96 % du prix initial, Les coefficients 1,20 et 0,80 ont pour produit 0,96,",
+      "hint": "Multipliez les coefficients plutôt que d’additionner les pourcentages."
+    }
+  },
+  {
+    "publication_date": "2026-06-22",
+    "payload": {
+      "question": "Dans une salle, 7 personnes se serrent chacune la main une fois avec toutes les autres. Combien de poignées de main sont échangées ?",
+      "answer": "21. Chaque personne salue 6 autres personnes ; on divise le produit par deux pour ne pas compter chaque paire deux fois.",
+      "hint": "Comptez les paires sans tenir compte de leur ordre."
+    }
+  },
+  {
+    "publication_date": "2026-06-23",
+    "payload": {
+      "question": "Je suis un entier positif. Mon triple augmenté de 9 vaut 42. Qui suis-je ?",
+      "answer": "11. En soustrayant 9, on obtient 33, puis on divise par trois.",
+      "hint": "Effectuez les opérations inverses dans l’ordre inverse."
+    }
+  },
+  {
+    "publication_date": "2026-06-24",
+    "payload": {
+      "question": "Une urne contient 21 jetons numérotés de 1 à 21. On en tire un au hasard, avec la même chance pour chaque jeton. Quelle est la probabilité de tirer le numéro 20 ?",
+      "answer": "1/21. Un seul jeton porte le numéro demandé parmi 21 jetons équiprobables.",
+      "hint": "Comptez les issues favorables et le nombre total d’issues."
+    }
+  },
+  {
+    "publication_date": "2026-06-25",
+    "payload": {
+      "question": "Une corde de 84 mètres est découpée en morceaux de 3 mètres. Une coupe ne traverse qu’une seule épaisseur. Combien de coupes faut-il ?",
+      "answer": "27 coupes. Il faut 28 morceaux ; chaque coupe augmente leur nombre de un.",
+      "hint": "Le premier morceau existe avant la première coupe."
+    }
+  },
+  {
+    "publication_date": "2026-06-26",
+    "payload": {
+      "question": "Un cycliste parcourt 17 km à l’aller puis la même distance au retour. Il roule à 12 km/h à l’aller et à 24 km/h au retour, sans pause. Quelle est sa vitesse moyenne sur l’ensemble du trajet ?",
+      "answer": "16 km/h. Pour une distance d à chaque étape, le temps total vaut d/12 + d/24 = d/8. La distance totale 2d divisée par ce temps donne 16.",
+      "hint": "La moyenne des vitesses n’est pas la moyenne arithmétique quand les durées diffèrent."
+    }
+  },
+  {
+    "publication_date": "2026-06-27",
+    "payload": {
+      "question": "Un sac contient 29 billes rouges et 31 billes bleues. Sans regarder, combien faut-il en tirer au minimum pour être certain d’en avoir deux de la même couleur ?",
+      "answer": "3 billes. Les deux premières peuvent être de couleurs différentes ; la troisième partage nécessairement sa couleur avec l’une des deux.",
+      "hint": "Il n’y a que deux couleurs."
+    }
+  },
+  {
+    "publication_date": "2026-06-28",
+    "payload": {
+      "question": "Une boîte contient 22 chaussettes noires et autant de blanches. Dans le noir, combien de chaussettes faut-il prendre au minimum pour être certain d’obtenir une paire de même couleur ?",
+      "answer": "3. Avec deux chaussettes, les couleurs peuvent différer. Avec trois, deux ont nécessairement la même couleur.",
+      "hint": "Raisonnez dans le cas le moins favorable."
+    }
+  },
+  {
+    "publication_date": "2026-06-29",
+    "payload": {
+      "question": "Une boîte contient 8 chaussettes noires et autant de blanches. Dans le noir, combien de chaussettes faut-il prendre au minimum pour être certain d’obtenir une paire de même couleur ?",
+      "answer": "3. Avec deux chaussettes, les couleurs peuvent différer. Avec trois, deux ont nécessairement la même couleur.",
+      "hint": "Raisonnez dans le cas le moins favorable."
+    }
+  },
+  {
+    "publication_date": "2026-06-30",
+    "payload": {
+      "question": "Un objet coûte 280 euros. Son prix augmente de 20 %, puis diminue de 20 % sur le nouveau prix. Le prix final est-il revenu au prix initial ?",
+      "answer": "Non, il vaut 268,80 euros, soit 96 % du prix initial, Les coefficients 1,20 et 0,80 ont pour produit 0,96,",
+      "hint": "Multipliez les coefficients plutôt que d’additionner les pourcentages."
+    }
+  },
+  {
+    "publication_date": "2026-07-01",
+    "payload": {
+      "question": "Une urne contient 11 jetons numérotés de 1 à 11. On en tire un au hasard, avec la même chance pour chaque jeton. Quelle est la probabilité de tirer le numéro 10 ?",
+      "answer": "1/11. Un seul jeton porte le numéro demandé parmi 11 jetons équiprobables.",
+      "hint": "Comptez les issues favorables et le nombre total d’issues."
+    }
+  },
+  {
+    "publication_date": "2026-07-02",
+    "payload": {
+      "question": "Une urne contient 28 jetons numérotés de 1 à 28. On en tire un au hasard, avec la même chance pour chaque jeton. Quelle est la probabilité de tirer le numéro 27 ?",
+      "answer": "1/28. Un seul jeton porte le numéro demandé parmi 28 jetons équiprobables.",
+      "hint": "Comptez les issues favorables et le nombre total d’issues."
+    }
+  },
+  {
+    "publication_date": "2026-07-03",
+    "payload": {
+      "question": "Dans une salle, 10 personnes se serrent chacune la main une fois avec toutes les autres. Combien de poignées de main sont échangées ?",
+      "answer": "45. Chaque personne salue 9 autres personnes ; on divise le produit par deux pour ne pas compter chaque paire deux fois.",
+      "hint": "Comptez les paires sans tenir compte de leur ordre."
+    }
+  },
+  {
+    "publication_date": "2026-07-04",
+    "payload": {
+      "question": "Un objet coûte 160 euros. Son prix augmente de 20 %, puis diminue de 20 % sur le nouveau prix. Le prix final est-il revenu au prix initial ?",
+      "answer": "Non, il vaut 153,60 euros, soit 96 % du prix initial, Les coefficients 1,20 et 0,80 ont pour produit 0,96,",
+      "hint": "Multipliez les coefficients plutôt que d’additionner les pourcentages."
+    }
+  },
+  {
+    "publication_date": "2026-07-05",
+    "payload": {
+      "question": "Un objet coûte 200 euros. Son prix augmente de 20 %, puis diminue de 20 % sur le nouveau prix. Le prix final est-il revenu au prix initial ?",
+      "answer": "Non, il vaut 192,00 euros, soit 96 % du prix initial, Les coefficients 1,20 et 0,80 ont pour produit 0,96,",
+      "hint": "Multipliez les coefficients plutôt que d’additionner les pourcentages."
+    }
+  },
+  {
+    "publication_date": "2026-07-06",
+    "payload": {
+      "question": "Un objet coûte 180 euros. Son prix augmente de 20 %, puis diminue de 20 % sur le nouveau prix. Le prix final est-il revenu au prix initial ?",
+      "answer": "Non, il vaut 172,80 euros, soit 96 % du prix initial, Les coefficients 1,20 et 0,80 ont pour produit 0,96,",
+      "hint": "Multipliez les coefficients plutôt que d’additionner les pourcentages."
+    }
+  },
+  {
+    "publication_date": "2026-07-07",
+    "payload": {
+      "question": "Un objet coûte 80 euros. Son prix augmente de 20 %, puis diminue de 20 % sur le nouveau prix. Le prix final est-il revenu au prix initial ?",
+      "answer": "Non, il vaut 76,80 euros, soit 96 % du prix initial, Les coefficients 1,20 et 0,80 ont pour produit 0,96,",
+      "hint": "Multipliez les coefficients plutôt que d’additionner les pourcentages."
+    }
+  },
+  {
+    "publication_date": "2026-07-08",
+    "payload": {
+      "question": "Un cycliste parcourt 33 km à l’aller puis la même distance au retour. Il roule à 12 km/h à l’aller et à 24 km/h au retour, sans pause. Quelle est sa vitesse moyenne sur l’ensemble du trajet ?",
+      "answer": "16 km/h. Pour une distance d à chaque étape, le temps total vaut d/12 + d/24 = d/8. La distance totale 2d divisée par ce temps donne 16.",
+      "hint": "La moyenne des vitesses n’est pas la moyenne arithmétique quand les durées diffèrent."
+    }
+  },
+  {
+    "publication_date": "2026-07-09",
+    "payload": {
+      "question": "Un sac contient 13 billes rouges et 15 billes bleues. Sans regarder, combien faut-il en tirer au minimum pour être certain d’en avoir deux de la même couleur ?",
+      "answer": "3 billes. Les deux premières peuvent être de couleurs différentes ; la troisième partage nécessairement sa couleur avec l’une des deux.",
+      "hint": "Il n’y a que deux couleurs."
+    }
+  },
+  {
+    "publication_date": "2026-07-10",
+    "payload": {
+      "question": "Un objet coûte 100 euros. Son prix augmente de 20 %, puis diminue de 20 % sur le nouveau prix. Le prix final est-il revenu au prix initial ?",
+      "answer": "Non, il vaut 96,00 euros, soit 96 % du prix initial, Les coefficients 1,20 et 0,80 ont pour produit 0,96,",
+      "hint": "Multipliez les coefficients plutôt que d’additionner les pourcentages."
+    }
+  },
+  {
+    "publication_date": "2026-07-11",
+    "payload": {
+      "question": "Un sac contient 28 billes rouges et 30 billes bleues. Sans regarder, combien faut-il en tirer au minimum pour être certain d’en avoir deux de la même couleur ?",
+      "answer": "3 billes. Les deux premières peuvent être de couleurs différentes ; la troisième partage nécessairement sa couleur avec l’une des deux.",
+      "hint": "Il n’y a que deux couleurs."
+    }
+  },
+  {
+    "publication_date": "2026-07-12",
+    "payload": {
+      "question": "Une urne contient 5 jetons numérotés de 1 à 5. On en tire un au hasard, avec la même chance pour chaque jeton. Quelle est la probabilité de tirer le numéro 4 ?",
+      "answer": "1/5. Un seul jeton porte le numéro demandé parmi 5 jetons équiprobables.",
+      "hint": "Comptez les issues favorables et le nombre total d’issues."
+    }
+  },
+  {
+    "publication_date": "2026-07-13",
+    "payload": {
+      "question": "Un escalier compte 27 marches. Combien de façons différentes permettent d’atteindre la deuxième marche en faisant uniquement des pas de une ou de deux marches, sans redescendre ?",
+      "answer": "2 façons : deux pas de une marche, ou un pas de deux marches. La hauteur totale de l’escalier ne change pas la question.",
+      "hint": "Arrêtez-vous à la deuxième marche, sans monter davantage."
+    }
+  },
+  {
+    "publication_date": "2026-07-14",
+    "payload": {
+      "question": "Une corde de 72 mètres est découpée en morceaux de 3 mètres. Une coupe ne traverse qu’une seule épaisseur. Combien de coupes faut-il ?",
+      "answer": "23 coupes. Il faut 24 morceaux ; chaque coupe augmente leur nombre de un.",
+      "hint": "Le premier morceau existe avant la première coupe."
+    }
+  },
+  {
+    "publication_date": "2026-07-15",
+    "payload": {
+      "question": "Une suite commence par 11, 14, 19, 26. On ajoute successivement les nombres impairs 3, 5, 7, puis 9. Quel est le terme suivant ?",
+      "answer": "35, car 26 + 9 = 35.",
+      "hint": "La règle d’addition est donnée : poursuivez-la."
+    }
+  },
+  {
+    "publication_date": "2026-07-16",
+    "payload": {
+      "question": "Deux nombres entiers positifs consécutifs ont pour somme 63. Quel est le plus petit ?",
+      "answer": "31. Si le premier vaut x, le second vaut x + 1 : 2x + 1 = 63.",
+      "hint": "Soustrayez un à la somme, puis divisez par deux."
+    }
+  },
+  {
+    "publication_date": "2026-07-17",
+    "payload": {
+      "question": "Une corde de 87 mètres est découpée en morceaux de 3 mètres. Une coupe ne traverse qu’une seule épaisseur. Combien de coupes faut-il ?",
+      "answer": "28 coupes. Il faut 29 morceaux ; chaque coupe augmente leur nombre de un.",
+      "hint": "Le premier morceau existe avant la première coupe."
+    }
+  },
+  {
+    "publication_date": "2026-07-18",
+    "payload": {
+      "question": "Dans une salle, 18 personnes se serrent chacune la main une fois avec toutes les autres. Combien de poignées de main sont échangées ?",
+      "answer": "153. Chaque personne salue 17 autres personnes ; on divise le produit par deux pour ne pas compter chaque paire deux fois.",
+      "hint": "Comptez les paires sans tenir compte de leur ordre."
+    }
+  },
+  {
+    "publication_date": "2026-07-19",
+    "payload": {
+      "question": "Une corde de 27 mètres est découpée en morceaux de 3 mètres. Une coupe ne traverse qu’une seule épaisseur. Combien de coupes faut-il ?",
+      "answer": "8 coupes. Il faut 9 morceaux ; chaque coupe augmente leur nombre de un.",
+      "hint": "Le premier morceau existe avant la première coupe."
+    }
+  },
+  {
+    "publication_date": "2026-07-20",
+    "payload": {
+      "question": "Un cycliste parcourt 39 km à l’aller puis la même distance au retour. Il roule à 12 km/h à l’aller et à 24 km/h au retour, sans pause. Quelle est sa vitesse moyenne sur l’ensemble du trajet ?",
+      "answer": "16 km/h. Pour une distance d à chaque étape, le temps total vaut d/12 + d/24 = d/8. La distance totale 2d divisée par ce temps donne 16.",
+      "hint": "La moyenne des vitesses n’est pas la moyenne arithmétique quand les durées diffèrent."
+    }
+  },
+  {
+    "publication_date": "2026-07-21",
+    "payload": {
+      "question": "Un sac contient 30 billes rouges et 32 billes bleues. Sans regarder, combien faut-il en tirer au minimum pour être certain d’en avoir deux de la même couleur ?",
+      "answer": "3 billes. Les deux premières peuvent être de couleurs différentes ; la troisième partage nécessairement sa couleur avec l’une des deux.",
+      "hint": "Il n’y a que deux couleurs."
+    }
+  },
+  {
+    "publication_date": "2026-07-22",
+    "payload": {
+      "question": "Deux nombres entiers positifs consécutifs ont pour somme 25. Quel est le plus petit ?",
+      "answer": "12. Si le premier vaut x, le second vaut x + 1 : 2x + 1 = 25.",
+      "hint": "Soustrayez un à la somme, puis divisez par deux."
+    }
+  },
+  {
+    "publication_date": "2026-07-23",
+    "payload": {
+      "question": "Un cycliste parcourt 24 km à l’aller puis la même distance au retour. Il roule à 12 km/h à l’aller et à 24 km/h au retour, sans pause. Quelle est sa vitesse moyenne sur l’ensemble du trajet ?",
+      "answer": "16 km/h. Pour une distance d à chaque étape, le temps total vaut d/12 + d/24 = d/8. La distance totale 2d divisée par ce temps donne 16.",
+      "hint": "La moyenne des vitesses n’est pas la moyenne arithmétique quand les durées diffèrent."
+    }
+  },
+  {
+    "publication_date": "2026-07-24",
+    "payload": {
+      "question": "Un sac contient 19 billes rouges et 21 billes bleues. Sans regarder, combien faut-il en tirer au minimum pour être certain d’en avoir deux de la même couleur ?",
+      "answer": "3 billes. Les deux premières peuvent être de couleurs différentes ; la troisième partage nécessairement sa couleur avec l’une des deux.",
+      "hint": "Il n’y a que deux couleurs."
+    }
+  },
+  {
+    "publication_date": "2026-07-25",
+    "payload": {
+      "question": "Je suis un entier positif. Mon triple augmenté de 15 vaut 66. Qui suis-je ?",
+      "answer": "17. En soustrayant 15, on obtient 51, puis on divise par trois.",
+      "hint": "Effectuez les opérations inverses dans l’ordre inverse."
+    }
+  },
+  {
+    "publication_date": "2026-07-26",
+    "payload": {
+      "question": "Un rectangle a un périmètre de 104 cm. Sa longueur dépasse sa largeur de 2 cm. Quelle est son aire ?",
+      "answer": "675 cm². La demi-somme des côtés vaut 52 ; les côtés mesurent 25 et 27 cm.",
+      "hint": "Cherchez deux nombres dont la somme et la différence sont connues."
+    }
+  },
+  {
+    "publication_date": "2026-07-27",
+    "payload": {
+      "question": "Dans une salle, 22 personnes se serrent chacune la main une fois avec toutes les autres. Combien de poignées de main sont échangées ?",
+      "answer": "231. Chaque personne salue 21 autres personnes ; on divise le produit par deux pour ne pas compter chaque paire deux fois.",
+      "hint": "Comptez les paires sans tenir compte de leur ordre."
+    }
+  },
+  {
+    "publication_date": "2026-07-28",
+    "payload": {
+      "question": "Je suis un entier positif. Mon triple augmenté de 28 vaut 118. Qui suis-je ?",
+      "answer": "30. En soustrayant 28, on obtient 90, puis on divise par trois.",
+      "hint": "Effectuez les opérations inverses dans l’ordre inverse."
+    }
+  },
+  {
+    "publication_date": "2026-07-29",
+    "payload": {
+      "question": "Un escalier compte 6 marches. Combien de façons différentes permettent d’atteindre la deuxième marche en faisant uniquement des pas de une ou de deux marches, sans redescendre ?",
+      "answer": "2 façons : deux pas de une marche, ou un pas de deux marches. La hauteur totale de l’escalier ne change pas la question.",
+      "hint": "Arrêtez-vous à la deuxième marche, sans monter davantage."
+    }
+  },
+  {
+    "publication_date": "2026-07-30",
+    "payload": {
+      "question": "Je suis un entier positif. Mon triple augmenté de 27 vaut 114. Qui suis-je ?",
+      "answer": "29. En soustrayant 27, on obtient 87, puis on divise par trois.",
+      "hint": "Effectuez les opérations inverses dans l’ordre inverse."
+    }
+  },
+  {
+    "publication_date": "2026-07-31",
+    "payload": {
+      "question": "Un cycliste parcourt 13 km à l’aller puis la même distance au retour. Il roule à 12 km/h à l’aller et à 24 km/h au retour, sans pause. Quelle est sa vitesse moyenne sur l’ensemble du trajet ?",
+      "answer": "16 km/h. Pour une distance d à chaque étape, le temps total vaut d/12 + d/24 = d/8. La distance totale 2d divisée par ce temps donne 16.",
+      "hint": "La moyenne des vitesses n’est pas la moyenne arithmétique quand les durées diffèrent."
+    }
+  },
+  {
+    "publication_date": "2026-08-01",
+    "payload": {
+      "question": "Je suis un entier positif. Mon triple augmenté de 6 vaut 30. Qui suis-je ?",
+      "answer": "8. En soustrayant 6, on obtient 24, puis on divise par trois.",
+      "hint": "Effectuez les opérations inverses dans l’ordre inverse."
+    }
+  },
+  {
+    "publication_date": "2026-08-02",
+    "payload": {
+      "question": "Un sac contient 31 billes rouges et 33 billes bleues. Sans regarder, combien faut-il en tirer au minimum pour être certain d’en avoir deux de la même couleur ?",
+      "answer": "3 billes. Les deux premières peuvent être de couleurs différentes ; la troisième partage nécessairement sa couleur avec l’une des deux.",
+      "hint": "Il n’y a que deux couleurs."
+    }
+  },
+  {
+    "publication_date": "2026-08-03",
+    "payload": {
+      "question": "Un objet coûte 340 euros. Son prix augmente de 20 %, puis diminue de 20 % sur le nouveau prix. Le prix final est-il revenu au prix initial ?",
+      "answer": "Non, il vaut 326,40 euros, soit 96 % du prix initial, Les coefficients 1,20 et 0,80 ont pour produit 0,96,",
+      "hint": "Multipliez les coefficients plutôt que d’additionner les pourcentages."
+    }
+  },
+  {
+    "publication_date": "2026-08-04",
+    "payload": {
+      "question": "Un rectangle a un périmètre de 72 cm. Sa longueur dépasse sa largeur de 2 cm. Quelle est son aire ?",
+      "answer": "323 cm². La demi-somme des côtés vaut 36 ; les côtés mesurent 17 et 19 cm.",
+      "hint": "Cherchez deux nombres dont la somme et la différence sont connues."
+    }
+  },
+  {
+    "publication_date": "2026-08-05",
+    "payload": {
+      "question": "Un objet coûte 70 euros. Son prix augmente de 20 %, puis diminue de 20 % sur le nouveau prix. Le prix final est-il revenu au prix initial ?",
+      "answer": "Non, il vaut 67,20 euros, soit 96 % du prix initial, Les coefficients 1,20 et 0,80 ont pour produit 0,96,",
+      "hint": "Multipliez les coefficients plutôt que d’additionner les pourcentages."
+    }
+  },
+  {
+    "publication_date": "2026-08-06",
+    "payload": {
+      "question": "Une urne contient 20 jetons numérotés de 1 à 20. On en tire un au hasard, avec la même chance pour chaque jeton. Quelle est la probabilité de tirer le numéro 19 ?",
+      "answer": "1/20. Un seul jeton porte le numéro demandé parmi 20 jetons équiprobables.",
+      "hint": "Comptez les issues favorables et le nombre total d’issues."
+    }
+  },
+  {
+    "publication_date": "2026-08-07",
+    "payload": {
+      "question": "Deux nombres entiers positifs consécutifs ont pour somme 33. Quel est le plus petit ?",
+      "answer": "16. Si le premier vaut x, le second vaut x + 1 : 2x + 1 = 33.",
+      "hint": "Soustrayez un à la somme, puis divisez par deux."
+    }
+  },
+  {
+    "publication_date": "2026-08-08",
+    "payload": {
+      "question": "Une suite commence par 26, 29, 34, 41. On ajoute successivement les nombres impairs 3, 5, 7, puis 9. Quel est le terme suivant ?",
+      "answer": "50, car 41 + 9 = 50.",
+      "hint": "La règle d’addition est donnée : poursuivez-la."
+    }
+  },
+  {
+    "publication_date": "2026-08-09",
+    "payload": {
+      "question": "Une corde de 63 mètres est découpée en morceaux de 3 mètres. Une coupe ne traverse qu’une seule épaisseur. Combien de coupes faut-il ?",
+      "answer": "20 coupes. Il faut 21 morceaux ; chaque coupe augmente leur nombre de un.",
+      "hint": "Le premier morceau existe avant la première coupe."
+    }
+  },
+  {
+    "publication_date": "2026-08-10",
+    "payload": {
+      "question": "Un rectangle a un périmètre de 20 cm. Sa longueur dépasse sa largeur de 2 cm. Quelle est son aire ?",
+      "answer": "24 cm². La demi-somme des côtés vaut 10 ; les côtés mesurent 4 et 6 cm.",
+      "hint": "Cherchez deux nombres dont la somme et la différence sont connues."
+    }
+  },
+  {
+    "publication_date": "2026-08-11",
+    "payload": {
+      "question": "Un escalier compte 7 marches. Combien de façons différentes permettent d’atteindre la deuxième marche en faisant uniquement des pas de une ou de deux marches, sans redescendre ?",
+      "answer": "2 façons : deux pas de une marche, ou un pas de deux marches. La hauteur totale de l’escalier ne change pas la question.",
+      "hint": "Arrêtez-vous à la deuxième marche, sans monter davantage."
+    }
+  },
+  {
+    "publication_date": "2026-08-12",
+    "payload": {
+      "question": "Je suis un entier positif. Mon triple augmenté de 1 vaut 10. Qui suis-je ?",
+      "answer": "3. En soustrayant 1, on obtient 9, puis on divise par trois.",
+      "hint": "Effectuez les opérations inverses dans l’ordre inverse."
+    }
+  },
+  {
+    "publication_date": "2026-08-13",
+    "payload": {
+      "question": "Je suis un entier positif. Mon triple augmenté de 21 vaut 90. Qui suis-je ?",
+      "answer": "23. En soustrayant 21, on obtient 69, puis on divise par trois.",
+      "hint": "Effectuez les opérations inverses dans l’ordre inverse."
+    }
+  },
+  {
+    "publication_date": "2026-08-14",
+    "payload": {
+      "question": "Un sac contient 6 billes rouges et 8 billes bleues. Sans regarder, combien faut-il en tirer au minimum pour être certain d’en avoir deux de la même couleur ?",
+      "answer": "3 billes. Les deux premières peuvent être de couleurs différentes ; la troisième partage nécessairement sa couleur avec l’une des deux.",
+      "hint": "Il n’y a que deux couleurs."
+    }
+  },
+  {
+    "publication_date": "2026-08-15",
+    "payload": {
+      "question": "Un objet coûte 140 euros. Son prix augmente de 20 %, puis diminue de 20 % sur le nouveau prix. Le prix final est-il revenu au prix initial ?",
+      "answer": "Non, il vaut 134,40 euros, soit 96 % du prix initial, Les coefficients 1,20 et 0,80 ont pour produit 0,96,",
+      "hint": "Multipliez les coefficients plutôt que d’additionner les pourcentages."
+    }
+  },
+  {
+    "publication_date": "2026-08-16",
+    "payload": {
+      "question": "Une urne contient 26 jetons numérotés de 1 à 26. On en tire un au hasard, avec la même chance pour chaque jeton. Quelle est la probabilité de tirer le numéro 25 ?",
+      "answer": "1/26. Un seul jeton porte le numéro demandé parmi 26 jetons équiprobables.",
+      "hint": "Comptez les issues favorables et le nombre total d’issues."
+    }
+  },
+  {
+    "publication_date": "2026-08-17",
+    "payload": {
+      "question": "Un escalier compte 21 marches. Combien de façons différentes permettent d’atteindre la deuxième marche en faisant uniquement des pas de une ou de deux marches, sans redescendre ?",
+      "answer": "2 façons : deux pas de une marche, ou un pas de deux marches. La hauteur totale de l’escalier ne change pas la question.",
+      "hint": "Arrêtez-vous à la deuxième marche, sans monter davantage."
+    }
+  },
+  {
+    "publication_date": "2026-08-18",
+    "payload": {
+      "question": "Un sac contient 7 billes rouges et 9 billes bleues. Sans regarder, combien faut-il en tirer au minimum pour être certain d’en avoir deux de la même couleur ?",
+      "answer": "3 billes. Les deux premières peuvent être de couleurs différentes ; la troisième partage nécessairement sa couleur avec l’une des deux.",
+      "hint": "Il n’y a que deux couleurs."
+    }
+  },
+  {
+    "publication_date": "2026-08-19",
+    "payload": {
+      "question": "Un rectangle a un périmètre de 28 cm. Sa longueur dépasse sa largeur de 2 cm. Quelle est son aire ?",
+      "answer": "48 cm². La demi-somme des côtés vaut 14 ; les côtés mesurent 6 et 8 cm.",
+      "hint": "Cherchez deux nombres dont la somme et la différence sont connues."
+    }
+  },
+  {
+    "publication_date": "2026-08-20",
+    "payload": {
+      "question": "Une urne contient 10 jetons numérotés de 1 à 10. On en tire un au hasard, avec la même chance pour chaque jeton. Quelle est la probabilité de tirer le numéro 9 ?",
+      "answer": "1/10. Un seul jeton porte le numéro demandé parmi 10 jetons équiprobables.",
+      "hint": "Comptez les issues favorables et le nombre total d’issues."
+    }
+  },
+  {
+    "publication_date": "2026-08-21",
+    "payload": {
+      "question": "Deux nombres entiers positifs consécutifs ont pour somme 31. Quel est le plus petit ?",
+      "answer": "15. Si le premier vaut x, le second vaut x + 1 : 2x + 1 = 31.",
+      "hint": "Soustrayez un à la somme, puis divisez par deux."
+    }
+  },
+  {
+    "publication_date": "2026-08-22",
+    "payload": {
+      "question": "Je suis un entier positif. Mon triple augmenté de 20 vaut 86. Qui suis-je ?",
+      "answer": "22. En soustrayant 20, on obtient 66, puis on divise par trois.",
+      "hint": "Effectuez les opérations inverses dans l’ordre inverse."
+    }
+  },
+  {
+    "publication_date": "2026-08-23",
+    "payload": {
+      "question": "Une corde de 24 mètres est découpée en morceaux de 3 mètres. Une coupe ne traverse qu’une seule épaisseur. Combien de coupes faut-il ?",
+      "answer": "7 coupes. Il faut 8 morceaux ; chaque coupe augmente leur nombre de un.",
+      "hint": "Le premier morceau existe avant la première coupe."
+    }
+  },
+  {
+    "publication_date": "2026-08-24",
+    "payload": {
+      "question": "Une urne contient 16 jetons numérotés de 1 à 16. On en tire un au hasard, avec la même chance pour chaque jeton. Quelle est la probabilité de tirer le numéro 15 ?",
+      "answer": "1/16. Un seul jeton porte le numéro demandé parmi 16 jetons équiprobables.",
+      "hint": "Comptez les issues favorables et le nombre total d’issues."
+    }
+  },
+  {
+    "publication_date": "2026-08-25",
+    "payload": {
+      "question": "Une corde de 81 mètres est découpée en morceaux de 3 mètres. Une coupe ne traverse qu’une seule épaisseur. Combien de coupes faut-il ?",
+      "answer": "26 coupes. Il faut 27 morceaux ; chaque coupe augmente leur nombre de un.",
+      "hint": "Le premier morceau existe avant la première coupe."
+    }
+  },
+  {
+    "publication_date": "2026-08-26",
+    "payload": {
+      "question": "Deux nombres entiers positifs consécutifs ont pour somme 67. Quel est le plus petit ?",
+      "answer": "33. Si le premier vaut x, le second vaut x + 1 : 2x + 1 = 67.",
+      "hint": "Soustrayez un à la somme, puis divisez par deux."
+    }
+  },
+  {
+    "publication_date": "2026-08-27",
+    "payload": {
+      "question": "Un rectangle a un périmètre de 124 cm. Sa longueur dépasse sa largeur de 2 cm. Quelle est son aire ?",
+      "answer": "960 cm². La demi-somme des côtés vaut 62 ; les côtés mesurent 30 et 32 cm.",
+      "hint": "Cherchez deux nombres dont la somme et la différence sont connues."
+    }
+  },
+  {
+    "publication_date": "2026-08-28",
+    "payload": {
+      "question": "Un objet coûte 300 euros. Son prix augmente de 20 %, puis diminue de 20 % sur le nouveau prix. Le prix final est-il revenu au prix initial ?",
+      "answer": "Non, il vaut 288,00 euros, soit 96 % du prix initial, Les coefficients 1,20 et 0,80 ont pour produit 0,96,",
+      "hint": "Multipliez les coefficients plutôt que d’additionner les pourcentages."
+    }
+  },
+  {
+    "publication_date": "2026-08-29",
+    "payload": {
+      "question": "Un rectangle a un périmètre de 56 cm. Sa longueur dépasse sa largeur de 2 cm. Quelle est son aire ?",
+      "answer": "195 cm². La demi-somme des côtés vaut 28 ; les côtés mesurent 13 et 15 cm.",
+      "hint": "Cherchez deux nombres dont la somme et la différence sont connues."
+    }
+  },
+  {
+    "publication_date": "2026-08-30",
+    "payload": {
+      "question": "Un objet coûte 310 euros. Son prix augmente de 20 %, puis diminue de 20 % sur le nouveau prix. Le prix final est-il revenu au prix initial ?",
+      "answer": "Non, il vaut 297,60 euros, soit 96 % du prix initial, Les coefficients 1,20 et 0,80 ont pour produit 0,96,",
+      "hint": "Multipliez les coefficients plutôt que d’additionner les pourcentages."
+    }
+  },
+  {
+    "publication_date": "2026-08-31",
+    "payload": {
+      "question": "Un escalier compte 31 marches. Combien de façons différentes permettent d’atteindre la deuxième marche en faisant uniquement des pas de une ou de deux marches, sans redescendre ?",
+      "answer": "2 façons : deux pas de une marche, ou un pas de deux marches. La hauteur totale de l’escalier ne change pas la question.",
+      "hint": "Arrêtez-vous à la deuxième marche, sans monter davantage."
+    }
+  },
+  {
+    "publication_date": "2026-09-01",
+    "payload": {
+      "question": "Deux nombres entiers positifs consécutifs ont pour somme 29. Quel est le plus petit ?",
+      "answer": "14. Si le premier vaut x, le second vaut x + 1 : 2x + 1 = 29.",
+      "hint": "Soustrayez un à la somme, puis divisez par deux."
+    }
+  },
+  {
+    "publication_date": "2026-09-02",
+    "payload": {
+      "question": "Dans une salle, 28 personnes se serrent chacune la main une fois avec toutes les autres. Combien de poignées de main sont échangées ?",
+      "answer": "378. Chaque personne salue 27 autres personnes ; on divise le produit par deux pour ne pas compter chaque paire deux fois.",
+      "hint": "Comptez les paires sans tenir compte de leur ordre."
+    }
+  },
+  {
+    "publication_date": "2026-09-03",
+    "payload": {
+      "question": "Un escalier compte 16 marches. Combien de façons différentes permettent d’atteindre la deuxième marche en faisant uniquement des pas de une ou de deux marches, sans redescendre ?",
+      "answer": "2 façons : deux pas de une marche, ou un pas de deux marches. La hauteur totale de l’escalier ne change pas la question.",
+      "hint": "Arrêtez-vous à la deuxième marche, sans monter davantage."
+    }
+  },
+  {
+    "publication_date": "2026-09-04",
+    "payload": {
+      "question": "Une corde de 57 mètres est découpée en morceaux de 3 mètres. Une coupe ne traverse qu’une seule épaisseur. Combien de coupes faut-il ?",
+      "answer": "18 coupes. Il faut 19 morceaux ; chaque coupe augmente leur nombre de un.",
+      "hint": "Le premier morceau existe avant la première coupe."
+    }
+  },
+  {
+    "publication_date": "2026-09-05",
+    "payload": {
+      "question": "Je suis un entier positif. Mon triple augmenté de 16 vaut 70. Qui suis-je ?",
+      "answer": "18. En soustrayant 16, on obtient 54, puis on divise par trois.",
+      "hint": "Effectuez les opérations inverses dans l’ordre inverse."
+    }
+  },
+  {
+    "publication_date": "2026-09-06",
+    "payload": {
+      "question": "Une corde de 51 mètres est découpée en morceaux de 3 mètres. Une coupe ne traverse qu’une seule épaisseur. Combien de coupes faut-il ?",
+      "answer": "16 coupes. Il faut 17 morceaux ; chaque coupe augmente leur nombre de un.",
+      "hint": "Le premier morceau existe avant la première coupe."
+    }
+  },
+  {
+    "publication_date": "2026-09-07",
+    "payload": {
+      "question": "Une boîte contient 14 chaussettes noires et autant de blanches. Dans le noir, combien de chaussettes faut-il prendre au minimum pour être certain d’obtenir une paire de même couleur ?",
+      "answer": "3. Avec deux chaussettes, les couleurs peuvent différer. Avec trois, deux ont nécessairement la même couleur.",
+      "hint": "Raisonnez dans le cas le moins favorable."
+    }
+  },
+  {
+    "publication_date": "2026-09-08",
+    "payload": {
+      "question": "Un sac contient 27 billes rouges et 29 billes bleues. Sans regarder, combien faut-il en tirer au minimum pour être certain d’en avoir deux de la même couleur ?",
+      "answer": "3 billes. Les deux premières peuvent être de couleurs différentes ; la troisième partage nécessairement sa couleur avec l’une des deux.",
+      "hint": "Il n’y a que deux couleurs."
+    }
+  },
+  {
+    "publication_date": "2026-09-09",
+    "payload": {
+      "question": "Je suis un entier positif. Mon triple augmenté de 18 vaut 78. Qui suis-je ?",
+      "answer": "20. En soustrayant 18, on obtient 60, puis on divise par trois.",
+      "hint": "Effectuez les opérations inverses dans l’ordre inverse."
+    }
+  },
+  {
+    "publication_date": "2026-09-10",
+    "payload": {
+      "question": "Un rectangle a un périmètre de 136 cm. Sa longueur dépasse sa largeur de 2 cm. Quelle est son aire ?",
+      "answer": "1155 cm². La demi-somme des côtés vaut 68 ; les côtés mesurent 33 et 35 cm.",
+      "hint": "Cherchez deux nombres dont la somme et la différence sont connues."
+    }
+  },
+  {
+    "publication_date": "2026-09-11",
+    "payload": {
+      "question": "Un cycliste parcourt 34 km à l’aller puis la même distance au retour. Il roule à 12 km/h à l’aller et à 24 km/h au retour, sans pause. Quelle est sa vitesse moyenne sur l’ensemble du trajet ?",
+      "answer": "16 km/h. Pour une distance d à chaque étape, le temps total vaut d/12 + d/24 = d/8. La distance totale 2d divisée par ce temps donne 16.",
+      "hint": "La moyenne des vitesses n’est pas la moyenne arithmétique quand les durées diffèrent."
+    }
+  },
+  {
+    "publication_date": "2026-09-12",
+    "payload": {
+      "question": "Un objet coûte 120 euros. Son prix augmente de 20 %, puis diminue de 20 % sur le nouveau prix. Le prix final est-il revenu au prix initial ?",
+      "answer": "Non, il vaut 115,20 euros, soit 96 % du prix initial, Les coefficients 1,20 et 0,80 ont pour produit 0,96,",
+      "hint": "Multipliez les coefficients plutôt que d’additionner les pourcentages."
+    }
+  },
+  {
+    "publication_date": "2026-09-13",
+    "payload": {
+      "question": "Une boîte contient 17 chaussettes noires et autant de blanches. Dans le noir, combien de chaussettes faut-il prendre au minimum pour être certain d’obtenir une paire de même couleur ?",
+      "answer": "3. Avec deux chaussettes, les couleurs peuvent différer. Avec trois, deux ont nécessairement la même couleur.",
+      "hint": "Raisonnez dans le cas le moins favorable."
+    }
+  },
+  {
+    "publication_date": "2026-09-14",
+    "payload": {
+      "question": "Une suite commence par 2, 5, 10, 17. On ajoute successivement les nombres impairs 3, 5, 7, puis 9. Quel est le terme suivant ?",
+      "answer": "26, car 17 + 9 = 26.",
+      "hint": "La règle d’addition est donnée : poursuivez-la."
+    }
+  },
+  {
+    "publication_date": "2026-09-15",
+    "payload": {
+      "question": "Un cycliste parcourt 29 km à l’aller puis la même distance au retour. Il roule à 12 km/h à l’aller et à 24 km/h au retour, sans pause. Quelle est sa vitesse moyenne sur l’ensemble du trajet ?",
+      "answer": "16 km/h. Pour une distance d à chaque étape, le temps total vaut d/12 + d/24 = d/8. La distance totale 2d divisée par ce temps donne 16.",
+      "hint": "La moyenne des vitesses n’est pas la moyenne arithmétique quand les durées diffèrent."
+    }
+  },
+  {
+    "publication_date": "2026-09-16",
+    "payload": {
+      "question": "Dans une salle, 25 personnes se serrent chacune la main une fois avec toutes les autres. Combien de poignées de main sont échangées ?",
+      "answer": "300. Chaque personne salue 24 autres personnes ; on divise le produit par deux pour ne pas compter chaque paire deux fois.",
+      "hint": "Comptez les paires sans tenir compte de leur ordre."
+    }
+  },
+  {
+    "publication_date": "2026-09-17",
+    "payload": {
+      "question": "Une urne contient 22 jetons numérotés de 1 à 22. On en tire un au hasard, avec la même chance pour chaque jeton. Quelle est la probabilité de tirer le numéro 21 ?",
+      "answer": "1/22. Un seul jeton porte le numéro demandé parmi 22 jetons équiprobables.",
+      "hint": "Comptez les issues favorables et le nombre total d’issues."
+    }
+  },
+  {
+    "publication_date": "2026-09-18",
+    "payload": {
+      "question": "Une corde de 69 mètres est découpée en morceaux de 3 mètres. Une coupe ne traverse qu’une seule épaisseur. Combien de coupes faut-il ?",
+      "answer": "22 coupes. Il faut 23 morceaux ; chaque coupe augmente leur nombre de un.",
+      "hint": "Le premier morceau existe avant la première coupe."
+    }
+  },
+  {
+    "publication_date": "2026-09-19",
+    "payload": {
+      "question": "Un sac contient 14 billes rouges et 16 billes bleues. Sans regarder, combien faut-il en tirer au minimum pour être certain d’en avoir deux de la même couleur ?",
+      "answer": "3 billes. Les deux premières peuvent être de couleurs différentes ; la troisième partage nécessairement sa couleur avec l’une des deux.",
+      "hint": "Il n’y a que deux couleurs."
+    }
+  },
+  {
+    "publication_date": "2026-09-20",
+    "payload": {
+      "question": "Un cycliste parcourt 19 km à l’aller puis la même distance au retour. Il roule à 12 km/h à l’aller et à 24 km/h au retour, sans pause. Quelle est sa vitesse moyenne sur l’ensemble du trajet ?",
+      "answer": "16 km/h. Pour une distance d à chaque étape, le temps total vaut d/12 + d/24 = d/8. La distance totale 2d divisée par ce temps donne 16.",
+      "hint": "La moyenne des vitesses n’est pas la moyenne arithmétique quand les durées diffèrent."
+    }
+  },
+  {
+    "publication_date": "2026-09-21",
+    "payload": {
+      "question": "Une boîte contient 20 chaussettes noires et autant de blanches. Dans le noir, combien de chaussettes faut-il prendre au minimum pour être certain d’obtenir une paire de même couleur ?",
+      "answer": "3. Avec deux chaussettes, les couleurs peuvent différer. Avec trois, deux ont nécessairement la même couleur.",
+      "hint": "Raisonnez dans le cas le moins favorable."
+    }
+  },
+  {
+    "publication_date": "2026-09-22",
+    "payload": {
+      "question": "Une urne contient 23 jetons numérotés de 1 à 23. On en tire un au hasard, avec la même chance pour chaque jeton. Quelle est la probabilité de tirer le numéro 22 ?",
+      "answer": "1/23. Un seul jeton porte le numéro demandé parmi 23 jetons équiprobables.",
+      "hint": "Comptez les issues favorables et le nombre total d’issues."
+    }
+  },
+  {
+    "publication_date": "2026-09-23",
+    "payload": {
+      "question": "Je suis un entier positif. Mon triple augmenté de 30 vaut 126. Qui suis-je ?",
+      "answer": "32. En soustrayant 30, on obtient 96, puis on divise par trois.",
+      "hint": "Effectuez les opérations inverses dans l’ordre inverse."
+    }
+  },
+  {
+    "publication_date": "2026-09-24",
+    "payload": {
+      "question": "Une boîte contient 11 chaussettes noires et autant de blanches. Dans le noir, combien de chaussettes faut-il prendre au minimum pour être certain d’obtenir une paire de même couleur ?",
+      "answer": "3. Avec deux chaussettes, les couleurs peuvent différer. Avec trois, deux ont nécessairement la même couleur.",
+      "hint": "Raisonnez dans le cas le moins favorable."
+    }
+  },
+  {
+    "publication_date": "2026-09-25",
+    "payload": {
+      "question": "Une boîte contient 6 chaussettes noires et autant de blanches. Dans le noir, combien de chaussettes faut-il prendre au minimum pour être certain d’obtenir une paire de même couleur ?",
+      "answer": "3. Avec deux chaussettes, les couleurs peuvent différer. Avec trois, deux ont nécessairement la même couleur.",
+      "hint": "Raisonnez dans le cas le moins favorable."
+    }
+  },
+  {
+    "publication_date": "2026-09-26",
+    "payload": {
+      "question": "Une boîte contient 5 chaussettes noires et autant de blanches. Dans le noir, combien de chaussettes faut-il prendre au minimum pour être certain d’obtenir une paire de même couleur ?",
+      "answer": "3. Avec deux chaussettes, les couleurs peuvent différer. Avec trois, deux ont nécessairement la même couleur.",
+      "hint": "Raisonnez dans le cas le moins favorable."
+    }
+  },
+  {
+    "publication_date": "2026-09-27",
+    "payload": {
+      "question": "Une suite commence par 12, 15, 20, 27. On ajoute successivement les nombres impairs 3, 5, 7, puis 9. Quel est le terme suivant ?",
+      "answer": "36, car 27 + 9 = 36.",
+      "hint": "La règle d’addition est donnée : poursuivez-la."
+    }
+  },
+  {
+    "publication_date": "2026-09-28",
+    "payload": {
+      "question": "Un cycliste parcourt 23 km à l’aller puis la même distance au retour. Il roule à 12 km/h à l’aller et à 24 km/h au retour, sans pause. Quelle est sa vitesse moyenne sur l’ensemble du trajet ?",
+      "answer": "16 km/h. Pour une distance d à chaque étape, le temps total vaut d/12 + d/24 = d/8. La distance totale 2d divisée par ce temps donne 16.",
+      "hint": "La moyenne des vitesses n’est pas la moyenne arithmétique quand les durées diffèrent."
+    }
+  },
+  {
+    "publication_date": "2026-09-29",
+    "payload": {
+      "question": "Deux nombres entiers positifs consécutifs ont pour somme 27. Quel est le plus petit ?",
+      "answer": "13. Si le premier vaut x, le second vaut x + 1 : 2x + 1 = 27.",
+      "hint": "Soustrayez un à la somme, puis divisez par deux."
+    }
+  },
+  {
+    "publication_date": "2026-09-30",
+    "payload": {
+      "question": "Une suite commence par 19, 22, 27, 34. On ajoute successivement les nombres impairs 3, 5, 7, puis 9. Quel est le terme suivant ?",
+      "answer": "43, car 34 + 9 = 43.",
+      "hint": "La règle d’addition est donnée : poursuivez-la."
+    }
+  },
+  {
+    "publication_date": "2026-10-01",
+    "payload": {
+      "question": "Un sac contient 26 billes rouges et 28 billes bleues. Sans regarder, combien faut-il en tirer au minimum pour être certain d’en avoir deux de la même couleur ?",
+      "answer": "3 billes. Les deux premières peuvent être de couleurs différentes ; la troisième partage nécessairement sa couleur avec l’une des deux.",
+      "hint": "Il n’y a que deux couleurs."
+    }
+  },
+  {
+    "publication_date": "2026-10-02",
+    "payload": {
+      "question": "Une boîte contient 31 chaussettes noires et autant de blanches. Dans le noir, combien de chaussettes faut-il prendre au minimum pour être certain d’obtenir une paire de même couleur ?",
+      "answer": "3. Avec deux chaussettes, les couleurs peuvent différer. Avec trois, deux ont nécessairement la même couleur.",
+      "hint": "Raisonnez dans le cas le moins favorable."
+    }
+  },
+  {
+    "publication_date": "2026-10-03",
+    "payload": {
+      "question": "Une boîte contient 26 chaussettes noires et autant de blanches. Dans le noir, combien de chaussettes faut-il prendre au minimum pour être certain d’obtenir une paire de même couleur ?",
+      "answer": "3. Avec deux chaussettes, les couleurs peuvent différer. Avec trois, deux ont nécessairement la même couleur.",
+      "hint": "Raisonnez dans le cas le moins favorable."
+    }
+  },
+  {
+    "publication_date": "2026-10-04",
+    "payload": {
+      "question": "Un sac contient 16 billes rouges et 18 billes bleues. Sans regarder, combien faut-il en tirer au minimum pour être certain d’en avoir deux de la même couleur ?",
+      "answer": "3 billes. Les deux premières peuvent être de couleurs différentes ; la troisième partage nécessairement sa couleur avec l’une des deux.",
+      "hint": "Il n’y a que deux couleurs."
+    }
+  },
+  {
+    "publication_date": "2026-10-05",
+    "payload": {
+      "question": "Un sac contient 20 billes rouges et 22 billes bleues. Sans regarder, combien faut-il en tirer au minimum pour être certain d’en avoir deux de la même couleur ?",
+      "answer": "3 billes. Les deux premières peuvent être de couleurs différentes ; la troisième partage nécessairement sa couleur avec l’une des deux.",
+      "hint": "Il n’y a que deux couleurs."
+    }
+  },
+  {
+    "publication_date": "2026-10-06",
+    "payload": {
+      "question": "Un cycliste parcourt 38 km à l’aller puis la même distance au retour. Il roule à 12 km/h à l’aller et à 24 km/h au retour, sans pause. Quelle est sa vitesse moyenne sur l’ensemble du trajet ?",
+      "answer": "16 km/h. Pour une distance d à chaque étape, le temps total vaut d/12 + d/24 = d/8. La distance totale 2d divisée par ce temps donne 16.",
+      "hint": "La moyenne des vitesses n’est pas la moyenne arithmétique quand les durées diffèrent."
+    }
+  },
+  {
+    "publication_date": "2026-10-07",
+    "payload": {
+      "question": "Une urne contient 29 jetons numérotés de 1 à 29. On en tire un au hasard, avec la même chance pour chaque jeton. Quelle est la probabilité de tirer le numéro 28 ?",
+      "answer": "1/29. Un seul jeton porte le numéro demandé parmi 29 jetons équiprobables.",
+      "hint": "Comptez les issues favorables et le nombre total d’issues."
+    }
+  },
+  {
+    "publication_date": "2026-10-08",
+    "payload": {
+      "question": "Une suite commence par 20, 23, 28, 35. On ajoute successivement les nombres impairs 3, 5, 7, puis 9. Quel est le terme suivant ?",
+      "answer": "44, car 35 + 9 = 44.",
+      "hint": "La règle d’addition est donnée : poursuivez-la."
+    }
+  },
+  {
+    "publication_date": "2026-10-09",
+    "payload": {
+      "question": "Dans une salle, 9 personnes se serrent chacune la main une fois avec toutes les autres. Combien de poignées de main sont échangées ?",
+      "answer": "36. Chaque personne salue 8 autres personnes ; on divise le produit par deux pour ne pas compter chaque paire deux fois.",
+      "hint": "Comptez les paires sans tenir compte de leur ordre."
+    }
+  },
+  {
+    "publication_date": "2026-10-10",
+    "payload": {
+      "question": "Un objet coûte 150 euros. Son prix augmente de 20 %, puis diminue de 20 % sur le nouveau prix. Le prix final est-il revenu au prix initial ?",
+      "answer": "Non, il vaut 144,00 euros, soit 96 % du prix initial, Les coefficients 1,20 et 0,80 ont pour produit 0,96,",
+      "hint": "Multipliez les coefficients plutôt que d’additionner les pourcentages."
+    }
+  },
+  {
+    "publication_date": "2026-10-11",
+    "payload": {
+      "question": "Un cycliste parcourt 31 km à l’aller puis la même distance au retour. Il roule à 12 km/h à l’aller et à 24 km/h au retour, sans pause. Quelle est sa vitesse moyenne sur l’ensemble du trajet ?",
+      "answer": "16 km/h. Pour une distance d à chaque étape, le temps total vaut d/12 + d/24 = d/8. La distance totale 2d divisée par ce temps donne 16.",
+      "hint": "La moyenne des vitesses n’est pas la moyenne arithmétique quand les durées diffèrent."
+    }
+  },
+  {
+    "publication_date": "2026-10-12",
+    "payload": {
+      "question": "Une suite commence par 27, 30, 35, 42. On ajoute successivement les nombres impairs 3, 5, 7, puis 9. Quel est le terme suivant ?",
+      "answer": "51, car 42 + 9 = 51.",
+      "hint": "La règle d’addition est donnée : poursuivez-la."
+    }
+  },
+  {
+    "publication_date": "2026-10-13",
+    "payload": {
+      "question": "Un rectangle a un périmètre de 100 cm. Sa longueur dépasse sa largeur de 2 cm. Quelle est son aire ?",
+      "answer": "624 cm². La demi-somme des côtés vaut 50 ; les côtés mesurent 24 et 26 cm.",
+      "hint": "Cherchez deux nombres dont la somme et la différence sont connues."
+    }
+  },
+  {
+    "publication_date": "2026-10-14",
+    "payload": {
+      "question": "Je suis un entier positif. Mon triple augmenté de 19 vaut 82. Qui suis-je ?",
+      "answer": "21. En soustrayant 19, on obtient 63, puis on divise par trois.",
+      "hint": "Effectuez les opérations inverses dans l’ordre inverse."
+    }
+  },
+  {
+    "publication_date": "2026-10-15",
+    "payload": {
+      "question": "Un cycliste parcourt 40 km à l’aller puis la même distance au retour. Il roule à 12 km/h à l’aller et à 24 km/h au retour, sans pause. Quelle est sa vitesse moyenne sur l’ensemble du trajet ?",
+      "answer": "16 km/h. Pour une distance d à chaque étape, le temps total vaut d/12 + d/24 = d/8. La distance totale 2d divisée par ce temps donne 16.",
+      "hint": "La moyenne des vitesses n’est pas la moyenne arithmétique quand les durées diffèrent."
+    }
+  },
+  {
+    "publication_date": "2026-10-16",
+    "payload": {
+      "question": "Je suis un entier positif. Mon triple augmenté de 23 vaut 98. Qui suis-je ?",
+      "answer": "25. En soustrayant 23, on obtient 75, puis on divise par trois.",
+      "hint": "Effectuez les opérations inverses dans l’ordre inverse."
+    }
+  },
+  {
+    "publication_date": "2026-10-17",
+    "payload": {
+      "question": "Un sac contient 5 billes rouges et 7 billes bleues. Sans regarder, combien faut-il en tirer au minimum pour être certain d’en avoir deux de la même couleur ?",
+      "answer": "3 billes. Les deux premières peuvent être de couleurs différentes ; la troisième partage nécessairement sa couleur avec l’une des deux.",
+      "hint": "Il n’y a que deux couleurs."
+    }
+  },
+  {
+    "publication_date": "2026-10-18",
+    "payload": {
+      "question": "Un cycliste parcourt 16 km à l’aller puis la même distance au retour. Il roule à 12 km/h à l’aller et à 24 km/h au retour, sans pause. Quelle est sa vitesse moyenne sur l’ensemble du trajet ?",
+      "answer": "16 km/h. Pour une distance d à chaque étape, le temps total vaut d/12 + d/24 = d/8. La distance totale 2d divisée par ce temps donne 16.",
+      "hint": "La moyenne des vitesses n’est pas la moyenne arithmétique quand les durées diffèrent."
+    }
+  },
+  {
+    "publication_date": "2026-10-19",
+    "payload": {
+      "question": "Une suite commence par 30, 33, 38, 45. On ajoute successivement les nombres impairs 3, 5, 7, puis 9. Quel est le terme suivant ?",
+      "answer": "54, car 45 + 9 = 54.",
+      "hint": "La règle d’addition est donnée : poursuivez-la."
+    }
+  },
+  {
+    "publication_date": "2026-10-20",
+    "payload": {
+      "question": "Une suite commence par 29, 32, 37, 44. On ajoute successivement les nombres impairs 3, 5, 7, puis 9. Quel est le terme suivant ?",
+      "answer": "53, car 44 + 9 = 53.",
+      "hint": "La règle d’addition est donnée : poursuivez-la."
+    }
+  },
+  {
+    "publication_date": "2026-10-21",
+    "payload": {
+      "question": "Un sac contient 25 billes rouges et 27 billes bleues. Sans regarder, combien faut-il en tirer au minimum pour être certain d’en avoir deux de la même couleur ?",
+      "answer": "3 billes. Les deux premières peuvent être de couleurs différentes ; la troisième partage nécessairement sa couleur avec l’une des deux.",
+      "hint": "Il n’y a que deux couleurs."
+    }
+  },
+  {
+    "publication_date": "2026-10-22",
+    "payload": {
+      "question": "Dans une salle, 31 personnes se serrent chacune la main une fois avec toutes les autres. Combien de poignées de main sont échangées ?",
+      "answer": "465. Chaque personne salue 30 autres personnes ; on divise le produit par deux pour ne pas compter chaque paire deux fois.",
+      "hint": "Comptez les paires sans tenir compte de leur ordre."
+    }
+  },
+  {
+    "publication_date": "2026-10-23",
+    "payload": {
+      "question": "Une suite commence par 21, 24, 29, 36. On ajoute successivement les nombres impairs 3, 5, 7, puis 9. Quel est le terme suivant ?",
+      "answer": "45, car 36 + 9 = 45.",
+      "hint": "La règle d’addition est donnée : poursuivez-la."
+    }
+  },
+  {
+    "publication_date": "2026-10-24",
+    "payload": {
+      "question": "Un rectangle a un périmètre de 116 cm. Sa longueur dépasse sa largeur de 2 cm. Quelle est son aire ?",
+      "answer": "840 cm². La demi-somme des côtés vaut 58 ; les côtés mesurent 28 et 30 cm.",
+      "hint": "Cherchez deux nombres dont la somme et la différence sont connues."
+    }
+  },
+  {
+    "publication_date": "2026-10-25",
+    "payload": {
+      "question": "Un sac contient 32 billes rouges et 34 billes bleues. Sans regarder, combien faut-il en tirer au minimum pour être certain d’en avoir deux de la même couleur ?",
+      "answer": "3 billes. Les deux premières peuvent être de couleurs différentes ; la troisième partage nécessairement sa couleur avec l’une des deux.",
+      "hint": "Il n’y a que deux couleurs."
+    }
+  },
+  {
+    "publication_date": "2026-10-26",
+    "payload": {
+      "question": "Un rectangle a un périmètre de 64 cm. Sa longueur dépasse sa largeur de 2 cm. Quelle est son aire ?",
+      "answer": "255 cm². La demi-somme des côtés vaut 32 ; les côtés mesurent 15 et 17 cm.",
+      "hint": "Cherchez deux nombres dont la somme et la différence sont connues."
+    }
+  },
+  {
+    "publication_date": "2026-10-27",
+    "payload": {
+      "question": "Une boîte contient 27 chaussettes noires et autant de blanches. Dans le noir, combien de chaussettes faut-il prendre au minimum pour être certain d’obtenir une paire de même couleur ?",
+      "answer": "3. Avec deux chaussettes, les couleurs peuvent différer. Avec trois, deux ont nécessairement la même couleur.",
+      "hint": "Raisonnez dans le cas le moins favorable."
+    }
+  },
+  {
+    "publication_date": "2026-10-28",
+    "payload": {
+      "question": "Deux nombres entiers positifs consécutifs ont pour somme 69. Quel est le plus petit ?",
+      "answer": "34. Si le premier vaut x, le second vaut x + 1 : 2x + 1 = 69.",
+      "hint": "Soustrayez un à la somme, puis divisez par deux."
+    }
+  },
+  {
+    "publication_date": "2026-10-29",
+    "payload": {
+      "question": "Une urne contient 30 jetons numérotés de 1 à 30. On en tire un au hasard, avec la même chance pour chaque jeton. Quelle est la probabilité de tirer le numéro 29 ?",
+      "answer": "1/30. Un seul jeton porte le numéro demandé parmi 30 jetons équiprobables.",
+      "hint": "Comptez les issues favorables et le nombre total d’issues."
+    }
+  },
+  {
+    "publication_date": "2026-10-30",
+    "payload": {
+      "question": "Deux nombres entiers positifs consécutifs ont pour somme 53. Quel est le plus petit ?",
+      "answer": "26. Si le premier vaut x, le second vaut x + 1 : 2x + 1 = 53.",
+      "hint": "Soustrayez un à la somme, puis divisez par deux."
+    }
+  },
+  {
+    "publication_date": "2026-10-31",
+    "payload": {
+      "question": "Un sac contient 21 billes rouges et 23 billes bleues. Sans regarder, combien faut-il en tirer au minimum pour être certain d’en avoir deux de la même couleur ?",
+      "answer": "3 billes. Les deux premières peuvent être de couleurs différentes ; la troisième partage nécessairement sa couleur avec l’une des deux.",
+      "hint": "Il n’y a que deux couleurs."
+    }
+  },
+  {
+    "publication_date": "2026-11-01",
+    "payload": {
+      "question": "Un escalier compte 10 marches. Combien de façons différentes permettent d’atteindre la deuxième marche en faisant uniquement des pas de une ou de deux marches, sans redescendre ?",
+      "answer": "2 façons : deux pas de une marche, ou un pas de deux marches. La hauteur totale de l’escalier ne change pas la question.",
+      "hint": "Arrêtez-vous à la deuxième marche, sans monter davantage."
+    }
+  },
+  {
+    "publication_date": "2026-11-02",
+    "payload": {
+      "question": "Je suis un entier positif. Mon triple augmenté de 22 vaut 94. Qui suis-je ?",
+      "answer": "24. En soustrayant 22, on obtient 72, puis on divise par trois.",
+      "hint": "Effectuez les opérations inverses dans l’ordre inverse."
+    }
+  },
+  {
+    "publication_date": "2026-11-03",
+    "payload": {
+      "question": "Deux nombres entiers positifs consécutifs ont pour somme 57. Quel est le plus petit ?",
+      "answer": "28. Si le premier vaut x, le second vaut x + 1 : 2x + 1 = 57.",
+      "hint": "Soustrayez un à la somme, puis divisez par deux."
+    }
+  },
+  {
+    "publication_date": "2026-11-04",
+    "payload": {
+      "question": "Un escalier compte 30 marches. Combien de façons différentes permettent d’atteindre la deuxième marche en faisant uniquement des pas de une ou de deux marches, sans redescendre ?",
+      "answer": "2 façons : deux pas de une marche, ou un pas de deux marches. La hauteur totale de l’escalier ne change pas la question.",
+      "hint": "Arrêtez-vous à la deuxième marche, sans monter davantage."
+    }
+  },
+  {
     "publication_date": "2026-11-05",
     "payload": {
       "question": "Je suis un nombre entier positif de deux chiffres. La somme de mes chiffres vaut 9 et mon chiffre des dizaines est le double de celui des unités. Quel nombre suis-je ?",

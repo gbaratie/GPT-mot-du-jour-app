@@ -13,7 +13,7 @@
         "end": "2025-12-31"
       },
       {
-        "start": "2026-11-05",
+        "start": "2026-01-01",
         "end": "2026-12-31"
       }
     ]
@@ -21,15 +21,15 @@
   {
     "slug": "citation-du-jour",
     "name": "Citation du jour",
-    "description": "Quelques lignes pour prendre du recul. Une première sélection de trois citations.",
+    "description": "Une citation quotidienne pour prendre du recul, avec sa référence.",
     "kind": "quote",
     "locale": "fr-FR",
     "active": true,
     "sort_order": 1,
     "coverage": [
       {
-        "start": "2026-11-04",
-        "end": "2026-11-06"
+        "start": "2026-01-01",
+        "end": "2026-12-31"
       }
     ]
   },
@@ -43,7 +43,7 @@
     "sort_order": 2,
     "coverage": [
       {
-        "start": "2026-11-05",
+        "start": "2026-01-01",
         "end": "2026-12-31"
       }
     ]
