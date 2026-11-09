@@ -124,9 +124,13 @@ visible. La prévisualisation est une vraie publication du lot aléatoire, rendu
 sous la carte active, sans la marquer comme vue. Elle est `inert` et masquée aux
 lecteurs d’écran pour éviter des commandes et annonces en double.
 
-Le déplacement suit le pointeur ; au-delà de 80 px, ou lors d’un geste rapide
-d’au moins 30 px, la carte sort latéralement pendant 260 ms puis la suivante est
-promue. La prévisualisation de droite correspond au retour dans le parcours.
+Le déplacement suit le pointeur. À 24 % de la largeur de la carte (seuil borné
+entre 56 et 96 px), la sortie est engagée immédiatement, même si le doigt reste
+posé. Un geste rapide d’au moins 30 px peut aussi déclencher la sortie au
+relâchement. La carte sort latéralement pendant 260 ms puis la suivante est
+promue. Une perte de capture ou une annulation après engagement ne ramène pas
+la carte en place. Sur la première carte, sans historique, les deux directions
+affichent une nouvelle découverte ; ensuite, la droite revient dans le parcours. La prévisualisation de droite correspond au retour dans le parcours.
 Un geste court, vertical ou interrompu restaure la position. Sans publication
 préparée, la navigation attend la requête avant de lancer la sortie ; une erreur
 conserve la carte. Les boutons et le clavier utilisent le même parcours. La

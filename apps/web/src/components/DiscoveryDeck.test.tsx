@@ -92,3 +92,79 @@ it("attend la sortie de la carte avant de promouvoir la suivante", async () => {
     vi.unstubAllGlobals();
   }
 });
+
+it("aspire la carte dès le seuil franchi, avant le relâchement, sans annulation par perte de capture", async () => {
+  class Pointer extends MouseEvent {
+    constructor(type: string, init: MouseEventInit) {
+      super(type, init);
+      Object.defineProperties(this, {
+        isPrimary: { value: true },
+        pointerType: { value: "touch" },
+        pointerId: { value: 1 },
+      });
+    }
+  }
+  vi.stubGlobal("PointerEvent", Pointer);
+  vi.stubGlobal("matchMedia", () => ({ matches: false }));
+  vi.spyOn(api, "discover").mockResolvedValue([
+    word("2025-01-01", "Suivante"),
+    word("2025-01-02", "Encore"),
+  ]);
+  let finish!: () => void;
+  const animate = vi.fn(() => ({
+    finished: new Promise<void>((r) => {
+      finish = r;
+    }),
+    cancel: vi.fn(),
+  }));
+  Object.defineProperty(HTMLElement.prototype, "animate", { configurable: true, value: animate });
+  try {
+    render(
+      <DiscoveryDeck slug="mot-du-jour" locale="fr-FR" initial={word("2026-11-05", "Cinq")} />,
+    );
+    await waitFor(() => expect(document.querySelector(".deck-underneath")).not.toBeNull());
+    const card = screen.getByRole("group");
+    Object.defineProperty(card, "setPointerCapture", { value: vi.fn() });
+    fireEvent.pointerDown(card, { clientX: 220, clientY: 150 });
+    fireEvent.pointerMove(card, { clientX: 100, clientY: 155 });
+    await waitFor(() => expect(animate).toHaveBeenCalledTimes(1));
+    fireEvent.lostPointerCapture(card);
+    fireEvent.pointerCancel(card);
+    fireEvent.pointerMove(card, { clientX: 80, clientY: 155 });
+    expect(animate).toHaveBeenCalledTimes(1);
+    finish();
+    expect(await within(card).findByText("Suivante")).toBeVisible();
+  } finally {
+    delete (HTMLElement.prototype as unknown as { animate?: unknown }).animate;
+    vi.unstubAllGlobals();
+  }
+});
+
+it("permet de découvrir en glissant la première carte vers la droite", async () => {
+  class Pointer extends MouseEvent {
+    constructor(type: string, init: MouseEventInit) {
+      super(type, init);
+      Object.defineProperties(this, {
+        isPrimary: { value: true },
+        pointerType: { value: "touch" },
+        pointerId: { value: 1 },
+      });
+    }
+  }
+  vi.stubGlobal("PointerEvent", Pointer);
+  vi.stubGlobal("matchMedia", () => ({ matches: true }));
+  vi.spyOn(api, "discover").mockResolvedValue([word("2025-01-01", "Suivante")]);
+  try {
+    render(
+      <DiscoveryDeck slug="mot-du-jour" locale="fr-FR" initial={word("2026-11-05", "Cinq")} />,
+    );
+    await waitFor(() => expect(document.querySelector(".deck-underneath")).not.toBeNull());
+    const card = screen.getByRole("group");
+    Object.defineProperty(card, "setPointerCapture", { value: vi.fn() });
+    fireEvent.pointerDown(card, { clientX: 100, clientY: 150 });
+    fireEvent.pointerMove(card, { clientX: 220, clientY: 150 });
+    expect(await within(card).findByText("Suivante")).toBeVisible();
+  } finally {
+    vi.unstubAllGlobals();
+  }
+});

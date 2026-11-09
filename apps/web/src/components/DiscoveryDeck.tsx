@@ -115,6 +115,14 @@ export default function DiscoveryDeck({ slug, locale, initial, heading }: Props)
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [current, position, trail.length]);
 
+  function swipeDirection(dx: number): "next" | "previous" {
+    // A first card has no history: either side can reveal a new discovery.
+    return dx > 0 && position > 0 ? "previous" : "next";
+  }
+  function commitThreshold() {
+    return Math.max(56, Math.min(96, (surface.current?.offsetWidth ?? 320) * 0.24));
+  }
+
   function resetDrag() {
     start.current = null;
     if (lock.current) return;
@@ -123,7 +131,7 @@ export default function DiscoveryDeck({ slug, locale, initial, heading }: Props)
       delete surface.current.dataset.dragging;
     }
   }
-  async function advance(targetDirection: "next" | "previous", restart = false) {
+  async function advance(targetDirection: "next" | "previous", restart = false, exitSide?: number) {
     if (lock.current || (targetDirection === "previous" && position <= 0)) {
       resetDrag();
       return;
@@ -154,7 +162,7 @@ export default function DiscoveryDeck({ slug, locale, initial, heading }: Props)
     const card = surface.current;
     const reduced = window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
     if (card && card.animate && !reduced) {
-      const sign = targetDirection === "next" ? -1 : 1;
+      const sign = exitSide ?? (targetDirection === "next" ? -1 : 1);
       const distance = window.innerWidth + card.getBoundingClientRect().width;
       motion.current = card.animate(
         [
@@ -249,7 +257,9 @@ export default function DiscoveryDeck({ slug, locale, initial, heading }: Props)
             className="swipe-hint"
             sx={{ mt: 2, fontSize: ".7rem", lineHeight: 1.5 }}
           >
-            Glissez à gauche pour découvrir, à droite pour revenir.
+            {position > 0
+              ? "Glissez à gauche pour découvrir, à droite pour revenir."
+              : "Glissez sur le côté pour découvrir."}
           </Typography>
         )}
       </CardContent>
@@ -304,9 +314,15 @@ export default function DiscoveryDeck({ slug, locale, initial, heading }: Props)
               return;
             }
             if (Math.abs(dx) > Math.abs(dy)) {
-              setDirection(dx < 0 ? "next" : "previous");
+              const targetDirection = swipeDirection(dx);
+              setDirection(targetDirection);
               e.currentTarget.dataset.dragging = "true";
               e.currentTarget.style.transform = `translate3d(${dx}px, ${dy * 0.12}px, 0) rotate(${dx * 0.025}deg)`;
+              // Commit while the finger is still down. Pointer-up/cancel must no
+              // longer turn a committed swipe into a return animation.
+              if (Math.abs(dx) >= commitThreshold() && Math.abs(dx) > Math.abs(dy) * 1.5) {
+                void advance(targetDirection, false, Math.sign(dx));
+              }
             }
           }}
           onPointerCancel={resetDrag}
@@ -318,9 +334,10 @@ export default function DiscoveryDeck({ slug, locale, initial, heading }: Props)
             const dx = e.clientX - origin.x;
             const dy = e.clientY - origin.y;
             const velocity = Math.abs(dx) / Math.max(1, performance.now() - origin.time);
-            const enough = Math.abs(dx) >= 80 || (Math.abs(dx) >= 30 && velocity > 0.5);
+            const enough =
+              Math.abs(dx) >= commitThreshold() || (Math.abs(dx) >= 30 && velocity > 0.5);
             if (enough && Math.abs(dx) > Math.abs(dy) * 1.5)
-              void advance(dx < 0 ? "next" : "previous");
+              void advance(swipeDirection(dx), false, Math.sign(dx));
             else resetDrag();
           }}
         >
