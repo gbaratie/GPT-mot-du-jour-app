@@ -1,6 +1,6 @@
 from datetime import date
 
-from sqlalchemy import select
+from sqlalchemy import func, select
 from sqlalchemy.orm import Session
 
 from app.models import DailyCollection, DailyEntry
@@ -36,6 +36,18 @@ class CollectionRepository:
             select(DailyEntry)
             .where(DailyEntry.collection_id == collection_id, DailyEntry.publication_date < before)
             .order_by(DailyEntry.publication_date.desc())
+            .limit(limit)
+        ).all()
+
+    def discover(self, collection_id: int, day: date, exclude: list[date], limit: int):
+        return self.session.scalars(
+            select(DailyEntry)
+            .where(
+                DailyEntry.collection_id == collection_id,
+                DailyEntry.publication_date <= day,
+                DailyEntry.publication_date.not_in(exclude),
+            )
+            .order_by(func.random())
             .limit(limit)
         ).all()
 

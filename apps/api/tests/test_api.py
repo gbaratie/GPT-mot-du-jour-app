@@ -129,3 +129,24 @@ def test_unique_collection_date_constraint(database):
         )
         with pytest.raises(IntegrityError):
             session.commit()
+
+
+def test_discover_excludes_recent_future_and_other_collections(client):
+    response = client.get(
+        "/api/v1/collections/mot-du-jour/discover",
+        params={"exclude": ["2026-01-01", "2025-12-31"]},
+    )
+    assert response.status_code == 200
+    assert [entry["publication_date"] for entry in response.json()] == ["2025-12-30"]
+    assert all(entry["collection_slug"] == "mot-du-jour" for entry in response.json())
+    assert client.get("/api/v1/collections/inactive/discover").status_code == 404
+    assert client.get("/api/v1/collections/unknown/discover").status_code == 404
+
+
+def test_discover_limit_exhaustion_and_validation(client):
+    assert len(client.get("/api/v1/collections/mot-du-jour/discover?limit=1").json()) == 1
+    assert (
+        client.get("/api/v1/collections/citation-du-jour/discover?exclude=2026-01-01").json() == []
+    )
+    for query in ["limit=0", "limit=21", "exclude=bad", "&".join(["exclude=2025-12-31"] * 101)]:
+        assert client.get(f"/api/v1/collections/mot-du-jour/discover?{query}").status_code == 422

@@ -39,6 +39,13 @@ class CollectionService:
             for entry in self.repository.entries(collection.id, before, limit)
         ]
 
+    def discover(self, slug: str, day: date, exclude: list[date], limit: int):
+        collection = self.collection(slug)
+        return [
+            serialize_entry(collection, entry)
+            for entry in self.repository.discover(collection.id, day, exclude, limit)
+        ]
+
     def today(self, day: date):
         entries = self.repository.today_entries(day)
         return {

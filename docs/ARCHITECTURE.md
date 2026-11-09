@@ -78,3 +78,33 @@ les collections inconnues/inactives, CORS, les erreurs de base, les schémas, la
 les doublons et l'idempotence. La CI teste aussi PostgreSQL 17 (JSONB, migrations et double
 synchronisation). Les tests React couvrent les payloads et les erreurs/absences. Le build
 est exécuté sous `/GPT-mot-du-jour-app` pour vérifier l'export en sous-répertoire.
+
+## Découverte et cache navigateur
+
+`GET /api/v1/collections/{slug}/discover?limit=12&exclude=YYYY-MM-DD` fournit
+un lot aléatoire (1 à 20 éléments, 100 dates exclues maximum, paramètre répété).
+La sélection porte sur une seule collection active et les publications jusqu’à
+aujourd’hui inclus, calculé par l’API à Paris. Le hasard est appliqué en SQL ;
+aucune date vide n’est tirée. Une collection épuisée renvoie un tableau vide.
+
+Les cartes proposent un balayage horizontal, des boutons et les flèches clavier
+lorsque la carte a le focus. Retour permet de relire le parcours courant. Les 30
+dernières dates vues par collection sont conservées sur cet appareil ; les dates
+encore connues dans la session sont aussi exclues (jusqu’à 100 au total). Après
+épuisement, « Recommencer » autorise explicitement leur réapparition. Les lots
+chargés sont consommés localement et leurs publications peuvent être réutilisées
+après rechargement. Sans stockage disponible, la session continue de fonctionner.
+
+Le cache `localStorage` est versionné, séparé par URL d’API et limité à 200
+réponses/publications. Une publication datée est conservée sept jours ; les
+réponses « aujourd’hui » et les listes d’archives ont une fraîcheur de 60 secondes.
+Une réponse expirée de moins de sept jours peut dépanner en cas de panne réseau
+ou d’erreur serveur, avec un message explicite. Les erreurs 4xx ne sont pas
+masquées. Les réponses « aujourd’hui » conservent la date fournie par l’API.
+Il s’agit du cache des données, pas d’un mode PWA hors ligne du site lui-même.
+
+Après 3,5 secondes d’attente réseau, une notification refermable explique que le
+service peut redémarrer après une pause. Elle disparaît à la fin des appels lents.
+Le front ne peut pas distinguer un démarrage à froid d’une connexion lente et ne
+prétend donc pas le diagnostiquer. Le délai d’expiration est de 90 secondes pour
+laisser le temps au service de redémarrer ; les erreurs restent réessayables.

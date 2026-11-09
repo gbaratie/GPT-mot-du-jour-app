@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import DiscoveryDeck from "./DiscoveryDeck";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import {
@@ -97,7 +98,7 @@ function CollectionView({ collection, day }: { collection: Collection; day: stri
   }
 
   return (
-    <Stack spacing={4}>
+    <Stack spacing={3} className="collection-view">
       <Box>
         <Typography variant="overline" color="primary">
           Une découverte à la fois
@@ -109,6 +110,7 @@ function CollectionView({ collection, day }: { collection: Collection; day: stri
       </Box>
       <Stack
         component="form"
+        className="date-controls"
         direction={{ xs: "column", sm: "row" }}
         sx={{ gap: 2, alignItems: { sm: "center" } }}
         onSubmit={(event) => {
@@ -145,10 +147,12 @@ function CollectionView({ collection, day }: { collection: Collection; day: stri
           {result.entry ? (
             <Card>
               <CardContent sx={{ p: { xs: 3, sm: 5 } }}>
-                <Typography color="text.secondary" variant="body2" sx={{ mb: 3 }}>
-                  {formatDate(result.entry.publication_date, collection.locale)}
-                </Typography>
-                <EntryRenderer entry={result.entry} />
+                <DiscoveryDeck
+                  key={result.entry.publication_date}
+                  slug={collection.slug}
+                  locale={collection.locale}
+                  initial={result.entry}
+                />
               </CardContent>
             </Card>
           ) : (
@@ -168,7 +172,10 @@ function CollectionView({ collection, day }: { collection: Collection; day: stri
               {result.entryError}
             </Alert>
           )}
-          <Box>
+          {!result.entry && (
+            <DiscoveryDeck slug={collection.slug} locale={collection.locale} initial={null} />
+          )}
+          <Box className="archive-section">
             <Typography variant="h2" sx={{ mb: 3 }}>
               Les jours précédents
             </Typography>
@@ -179,7 +186,7 @@ function CollectionView({ collection, day }: { collection: Collection; day: stri
                 Aucune publication antérieure à cette date.
               </Typography>
             ) : (
-              <Stack spacing={2}>
+              <Stack spacing={2} className="archive-grid">
                 {result.history.map((entry) => (
                   <Card key={entry.publication_date}>
                     <CardContent sx={{ p: 3 }}>

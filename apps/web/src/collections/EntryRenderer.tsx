@@ -28,15 +28,15 @@ export function EntryRenderer({ entry }: { entry: DailyEntry }) {
   switch (entry.kind) {
     case "word":
       return (
-        <Stack spacing={3}>
+        <Stack spacing={2}>
           <Typography
             variant="h2"
             component="h3"
-            sx={{ fontFamily: "Georgia, serif", fontSize: { xs: "2rem", md: "3rem" } }}
+            sx={{ fontFamily: "Georgia, serif", fontSize: { xs: "2rem", md: "2.6rem" } }}
           >
             {entry.payload.term}
           </Typography>
-          <Typography sx={{ fontSize: "1.2rem", lineHeight: 1.8 }}>
+          <Typography sx={{ fontSize: "1.05rem", lineHeight: 1.55 }}>
             {entry.payload.definition}
           </Typography>
           <Typography
@@ -56,14 +56,14 @@ export function EntryRenderer({ entry }: { entry: DailyEntry }) {
       );
     case "quote":
       return (
-        <Stack spacing={3}>
+        <Stack spacing={2}>
           <Typography
             component="blockquote"
             sx={{
               m: 0,
               fontFamily: "Georgia, serif",
-              fontSize: { xs: "1.6rem", md: "2.2rem" },
-              lineHeight: 1.6,
+              fontSize: { xs: "1.4rem", md: "1.65rem" },
+              lineHeight: 1.5,
             }}
           >
             « {entry.payload.text} »
