@@ -1,7 +1,16 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { Alert, Box, Button, CircularProgress, IconButton, Stack, Typography } from "@mui/material";
+import {
+  Alert,
+  Box,
+  Button,
+  CircularProgress,
+  IconButton,
+  Stack,
+  Typography,
+  Skeleton,
+} from "@mui/material";
 import CardIcon from "./CardIcon";
 import { EntryRenderer } from "@/collections/EntryRenderer";
 import { api } from "@/lib/api/client";
@@ -61,7 +70,7 @@ export default function DiscoveryDeck({ slug, locale, initial }: Props) {
     const available = (entries: DailyEntry[]) =>
       entries.filter((e) => !excluded.has(e.publication_date));
     let candidates = available(pool.current);
-    if (!candidates.length) candidates = available(api.saved(slug));
+
     setError(false);
     setEmpty(false);
     lock.current = true;
@@ -70,7 +79,12 @@ export default function DiscoveryDeck({ slug, locale, initial }: Props) {
     request.current = controller;
     try {
       if (!candidates.length)
-        candidates = await api.discover(slug, [...excluded], controller.signal);
+        try {
+          candidates = await api.discover(slug, [...excluded], controller.signal);
+        } catch (error) {
+          candidates = available(api.saved(slug));
+          if (!candidates.length) throw error;
+        }
       if (controller.signal.aborted) return;
       candidates = available(candidates);
       if (!candidates.length) {
@@ -90,6 +104,20 @@ export default function DiscoveryDeck({ slug, locale, initial }: Props) {
     } finally {
       lock.current = false;
       if (!controller.signal.aborted) setBusy(false);
+    }
+  }
+
+  function movingCard() {
+    return (
+      surface.current?.closest<HTMLElement>(".discovery, .publication-card") ?? surface.current
+    );
+  }
+  function resetDrag() {
+    start.current = null;
+    const card = movingCard();
+    if (card) {
+      card.style.transform = "";
+      delete card.dataset.dragging;
     }
   }
 
@@ -152,7 +180,8 @@ export default function DiscoveryDeck({ slug, locale, initial }: Props) {
           if (
             (e.target as HTMLElement).closest("button, a, input") ||
             !e.isPrimary ||
-            e.button !== 0
+            (e.pointerType === "mouse" && e.button !== 0) ||
+            busy
           )
             return;
           start.current = { x: e.clientX, y: e.clientY };
@@ -162,17 +191,23 @@ export default function DiscoveryDeck({ slug, locale, initial }: Props) {
           if (!start.current || busy) return;
           const dx = e.clientX - start.current.x;
           const dy = e.clientY - start.current.y;
-          if (Math.abs(dx) > Math.abs(dy))
-            e.currentTarget.style.transform = `translateX(${Math.max(-70, Math.min(70, dx * 0.4))}px) rotate(${dx * 0.015}deg)`;
+          if (Math.abs(dy) > Math.abs(dx) && Math.abs(dy) > 10) {
+            resetDrag();
+            return;
+          }
+          if (Math.abs(dx) > Math.abs(dy)) {
+            const card = movingCard();
+            if (card) {
+              card.dataset.dragging = "true";
+              card.style.transform = `translate3d(${Math.max(-24, Math.min(24, dx * 0.2))}px, 0, 0)`;
+            }
+          }
         }}
-        onPointerCancel={(e) => {
-          start.current = null;
-          e.currentTarget.style.transform = "";
-        }}
+        onPointerCancel={resetDrag}
+        onLostPointerCapture={resetDrag}
         onPointerUp={(e) => {
           const origin = start.current;
-          start.current = null;
-          e.currentTarget.style.transform = "";
+          resetDrag();
           if (!origin) return;
           const dx = e.clientX - origin.x;
           if (Math.abs(dx) < 65 || Math.abs(dx) < Math.abs(e.clientY - origin.y) * 1.5) return;
@@ -180,7 +215,11 @@ export default function DiscoveryDeck({ slug, locale, initial }: Props) {
           else previous();
         }}
       >
-        {current ? (
+        {busy ? (
+          <Box role="status" aria-label="Chargement de la découverte">
+            <Skeleton variant="rounded" height={180} />
+          </Box>
+        ) : current ? (
           <>
             <EntryRenderer key={`${slug}:${current.publication_date}`} entry={current} />
           </>
@@ -212,7 +251,11 @@ export default function DiscoveryDeck({ slug, locale, initial }: Props) {
         <Alert
           severity="info"
           sx={{ mt: 2 }}
-          action={<Button onClick={() => void next(true)}>Recommencer</Button>}
+          action={
+            <Button sx={{ whiteSpace: "nowrap" }} onClick={() => void next(true)}>
+              Recommencer
+            </Button>
+          }
         >
           Vous avez parcouru les publications disponibles récemment. Recommencer autorise leur
           réapparition.

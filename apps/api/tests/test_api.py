@@ -150,3 +150,24 @@ def test_discover_limit_exhaustion_and_validation(client):
     )
     for query in ["limit=0", "limit=21", "exclude=bad", "&".join(["exclude=2025-12-31"] * 101)]:
         assert client.get(f"/api/v1/collections/mot-du-jour/discover?{query}").status_code == 422
+
+
+def test_discover_searches_distant_archives(client, database):
+    _, factory = database
+    with factory.begin() as session:
+        collection = session.scalar(
+            select(DailyCollection).where(DailyCollection.slug == "mot-du-jour")
+        )
+        session.add(
+            DailyEntry(
+                collection_id=collection.id,
+                publication_date=date(2020, 1, 1),
+                payload={"term": "Ancien", "definition": "Une archive", "example": "Un exemple"},
+            )
+        )
+    response = client.get(
+        "/api/v1/collections/mot-du-jour/discover",
+        params={"exclude": ["2025-12-30", "2025-12-31", "2026-01-01"]},
+    )
+    assert response.status_code == 200
+    assert [entry["publication_date"] for entry in response.json()] == ["2020-01-01"]

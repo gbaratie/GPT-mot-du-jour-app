@@ -54,21 +54,27 @@ def test_repository_content_valid_and_legacy_year_complete():
     assert len(content) == 3
     word, entries = content[0]
     assert word.kind == "word"
-    assert len(entries) == 422
+    assert len(entries) == 730
     assert entries[0]["publication_date"] == date(2025, 1, 1)
     assert entries[364]["publication_date"] == date(2025, 12, 31)
-    assert entries[365]["publication_date"] == date(2026, 11, 5)
+    assert entries[365]["publication_date"] == date(2026, 1, 1)
     assert entries[-1]["publication_date"] == date(2026, 12, 31)
-    assert [e["payload"] for e in entries[365:]] == [
+    assert [e["payload"] for e in entries[365:] if e["publication_date"] >= date(2026, 11, 5)] == [
         e["payload"] for e in entries[:365] if e["publication_date"] >= date(2025, 11, 5)
     ]
     assert content[1][0].kind == "quote"
     riddle, entries = content[2]
     assert riddle.slug == "enigme-du-jour"
     assert riddle.kind == "riddle"
-    assert len(entries) == 57
-    assert entries[0]["publication_date"] == date(2026, 11, 5)
+    assert len(entries) == 365
+    assert entries[0]["publication_date"] == date(2026, 1, 1)
     assert entries[-1]["publication_date"] == date(2026, 12, 31)
+
+    for _, rows in content:
+        days = {e["publication_date"] for e in rows if e["publication_date"].year == 2026}
+        assert len(days) == 365
+        assert min(days) == date(2026, 1, 1)
+        assert max(days) == date(2026, 12, 31)
 
 
 @pytest.mark.parametrize(

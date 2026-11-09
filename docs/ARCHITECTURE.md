@@ -93,11 +93,12 @@ dernières dates vues par collection sont conservées sur cet appareil ; les dat
 encore connues dans la session sont aussi exclues (jusqu’à 100 au total). Après
 épuisement, « Recommencer » autorise explicitement leur réapparition. Les lots
 chargés sont consommés localement et leurs publications peuvent être réutilisées
-après rechargement. Sans stockage disponible, la session continue de fonctionner.
+en cas de panne réseau après rechargement. Sans stockage disponible, la session continue de fonctionner.
 
 Le cache `localStorage` est versionné, séparé par URL d’API et limité à 200
 réponses/publications. Une publication datée est conservée sept jours ; les
-réponses « aujourd’hui » et les listes d’archives ont une fraîcheur de 60 secondes.
+réponses « aujourd’hui » sont toujours revalidées auprès du serveur avant affichage ;
+les listes d’archives ont une fraîcheur de 60 secondes.
 Une réponse expirée de moins de sept jours peut dépanner en cas de panne réseau
 ou d’erreur serveur, avec un message explicite. Les erreurs 4xx ne sont pas
 masquées. Les réponses « aujourd’hui » conservent la date fournie par l’API.
@@ -108,3 +109,10 @@ service peut redémarrer après une pause. Elle disparaît à la fin des appels 
 Le front ne peut pas distinguer un démarrage à froid d’une connexion lente et ne
 prétend donc pas le diagnostiquer. Le délai d’expiration est de 90 secondes pour
 laisser le temps au service de redémarrer ; les erreurs restent réessayables.
+
+Le tirage consomme un lot choisi aléatoirement dans toute l’histoire publiée de
+la collection. Quand il est vide, le front demande un nouveau lot au serveur,
+sans privilégier les seuls éléments déjà en cache. Le cache devient le secours
+en cas de panne. Pendant la recherche d’une nouvelle carte, un squelette remplace
+la précédente. Le geste transforme la carte entière et toute interruption du
+pointeur restaure sa position. Couverture éditoriale 2026 : voir `docs/content/2026.md`.

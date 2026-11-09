@@ -20,6 +20,7 @@ import { api } from "@/lib/api/client";
 import type { TodayResponse } from "@/lib/api/types";
 import CardIcon from "./CardIcon";
 import DiscoveryDeck from "./DiscoveryDeck";
+import { collections } from "@/collections/catalog";
 import { formatDate } from "@/lib/dates";
 
 export default function Home() {
@@ -57,7 +58,7 @@ export default function Home() {
           </Typography>
         )}
       </Box>
-      {today && today.items.length > 1 && (
+      {(today?.items.length ?? collections.length) > 1 && (
         <ToggleButtonGroup
           className="collection-picker"
           exclusive
@@ -67,15 +68,17 @@ export default function Home() {
           }}
           aria-label="Choisir une découverte"
         >
-          {today.items.map(({ collection }, index) => (
-            <ToggleButton
-              key={collection.slug}
-              value={index}
-              aria-controls={`discovery-${collection.slug}`}
-            >
-              {collection.name}
-            </ToggleButton>
-          ))}
+          {(today?.items ?? collections.map((collection) => ({ collection }))).map(
+            ({ collection }, index) => (
+              <ToggleButton
+                key={collection.slug}
+                value={index}
+                aria-controls={`discovery-${collection.slug}`}
+              >
+                {collection.name}
+              </ToggleButton>
+            ),
+          )}
         </ToggleButtonGroup>
       )}
       {error ? (
@@ -95,10 +98,21 @@ export default function Home() {
           Le contenu ne peut pas être chargé pour le moment.
         </Alert>
       ) : !today ? (
-        <Stack spacing={2} role="status" aria-label="Chargement des collections">
-          <Skeleton variant="rounded" height={220} />
-          <Skeleton variant="rounded" height={220} />
-        </Stack>
+        <Box className="discoveries" role="status" aria-label="Chargement des collections">
+          {collections.map((collection, index) => (
+            <Card
+              key={collection.slug}
+              className={`discovery ${index === selected ? "is-selected" : ""}`}
+            >
+              <CardContent>
+                <Typography variant="h2" sx={{ fontSize: "1.1rem", mb: 3 }}>
+                  {collection.name}
+                </Typography>
+                <Skeleton variant="rounded" height={240} />
+              </CardContent>
+            </Card>
+          ))}
+        </Box>
       ) : today.items.length === 0 ? (
         <Alert severity="info">Aucune collection disponible pour le moment.</Alert>
       ) : (

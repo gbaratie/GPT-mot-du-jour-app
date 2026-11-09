@@ -145,7 +145,7 @@ function CollectionView({ collection, day }: { collection: Collection; day: stri
       ) : (
         <>
           {result.entry ? (
-            <Card>
+            <Card className="publication-card">
               <CardContent sx={{ p: { xs: 3, sm: 5 } }}>
                 <DiscoveryDeck
                   key={result.entry.publication_date}
