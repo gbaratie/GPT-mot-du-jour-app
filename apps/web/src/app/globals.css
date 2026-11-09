@@ -182,15 +182,6 @@ input {
     max-width: none;
   }
 }
-.swipe-surface {
-  touch-action: pan-y pinch-zoom;
-  outline-offset: 6px;
-  border-radius: 8px;
-  overflow-wrap: anywhere;
-}
-.swipe-surface:focus-visible {
-  outline: 2px solid #7c9ce0;
-}
 .swipe-hint {
   display: none;
   margin-top: 12px;
@@ -198,11 +189,6 @@ input {
 @media (pointer: coarse) {
   .swipe-hint {
     display: block;
-  }
-}
-@media (prefers-reduced-motion: no-preference) {
-  .swipe-surface {
-    transition: transform 120ms ease-out;
   }
 }
 @media (max-width: 599px) {
@@ -218,15 +204,6 @@ input {
     margin-top: 8px;
   }
 }
-.discovery,
-.publication-card {
-  touch-action: pan-y pinch-zoom;
-}
-.discovery[data-dragging],
-.publication-card[data-dragging] {
-  transition: none;
-  user-select: none;
-}
 .discovery-deck .MuiAlert-root {
   flex-wrap: wrap;
 }
@@ -240,35 +217,24 @@ body {
 .deck-stack {
   position: relative;
   isolation: isolate;
-  padding-bottom: 12px;
+  margin-bottom: 12px;
+}
+.deck-layer {
+  position: absolute;
+  inset: 0;
+  min-width: 0;
+  touch-action: pan-y pinch-zoom;
+  transform-origin: 50% 75%;
 }
 .deck-card {
-  touch-action: pan-y pinch-zoom;
+  height: 100%;
   overflow-wrap: anywhere;
-}
-.deck-foreground {
-  position: relative;
-  z-index: 1;
-  min-height: 260px;
-  transform-origin: 50% 85%;
 }
 .deck-foreground:focus-visible {
   outline: 2px solid #7c9ce0;
   outline-offset: 4px;
+  border-radius: 20px;
 }
 .deck-underneath {
-  position: absolute;
-  inset: 0 0 12px;
-  transform: translateY(10px) scale(0.97);
   pointer-events: none;
-  overflow: hidden;
-}
-.deck-foreground[data-dragging] {
-  transition: none;
-  user-select: none;
-}
-@media (prefers-reduced-motion: no-preference) {
-  .deck-foreground {
-    transition: transform 220ms cubic-bezier(0.2, 0.7, 0.3, 1);
-  }
 }

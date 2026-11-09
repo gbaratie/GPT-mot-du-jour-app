@@ -34,6 +34,8 @@ Utiliser une sélection native ou des composants accessibles de la bibliothèque
 
 N’ajouter du mouvement que pour expliquer un état ou une relation. Garder les transitions brèves, cibler leurs propriétés et respecter `prefers-reduced-motion`. Ne pas installer un moteur d’animation pour une interface essentiellement statique.
 
+Pour une pile de cartes ou un geste complexe, employer un moteur maintenu comme Motion si les transitions CSS ne suffisent plus. Conserver la même carte et la même géométrie lors de sa promotion depuis la prévisualisation. Réserver les emplacements des commandes dans les deux couches. Ne pas faire disparaître une carte encore dans le viewport par un fondu non demandé. Mesurer le contenu naturel sans inclure ses transformations ; figer le cadre pendant le geste et animer séparément les ajustements de hauteur au repos. Le geste, la sortie et le retour doivent partager un seul moteur de transformation.
+
 ## 5. Vérifier le résultat réel
 
 Capturer au minimum 390 × 844, 360 × 640, 768 × 1024 et 1440 × 900. Vérifier aussi 320 px de large, un paysage court et le zoom à 200 %. Vérifier les débordements horizontaux, les commandes principales, l’ordre du focus et l’accès à tout le contenu.
