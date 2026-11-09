@@ -202,10 +202,11 @@ def test_postgres_migration_and_sync():
     env = {**os.environ, "DATABASE_URL": url}
     command = [sys.executable, "-m", "alembic", "-c", str(ROOT / "apps/api/alembic.ini")]
     subprocess.run([*command, "upgrade", "head"], env=env, check=True, capture_output=True)
-    assert sync_content(ROOT / "content", url) == 482
-    assert sync_content(ROOT / "content", url) == 482
+    expected_count = sum(len(entries) for _, entries in load_content(ROOT / "content"))
+    assert sync_content(ROOT / "content", url) == expected_count
+    assert sync_content(ROOT / "content", url) == expected_count
     subprocess.run([*command, "check"], env=env, check=True, capture_output=True)
     engine, factory = create_database(url)
     with factory() as session:
-        assert session.scalar(select(func.count()).select_from(DailyEntry)) == 482
+        assert session.scalar(select(func.count()).select_from(DailyEntry)) == expected_count
     engine.dispose()
