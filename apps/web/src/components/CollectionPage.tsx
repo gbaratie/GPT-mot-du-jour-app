@@ -145,16 +145,12 @@ function CollectionView({ collection, day }: { collection: Collection; day: stri
       ) : (
         <>
           {result.entry ? (
-            <Card className="publication-card">
-              <CardContent sx={{ p: { xs: 3, sm: 5 } }}>
-                <DiscoveryDeck
-                  key={result.entry.publication_date}
-                  slug={collection.slug}
-                  locale={collection.locale}
-                  initial={result.entry}
-                />
-              </CardContent>
-            </Card>
+            <DiscoveryDeck
+              key={result.entry.publication_date}
+              slug={collection.slug}
+              locale={collection.locale}
+              initial={result.entry}
+            />
           ) : (
             <Alert
               severity="info"

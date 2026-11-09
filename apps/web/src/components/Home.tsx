@@ -118,14 +118,17 @@ export default function Home() {
       ) : (
         <Box className="discoveries">
           {today.items.map(({ collection, entry }, index) => (
-            <Card
+            <Box
               component="article"
               id={`discovery-${collection.slug}`}
               className={`discovery ${index === selected ? "is-selected" : ""}`}
               key={collection.slug}
             >
-              <CardContent className="discovery-content" sx={{ p: { xs: 2.5, sm: 3 } }}>
-                <Stack spacing={2.5} sx={{ height: "100%" }}>
+              <DiscoveryDeck
+                slug={collection.slug}
+                locale={collection.locale}
+                initial={entry}
+                heading={
                   <Stack
                     direction="row"
                     sx={{ justifyContent: "space-between", alignItems: "center", gap: 1 }}
@@ -150,14 +153,9 @@ export default function Home() {
                       </IconButton>
                     </Stack>
                   </Stack>
-                  <DiscoveryDeck
-                    slug={collection.slug}
-                    locale={collection.locale}
-                    initial={entry}
-                  />
-                </Stack>
-              </CardContent>
-            </Card>
+                }
+              />
+            </Box>
           ))}
         </Box>
       )}

@@ -116,3 +116,18 @@ sans privilégier les seuls éléments déjà en cache. Le cache devient le seco
 en cas de panne. Pendant la recherche d’une nouvelle carte, un squelette remplace
 la précédente. Le geste transforme la carte entière et toute interruption du
 pointeur restaure sa position. Couverture éditoriale 2026 : voir `docs/content/2026.md`.
+
+## Pile de cartes
+
+Le composant de découverte prépare la prochaine publication dès que la pile est
+visible. La prévisualisation est une vraie publication du lot aléatoire, rendue
+sous la carte active, sans la marquer comme vue. Elle est `inert` et masquée aux
+lecteurs d’écran pour éviter des commandes et annonces en double.
+
+Le déplacement suit le pointeur ; au-delà de 80 px, ou lors d’un geste rapide
+d’au moins 30 px, la carte sort latéralement pendant 260 ms puis la suivante est
+promue. La prévisualisation de droite correspond au retour dans le parcours.
+Un geste court, vertical ou interrompu restaure la position. Sans publication
+préparée, la navigation attend la requête avant de lancer la sortie ; une erreur
+conserve la carte. Les boutons et le clavier utilisent le même parcours. La
+préférence de réduction des animations supprime la transition de sortie.
