@@ -53,10 +53,10 @@ input {
 }
 .discovery {
   min-width: 0;
-  box-shadow: 0 12px 36px #00000014;
+
   overflow-wrap: anywhere;
 }
-.discovery:first-child {
+.discovery:first-child .deck-card {
   background: #202b42;
 }
 .discovery-content {
@@ -232,4 +232,43 @@ input {
 }
 .discovery-deck .MuiAlert-action {
   margin-left: auto;
+}
+
+body {
+  overflow-x: clip;
+}
+.deck-stack {
+  position: relative;
+  isolation: isolate;
+  padding-bottom: 12px;
+}
+.deck-card {
+  touch-action: pan-y pinch-zoom;
+  overflow-wrap: anywhere;
+}
+.deck-foreground {
+  position: relative;
+  z-index: 1;
+  min-height: 260px;
+  transform-origin: 50% 85%;
+}
+.deck-foreground:focus-visible {
+  outline: 2px solid #7c9ce0;
+  outline-offset: 4px;
+}
+.deck-underneath {
+  position: absolute;
+  inset: 0 0 12px;
+  transform: translateY(10px) scale(0.97);
+  pointer-events: none;
+  overflow: hidden;
+}
+.deck-foreground[data-dragging] {
+  transition: none;
+  user-select: none;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .deck-foreground {
+    transition: transform 220ms cubic-bezier(0.2, 0.7, 0.3, 1);
+  }
 }
