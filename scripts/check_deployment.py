@@ -23,16 +23,9 @@ def fetch(url: str, origin: str, *, method: str = "GET"):
         return response.read(), response.headers
 
 
-def check_api(api_url: str, origin: str):
-    for attempt in range(5):
-        try:
-            body, _ = fetch(f"{api_url}/health", origin)
-            assert json.loads(body) == {"status": "ok"}, "Health check invalide"
-            break
-        except (URLError, TimeoutError):
-            if attempt == 4:
-                raise
-            time.sleep(5)
+def check_api_once(api_url: str, origin: str):
+    body, _ = fetch(f"{api_url}/health", origin)
+    assert json.loads(body) == {"status": "ok"}, "Health check invalide"
 
     body, headers = fetch(f"{api_url}/api/v1/collections", origin)
     assert headers.get("Access-Control-Allow-Origin") == origin, "Origine CORS non autorisée"
@@ -64,6 +57,21 @@ def check_api(api_url: str, origin: str):
     _, headers = fetch(f"{api_url}/api/v1/today", origin, method="OPTIONS")
     assert headers.get("Access-Control-Allow-Origin") == origin, "Prévol CORS refusé"
     print("API : santé, collections, archives, contenu, date de Paris et CORS vérifiés.")
+
+
+def check_api(api_url: str, origin: str, *, wait_seconds: float = 0):
+    deadline = time.monotonic() + wait_seconds
+    while True:
+        try:
+            check_api_once(api_url, origin)
+            return
+        except (URLError, TimeoutError, AssertionError) as exc:
+            detail = f"{exc} ({exc.url})" if isinstance(exc, HTTPError) else str(exc)
+            remaining = deadline - time.monotonic()
+            if remaining <= 0:
+                raise RuntimeError(f"API non prête : {detail}") from exc
+            print(f"API en cours de mise à jour : {detail}. Nouvel essai…", flush=True)
+            time.sleep(min(10, remaining))
 
 
 def check_web(web_url: str, origin: str):
@@ -124,9 +132,17 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--api-url", required=True)
     parser.add_argument("--origin")
+    parser.add_argument(
+        "--wait-seconds",
+        type=int,
+        default=0,
+        help="Temps maximal d’attente de synchronisation de l’API",
+    )
     parser.add_argument("--web-url")
     parser.add_argument("--legacy-api-url")
     args = parser.parse_args()
+    if args.wait_seconds < 0:
+        parser.error("--wait-seconds doit être positif")
     for url in [args.api_url, args.web_url, args.legacy_api_url]:
         if url:
             parsed = urlsplit(url)
@@ -135,12 +151,20 @@ def main():
     parsed = urlsplit(args.web_url or "https://gbaratie.github.io")
     origin = args.origin or f"{parsed.scheme}://{parsed.netloc}"
     try:
-        check_api(args.api_url.rstrip("/"), origin)
+        check_api(args.api_url.rstrip("/"), origin, wait_seconds=args.wait_seconds)
         if args.web_url:
             check_web(args.web_url, origin)
         if args.legacy_api_url:
             check_legacy(args.legacy_api_url.rstrip("/"), args.api_url.rstrip("/"), origin)
-    except (AssertionError, HTTPError, URLError, TimeoutError, ValueError, KeyError) as exc:
+    except (
+        RuntimeError,
+        AssertionError,
+        HTTPError,
+        URLError,
+        TimeoutError,
+        ValueError,
+        KeyError,
+    ) as exc:
         raise SystemExit(f"Vérification du déploiement échouée : {exc}") from exc
 
 
