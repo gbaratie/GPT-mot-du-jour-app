@@ -2,7 +2,7 @@ import "./globals.css";
 import type { Metadata, Viewport } from "next";
 import Link from "next/link";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v16-appRouter";
-import { Box, Container, Stack, Typography } from "@mui/material";
+import { Box, Container, Stack } from "@mui/material";
 import Providers from "@/components/Providers";
 import { collections } from "@/collections/catalog";
 
@@ -48,6 +48,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                       textDecoration: "none",
                       fontWeight: 750,
                       fontSize: "1.25rem",
+                      display: "inline-flex",
+                      alignItems: "center",
+                      minHeight: 44,
                     }}
                   >
                     Chaque jour<span style={{ color: "#7c9ce0" }}>.</span>
@@ -79,15 +82,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               sx={{ py: { xs: 3, md: 5 }, flex: 1, width: "100%" }}
             >
               {children}
-            </Container>
-            <Container
-              component="footer"
-              maxWidth="lg"
-              sx={{ py: 2, borderTop: "1px solid", borderColor: "divider" }}
-            >
-              <Typography variant="body2" color="text.secondary">
-                Une petite découverte, chaque jour. Les dates suivent le calendrier de Paris.
-              </Typography>
             </Container>
           </Providers>
         </AppRouterCacheProvider>

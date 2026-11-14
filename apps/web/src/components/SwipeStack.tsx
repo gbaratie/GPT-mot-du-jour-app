@@ -122,8 +122,10 @@ const SwipeStack = forwardRef<SwipeStackHandle, Props>(function SwipeStack(
     const update = () => {
       if (moving.current || !alive.current) return;
       width.set(node.clientWidth || 360);
-      const contents = [...node.querySelectorAll<HTMLElement>(".deck-measure")];
-      const target = Math.max(260, ...contents.map((content) => content.scrollHeight));
+      // A long hidden preview must not add empty space to the visible card.
+      // Both layers share this frame; resize once the preview becomes active.
+      const content = node.querySelector<HTMLElement>(".deck-foreground .deck-measure");
+      const target = Math.max(260, content?.scrollHeight ?? 0);
       if (Math.abs(target - targetHeight.current) < 0.5) return;
       targetHeight.current = target;
       sizing.current?.stop();

@@ -1,23 +1,47 @@
 "use client";
 
 import { Box, Button, Collapse, Stack, Typography } from "@mui/material";
-import { useState } from "react";
+import { useId, useState } from "react";
 import type { DailyEntry } from "@/lib/api/types";
 
 function Riddle({ payload }: { payload: Extract<DailyEntry, { kind: "riddle" }>["payload"] }) {
   const [revealed, setRevealed] = useState(false);
+  const [hintRevealed, setHintRevealed] = useState(false);
+  const id = useId();
   return (
-    <Stack spacing={2}>
-      <Typography variant="h2" component="h3">
+    <Stack spacing={{ xs: 1.5, md: 2 }}>
+      <Typography
+        variant="h2"
+        component="h3"
+        sx={{ fontSize: { xs: "1.25rem", md: "1.5rem" }, lineHeight: 1.4 }}
+      >
         {payload.question}
       </Typography>
-      {payload.hint && <Typography color="text.secondary">Indice : {payload.hint}</Typography>}
-      <Box>
-        <Button variant="outlined" onClick={() => setRevealed(!revealed)} aria-expanded={revealed}>
+      <Stack direction="row" sx={{ gap: 1, flexWrap: "wrap" }}>
+        <Button
+          variant="outlined"
+          onClick={() => setRevealed(!revealed)}
+          aria-expanded={revealed}
+          aria-controls={`${id}-answer`}
+        >
           {revealed ? "Masquer la réponse" : "Voir la réponse"}
         </Button>
-      </Box>
-      <Collapse in={revealed}>
+        {payload.hint && (
+          <Button
+            onClick={() => setHintRevealed(!hintRevealed)}
+            aria-expanded={hintRevealed}
+            aria-controls={`${id}-hint`}
+          >
+            {hintRevealed ? "Masquer l’indice" : "Voir l’indice"}
+          </Button>
+        )}
+      </Stack>
+      {payload.hint && (
+        <Collapse id={`${id}-hint`} in={hintRevealed} unmountOnExit>
+          <Typography color="text.secondary">{payload.hint}</Typography>
+        </Collapse>
+      )}
+      <Collapse id={`${id}-answer`} in={revealed} unmountOnExit>
         <Typography>{payload.answer}</Typography>
       </Collapse>
     </Stack>
@@ -28,7 +52,7 @@ export function EntryRenderer({ entry }: { entry: DailyEntry }) {
   switch (entry.kind) {
     case "word":
       return (
-        <Stack spacing={2}>
+        <Stack spacing={{ xs: 1.5, md: 2 }}>
           <Typography
             variant="h2"
             component="h3"
@@ -56,13 +80,13 @@ export function EntryRenderer({ entry }: { entry: DailyEntry }) {
       );
     case "quote":
       return (
-        <Stack spacing={2}>
+        <Stack spacing={{ xs: 1.5, md: 2 }}>
           <Typography
             component="blockquote"
             sx={{
               m: 0,
               fontFamily: "Georgia, serif",
-              fontSize: { xs: "1.4rem", md: "1.65rem" },
+              fontSize: { xs: "1.25rem", md: "1.65rem" },
               lineHeight: 1.5,
             }}
           >
