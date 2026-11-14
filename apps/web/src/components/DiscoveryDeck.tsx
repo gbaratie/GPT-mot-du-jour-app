@@ -20,8 +20,14 @@ import type { DailyEntry } from "@/lib/api/types";
 import { formatDate } from "@/lib/dates";
 import { clearRecent, markSeen, recentDates } from "@/lib/discovery";
 
-type Props = { slug: string; locale: string; initial: DailyEntry | null; heading?: ReactNode };
-export default function DiscoveryDeck({ slug, locale, initial, heading }: Props) {
+type Props = {
+  slug: string;
+  locale: string;
+  initial: DailyEntry | null;
+  heading?: ReactNode;
+  action?: ReactNode;
+};
+export default function DiscoveryDeck({ slug, locale, initial, heading, action }: Props) {
   const [trail, setTrail] = useState<DailyEntry[]>(initial ? [initial] : []);
   const [position, setPosition] = useState(initial ? 0 : -1);
   const [prepared, setPrepared] = useState<DailyEntry | null>(null);
@@ -160,21 +166,24 @@ export default function DiscoveryDeck({ slug, locale, initial, heading }: Props)
 
   function content(entry: DailyEntry | null, preview = false) {
     return (
-      <CardContent sx={{ p: { xs: 2.5, sm: 3 }, "&:last-child": { pb: { xs: 2.5, sm: 3 } } }}>
-        {heading && <Box sx={{ mb: 2 }}>{heading}</Box>}
+      <CardContent sx={{ p: { xs: 2, md: 3 }, "&:last-child": { pb: { xs: 2, md: 3 } } }}>
         <Stack
           direction="row"
           sx={{ alignItems: "center", justifyContent: "space-between", gap: 1, mb: 1.5 }}
         >
-          <Typography
-            variant="caption"
-            color="text.secondary"
-            component="p"
-            aria-live={preview ? undefined : "polite"}
-          >
-            {entry ? formatDate(entry.publication_date, locale) : "Au fil des jours"}
-          </Typography>
+          <Box sx={{ minWidth: 0 }}>
+            {heading}
+            <Typography
+              variant="caption"
+              color="text.secondary"
+              component="p"
+              aria-live={preview ? undefined : "polite"}
+            >
+              {entry ? formatDate(entry.publication_date, locale) : "Au fil des jours"}
+            </Typography>
+          </Box>
           <Stack direction="row" sx={{ flexShrink: 0, visibility: preview ? "hidden" : "visible" }}>
+            {action}
             <IconButton
               onClick={() => void advance("previous")}
               disabled={position <= 0 || busy}
@@ -204,26 +213,9 @@ export default function DiscoveryDeck({ slug, locale, initial, heading }: Props)
           <EntryRenderer key={`${slug}:${entry.publication_date}`} entry={entry} />
         ) : (
           <Typography color="text.secondary">
-            Aucun contenu publié aujourd’hui. Retrouvez les publications précédentes dans les
-            archives ou découvrez un autre jour.
+            Aucun contenu publié aujourd’hui. Découvrez un autre jour ou ouvrez les archives.
           </Typography>
         )}
-        <Typography
-          variant="caption"
-          color="text.secondary"
-          className="swipe-hint"
-          sx={{
-            mt: 2,
-            fontSize: ".7rem",
-            lineHeight: 1.5,
-            visibility: preview ? "hidden" : "visible",
-            minHeight: "3em",
-          }}
-        >
-          {position > 0
-            ? "Glissez à gauche pour découvrir, à droite pour revenir."
-            : "Glissez sur le côté pour découvrir."}
-        </Typography>
       </CardContent>
     );
   }
@@ -246,7 +238,7 @@ export default function DiscoveryDeck({ slug, locale, initial, heading }: Props)
           sx={{ mt: 2 }}
           action={<Button onClick={() => void advance("next")}>Réessayer</Button>}
         >
-          Impossible de charger une autre découverte. La carte actuelle reste disponible.
+          Impossible de charger une autre découverte.
         </Alert>
       )}
       {empty && (
@@ -259,8 +251,7 @@ export default function DiscoveryDeck({ slug, locale, initial, heading }: Props)
             </Button>
           }
         >
-          Vous avez parcouru les publications disponibles récemment. Recommencer autorise leur
-          réapparition.
+          Tout a été vu. Recommencer permet de revoir ces publications.
         </Alert>
       )}
     </Box>

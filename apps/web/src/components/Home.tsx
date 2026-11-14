@@ -8,7 +8,6 @@ import {
   Button,
   Card,
   CardContent,
-  Chip,
   IconButton,
   Skeleton,
   ToggleButton,
@@ -21,7 +20,6 @@ import type { TodayResponse } from "@/lib/api/types";
 import CardIcon from "./CardIcon";
 import DiscoveryDeck from "./DiscoveryDeck";
 import { collections } from "@/collections/catalog";
-import { formatDate } from "@/lib/dates";
 
 export default function Home() {
   const [selected, setSelected] = useState(0);
@@ -40,23 +38,9 @@ export default function Home() {
   }, [attempt]);
 
   return (
-    <Stack spacing={{ xs: 2.5, md: 4 }} className="home-view">
+    <Stack sx={{ gap: { xs: 2, md: 4 } }} className="home-view">
       <Box className="home-intro">
-        <Typography variant="overline" color="primary">
-          Le plaisir de découvrir
-        </Typography>
-        <Typography variant="h1" sx={{ mt: 0.5, mb: 1.5 }}>
-          Un jour. Une nouvelle idée.
-        </Typography>
-        <Typography color="text.secondary" sx={{ maxWidth: 520 }}>
-          Un mot à apprivoiser, une pensée à emporter. Prenez un instant pour nourrir votre
-          curiosité.
-        </Typography>
-        {today && (
-          <Typography sx={{ mt: 2 }} variant="body2" color="primary">
-            {formatDate(today.date)}
-          </Typography>
-        )}
+        <Typography variant="h1">Une découverte chaque jour.</Typography>
       </Box>
       {(today?.items.length ?? collections.length) > 1 && (
         <ToggleButtonGroup
@@ -108,7 +92,7 @@ export default function Home() {
                 <Typography variant="h2" sx={{ fontSize: "1.1rem", mb: 3 }}>
                   {collection.name}
                 </Typography>
-                <Skeleton variant="rounded" height={240} />
+                <Skeleton variant="rounded" height={180} />
               </CardContent>
             </Card>
           ))}
@@ -129,30 +113,25 @@ export default function Home() {
                 locale={collection.locale}
                 initial={entry}
                 heading={
-                  <Stack
-                    direction="row"
-                    sx={{ justifyContent: "space-between", alignItems: "center", gap: 1 }}
+                  <Typography
+                    variant="h2"
+                    component="h2"
+                    className="discovery-title"
+                    sx={{ fontSize: "1.1rem" }}
                   >
-                    <Typography variant="h2" component="h2" sx={{ fontSize: "1.1rem" }}>
-                      {collection.name}
-                    </Typography>
-                    <Stack direction="row" sx={{ alignItems: "center", gap: 0.5 }}>
-                      <Chip
-                        size="small"
-                        variant="outlined"
-                        label={collection.locale === "fr-FR" ? "Français" : collection.locale}
-                      />
-                      <IconButton
-                        component={Link}
-                        href={`/${collection.slug}/`}
-                        aria-label={`Explorer ${collection.name.toLowerCase()} : archives`}
-                        title="Explorer les archives"
-                        sx={{ width: 44, height: 44, color: "text.secondary" }}
-                      >
-                        <CardIcon name="archive" />
-                      </IconButton>
-                    </Stack>
-                  </Stack>
+                    {collection.name}
+                  </Typography>
+                }
+                action={
+                  <IconButton
+                    component={Link}
+                    href={`/${collection.slug}/`}
+                    aria-label={`Explorer ${collection.name.toLowerCase()} : archives`}
+                    title="Explorer les archives"
+                    sx={{ width: 44, height: 44, color: "text.secondary" }}
+                  >
+                    <CardIcon name="archive" />
+                  </IconButton>
                 }
               />
             </Box>

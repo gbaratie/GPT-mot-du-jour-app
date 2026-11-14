@@ -132,8 +132,12 @@ la déclencher au relâchement. L’opacité reste à 1 jusqu’à la sortie com
 coins de la carte hors du viewport. Le reset du déplacement intervient dans un
 effet de layout après promotion, pour éviter de réafficher l’ancienne carte.
 
-Les deux couches partagent une hauteur calculée depuis leur contenu naturel,
-avec les mêmes emplacements réservés pour les commandes et le texte d’aide.
+Les deux couches partagent une hauteur calculée depuis le contenu naturel de la
+carte active, avec les mêmes emplacements réservés pour les commandes. Une
+prévisualisation plus longue n’allonge pas la carte affichée ; le cadre s’ajuste
+après sa promotion. Sur mobile, la sélection de collection remplace les titres
+répétés et la navigation du header. L’indice et la réponse des énigmes se révèlent
+indépendamment à la demande.
 Cette hauteur est figée pendant le geste et la sortie. Les ajustements suivants
 (contenu long, réponse d’énigme, changement de largeur) sont animés par ressort,
 sans étirer le texte. L’échelle et le décalage de la carte dessous rejoignent
