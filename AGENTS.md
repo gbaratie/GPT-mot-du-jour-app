@@ -19,7 +19,8 @@ avant de changer leurs contrats, puis le guide adapté dans `docs/agents/`.
 - Toute modification éditoriale doit passer `make validate`. Ne pas contourner les schémas,
   les contrôles de doublons ou les plages de couverture pour faire passer un fichier invalide.
 - Une nouvelle locale réutilise un kind existant quand la forme du payload est identique.
-- Pas d'API publique d'écriture dans ce jalon. Ne pas supprimer des archives lors du sync.
+- L'écriture publique est limitée aux votes anonymes ; aucune écriture de contenu
+  éditorial par l'API. Ne pas supprimer des archives lors du sync.
 - Ne jamais versionner des identifiants Neon/Render. Les variables `NEXT_PUBLIC_*` sont publiques.
 - Utiliser `work/` pour les brouillons, caches et données locales ; ce dossier est ignoré.
 

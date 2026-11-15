@@ -13,6 +13,7 @@ import {
   Typography,
 } from "@mui/material";
 import CardIcon from "./CardIcon";
+import CardFeedback from "./CardFeedback";
 import SwipeStack, { type SwipeStackHandle } from "./SwipeStack";
 import { EntryRenderer } from "@/collections/EntryRenderer";
 import { api } from "@/lib/api/client";
@@ -166,7 +167,9 @@ export default function DiscoveryDeck({ slug, locale, initial, heading, action }
 
   function content(entry: DailyEntry | null, preview = false) {
     return (
-      <CardContent sx={{ p: { xs: 2, md: 3 }, "&:last-child": { pb: { xs: 2, md: 3 } } }}>
+      <CardContent
+        sx={{ position: "relative", p: { xs: 2, md: 3 }, "&:last-child": { pb: { xs: 2, md: 3 } } }}
+      >
         <Stack
           direction="row"
           sx={{ alignItems: "center", justifyContent: "space-between", gap: 1, mb: 1.5 }}
@@ -210,11 +213,22 @@ export default function DiscoveryDeck({ slug, locale, initial, heading, action }
             <Skeleton variant="rounded" height={180} />
           </Box>
         ) : entry ? (
-          <EntryRenderer key={`${slug}:${entry.publication_date}`} entry={entry} />
+          <EntryRenderer
+            key={`${slug}:${entry.publication_date}`}
+            entry={entry}
+            actions={
+              entry.kind === "riddle" ? (
+                <CardFeedback entry={entry} active={!preview} inline />
+              ) : undefined
+            }
+          />
         ) : (
           <Typography color="text.secondary">
             Aucun contenu publié aujourd’hui. Découvrez un autre jour ou ouvrez les archives.
           </Typography>
+        )}
+        {entry && entry.kind !== "riddle" && !busy && (
+          <CardFeedback entry={entry} active={!preview} />
         )}
       </CardContent>
     );

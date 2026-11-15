@@ -66,10 +66,51 @@ script d'ajout sont retirés ; leurs versions précédentes restent dans Git.
 - `repositories/` : requêtes SQLAlchemy.
 - `models/` : tables ; `schemas/` : contrats HTTP ; `collections/` : schémas des payloads.
 - `content.py` : validation, import et synchronisation, sans endpoints d'écriture.
+- `feedback_report.py` : export agrégé des votes pour la préparation éditoriale.
+- `duplicates.py` : comparaison des nouveaux lots à toutes les années et entre eux.
 
 Les sessions sont courtes et le pool vérifie les connexions avant réutilisation. Les erreurs
 SQL deviennent des 503 génériques sans exposer requêtes ni chaînes de connexion. `/health`
 vérifie la connexion. Les migrations sont obligatoires avant le lancement du service.
+
+## Avis et favoris
+
+Chaque carte propose « J’aime » / « Je n’aime pas ». L’API accepte uniquement
+`PUT /api/v1/collections/{slug}/entries/{date}/feedback` avec `{vote: "like"}`,
+`{vote: "dislike"}` ou `{vote: null}` pour retirer le vote. Le lecteur est un UUID
+aléatoire envoyé dans `X-Reader-Id`, conservé dans le `localStorage` du navigateur.
+La base conserve son SHA-256 dans `entry_feedback`, avec une contrainte unique
+par publication et lecteur. Les nouvelles tentatives sont idempotentes, un vote
+remplace l’autre et les écritures ne modifient jamais le contenu éditorial.
+
+`GET` sur le même endpoint restaure le vote. `GET /api/v1/feedback/favorites`
+renvoie uniquement les cartes aimées par ce lecteur, par date décroissante,
+avec `limit` (1 à 100, défaut 20) et `offset` (0 à 10000). Ces réponses utilisent
+`Cache-Control: no-store`, sans cache de secours. Une carte préchargée inactive
+ne charge aucun avis. L’interface n’annonce un enregistrement qu’après succès.
+Les cartes désactivées et absentes renvoient 404 et sont exclues des favoris.
+
+La route statique `/favorites/` montre les cartes aimées et permet de les retirer.
+Sans compte, les favoris sont propres au navigateur et ne se transfèrent pas
+automatiquement entre appareils. Effacer son stockage perd l’accès à cette identité.
+Sans stockage disponible, l’identité ne dure que la session. Un UUID anonyme n’est
+pas une authentification : il ne garantit pas une seule voix par personne et ne
+doit pas protéger de données sensibles.
+
+`make feedback-report COLLECTION=<slug>` lit la base configurée et écrit
+`work/feedback/report.json` : payloads, dates et nombres de votes, sans identifiant.
+Le skill éditorial consulte ce rapport avant de proposer les futurs contenus ;
+il distingue absence de votes et export indisponible. Il n’y a pas de génération
+automatique au clic, ni de modification du tirage des cartes déjà publiées.
+
+`make check-duplicates COLLECTION=<slug> DRAFT=<lot.json>` compare les sujets
+du lot à toutes les archives de même kind et langue, y compris les dates futures
+déjà planifiées. Les doublons exacts bloquent ; les variantes numériques et
+formulations proches demandent une revue éditoriale du sens et du mécanisme.
+`add_entry.py` refuse aussi ces trois catégories avant toute écriture.
+`make validate` conserve son contrôle des dates, payloads et couvertures ; il
+ne réécrit pas les répétitions historiques existantes. L’audit des nouveaux lots
+est distinct et obligatoire dans le skill, même pour un ajout annuel en masse.
 
 ## Vérification
 

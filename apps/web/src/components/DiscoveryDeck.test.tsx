@@ -1,5 +1,5 @@
 import { fireEvent, render, screen, within, waitFor } from "@testing-library/react";
-import { afterEach, expect, it, vi } from "vitest";
+import { afterEach, beforeEach, expect, it, vi } from "vitest";
 import DiscoveryDeck from "./DiscoveryDeck";
 import { api } from "@/lib/api/client";
 import { markSeen, recentDates } from "@/lib/discovery";
@@ -17,6 +17,7 @@ const word = (date: string, term: string): DailyEntry => ({
   publication_date: date,
   payload: { term, definition: "Définition", example: "Exemple" },
 });
+beforeEach(() => vi.spyOn(api, "feedback").mockResolvedValue({ vote: null }));
 afterEach(() => vi.restoreAllMocks());
 it("exclut les cartes récentes, revient à la précédente et conserve un lot sans nouvel appel", async () => {
   markSeen("mot-du-jour", "2026-11-01");

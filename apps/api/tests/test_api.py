@@ -16,10 +16,12 @@ def test_health_and_openapi(client):
     assert client.get("/health").json() == {"status": "ok"}
     schema = client.get("/openapi.json").json()
     assert "/api/v1/collections/{slug}/entries/{entry_date}" in schema["paths"]
-    assert all(
-        not set(methods) & {"post", "patch", "put", "delete"}
-        for methods in schema["paths"].values()
-    )
+    writes = {
+        path: set(methods) & {"post", "patch", "put", "delete"}
+        for path, methods in schema["paths"].items()
+        if set(methods) & {"post", "patch", "put", "delete"}
+    }
+    assert writes == {"/api/v1/collections/{slug}/entries/{entry_date}/feedback": {"put"}}
 
 
 def test_list_active_collections(client):

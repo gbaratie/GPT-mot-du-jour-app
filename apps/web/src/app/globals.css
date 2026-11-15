@@ -113,7 +113,7 @@ input {
     clip-path: inset(50%);
     white-space: nowrap;
   }
-  body:has(.home-view) .site-nav {
+  body:has(.home-view, .favorites-view) .site-nav {
     display: none;
   }
   main:has(.home-view) {
@@ -137,7 +137,11 @@ input {
   }
 }
 @media (max-width: 599px) {
+  .site-header-actions.MuiStack-root {
+    display: contents;
+  }
   .site-nav {
+    order: 1;
     width: 100%;
     justify-content: space-between;
   }
@@ -167,6 +171,20 @@ input {
     margin: 0;
     border: 1px solid #ffffff1f;
     border-radius: 12px;
+  }
+  .discovery-deck .card-feedback:not(:has(button[aria-label="Réessayer"])) {
+    position: absolute;
+    top: 16px;
+    right: 156px;
+    margin-top: 0;
+  }
+  .discovery-deck .feedback-status {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
   }
 }
 @media (prefers-reduced-motion: reduce) {
@@ -218,4 +236,12 @@ input {
   inset: auto -1px -1px;
   height: 18px;
   background: inherit;
+}
+.card-feedback.is-inline .feedback-status {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
 }

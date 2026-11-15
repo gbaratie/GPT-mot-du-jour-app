@@ -11,6 +11,7 @@ from pathlib import Path
 from app.collections import validate_payload
 from app.config import ROOT
 from app.content import ContentError, load_content, read_json
+from app.duplicates import find_duplicates
 
 
 def write_json(path: Path, value):
@@ -30,6 +31,18 @@ def add_entry(root: Path, slug: str, day: date, payload: dict):
     if any(entry["publication_date"] == day for entry in entries):
         raise ContentError(f"Date déjà publiée : {slug}/{day}")
     payload = validate_payload(definition.kind, payload)
+    duplicates = find_duplicates(
+        definition, [{"publication_date": day, "payload": payload}], content
+    )
+    exact = next((match for match in duplicates if match["match"] == "exact"), None)
+    if exact:
+        raise ContentError(
+            f"Sujet déjà publié : {exact['existing_collection']}/{exact['existing_date']}"
+        )
+    if duplicates:
+        raise ContentError(
+            "Sujet très proche d'une archive : reformulez le sujet ou choisissez une autre carte"
+        )
     manifest = read_json(root / "collections.json")
     metadata = next(collection for collection in manifest if collection["slug"] == slug)
     spans = sorted(
