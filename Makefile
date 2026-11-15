@@ -1,7 +1,7 @@
 PYTHON ?= .venv/bin/python
 NPM ?= npm
 
-.PHONY: install validate test check build dev-api dev-web migrate sync-content add-entry schemas
+.PHONY: install validate test check build dev-api dev-web migrate sync-content add-entry schemas feedback-report check-duplicates
 install:
 	python3 -m venv .venv
 	$(PYTHON) -m pip install -e 'apps/api[dev]'
@@ -43,3 +43,9 @@ sync-content: validate
 
 add-entry:
 	$(PYTHON) scripts/add_entry.py --collection '$(COLLECTION)' --date '$(DATE)' $(if $(PAYLOAD),--payload-file '$(PAYLOAD)')
+
+feedback-report:
+	$(PYTHON) -m app.feedback_report $(if $(COLLECTION),--collection '$(COLLECTION)') $(if $(SINCE),--since '$(SINCE)') --output work/feedback/report.json
+
+check-duplicates:
+	$(PYTHON) -m app.duplicates --collection '$(COLLECTION)' --draft '$(DRAFT)'

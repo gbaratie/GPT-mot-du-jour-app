@@ -77,6 +77,12 @@ propositions avant leur ajout réel. Ne pas contourner cette étape avec des
 contenus « exemples » ou « seed ». Les fixtures isolées restent hors publication.
 L'approbation explicite d'un lot exact reste valable après adaptation technique.
 
+Ce passage inclut la consultation du rapport des votes collectifs et le contrôle
+des doublons sur toutes les archives de même kind et langue, ainsi que dans le
+nouveau lot. Reprendre les préférences de thème et de style, sans recopier les
+favoris ni réhabiller une ancienne énigme en changeant ses nombres ou son décor.
+Pour une nouvelle collection sans votes, suivre la ligne éditoriale définie.
+
 Exécuter `make validate`, `make check`, `make test`, `make build` ; vérifier les
 routes du nouveau thème, l'historique, l'isolation, les frontières de dates et
 la non-régression des collections existantes. Tester toute nouvelle interaction.

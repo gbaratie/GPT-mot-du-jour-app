@@ -8,6 +8,7 @@ from sqlalchemy import text
 from sqlalchemy.exc import SQLAlchemyError
 
 from app.api.routes.collections import router
+from app.api.routes.feedback import router as feedback_router
 from app.config import Settings
 from app.db import create_database
 
@@ -29,8 +30,8 @@ def create_app(settings: Settings | None = None) -> FastAPI:
     app.add_middleware(
         CORSMiddleware,
         allow_origins=list(settings.cors_origins),
-        allow_methods=["GET"],
-        allow_headers=["Accept", "Content-Type"],
+        allow_methods=["GET", "PUT"],
+        allow_headers=["Accept", "Content-Type", "X-Reader-Id"],
     )
 
     @app.exception_handler(SQLAlchemyError)
@@ -48,6 +49,7 @@ def create_app(settings: Settings | None = None) -> FastAPI:
         return {"status": "ok"}
 
     app.include_router(router)
+    app.include_router(feedback_router)
     return app
 
 

@@ -72,3 +72,20 @@ it("revalide aujourd’hui même si une ancienne réponse est en cache", async (
   expect((await api.today()).date).toBe("2026-11-09");
   expect(fetch).toHaveBeenCalledTimes(2);
 });
+
+it("envoie les votes au serveur avec la même identité, sans cache ni succès hors ligne", async () => {
+  const fetch = vi.fn().mockResolvedValue({ ok: true, json: async () => ({ vote: "like" }) });
+  vi.stubGlobal("fetch", fetch);
+  await api.vote("mot-du-jour", "2026-01-01", "like");
+  await api.feedback("mot-du-jour", "2026-01-01");
+  expect(fetch.mock.calls[0][1]).toMatchObject({
+    method: "PUT",
+    body: JSON.stringify({ vote: "like" }),
+    cache: "no-store",
+  });
+  const id = fetch.mock.calls[0][1].headers["X-Reader-Id"];
+  expect(fetch.mock.calls[1][1].headers["X-Reader-Id"]).toBe(id);
+  expect(localStorage.getItem("daily-reader-v1")).toBe(id);
+  fetch.mockRejectedValue(new Error("offline"));
+  await expect(api.vote("mot-du-jour", "2026-01-01", "dislike")).rejects.toThrow("offline");
+});

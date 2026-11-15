@@ -1,5 +1,6 @@
 import { cached, save, remember, savedEntries, cacheAge } from "./cache";
-import type { DailyEntry, TodayResponse } from "./types";
+import type { DailyEntry, TodayResponse, Feedback, FeedbackVote } from "./types";
+import { readerId } from "../reader";
 
 const API_URL = (process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000").replace(/\/$/, "");
 
@@ -65,7 +66,48 @@ async function get<T>(path: string, signal?: AbortSignal, random = false): Promi
   }
 }
 
+async function feedbackRequest<T>(
+  path: string,
+  signal?: AbortSignal,
+  vote?: FeedbackVote | null,
+): Promise<T> {
+  let slow = false;
+  const timer = setTimeout(() => {
+    slow = true;
+    notifySlow(1);
+  }, 3500);
+  try {
+    const response = await fetch(`${API_URL}/api/v1${path}`, {
+      method: vote === undefined ? "GET" : "PUT",
+      headers: {
+        Accept: "application/json",
+        "X-Reader-Id": readerId(),
+        ...(vote === undefined ? {} : { "Content-Type": "application/json" }),
+      },
+      body: vote === undefined ? undefined : JSON.stringify({ vote }),
+      cache: "no-store",
+      signal: signal
+        ? AbortSignal.any([signal, AbortSignal.timeout(90000)])
+        : AbortSignal.timeout(90000),
+    });
+    if (!response.ok) throw new ApiError(response.status);
+    return (await response.json()) as T;
+  } finally {
+    clearTimeout(timer);
+    if (slow) notifySlow(-1);
+  }
+}
+
+const feedbackPath = (slug: string, day: string) =>
+  `/collections/${encodeURIComponent(slug)}/entries/${encodeURIComponent(day)}/feedback`;
+
 export const api = {
+  feedback: (slug: string, day: string, signal?: AbortSignal) =>
+    feedbackRequest<Feedback>(feedbackPath(slug, day), signal),
+  vote: (slug: string, day: string, vote: FeedbackVote | null) =>
+    feedbackRequest<Feedback>(feedbackPath(slug, day), undefined, vote),
+  favorites: (offset = 0, signal?: AbortSignal) =>
+    feedbackRequest<DailyEntry[]>(`/feedback/favorites?limit=20&offset=${offset}`, signal),
   saved: (slug: string) => {
     const today = cached<TodayResponse>(`${API_URL}/today`, cacheAge)?.date;
     const dated = today

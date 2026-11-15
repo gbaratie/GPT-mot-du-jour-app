@@ -1,4 +1,6 @@
 export type CollectionKind = "word" | "quote" | "riddle";
+export type FeedbackVote = "like" | "dislike";
+export type Feedback = { vote: FeedbackVote | null };
 
 export interface Collection {
   slug: string;

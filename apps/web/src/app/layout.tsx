@@ -5,6 +5,7 @@ import { AppRouterCacheProvider } from "@mui/material-nextjs/v16-appRouter";
 import { Box, Container, Stack } from "@mui/material";
 import Providers from "@/components/Providers";
 import { collections } from "@/collections/catalog";
+import CardIcon from "@/components/CardIcon";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -56,21 +57,42 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                     Chaque jour<span style={{ color: "#7c9ce0" }}>.</span>
                   </Link>
                   <Stack
-                    component="nav"
-                    className="site-nav"
-                    aria-label="Navigation principale"
+                    className="site-header-actions"
                     direction="row"
-                    sx={{ gap: { xs: 1, sm: 3 }, flexWrap: "wrap" }}
+                    sx={{ gap: 3, alignItems: "center", flexWrap: "wrap" }}
                   >
-                    {collections.map((collection) => (
-                      <Link
-                        key={collection.slug}
-                        href={`/${collection.slug}/`}
-                        style={{ color: "#a0a8b8", textDecoration: "none", fontSize: "0.9rem" }}
-                      >
-                        {collection.name}
-                      </Link>
-                    ))}
+                    <Stack
+                      component="nav"
+                      className="site-nav"
+                      aria-label="Navigation principale"
+                      direction="row"
+                      sx={{ gap: { xs: 1, sm: 3 }, flexWrap: "wrap" }}
+                    >
+                      {collections.map((collection) => (
+                        <Link
+                          key={collection.slug}
+                          href={`/${collection.slug}/`}
+                          style={{ color: "#a0a8b8", textDecoration: "none", fontSize: "0.9rem" }}
+                        >
+                          {collection.name}
+                        </Link>
+                      ))}
+                    </Stack>
+                    <Link
+                      href="/favorites/"
+                      aria-label="Mes favoris"
+                      title="Mes favoris"
+                      style={{
+                        display: "inline-flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        color: "#a0a8b8",
+                        minWidth: 44,
+                        minHeight: 44,
+                      }}
+                    >
+                      <CardIcon name="heart" />
+                    </Link>
                   </Stack>
                 </Stack>
               </Container>

@@ -13,6 +13,7 @@ from app.config import ROOT
 from app.content import ContentError, import_legacy, load_content, sync_content
 from app.db import Base, create_database
 from app.models import DailyEntry
+from app.repositories.feedback import FeedbackRepository
 
 
 def write_json(path, value):
@@ -209,4 +210,14 @@ def test_postgres_migration_and_sync():
     engine, factory = create_database(url)
     with factory() as session:
         assert session.scalar(select(func.count()).select_from(DailyEntry)) == expected_count
+        entry = session.scalar(select(DailyEntry).order_by(DailyEntry.id))
+        feedback = FeedbackRepository(session)
+        feedback.save(entry.id, "1" * 64, "like")
+        feedback.save(entry.id, "1" * 64, "like")
+        feedback.save(entry.id, "1" * 64, "dislike")
+        assert feedback.vote(entry.id, "1" * 64) == "dislike"
+        report = feedback.report("mot-du-jour")
+        assert report[0]["dislikes"] == 1
+        assert report[0]["likes"] == 0
+        feedback.save(entry.id, "1" * 64, None)
     engine.dispose()

@@ -1,10 +1,16 @@
 "use client";
 
 import { Box, Button, Collapse, Stack, Typography } from "@mui/material";
-import { useId, useState } from "react";
+import { useId, useState, type ReactNode } from "react";
 import type { DailyEntry } from "@/lib/api/types";
 
-function Riddle({ payload }: { payload: Extract<DailyEntry, { kind: "riddle" }>["payload"] }) {
+function Riddle({
+  payload,
+  actions,
+}: {
+  payload: Extract<DailyEntry, { kind: "riddle" }>["payload"];
+  actions?: ReactNode;
+}) {
   const [revealed, setRevealed] = useState(false);
   const [hintRevealed, setHintRevealed] = useState(false);
   const id = useId();
@@ -35,6 +41,7 @@ function Riddle({ payload }: { payload: Extract<DailyEntry, { kind: "riddle" }>[
             {hintRevealed ? "Masquer l’indice" : "Voir l’indice"}
           </Button>
         )}
+        {actions}
       </Stack>
       {payload.hint && (
         <Collapse id={`${id}-hint`} in={hintRevealed} unmountOnExit>
@@ -48,7 +55,7 @@ function Riddle({ payload }: { payload: Extract<DailyEntry, { kind: "riddle" }>[
   );
 }
 
-export function EntryRenderer({ entry }: { entry: DailyEntry }) {
+export function EntryRenderer({ entry, actions }: { entry: DailyEntry; actions?: ReactNode }) {
   switch (entry.kind) {
     case "word":
       return (
@@ -107,6 +114,7 @@ export function EntryRenderer({ entry }: { entry: DailyEntry }) {
         <Riddle
           key={`${entry.collection_slug}-${entry.publication_date}`}
           payload={entry.payload}
+          actions={actions}
         />
       );
     default: {

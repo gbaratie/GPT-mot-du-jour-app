@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import DiscoveryDeck from "./DiscoveryDeck";
+import CardFeedback from "./CardFeedback";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import {
@@ -194,6 +195,7 @@ function CollectionView({ collection, day }: { collection: Collection; day: stri
                         {formatDate(entry.publication_date, collection.locale)}
                       </Button>
                       <EntryRenderer entry={entry} />
+                      <CardFeedback entry={entry} />
                     </CardContent>
                   </Card>
                 ))}

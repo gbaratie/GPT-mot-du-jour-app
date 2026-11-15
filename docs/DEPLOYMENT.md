@@ -51,6 +51,13 @@ les JSON, valider puis synchroniser dans l'environnement autorisé. Si la struct
 migrer d'abord. Retirer une ligne Git ne supprime pas son archive en base ; les retraits
 nécessitent une opération dédiée. Désactiver une collection avec `active: false`.
 
+Les avis nécessitent la migration `0002_entry_feedback`, appliquée par le démarrage
+normal avant l’API et le nouveau front. CORS autorise `GET`, `PUT`, `Content-Type`
+et `X-Reader-Id`. Ne pas remplacer les votes lors des synchronisations éditoriales.
+Pour préparer de nouveaux lots, exécuter `make feedback-report COLLECTION=<slug>`
+avec l’environnement de lecture autorisé. L’export ne contient aucun identifiant
+et ne doit pas être confondu avec les données d’une base de test.
+
 ## GitHub Pages
 
 1. **Settings → Pages → Source** : choisir **GitHub Actions**.

@@ -50,6 +50,26 @@ GET /api/v1/collections/{slug}/entries/{date}
 
 Dates exactes ; `before` exclusif ; historique du plus récent au plus ancien ; `limit` de 1 à 100. Le jour courant suit Europe/Paris. Une publication absente renvoie 404, une date invalide 422, une base indisponible 503. `/today` garde les collections sans publication avec `entry: null`.
 
+## Avis et favoris
+
+Les boutons « J’aime » et « Je n’aime pas » enregistrent un avis modifiable par carte.
+Les cartes aimées se retrouvent dans **Mes favoris**, via le cœur dans l’en-tête.
+Sans compte, les favoris sont liés au navigateur utilisé.
+
+`make feedback-report COLLECTION=enigme-du-jour` exporte les avis collectifs depuis
+la base configurée dans `work/feedback/report.json`. Le skill de création s’en sert
+pour orienter les futures propositions, en vérifiant les doublons dans toutes les
+années. Contrôle d’un nouveau lot :
+
+```sh
+make check-duplicates COLLECTION=enigme-du-jour DRAFT=work/drafts/lot.json
+```
+
+Les seuls endpoints d’écriture sont les votes (`PUT` sur la publication suivie de
+`/feedback`, avec `X-Reader-Id` et `{vote: "like" | "dislike" | null}`). Les favoris
+sont lus via `GET /api/v1/feedback/favorites` avec la même identité. Déployer la
+migration `0002_entry_feedback` avant ce front ; le démarrage Render l’applique.
+
 ## Contenu migré
 
 Les **365 mots de 2025** sont conservés dans `content/mot-du-jour/2025.json`. Ils ne se répètent plus automatiquement en 2026. À la demande de réutilisation des mots existants, les 57 mots du 5 novembre au 31 décembre ont été republiés aux dates exactes de 2026, sans changer leurs textes ni les archives de 2025. `citation-du-jour` contient trois exemples du 4 au 6 novembre 2026. Les 57 énoncés approuvés de `enigme-du-jour` couvrent le 5 novembre au 31 décembre 2026, avec réponse et explication dans le champ `answer`, masquées jusqu’à révélation. Les autres dates restent sans publication.

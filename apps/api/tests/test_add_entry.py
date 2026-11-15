@@ -68,3 +68,15 @@ def test_invalid_payload_and_duplicates_leave_files_unchanged(content_root):
     with pytest.raises(ContentError, match="déjà publiée"):
         module.add_entry(content_root, "test-word", date(2025, 12, 31), {})
     assert {path: path.read_bytes() for path in content_root.rglob("*.json")} == original
+
+
+def test_same_subject_in_another_year_is_rejected_without_writes(content_root):
+    original = {path: path.read_bytes() for path in content_root.rglob("*.json")}
+    with pytest.raises(ContentError, match="Sujet déjà publié"):
+        module.add_entry(
+            content_root,
+            "test-word",
+            date(2027, 1, 1),
+            {"term": "MOT !", "definition": "Autre définition", "example": "Autre exemple"},
+        )
+    assert {path: path.read_bytes() for path in content_root.rglob("*.json")} == original

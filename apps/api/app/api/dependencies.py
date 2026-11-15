@@ -4,7 +4,9 @@ from fastapi import Depends, Request
 from sqlalchemy.orm import Session
 
 from app.repositories.collections import CollectionRepository
+from app.repositories.feedback import FeedbackRepository
 from app.services.collections import CollectionService
+from app.services.feedback import FeedbackService
 
 
 def get_session(request: Request):
@@ -18,3 +20,9 @@ def get_today(request: Request):
 
 def get_service(session: Session = Depends(get_session)):  # noqa: B008
     return CollectionService(CollectionRepository(session))
+
+
+def get_feedback_service(session: Session = Depends(get_session)):  # noqa: B008
+    return FeedbackService(
+        CollectionService(CollectionRepository(session)), FeedbackRepository(session)
+    )

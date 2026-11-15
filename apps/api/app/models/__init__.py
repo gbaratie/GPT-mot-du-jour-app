@@ -46,3 +46,17 @@ class DailyEntry(Base):
     updated_at: Mapped[datetime] = mapped_column(
         DateTime(timezone=True), server_default=func.now(), onupdate=func.now()
     )
+
+
+class EntryFeedback(Base):
+    __tablename__ = "entry_feedback"
+    __table_args__ = (
+        UniqueConstraint("entry_id", "reader_hash", name="uq_entry_reader"),
+        CheckConstraint("vote IN ('like', 'dislike')", name="ck_feedback_vote"),
+    )
+
+    id: Mapped[int] = mapped_column(primary_key=True)
+    entry_id: Mapped[int] = mapped_column(ForeignKey("daily_entries.id", ondelete="CASCADE"))
+    reader_hash: Mapped[str] = mapped_column(String(64), index=True)
+    vote: Mapped[str] = mapped_column(String(7))
+    updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())

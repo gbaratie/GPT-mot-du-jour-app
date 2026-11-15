@@ -26,6 +26,32 @@ les archives ni activer une répétition automatique. Gérer correctement le 29 
 
 ## Auditer et préparer le lot
 
+### Prendre en compte les avis des lecteurs
+
+Avant toute proposition, consulter les votes collectifs de la collection :
+
+```sh
+make feedback-report COLLECTION=enigme-du-jour
+```
+
+Lire `work/feedback/report.json` : cartes, textes et nombres de « J’aime » /
+« Je n’aime pas », sans identifiant. La commande lit uniquement la base configurée
+par `DATABASE_URL` ; ne jamais afficher cette URL, la copier dans Git ou migrer/
+synchroniser la production pour obtenir le rapport. Un export récent fourni par
+l’utilisateur convient aussi. Si la base est inaccessible ou non migrée, signaler
+l’indisponibilité : ne pas la présenter comme une absence de votes et ne pas
+utiliser les votes d’une base de test comme préférences réelles.
+
+Comparer thèmes, difficulté, longueur, style et clarté des cartes appréciées et
+moins appréciées. Pondérer par le nombre de votes : un vote isolé n’établit pas
+une préférence générale et une carte non notée n’est pas rejetée. Conserver de la
+diversité. Expliquer brièvement les tendances utilisées avant le tableau des
+propositions, sans révéler de solutions. Zéro vote signifie suivre la ligne
+éditoriale existante. Les favoris personnels restent privés ; seul l’agrégat
+collectif guide la création.
+
+### Éviter les doublons, y compris entre années
+
 1. Lire et valider les fichiers sans modifier les données. Énumérer tous les jours
    attendus avec un outil de calendrier puis comparer aux dates présentes.
 2. Distinguer jours absents, champs incomplets et doublons. Ne pas écraser une entrée
@@ -40,6 +66,29 @@ les archives ni activer une répétition automatique. Gérer correctement le 29 
 
 Conserver si nécessaire le brouillon dans `work/drafts/`, ignoré par Git et jamais
 synchronisé ; ne pas écrire de contenu non approuvé dans `content/`.
+
+Comparer à **toutes les années**, publications passées et déjà planifiées, et aux
+autres collections de même kind et langue. Pour les mots, comparer le terme, même
+si la définition change ; pour les citations, le texte, même si l’attribution ou
+la source changent. Pour les énigmes, comparer aussi le mécanisme de résolution :
+changer les nombres, les prénoms, le décor ou paraphraser une solution identique
+ne crée pas une nouvelle carte. Ne pas recopier un favori pour tenter de plaire.
+
+Avant présentation et de nouveau juste avant écriture, préparer le lot daté au
+format `{publication_date, payload}` dans un tableau JSON puis exécuter :
+
+```sh
+make check-duplicates COLLECTION=enigme-du-jour DRAFT=work/drafts/lot.json
+```
+
+L’outil compare le lot aux archives et à lui-même, normalise casse, accents et
+ponctuation, signale les formulations proches et les variantes numériques. Les
+doublons exacts bloquent la commande ; examiner et remplacer aussi les résultats
+`near` et `template` avant proposition. Une sortie vide n’exclut pas les doublons
+de sens : la relecture du raisonnement reste obligatoire. Ne pas désactiver les
+contrôles. Les répétitions historiques restent intactes et ne justifient pas de
+nouvelles répétitions. Une réutilisation doit être explicitement demandée,
+identifiée dans le lot et documentée ; ne jamais l’inférer d’un vote.
 
 ## Validation obligatoire des propositions
 
