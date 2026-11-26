@@ -2,9 +2,9 @@
   {
     "publication_date": "2026-01-01",
     "payload": {
-      "question": "Dans une salle, 33 personnes se serrent chacune la main une fois avec toutes les autres. Combien de poignées de main sont échangées ?",
-      "answer": "528. Chaque personne salue 32 autres personnes ; on divise le produit par deux pour ne pas compter chaque paire deux fois.",
-      "hint": "Comptez les paires sans tenir compte de leur ordre."
+      "question": "Quatre cartes portent respectivement A, K, 4 et 7 sur leur face visible. Chacune a une lettre sur une face et un entier sur l’autre. Quelles cartes faut-il retourner, et seulement celles qui sont nécessaires, pour vérifier la règle : « Si une face porte une voyelle, l’autre porte un nombre pair » ?",
+      "answer": "Il faut retourner A et 7. A pourrait cacher un nombre impair ; 7 pourrait cacher une voyelle. K ne peut pas contredire une règle qui ne contraint que les voyelles. Le 4 peut cacher une voyelle ou une consonne sans violer la règle : celle-ci ne dit pas que tout nombre pair doit avoir une voyelle au dos.",
+      "hint": "Cherche les cartes capables de révéler une violation de la règle."
     }
   },
   {
@@ -26,9 +26,9 @@
   {
     "publication_date": "2026-01-04",
     "payload": {
-      "question": "Un sac contient 18 billes rouges et 20 billes bleues. Sans regarder, combien faut-il en tirer au minimum pour être certain d’en avoir deux de la même couleur ?",
-      "answer": "3 billes. Les deux premières peuvent être de couleurs différentes ; la troisième partage nécessairement sa couleur avec l’une des deux.",
-      "hint": "Il n’y a que deux couleurs."
+      "question": "On enlève deux coins opposés d’un échiquier de 8 cases sur 8. Peut-on recouvrir exactement les 62 cases restantes avec 31 dominos, chacun couvrant deux cases voisines par un côté, sans chevauchement ?",
+      "answer": "Non. Les deux coins opposés ont la même couleur. Il reste donc 30 cases d’une couleur et 32 de l’autre, alors que chaque domino couvre obligatoirement une case de chaque couleur. Aucun assemblage de 31 dominos ne peut produire ce déséquilibre.",
+      "hint": "Cherche une propriété que tous les dominos partagent, quelle que soit leur orientation."
     }
   },
   {
@@ -50,9 +50,9 @@
   {
     "publication_date": "2026-01-07",
     "payload": {
-      "question": "Une urne contient 19 jetons numérotés de 1 à 19. On en tire un au hasard, avec la même chance pour chaque jeton. Quelle est la probabilité de tirer le numéro 18 ?",
-      "answer": "1/19. Un seul jeton porte le numéro demandé parmi 19 jetons équiprobables.",
-      "hint": "Comptez les issues favorables et le nombre total d’issues."
+      "question": "Une pile contient 23 jetons. Deux joueurs retirent chacun leur tour 1, 2 ou 3 jetons ; celui qui prend le dernier gagne. Tu commences. Quel premier retrait et quelle règle pour tes coups suivants te garantissent la victoire contre toute défense ?",
+      "answer": "Retire 3 jetons, puis complète toujours le retrait adverse pour que vos deux retraits totalisent 4. Tu laisses ainsi successivement 20, 16, 12, 8 puis 4 jetons après tes coups. Depuis 4, l’adversaire doit en laisser de 1 à 3, que tu prends tous. Chaque fois que tu rends la main, il reste un multiple de 4 : c’est la position perdante que tu lui imposes.",
+      "hint": "Cherche des tailles de pile depuis lesquelles tous les retraits autorisés donnent une occasion de gagner à l’autre joueur."
     }
   },
   {
@@ -74,9 +74,9 @@
   {
     "publication_date": "2026-01-10",
     "payload": {
-      "question": "Je suis un entier positif. Mon triple augmenté de 14 vaut 62. Qui suis-je ?",
-      "answer": "16. En soustrayant 14, on obtient 48, puis on divise par trois.",
-      "hint": "Effectuez les opérations inverses dans l’ordre inverse."
+      "question": "Un nombre de quatre chiffres tous différents, sans zéro, devient exactement le nombre écrit à l’envers lorsqu’on le multiplie par 4. Quel est ce nombre ?",
+      "answer": "2178, car 2178 × 4 = 8712. Notons ABCD le nombre. Puisque 4 × ABCD a encore quatre chiffres, A vaut 1 ou 2. Le dernier chiffre de 4D est A : A est donc pair, d’où A = 2. Pour que le produit commence par D, D vaut 8 ou 9 ; seul 8 donne un produit finissant par 2. La retenue à droite vaut 3. Aux deux colonnes centrales, 4C + 3 = B + 10r et 4B + r = C, car 4A + retenue = 8 impose une retenue nulle dans les milliers. On en tire 15B + 4r + 3 = 10r, donc 15B + 3 = 6r. Avec une retenue r entre 0 et 3, cela impose B = 1, r = 3, puis C = 7.",
+      "hint": "Examinez d’abord les chiffres des milliers et des unités, en tenant compte des retenues."
     }
   },
   {
@@ -98,9 +98,9 @@
   {
     "publication_date": "2026-01-13",
     "payload": {
-      "question": "Une boîte contient 13 chaussettes noires et autant de blanches. Dans le noir, combien de chaussettes faut-il prendre au minimum pour être certain d’obtenir une paire de même couleur ?",
-      "answer": "3. Avec deux chaussettes, les couleurs peuvent différer. Avec trois, deux ont nécessairement la même couleur.",
-      "hint": "Raisonnez dans le cas le moins favorable."
+      "question": "Tous les floriens sont des mirals. Aucun miral n’est un tavien. Certains taviens sont des lucels. Parmi les trois conclusions suivantes, laquelle est nécessairement vraie : « Aucun florien n’est lucel », « Certains lucels ne sont pas floriens », « Tous les lucels sont taviens » ?",
+      "answer": "Seule « Certains lucels ne sont pas floriens » est nécessairement vraie. Les taviens qui sont lucels ne sont pas mirals, donc pas floriens. Rien n’interdit à d’autres lucels d’être floriens, et rien ne dit que tous les lucels sont taviens.",
+      "hint": "Pars des individus dont l’existence est affirmée, puis suis les exclusions."
     }
   },
   {
@@ -122,9 +122,9 @@
   {
     "publication_date": "2026-01-16",
     "payload": {
-      "question": "Je suis un entier positif. Mon triple augmenté de 17 vaut 74. Qui suis-je ?",
-      "answer": "19. En soustrayant 17, on obtient 57, puis on divise par trois.",
-      "hint": "Effectuez les opérations inverses dans l’ordre inverse."
+      "question": "Quatre points A, B, C et D forment un carré ; E est au centre. On trace les quatre côtés du carré et les quatre segments reliant E aux sommets. Sans retracer un segment ni commencer ou terminer au milieu d’un segment, combien de traits continus faut-il au minimum pour dessiner tout le réseau ? On peut lever le crayon entre deux traits.",
+      "answer": "Deux traits. A, B, C et D ont chacun trois segments incidents : ce sont quatre sommets de degré impair. Un trait continu peut fournir au plus deux extrémités impaires, donc un seul trait est impossible. Deux suffisent : A–B–C–D–A–E–B, puis C–E–D. Les huit segments sont utilisés une seule fois.",
+      "hint": "Compte les segments qui arrivent à chaque point, puis examine les extrémités d’un trait."
     }
   },
   {
@@ -146,9 +146,9 @@
   {
     "publication_date": "2026-01-19",
     "payload": {
-      "question": "Dans une salle, 12 personnes se serrent chacune la main une fois avec toutes les autres. Combien de poignées de main sont échangées ?",
-      "answer": "66. Chaque personne salue 11 autres personnes ; on divise le produit par deux pour ne pas compter chaque paire deux fois.",
-      "hint": "Comptez les paires sans tenir compte de leur ordre."
+      "question": "Trois piles contiennent 3, 4 et 5 jetons. À chaque tour, on retire autant de jetons que l’on veut, mais dans une seule pile et au moins un. Prendre le dernier jeton fait gagner. Tu commences : quel coup te donne une stratégie gagnante, et comment reconnaître ensuite les positions à laisser à ton adversaire ?",
+      "answer": "Retire 2 jetons de la pile de 3 : les piles deviennent 1, 4 et 5. Écris leurs tailles en binaire et compte les 1 dans chaque colonne : chaque compte doit être pair. Cela revient à avoir un OU exclusif égal à zéro : 001 XOR 100 XOR 101 = 000. Tout retrait dans une seule pile rompt cette propriété. Depuis une somme exclusive non nulle, repère son bit de poids le plus fort et réduis une pile qui contient ce bit pour rétablir une somme nulle ; la nouvelle taille est la taille actuelle XOR la somme. C’est une réduction légale. En répétant, tu rends toujours une position nulle, jusqu’à prendre le dernier jeton.",
+      "hint": "Écris les tailles des trois piles en binaire et compare les colonnes."
     }
   },
   {
@@ -178,9 +178,9 @@
   {
     "publication_date": "2026-01-23",
     "payload": {
-      "question": "Dans une salle, 29 personnes se serrent chacune la main une fois avec toutes les autres. Combien de poignées de main sont échangées ?",
-      "answer": "406. Chaque personne salue 28 autres personnes ; on divise le produit par deux pour ne pas compter chaque paire deux fois.",
-      "hint": "Comptez les paires sans tenir compte de leur ordre."
+      "question": "Un code comporte quatre chiffres ABCD, avec A non nul. A indique combien de 0 contient le code, B combien de 1, C combien de 2 et D combien de 3. Trouvez tous les codes possibles.",
+      "answer": "1210 et 2020. Dans 1210, on trouve un 0, deux 1, un 2 et aucun 3 ; dans 2020, deux 0, aucun 1, deux 2 et aucun 3. Aucun chiffre ne peut dépasser 4. Un 4 serait impossible : il faudrait quatre occurrences du chiffre qu’il compte, sans place pour le 4 lui-même. Les quatre chiffres sont donc compris entre 0 et 3 et leur somme vaut 4. En examinant les quadruplets de cette somme avec A non nul, seuls 1210 et 2020 reproduisent exactement leurs propres effectifs.",
+      "hint": "Les quatre effectifs doivent compter, au total, les quatre places du code."
     }
   },
   {
@@ -202,9 +202,9 @@
   {
     "publication_date": "2026-01-26",
     "payload": {
-      "question": "Une boîte contient 10 chaussettes noires et autant de blanches. Dans le noir, combien de chaussettes faut-il prendre au minimum pour être certain d’obtenir une paire de même couleur ?",
-      "answer": "3. Avec deux chaussettes, les couleurs peuvent différer. Avec trois, deux ont nécessairement la même couleur.",
-      "hint": "Raisonnez dans le cas le moins favorable."
+      "question": "Dans un laboratoire, si la chambre A est pressurisée, la vanne B est fermée. Si B est fermée, le voyant C est allumé. Si le réservoir D est plein, A est pressurisée. On constate que C est éteint. Peut-on déterminer l’état de A, de B et de D, en supposant ces règles toujours respectées ?",
+      "answer": "Oui : A n’est pas pressurisée, B n’est pas fermée et D n’est pas plein. Si B était fermée, C serait allumé : B n’est donc pas fermée. A pressurisée entraînerait B fermée : A ne l’est pas. D plein entraînerait A pressurisée : D ne l’est pas non plus. On ne déduit pas la quantité de liquide restante ni le degré d’ouverture de la vanne.",
+      "hint": "Remonte la chaîne depuis le voyant observé, sans inverser les implications."
     }
   },
   {
@@ -226,9 +226,9 @@
   {
     "publication_date": "2026-01-29",
     "payload": {
-      "question": "Une boîte contient 15 chaussettes noires et autant de blanches. Dans le noir, combien de chaussettes faut-il prendre au minimum pour être certain d’obtenir une paire de même couleur ?",
-      "answer": "3. Avec deux chaussettes, les couleurs peuvent différer. Avec trois, deux ont nécessairement la même couleur.",
-      "hint": "Raisonnez dans le cas le moins favorable."
+      "question": "Un cube repose sur une table : 1 en haut, 6 dessous, 2 au nord, 5 au sud, 3 à l’est et 4 à l’ouest. Sans glisser ni pivoter sur place, on le fait basculer d’une face vers l’est, puis vers le nord, puis vers l’ouest, puis vers le sud. Quel nombre se retrouve en haut ?",
+      "answer": "Le 4. Les faces supérieures successives sont 4, puis 5, puis 1, puis 4. Le cube revient à sa case de départ, mais son orientation n’est pas revenue à l’état initial. Il faut suivre les faces, et pas seulement additionner les déplacements.",
+      "hint": "Conserve aussi la position des faces latérales après chaque basculement."
     }
   },
   {
@@ -250,9 +250,9 @@
   {
     "publication_date": "2026-02-01",
     "payload": {
-      "question": "Deux nombres entiers positifs consécutifs ont pour somme 13. Quel est le plus petit ?",
-      "answer": "6. Si le premier vaut x, le second vaut x + 1 : 2x + 1 = 13.",
-      "hint": "Soustrayez un à la somme, puis divisez par deux."
+      "question": "Quatre pièces de valeurs 8, 15, 3 et 7 sont alignées dans cet ordre. Chacun de deux joueurs prend à son tour une pièce située à une extrémité de la rangée restante, jusqu’à épuisement. Tu joues en premier et ton adversaire cherche à minimiser ton total. Quelle pièce dois-tu prendre d’abord, et quel total peux-tu garantir ?",
+      "answer": "Prends la pièce de 7. L’adversaire peut alors prendre 8 ou 3 ; dans les deux cas, la pièce de 15 devient accessible à une extrémité. Tu la prends et obtiens 22. Si tu avais choisi 8, l’adversaire aurait pris 15 et tu n’aurais pu ajouter que 7, soit 15 au total. Le meilleur total garanti est donc 22.",
+      "hint": "Étudie les deux choix possibles de l’adversaire après chacun de tes premiers coups."
     }
   },
   {
@@ -282,9 +282,9 @@
   {
     "publication_date": "2026-02-05",
     "payload": {
-      "question": "Un escalier compte 35 marches. Combien de façons différentes permettent d’atteindre la deuxième marche en faisant uniquement des pas de une ou de deux marches, sans redescendre ?",
-      "answer": "2 façons : deux pas de une marche, ou un pas de deux marches. La hauteur totale de l’escalier ne change pas la question.",
-      "hint": "Arrêtez-vous à la deuxième marche, sans monter davantage."
+      "question": "Partez de 3524. À chaque étape, rangez ses quatre chiffres dans l’ordre décroissant puis dans l’ordre croissant, et soustrayez le petit nombre du grand ; conservez les éventuels zéros initiaux pour avoir quatre chiffres. Quel résultat obtenez-vous après trois étapes, et que donne une quatrième étape ?",
+      "answer": "Les résultats successifs sont 3087, 8352 et 6174 : 5432 − 2345 = 3087 ; 8730 − 0378 = 8352 ; 8532 − 2358 = 6174. La quatrième étape conserve 6174, car 7641 − 1467 = 6174. On a atteint un point fixe.",
+      "hint": "À chaque étape, réutilisez les chiffres du résultat précédent, y compris les zéros."
     }
   },
   {
@@ -306,9 +306,9 @@
   {
     "publication_date": "2026-02-08",
     "payload": {
-      "question": "Un rectangle a un périmètre de 68 cm. Sa longueur dépasse sa largeur de 2 cm. Quelle est son aire ?",
-      "answer": "288 cm². La demi-somme des côtés vaut 34 ; les côtés mesurent 16 et 18 cm.",
-      "hint": "Cherchez deux nombres dont la somme et la différence sont connues."
+      "question": "Cinq conférences A, B, C, D et E occupent cinq créneaux consécutifs, sans simultanéité. C commence exactement deux créneaux après A. D a lieu avant A, B immédiatement après C, et E avant C. Dans quel ordre ont lieu les conférences ?",
+      "answer": "D, A, E, C, B. Puisque B suit C, C ne peut pas être au cinquième créneau. Comme C est deux créneaux après A et que D précède A, A ne peut être qu’au deuxième créneau : au troisième, C serait au cinquième. C est donc quatrième, B cinquième, D premier et E troisième.",
+      "hint": "Commence par placer le bloc formé par C et B, puis tiens compte de la place nécessaire avant A."
     }
   },
   {
@@ -330,9 +330,9 @@
   {
     "publication_date": "2026-02-11",
     "payload": {
-      "question": "Un escalier compte 9 marches. Combien de façons différentes permettent d’atteindre la deuxième marche en faisant uniquement des pas de une ou de deux marches, sans redescendre ?",
-      "answer": "2 façons : deux pas de une marche, ou un pas de deux marches. La hauteur totale de l’escalier ne change pas la question.",
-      "hint": "Arrêtez-vous à la deuxième marche, sans monter davantage."
+      "question": "Un patron de cube est formé ainsi : A au centre, B immédiatement à sa gauche, C à sa droite, D au-dessus, E au-dessous, puis F juste au-dessous de E. Toutes les lettres désignent des carrés identiques. Une fois le cube fermé, quelles sont les trois paires de faces opposées ?",
+      "answer": "A et F ; B et C ; D et E. Les quatre carrés voisins de A forment les parois autour de cette face. F, accroché au bord extérieur de E, ferme le cube face à A. Les parois situées de part et d’autre de A deviennent opposées.",
+      "hint": "Imagine A comme le fond d’une boîte et relève d’abord ses quatre voisins."
     }
   },
   {
@@ -354,9 +354,9 @@
   {
     "publication_date": "2026-02-14",
     "payload": {
-      "question": "Une corde de 36 mètres est découpée en morceaux de 3 mètres. Une coupe ne traverse qu’une seule épaisseur. Combien de coupes faut-il ?",
-      "answer": "11 coupes. Il faut 12 morceaux ; chaque coupe augmente leur nombre de un.",
-      "hint": "Le premier morceau existe avant la première coupe."
+      "question": "Un immeuble a 100 étages et tu disposes de deux œufs identiques. Il existe un seuil : lancé d’un étage inférieur ou égal à ce seuil, un œuf reste intact ; lancé de plus haut, il se casse. Le seuil peut valoir de 0 à 100 et un œuf intact peut être réutilisé. Quel nombre minimal de lancers suffit à trouver ce seuil avec certitude dans le pire cas, et quelle stratégie l’atteint ?",
+      "answer": "14 lancers. Avec k lancers et deux œufs, on peut couvrir au plus k + (k−1) + … + 1 = k(k+1)/2 étages : après un premier œuf cassé, le second impose une recherche étage par étage. Treize lancers couvrent seulement 91 étages, contre 105 pour quatorze. Lance d’abord au 14e étage, puis, si l’œuf survit, aux étages 27, 39, 50, 60, 69, 77, 84, 90, 95, 99 et enfin 100. Au premier œuf cassé, teste les étages encore inconnus au-dessus du dernier étage sûr avec le second œuf, dans l’ordre. Les intervalles décroissants maintiennent le total à 14 ou moins.",
+      "hint": "Après la casse du premier œuf, combien d’étages peux-tu encore explorer avec le nombre de lancers restant ?"
     }
   },
   {
@@ -378,9 +378,9 @@
   {
     "publication_date": "2026-02-17",
     "payload": {
-      "question": "Une boîte contient 34 chaussettes noires et autant de blanches. Dans le noir, combien de chaussettes faut-il prendre au minimum pour être certain d’obtenir une paire de même couleur ?",
-      "answer": "3. Avec deux chaussettes, les couleurs peuvent différer. Avec trois, deux ont nécessairement la même couleur.",
-      "hint": "Raisonnez dans le cas le moins favorable."
+      "question": "Sur une planète, l’écriture « 144 » représente exactement cent objets. Les habitants utilisent une base entière inconnue b : leurs trois positions valent b², b et 1, et leurs chiffres vont de 0 à b − 1. Quelle est leur base ?",
+      "answer": "La base 8. L’écriture vaut b² + 4b + 4 = (b + 2)². Comme elle représente 100 et que la base est positive, b + 2 = 10, donc b = 8. Le chiffre 4 est bien autorisé dans cette base.",
+      "hint": "Remplacez l’écriture 144 par la somme des valeurs de ses trois positions."
     }
   },
   {
@@ -402,9 +402,9 @@
   {
     "publication_date": "2026-02-20",
     "payload": {
-      "question": "Deux nombres entiers positifs consécutifs ont pour somme 43. Quel est le plus petit ?",
-      "answer": "21. Si le premier vaut x, le second vaut x + 1 : 2x + 1 = 43.",
-      "hint": "Soustrayez un à la somme, puis divisez par deux."
+      "question": "Six personnes A, B, C, D, E et F sont assises autour d’une table ronde. A est à la place du nord ; D lui fait face. Dans le sens des aiguilles d’une montre, C suit immédiatement B et F suit immédiatement E. E n’est pas à côté de A. Quel est l’ordre des personnes dans le sens des aiguilles d’une montre, en partant de A ?",
+      "answer": "A, B, C, D, E, F. Numérotons de 0 à 5 les places à partir de A : D occupe 3. E ne peut être ni 1 ni 5, voisines de A. E ne peut être 2, car F devrait alors occuper la place de D. E est donc 4, F 5, puis B 1 et C 2.",
+      "hint": "Place les personnes opposées avant de chercher où peut tenir la paire E–F."
     }
   },
   {
@@ -434,9 +434,9 @@
   {
     "publication_date": "2026-02-24",
     "payload": {
-      "question": "Une suite commence par 9, 12, 17, 24. On ajoute successivement les nombres impairs 3, 5, 7, puis 9. Quel est le terme suivant ?",
-      "answer": "33, car 24 + 9 = 33.",
-      "hint": "La règle d’addition est donnée : poursuivez-la."
+      "question": "Dans un repère, un point se trouve en (1 ; 2). On construit son symétrique par rapport à la droite verticale x = 0, puis le symétrique du nouveau point par rapport à la droite verticale x = 3. Quelles sont les coordonnées finales ?",
+      "answer": "(7 ; 2). La première symétrie transforme x = 1 en x = −1. La seconde transforme x = −1 en x = 2 × 3 − (−1) = 7. L’ordonnée ne change pas. Ces deux symétries équivalent à une translation de six unités vers la droite.",
+      "hint": "Après chaque symétrie, le point et son image doivent être à la même distance de la droite."
     }
   },
   {
@@ -458,9 +458,9 @@
   {
     "publication_date": "2026-02-27",
     "payload": {
-      "question": "Un sac contient 23 billes rouges et 25 billes bleues. Sans regarder, combien faut-il en tirer au minimum pour être certain d’en avoir deux de la même couleur ?",
-      "answer": "3 billes. Les deux premières peuvent être de couleurs différentes ; la troisième partage nécessairement sa couleur avec l’une des deux.",
-      "hint": "Il n’y a que deux couleurs."
+      "question": "Parmi 16 flacons, un seul contient une substance détectable. Un test est positif si l’échantillon qu’il reçoit contient au moins une goutte de ce flacon ; mélanger plusieurs flacons ne gêne pas la détection. Tu peux préparer plusieurs tests mais tu ne connaîtras leurs résultats qu’une seule fois, tous ensemble. Combien de tests sont nécessaires au minimum pour identifier le flacon, et comment les préparer ?",
+      "answer": "Quatre tests. Numérote les flacons de 0 à 15 et écris ces numéros sur quatre bits. Le test de chaque colonne reçoit une goutte de tous les flacons dont le bit de cette colonne vaut 1. Les quatre résultats donnent exactement les quatre bits du flacon recherché ; quatre résultats négatifs désignent le flacon 0. Trois tests ne fournissent que 2³ = 8 résultats possibles, insuffisants pour 16 flacons. Quatre suffisent donc et sont nécessaires.",
+      "hint": "Un résultat de test donne un bit d’information ; un flacon peut participer à plusieurs tests."
     }
   },
   {
@@ -482,9 +482,9 @@
   {
     "publication_date": "2026-03-02",
     "payload": {
-      "question": "Je suis un entier positif. Mon triple augmenté de 8 vaut 38. Qui suis-je ?",
-      "answer": "10. En soustrayant 8, on obtient 30, puis on divise par trois.",
-      "hint": "Effectuez les opérations inverses dans l’ordre inverse."
+      "question": "On multiplie tous les entiers de 1 à 100 inclus, puis on écrit le résultat en décimal. Sans effectuer cette énorme multiplication, combien de zéros consécutifs termine ce nombre ?",
+      "answer": "24 zéros. Un zéro final correspond à un facteur 10, soit 2 × 5. Les facteurs 2 sont plus nombreux que les facteurs 5. Les vingt multiples de 5 fournissent chacun au moins un 5 ; 25, 50, 75 et 100 en fournissent chacun un de plus. Cela fait 20 + 4 = 24 facteurs 5, donc exactement 24 zéros finaux.",
+      "hint": "Cherchez comment les facteurs du produit peuvent former des paquets de dix."
     }
   },
   {
@@ -506,9 +506,9 @@
   {
     "publication_date": "2026-03-05",
     "payload": {
-      "question": "Une boîte contient 32 chaussettes noires et autant de blanches. Dans le noir, combien de chaussettes faut-il prendre au minimum pour être certain d’obtenir une paire de même couleur ?",
-      "answer": "3. Avec deux chaussettes, les couleurs peuvent différer. Avec trois, deux ont nécessairement la même couleur.",
-      "hint": "Raisonnez dans le cas le moins favorable."
+      "question": "Ana, Bilal, Cléo et Diego vont chacun à la bibliothèque un jour différent, du lundi au jeudi, et empruntent chacun un genre différent : science-fiction, polar, poésie ou histoire. La science-fiction est empruntée le lendemain de la poésie ; le polar, deux jours après la science-fiction. Cléo passe avant Ana, qui passe avant Diego. Bilal ne lit ni poésie ni histoire ; Diego emprunte l’histoire. Retrouve le jour et le genre de chacun.",
+      "answer": "Cléo : lundi, poésie ; Ana : mardi, science-fiction ; Diego : mercredi, histoire ; Bilal : jeudi, polar. Les trois genres poésie, science-fiction et polar doivent occuper lundi, mardi et jeudi : aucun autre placement ne permet les deux écarts. L’histoire est donc mercredi. L’ordre Cléo avant Ana avant Diego impose lundi puis mardi puis mercredi. Bilal prend le dernier jour.",
+      "hint": "Les deux écarts entre genres imposent d’abord plusieurs jours, indépendamment des personnes."
     }
   },
   {
@@ -530,9 +530,9 @@
   {
     "publication_date": "2026-03-08",
     "payload": {
-      "question": "Dans une salle, 13 personnes se serrent chacune la main une fois avec toutes les autres. Combien de poignées de main sont échangées ?",
-      "answer": "78. Chaque personne salue 12 autres personnes ; on divise le produit par deux pour ne pas compter chaque paire deux fois.",
-      "hint": "Comptez les paires sans tenir compte de leur ordre."
+      "question": "Une fourmi part d’un sommet d’une boîte rectangulaire de dimensions 2 cm, 3 cm et 4 cm. Elle veut atteindre le sommet opposé, en restant sur la surface extérieure et sans traverser l’intérieur. Quelle est la longueur du plus court trajet ?",
+      "answer": "√41 cm, soit environ 6,40 cm. En dépliant les faces traversées, on transforme le trajet en segment droit. Les trois regroupements possibles donnent √((2 + 3)² + 4²) = √41, √((2 + 4)² + 3²) = √45 et √((3 + 4)² + 2²) = √53. Le premier est le plus court et correspond à un trajet réalisable sur les faces.",
+      "hint": "Un trajet sur plusieurs faces peut devenir un segment droit quand on déplie la boîte."
     }
   },
   {
@@ -554,9 +554,9 @@
   {
     "publication_date": "2026-03-11",
     "payload": {
-      "question": "Un cycliste parcourt 28 km à l’aller puis la même distance au retour. Il roule à 12 km/h à l’aller et à 24 km/h au retour, sans pause. Quelle est sa vitesse moyenne sur l’ensemble du trajet ?",
-      "answer": "16 km/h. Pour une distance d à chaque étape, le temps total vaut d/12 + d/24 = d/8. La distance totale 2d divisée par ce temps donne 16.",
-      "hint": "La moyenne des vitesses n’est pas la moyenne arithmétique quand les durées diffèrent."
+      "question": "Deux personnes peuvent exécuter chacune une tâche à la fois, sans l’interrompre. Les tâches A, B, C, D et E durent respectivement 4, 3, 2, 5 et 2 heures. C commence après A ; D commence après A et B ; E commence après C et D. Toutes les tâches sont disponibles à l’heure 0 sous réserve de ces dépendances. Quelle est la durée totale minimale pour tout terminer, et quel planning l’atteint ?",
+      "answer": "11 heures. Le chemin A puis D puis E dure 4 + 5 + 2 = 11 heures et ne peut être raccourci, quel que soit le nombre de personnes. Pour l’atteindre, exécute A de 0 à 4 sur une personne et B de 0 à 3 sur l’autre ; à l’heure 4, lance D jusqu’à 9 et C jusqu’à 6 ; lance enfin E de 9 à 11. Ce planning respecte toutes les dépendances et atteint la borne de 11 heures.",
+      "hint": "Cherche d’abord une suite de tâches qui doivent obligatoirement se suivre."
     }
   },
   {
@@ -578,9 +578,9 @@
   {
     "publication_date": "2026-03-14",
     "payload": {
-      "question": "Dans une salle, 20 personnes se serrent chacune la main une fois avec toutes les autres. Combien de poignées de main sont échangées ?",
-      "answer": "190. Chaque personne salue 19 autres personnes ; on divise le produit par deux pour ne pas compter chaque paire deux fois.",
-      "hint": "Comptez les paires sans tenir compte de leur ordre."
+      "question": "On multiplie 2026 fois le nombre 7 par lui-même, autrement dit on calcule 7 puissance 2026. Quels sont les deux derniers chiffres du résultat, sans calculatrice ?",
+      "answer": "49. Les deux derniers chiffres des puissances successives de 7 sont 07, 49, 43 et 01. Multiplier à nouveau par 7 recommence le cycle : puisque 7⁴ finit par 01, chaque bloc de quatre facteurs laisse les deux derniers chiffres inchangés. Comme 2026 = 4 × 506 + 2, le résultat finit comme 7², donc par 49.",
+      "hint": "Calculez seulement les deux derniers chiffres des premières puissances et cherchez un cycle."
     }
   },
   {
@@ -602,9 +602,9 @@
   {
     "publication_date": "2026-03-17",
     "payload": {
-      "question": "Une corde de 30 mètres est découpée en morceaux de 3 mètres. Une coupe ne traverse qu’une seule épaisseur. Combien de coupes faut-il ?",
-      "answer": "9 coupes. Il faut 10 morceaux ; chaque coupe augmente leur nombre de un.",
-      "hint": "Le premier morceau existe avant la première coupe."
+      "question": "Un immeuble a cinq étages habités, numérotés de 1 en bas à 5 en haut. A, B, C, D et E occupent chacun un étage différent. A habite plus haut que C ; B exactement deux étages au-dessus de D. E et C sont voisins immédiats. D n’est pas au premier étage, C non plus, et A n’est pas au cinquième. Qui habite à chaque étage ?",
+      "answer": "Du bas vers le haut : E, C, D, A, B. D ne peut être que 2 ou 3, puisque B est deux étages au-dessus. Si D était 2, B serait 4 ; A, qui n’est pas 5, devrait être 3, mais C ne pourrait être ni 1 ni 2, donc pas sous A. Ainsi D est 3 et B 5. A est 4 ; E et C occupent 1 et 2, et C n’est pas 1.",
+      "hint": "Il n’y a que deux étages possibles pour D. Examine-les séparément."
     }
   },
   {
@@ -626,9 +626,9 @@
   {
     "publication_date": "2026-03-20",
     "payload": {
-      "question": "Un escalier compte 11 marches. Combien de façons différentes permettent d’atteindre la deuxième marche en faisant uniquement des pas de une ou de deux marches, sans redescendre ?",
-      "answer": "2 façons : deux pas de une marche, ou un pas de deux marches. La hauteur totale de l’escalier ne change pas la question.",
-      "hint": "Arrêtez-vous à la deuxième marche, sans monter davantage."
+      "question": "On dispose d’un cube plein et on le découpe par quatre plans. Chaque coupe traverse le cube d’un seul geste ; les morceaux restent en place entre les coupes. Au maximum, combien de morceaux peut-on obtenir ?",
+      "answer": "Quinze morceaux. Les coupes successives peuvent ajouter au maximum 1, 2, 4 puis 7 régions : dans le nouveau plan, les plans précédents dessinent respectivement zéro, une, deux puis trois droites en position générale. Ainsi 1 + 1 + 2 + 4 + 7 = 15. On atteint ce maximum en plaçant les quatre plans sans parallélisme ni coïncidence, avec leurs intersections pertinentes à l’intérieur du cube.",
+      "hint": "Pour compter les nouveaux morceaux, observe les régions dessinées dans le plan de la nouvelle coupe."
     }
   },
   {
@@ -650,9 +650,9 @@
   {
     "publication_date": "2026-03-23",
     "payload": {
-      "question": "Un escalier compte 32 marches. Combien de façons différentes permettent d’atteindre la deuxième marche en faisant uniquement des pas de une ou de deux marches, sans redescendre ?",
-      "answer": "2 façons : deux pas de une marche, ou un pas de deux marches. La hauteur totale de l’escalier ne change pas la question.",
-      "hint": "Arrêtez-vous à la deuxième marche, sans monter davantage."
+      "question": "Tu peux assister entièrement à des ateliers proposés de 9 h à 10 h, de 9 h à 12 h, de 10 h à 11 h 30, de 11 h à 13 h, de 11 h 30 à 12 h 30 et de 12 h 30 à 14 h. Tu peux enchaîner deux ateliers si le suivant commence exactement à la fin du précédent. Quel est le plus grand nombre d’ateliers auxquels tu peux assister, et lesquels ?",
+      "answer": "Quatre : 9 h–10 h, 10 h–11 h 30, 11 h 30–12 h 30 et 12 h 30–14 h. Pour maximiser le nombre, on peut toujours choisir parmi les ateliers encore compatibles celui qui se termine le plus tôt : remplacer un premier atelier par celui-ci ne réduit pas le temps disponible ensuite. Cette règle sélectionne les quatre ateliers indiqués et prouve l’optimalité.",
+      "hint": "Un atelier qui se termine tôt laisse davantage de possibilités pour la suite."
     }
   },
   {
@@ -674,9 +674,9 @@
   {
     "publication_date": "2026-03-26",
     "payload": {
-      "question": "Un objet coûte 110 euros. Son prix augmente de 20 %, puis diminue de 20 % sur le nouveau prix. Le prix final est-il revenu au prix initial ?",
-      "answer": "Non, il vaut 105,60 euros, soit 96 % du prix initial, Les coefficients 1,20 et 0,80 ont pour produit 0,96,",
-      "hint": "Multipliez les coefficients plutôt que d’additionner les pourcentages."
+      "question": "Un code de cinq chiffres est 53?72. Le chiffre effacé doit rendre le nombre divisible par 11, c’est-à-dire permettre une division par 11 sans reste. Quel chiffre manque ? Expliquez comment le trouver sans essayer les dix possibilités.",
+      "answer": "3 : le code est 53372 = 11 × 4852. Pour la division par 11, les valeurs de position alternent entre +1 et −1, car 10 laisse le même reste que −1. Le nombre a donc le même reste que 5 − 3 + ? − 7 + 2 = ? − 3. Entre −3 et 6, le seul multiple de 11 est 0 : ? = 3.",
+      "hint": "Comparez les valeurs de 1, 10, 100 et 1000 après division par 11."
     }
   },
   {
@@ -698,9 +698,9 @@
   {
     "publication_date": "2026-03-29",
     "payload": {
-      "question": "Une urne contient 9 jetons numérotés de 1 à 9. On en tire un au hasard, avec la même chance pour chaque jeton. Quelle est la probabilité de tirer le numéro 8 ?",
-      "answer": "1/9. Un seul jeton porte le numéro demandé parmi 9 jetons équiprobables.",
-      "hint": "Comptez les issues favorables et le nombre total d’issues."
+      "question": "Quatre joueurs A, B, C et D se rencontrent chacun une fois, sans match nul. A et B terminent avec deux victoires chacun ; C et D avec une victoire chacun. On sait que A a battu B et que C a battu D. Quels sont les résultats des quatre autres rencontres ?",
+      "answer": "B a battu C et D ; A a battu C ; D a battu A. B a perdu face à A : pour avoir deux victoires, il doit battre C et D. C a déjà sa seule victoire face à D ; il perd donc aussi face à A. A a alors ses deux victoires contre B et C, donc perd face à D.",
+      "hint": "Commence par le joueur qui a deux victoires mais dont on connaît déjà une défaite."
     }
   },
   {
@@ -722,9 +722,9 @@
   {
     "publication_date": "2026-04-01",
     "payload": {
-      "question": "Une corde de 75 mètres est découpée en morceaux de 3 mètres. Une coupe ne traverse qu’une seule épaisseur. Combien de coupes faut-il ?",
-      "answer": "24 coupes. Il faut 25 morceaux ; chaque coupe augmente leur nombre de un.",
-      "hint": "Le premier morceau existe avant la première coupe."
+      "question": "Un carré mesure 10 cm de côté. On relie les milieux de ses quatre côtés dans l’ordre, ce qui forme un second carré à l’intérieur. Quelle est l’aire de ce carré intérieur ?",
+      "answer": "50 cm². Le grand carré a une aire de 100 cm². Chacun des quatre triangles retirés a deux côtés perpendiculaires de 5 cm et une aire de 12,5 cm². Le carré intérieur occupe donc 100 − 4 × 12,5 = 50 cm².",
+      "hint": "Il est possible de calculer ce qui reste sans chercher la longueur du côté oblique."
     }
   },
   {
@@ -746,9 +746,9 @@
   {
     "publication_date": "2026-04-04",
     "payload": {
-      "question": "Dans une salle, 15 personnes se serrent chacune la main une fois avec toutes les autres. Combien de poignées de main sont échangées ?",
-      "answer": "105. Chaque personne salue 14 autres personnes ; on divise le produit par deux pour ne pas compter chaque paire deux fois.",
-      "hint": "Comptez les paires sans tenir compte de leur ordre."
+      "question": "Quatre stations A, B, C et D sont disposées sur un circuit à sens unique, dans cet ordre. Elles offrent respectivement 2, 1, 5 et 2 litres, récupérés en arrivant ; aller de chaque station à la suivante consomme respectivement 3, 2, 3 et 2 litres, y compris D vers A. Le réservoir est initialement vide et sans limite de capacité. À quelle station faut-il commencer pour faire un tour complet sans tomber en panne ?",
+      "answer": "À C, et c’est le seul départ possible. On y reçoit 5 litres ; après C→D il reste 2, puis D en ajoute 2 : on repart avec 4. Après D→A il reste 2, puis A en ajoute 2 : on repart avec 4. Après A→B il reste 1, puis B en ajoute 1 : les 2 litres permettent de revenir à C. A et B ne permettent même pas le premier trajet. Depuis D, on arrive à A avec 0 litre, et ses 2 litres ne suffisent pas pour aller à B.",
+      "hint": "Fais le bilan de carburant après chaque trajet, en gardant les réserves accumulées."
     }
   },
   {
@@ -770,9 +770,9 @@
   {
     "publication_date": "2026-04-07",
     "payload": {
-      "question": "Deux nombres entiers positifs consécutifs ont pour somme 21. Quel est le plus petit ?",
-      "answer": "10. Si le premier vaut x, le second vaut x + 1 : 2x + 1 = 21.",
-      "hint": "Soustrayez un à la somme, puis divisez par deux."
+      "question": "On colle les écritures des entiers positifs : 1234567891011121314… La première place contient le chiffre 1. Quel chiffre occupe exactement la 2026e place ?",
+      "answer": "7. Les entiers de 1 à 9 occupent 9 places ; ceux de 10 à 99 en occupent 90 × 2 = 180. Les nombres à trois chiffres commencent donc à la place 190. La place 2026 est à 1836 places de ce début ; 1836 = 612 × 3. Elle correspond au premier chiffre du 613e nombre à trois chiffres, soit 100 + 612 = 712 : c’est 7.",
+      "hint": "Comptez séparément la place prise par les nombres à un, deux puis trois chiffres."
     }
   },
   {
@@ -794,9 +794,9 @@
   {
     "publication_date": "2026-04-10",
     "payload": {
-      "question": "Un sac contient 8 billes rouges et 10 billes bleues. Sans regarder, combien faut-il en tirer au minimum pour être certain d’en avoir deux de la même couleur ?",
-      "answer": "3 billes. Les deux premières peuvent être de couleurs différentes ; la troisième partage nécessairement sa couleur avec l’une des deux.",
-      "hint": "Il n’y a que deux couleurs."
+      "question": "Une date est choisie parmi : 15, 16 ou 19 mars ; 17 ou 18 juin ; 14 ou 16 septembre ; 14, 15 ou 17 décembre. Alice connaît seulement le mois, Bilal seulement le numéro du jour ; tous deux connaissent la liste et raisonnent parfaitement. Alice dit : « Je ne connais pas la date et je savais que Bilal ne la connaissait pas. » Bilal répond : « Maintenant, je la connais. » Alice conclut : « Alors moi aussi. » Quelle est la date ?",
+      "answer": "Le 16 septembre. Les jours 19 et 18 sont uniques. Si Alice connaissait mars ou juin, elle ne pourrait pas être certaine de l’ignorance initiale de Bilal : ces deux mois sont éliminés. Restent septembre 14 ou 16, et décembre 14, 15 ou 17. Bilal sait maintenant : son jour n’est donc pas 14, qui figure encore deux fois. Restent le 16 septembre, le 15 décembre et le 17 décembre. Alice sait alors uniquement si son mois est septembre.",
+      "hint": "À chaque annonce, élimine les dates incompatibles avec ce que cette personne sait des connaissances de l’autre."
     }
   },
   {
@@ -818,9 +818,9 @@
   {
     "publication_date": "2026-04-13",
     "payload": {
-      "question": "Un escalier compte 17 marches. Combien de façons différentes permettent d’atteindre la deuxième marche en faisant uniquement des pas de une ou de deux marches, sans redescendre ?",
-      "answer": "2 façons : deux pas de une marche, ou un pas de deux marches. La hauteur totale de l’escalier ne change pas la question.",
-      "hint": "Arrêtez-vous à la deuxième marche, sans monter davantage."
+      "question": "Une boîte rectangulaire ouverte mesure 12 cm de long, 8 cm de large et 6 cm de haut. On l’incline autour de sa largeur. La surface horizontale de l’eau passe exactement par une arête supérieure de largeur 8 cm et par l’arête inférieure parallèle située à l’autre extrémité de la boîte. Quel volume d’eau contient-elle ?",
+      "answer": "288 cm³. Dans chaque section longitudinale de 12 cm sur 6 cm, la surface de l’eau suit une diagonale : elle partage ce rectangle en deux triangles de même aire. L’eau remplit donc la moitié du volume total, soit (12 × 8 × 6) ÷ 2 = 288 cm³. L’inclinaison ne change pas ce partage.",
+      "hint": "Examine une coupe de la boîte perpendiculaire aux arêtes de largeur 8 cm."
     }
   },
   {
@@ -842,9 +842,9 @@
   {
     "publication_date": "2026-04-16",
     "payload": {
-      "question": "Une urne contient 12 jetons numérotés de 1 à 12. On en tire un au hasard, avec la même chance pour chaque jeton. Quelle est la probabilité de tirer le numéro 11 ?",
-      "answer": "1/12. Un seul jeton porte le numéro demandé parmi 12 jetons équiprobables.",
-      "hint": "Comptez les issues favorables et le nombre total d’issues."
+      "question": "Un sac supporte au maximum 12 kg. Quatre objets, chacun disponible en un seul exemplaire, pèsent 4, 5, 6 et 7 kg et rapportent respectivement 7, 9, 12 et 14 points. Aucun objet ne peut être fractionné. Quels objets faut-il emporter pour obtenir le plus de points possible ?",
+      "answer": "Les objets de 5 et 7 kg, pour 12 kg et 23 points. Trois objets sont impossibles, car même les trois plus légers pèsent 15 kg. Parmi les paires admissibles, 4+5 rapporte 16, 4+6 rapporte 19, 4+7 rapporte 21 et 5+6 rapporte 21 ; 5+7 rapporte 23. La paire 6+7 est trop lourde. Aucun objet seul ne dépasse 14 points. Le maximum est donc bien 23.",
+      "hint": "Choisir seulement selon le meilleur rapport points/kilogramme peut empêcher la meilleure combinaison."
     }
   },
   {
@@ -866,9 +866,9 @@
   {
     "publication_date": "2026-04-19",
     "payload": {
-      "question": "Une corde de 60 mètres est découpée en morceaux de 3 mètres. Une coupe ne traverse qu’une seule épaisseur. Combien de coupes faut-il ?",
-      "answer": "19 coupes. Il faut 20 morceaux ; chaque coupe augmente leur nombre de un.",
-      "hint": "Le premier morceau existe avant la première coupe."
+      "question": "On écrit tous les codes qui utilisent exactement une fois chacun les chiffres 1, 2, 3, 4 et 5, puis on les classe dans l’ordre croissant. Le premier est 12345. Quel est le 73e code ?",
+      "answer": "41235. Pour un premier chiffre fixé, les quatre autres se placent de 24 façons. Les codes commençant par 1, 2 et 3 occupent donc les rangs 1 à 72. Le 73e est le plus petit de ceux qui commencent par 4 : on range les chiffres restants dans l’ordre croissant, d’où 41235.",
+      "hint": "Combien de codes partagent le même premier chiffre ?"
     }
   },
   {
@@ -890,9 +890,9 @@
   {
     "publication_date": "2026-04-22",
     "payload": {
-      "question": "Une urne contient 4 jetons numérotés de 1 à 4. On en tire un au hasard, avec la même chance pour chaque jeton. Quelle est la probabilité de tirer le numéro 3 ?",
-      "answer": "1/4. Un seul jeton porte le numéro demandé parmi 4 jetons équiprobables.",
-      "hint": "Comptez les issues favorables et le nombre total d’issues."
+      "question": "Alice et Bilal portent chacun un entier strictement positif sur le front. Ils savent que les deux nombres sont consécutifs, voient celui de l’autre et raisonnent parfaitement. Alice dit : « Je ne connais pas mon nombre. » Bilal dit ensuite : « Moi non plus. » Alice dit alors : « Maintenant, je connais le mien. » Quels sont tous les couples possibles, dans l’ordre (nombre d’Alice, nombre de Bilal) ?",
+      "answer": "Les couples possibles sont (3, 2) et (4, 3). La première ignorance d’Alice exclut que Bilal porte 1. Si Alice portait 1, Bilal saurait qu’il porte 2 ; si Alice portait 2, Bilal hésiterait entre 1 et 3, puis éliminerait 1 grâce à la première annonce. L’ignorance de Bilal exclut donc 1 et 2 pour Alice. Alice peut dès lors conclure seulement si elle voit 2 ou 3 : elle porte respectivement 3 ou 4. Si elle voit au moins 4, les deux voisins restent possibles.",
+      "hint": "Le nombre 1 n’a qu’un seul voisin strictement positif. Les annonces font progressivement remonter cette borne."
     }
   },
   {
@@ -914,9 +914,9 @@
   {
     "publication_date": "2026-04-25",
     "payload": {
-      "question": "Un escalier compte 24 marches. Combien de façons différentes permettent d’atteindre la deuxième marche en faisant uniquement des pas de une ou de deux marches, sans redescendre ?",
-      "answer": "2 façons : deux pas de une marche, ou un pas de deux marches. La hauteur totale de l’escalier ne change pas la question.",
-      "hint": "Arrêtez-vous à la deuxième marche, sans monter davantage."
+      "question": "On peint les six faces d’un cube avec six couleurs différentes, chacune utilisée exactement une fois. Deux cubes sont considérés identiques si une rotation de l’un permet d’obtenir l’autre ; les reflets dans un miroir ne sont pas assimilés. Combien de cubes différents peut-on former ?",
+      "answer": "30. Il existe 6! = 720 affectations de couleurs aux six positions. Un cube possède 24 orientations par rotation : six choix pour la face du haut, puis quatre pour la face avant. Avec six couleurs distinctes, aucune rotation non triviale ne conserve le cube peint. Chaque cube est donc compté exactement 24 fois, et 720 ÷ 24 = 30.",
+      "hint": "Compte d’abord les affectations aux positions, puis le nombre d’orientations d’un même cube."
     }
   },
   {
@@ -938,9 +938,9 @@
   {
     "publication_date": "2026-04-28",
     "payload": {
-      "question": "Un sac contient 15 billes rouges et 17 billes bleues. Sans regarder, combien faut-il en tirer au minimum pour être certain d’en avoir deux de la même couleur ?",
-      "answer": "3 billes. Les deux premières peuvent être de couleurs différentes ; la troisième partage nécessairement sa couleur avec l’une des deux.",
-      "hint": "Il n’y a que deux couleurs."
+      "question": "Quatre fichiers contiennent 2, 3, 7 et 9 pages. Fusionner deux fichiers coûte autant de points que leur nombre total de pages ; le fichier obtenu peut ensuite être fusionné à nouveau. Tu veux réunir les quatre fichiers en un seul. Quel coût total minimal peux-tu obtenir, et dans quel ordre ?",
+      "answer": "38 points : fusionne 2 et 3, ce qui coûte 5 et crée un fichier de 5 pages ; fusionne 5 et 7 pour un coût de 12 ; fusionne 12 et 9 pour un coût de 21. Total : 5 + 12 + 21 = 38. Pour une preuve directe, si la dernière fusion sépare un fichier des trois autres, les meilleurs coûts totaux sont 51, 48, 40 ou 38 selon que l’on isole 2, 3, 7 ou 9. Si elle sépare deux paires, les deux premières fusions coûtent ensemble 21 et la dernière encore 21, soit 42. Le minimum est 38.",
+      "hint": "Un petit fichier fusionné tôt sera compté plusieurs fois ; cherche quels fichiers peuvent supporter ces répétitions au moindre coût."
     }
   },
   {
@@ -962,9 +962,9 @@
   {
     "publication_date": "2026-05-01",
     "payload": {
-      "question": "Un cycliste parcourt 15 km à l’aller puis la même distance au retour. Il roule à 12 km/h à l’aller et à 24 km/h au retour, sans pause. Quelle est sa vitesse moyenne sur l’ensemble du trajet ?",
-      "answer": "16 km/h. Pour une distance d à chaque étape, le temps total vaut d/12 + d/24 = d/8. La distance totale 2d divisée par ce temps donne 16.",
-      "hint": "La moyenne des vitesses n’est pas la moyenne arithmétique quand les durées diffèrent."
+      "question": "Un signal est une suite de huit caractères, chacun étant 0 ou 1. Les zéros initiaux sont autorisés, mais trois 1 consécutifs sont interdits : 11100000 est refusé, 11011011 est accepté. Combien de signaux différents peut-on envoyer ?",
+      "answer": "149. Notons a(n) le nombre de signaux de longueur n. Pour n au moins égal à 3, un signal autorisé commence nécessairement par 0, 10 ou 110 ; ce qui suit est un signal autorisé de longueur n − 1, n − 2 ou n − 3. Ainsi a(n) = a(n − 1) + a(n − 2) + a(n − 3). Avec a(0) = 1, a(1) = 2 et a(2) = 4, on obtient a(3) = 7, a(4) = 13, a(5) = 24, a(6) = 44, a(7) = 81 puis a(8) = 149.",
+      "hint": "Classez les signaux selon ce qu’ils peuvent avoir avant leur premier 0."
     }
   },
   {
@@ -986,9 +986,9 @@
   {
     "publication_date": "2026-05-04",
     "payload": {
-      "question": "Un objet coûte 350 euros. Son prix augmente de 20 %, puis diminue de 20 % sur le nouveau prix. Le prix final est-il revenu au prix initial ?",
-      "answer": "Non, il vaut 336,00 euros, soit 96 % du prix initial, Les coefficients 1,20 et 0,80 ont pour produit 0,96,",
-      "hint": "Multipliez les coefficients plutôt que d’additionner les pourcentages."
+      "question": "Trois logiciens ont chacun soit une marque rouge, soit aucune marque sur le front. Chacun voit les deux autres fronts mais pas le sien. Tous ont en réalité une marque rouge. Un arbitre annonce publiquement : « Au moins un de vous a une marque rouge. » Puis, à trois signaux successifs, tous répondent simultanément et honnêtement s’ils connaissent leur propre état. Chacun entend les réponses précédentes et sait que tous raisonnent parfaitement. Que répondent-ils à chaque signal ?",
+      "answer": "Ils répondent tous « non » aux deux premiers signaux, puis tous « oui, rouge » au troisième. Avec une seule marque, son porteur verrait deux fronts sans marque et saurait au premier signal. Avec deux marques, chacun des deux attendrait le premier signal : l’absence de réponse positive exclurait qu’il n’y ait qu’une marque et leur permettrait de conclure au deuxième. Avec trois marques, chacun voit deux rouges ; leurs « non » au deuxième signal excluent qu’il n’y en ait que deux. Tous concluent au troisième.",
+      "hint": "Résous d’abord les situations hypothétiques à une puis deux marques rouges."
     }
   },
   {
@@ -1010,9 +1010,9 @@
   {
     "publication_date": "2026-05-07",
     "payload": {
-      "question": "Une corde de 12 mètres est découpée en morceaux de 3 mètres. Une coupe ne traverse qu’une seule épaisseur. Combien de coupes faut-il ?",
-      "answer": "3 coupes. Il faut 4 morceaux ; chaque coupe augmente leur nombre de un.",
-      "hint": "Le premier morceau existe avant la première coupe."
+      "question": "Un réseau comprend les routes A–B de 5 km, B–C de 4 km, C–D de 5 km, D–A de 4 km et A–C de 6 km. Toutes sont à double sens. Un agent part de A, doit parcourir chaque route au moins une fois et revenir à A. Quelle distance minimale doit-il parcourir ?",
+      "answer": "30 km. Les cinq routes totalisent 24 km. A et C ont un degré impair ; pour obtenir un parcours fermé, les routes répétées doivent les relier. Le plus court chemin entre eux est la diagonale de 6 km, contre 9 km par B ou D. Répéter cette diagonale suffit : A–B–C–A–D–C–A mesure 5 + 4 + 6 + 4 + 5 + 6 = 30 km.",
+      "hint": "Après avoir additionné les longueurs, demande-toi quelles routes doivent nécessairement être répétées."
     }
   },
   {
@@ -1034,9 +1034,9 @@
   {
     "publication_date": "2026-05-10",
     "payload": {
-      "question": "Deux nombres entiers positifs consécutifs ont pour somme 41. Quel est le plus petit ?",
-      "answer": "20. Si le premier vaut x, le second vaut x + 1 : 2x + 1 = 41.",
-      "hint": "Soustrayez un à la somme, puis divisez par deux."
+      "question": "Huit joueurs ont des niveaux tous différents. Quand deux joueurs s’affrontent, le meilleur gagne toujours ; il n’y a jamais de surprise. Sans connaître aucun niveau, quel nombre minimal de matchs suffit dans le pire cas à identifier à la fois le meilleur et le deuxième meilleur joueur ?",
+      "answer": "9 matchs. Un tournoi équilibré à élimination directe trouve le meilleur en 7 matchs. Il a vaincu directement trois adversaires, un par tour ; le deuxième meilleur se trouve forcément parmi ces trois, puisqu’il ne peut perdre que face au meilleur. Deux matchs entre ces trois donnent leur meilleur : 7 + 2 = 9. Pour la borne inférieure, un adversaire peut faire en sorte que chaque victoire réunisse des groupes de tailles comparables ; éliminer 7 candidats au titre de meilleur exige 7 matchs et le champion peut avoir trois vaincus directs encore candidats à la deuxième place. Deux comparaisons supplémentaires sont alors nécessaires. Ainsi aucun algorithme ne garantit moins de 9.",
+      "hint": "Le deuxième meilleur ne peut avoir perdu que contre un seul joueur."
     }
   },
   {
@@ -1058,9 +1058,9 @@
   {
     "publication_date": "2026-05-13",
     "payload": {
-      "question": "Un rectangle a un périmètre de 36 cm. Sa longueur dépasse sa largeur de 2 cm. Quelle est son aire ?",
-      "answer": "80 cm². La demi-somme des côtés vaut 18 ; les côtés mesurent 8 et 10 cm.",
-      "hint": "Cherchez deux nombres dont la somme et la différence sont connues."
+      "question": "On mélange les six lettres du mot BANANE, en utilisant chaque lettre une seule fois. Deux arrangements qui donnent la même suite de lettres comptent pour un seul, même s’ils utilisent des exemplaires différents des A ou des N. Combien de suites distinctes peut-on former, sans exiger des mots du dictionnaire ?",
+      "answer": "180. Si toutes les lettres étaient distinctes, il y aurait 6 × 5 × 4 × 3 × 2 × 1 = 720 arrangements. Les deux A peuvent être échangés sans modifier la suite, comme les deux N. Chaque suite a donc été comptée 2 × 2 = 4 fois : 720 ÷ 4 = 180.",
+      "hint": "Les exemplaires des mêmes lettres ne sont pas distinguables."
     }
   },
   {
@@ -1082,9 +1082,9 @@
   {
     "publication_date": "2026-05-16",
     "payload": {
-      "question": "Une suite commence par 18, 21, 26, 33. On ajoute successivement les nombres impairs 3, 5, 7, puis 9. Quel est le terme suivant ?",
-      "answer": "42, car 33 + 9 = 42.",
-      "hint": "La règle d’addition est donnée : poursuivez-la."
+      "question": "Quatre voyants A, B, C et D sont allumés ou éteints. A est allumé si et seulement si B et C ont des états différents. B est allumé si et seulement si D est éteint. C est allumé si et seulement si A et D sont tous deux allumés. D est allumé si et seulement si au moins l’un de A ou C est allumé. Quel est l’état de chaque voyant ?",
+      "answer": "A, C et D sont allumés ; B est éteint. Si D était éteint, B serait allumé, tandis que la dernière règle imposerait A et C éteints ; la première règle rendrait alors A allumé : contradiction. D est donc allumé, B éteint. La première règle donne A et C dans le même état, et la dernière impose qu’au moins l’un soit allumé : ils le sont donc tous deux. Toutes les règles sont alors satisfaites.",
+      "hint": "Essaie les deux états possibles de D et cherche si l’un conduit à une contradiction."
     }
   },
   {
@@ -1106,9 +1106,9 @@
   {
     "publication_date": "2026-05-19",
     "payload": {
-      "question": "Une corde de 9 mètres est découpée en morceaux de 3 mètres. Une coupe ne traverse qu’une seule épaisseur. Combien de coupes faut-il ?",
-      "answer": "2 coupes. Il faut 3 morceaux ; chaque coupe augmente leur nombre de un.",
-      "hint": "Le premier morceau existe avant la première coupe."
+      "question": "Quatre bâtiments A, B, C et D doivent être reliés par des câbles, directement ou par l’intermédiaire d’autres bâtiments. Les longueurs possibles sont : A–B 2 m, A–C 3 m, A–D 8 m, B–C 1 m, B–D 4 m et C–D 5 m. Les câbles suivent uniquement ces liaisons. Quelle longueur totale minimale suffit ?",
+      "answer": "7 m : B–C de 1 m, A–B de 2 m et B–D de 4 m. Pour relier les quatre bâtiments, il faut au moins trois liaisons. L’une doit toucher D et mesure au moins 4 m ; les deux autres, distinctes, totalisent au moins 1 + 2 = 3 m. Toute solution mesure donc au moins 7 m. Les trois câbles proposés atteignent cette borne, sans boucle inutile.",
+      "hint": "Une boucle de câbles n’est pas nécessaire pour maintenir la connexion de tous les bâtiments."
     }
   },
   {
@@ -1130,9 +1130,9 @@
   {
     "publication_date": "2026-05-22",
     "payload": {
-      "question": "Un objet coûte 320 euros. Son prix augmente de 20 %, puis diminue de 20 % sur le nouveau prix. Le prix final est-il revenu au prix initial ?",
-      "answer": "Non, il vaut 307,20 euros, soit 96 % du prix initial, Les coefficients 1,20 et 0,80 ont pour produit 0,96,",
-      "hint": "Multipliez les coefficients plutôt que d’additionner les pourcentages."
+      "question": "Cinq cartes sont alignées dans l’ordre 3, 1, 4, 2, 5. Un mouvement échange uniquement deux cartes voisines. Combien de mouvements faut-il au minimum pour les remettre dans l’ordre 1, 2, 3, 4, 5 ?",
+      "answer": "3 mouvements. Les paires dans le mauvais ordre sont (3,1), (3,2) et (4,2), soit trois inversions. Un échange de voisines ne peut corriger qu’une seule inversion ; il en faut donc au moins trois. On les atteint ainsi : 3,1,4,2,5 → 1,3,4,2,5 → 1,3,2,4,5 → 1,2,3,4,5.",
+      "hint": "Compte les paires dont la plus grande carte apparaît avant la plus petite."
     }
   },
   {
@@ -1154,9 +1154,9 @@
   {
     "publication_date": "2026-05-25",
     "payload": {
-      "question": "Dans une salle, 11 personnes se serrent chacune la main une fois avec toutes les autres. Combien de poignées de main sont échangées ?",
-      "answer": "55. Chaque personne salue 10 autres personnes ; on divise le produit par deux pour ne pas compter chaque paire deux fois.",
-      "hint": "Comptez les paires sans tenir compte de leur ordre."
+      "question": "Un bracelet rigide possède six emplacements circulaires, occupés par trois perles noires et trois blanches. Deux motifs sont identiques si une rotation les superpose ; on ne peut pas retourner le bracelet, donc une image miroir peut être différente. Combien de motifs distincts existe-t-il ?",
+      "answer": "4. On peut compter les perles blanches rencontrées après chaque perle noire jusqu’à la noire suivante : cela donne trois entiers positifs ou nuls de somme 3, considérés à rotation près. Les possibilités sont les rotations de (3,0,0), celles de (2,1,0), celles de (2,0,1), et (1,1,1). Les deux ordres (2,1,0) et (2,0,1) ne se déduisent pas l’un de l’autre par rotation. Ils donnent quatre bracelets ; les deux derniers ordres asymétriques sont l’un l’image miroir de l’autre.",
+      "hint": "Fixez votre attention sur les intervalles blancs entre deux perles noires successives."
     }
   },
   {
@@ -1178,9 +1178,9 @@
   {
     "publication_date": "2026-05-28",
     "payload": {
-      "question": "Un rectangle a un périmètre de 80 cm. Sa longueur dépasse sa largeur de 2 cm. Quelle est son aire ?",
-      "answer": "399 cm². La demi-somme des côtés vaut 40 ; les côtés mesurent 19 et 21 cm.",
-      "hint": "Cherchez deux nombres dont la somme et la différence sont connues."
+      "question": "Dix affiches sont numérotées de 1 à 10. L’affiche numéro n affirme : « Exactement n de ces dix affiches sont fausses. » Chaque affiche a une valeur de vérité ordinaire : vraie ou fausse. Combien d’affiches sont vraies, et laquelle ou lesquelles ?",
+      "answer": "Une seule affiche est vraie : la numéro 9. Deux affiches différentes ne peuvent pas être vraies puisqu’elles donneraient des nombres différents d’affiches fausses. Si aucune n’était vraie, il y aurait dix affiches fausses, ce qui rendrait vraie la numéro 10 : contradiction. Il y a donc exactement une vraie et neuf fausses ; c’est bien l’affiche 9.",
+      "hint": "Les dix affirmations peuvent-elles être toutes fausses ? Deux d’entre elles peuvent-elles être vraies ensemble ?"
     }
   },
   {
@@ -1202,9 +1202,9 @@
   {
     "publication_date": "2026-05-31",
     "payload": {
-      "question": "Dans une salle, 16 personnes se serrent chacune la main une fois avec toutes les autres. Combien de poignées de main sont échangées ?",
-      "answer": "120. Chaque personne salue 15 autres personnes ; on divise le produit par deux pour ne pas compter chaque paire deux fois.",
-      "hint": "Comptez les paires sans tenir compte de leur ordre."
+      "question": "Sur une grille, on part de (0 ; 0) pour atteindre (4 ; 3). Chaque déplacement avance d’une unité vers la droite ou vers le haut. Le point (2 ; 1) est interdit. Combien de chemins différents restent possibles ?",
+      "answer": "17. Sans interdiction, les sept déplacements comportent trois montées et quatre déplacements à droite, soit 35 ordres possibles. Il y a 3 chemins jusqu’à (2 ; 1), puis 6 chemins de ce point jusqu’à (4 ; 3). Il faut donc retirer 3 × 6 = 18 chemins, d’où 35 − 18 = 17.",
+      "hint": "Compte tous les chemins, puis ceux qui passent obligatoirement par le point interdit."
     }
   },
   {
@@ -1234,9 +1234,9 @@
   {
     "publication_date": "2026-06-04",
     "payload": {
-      "question": "Un rectangle a un périmètre de 112 cm. Sa longueur dépasse sa largeur de 2 cm. Quelle est son aire ?",
-      "answer": "783 cm². La demi-somme des côtés vaut 56 ; les côtés mesurent 27 et 29 cm.",
-      "hint": "Cherchez deux nombres dont la somme et la différence sont connues."
+      "question": "Cinq maisons se trouvent sur une route droite aux positions 0, 2, 3, 12 et 18 km. On veut installer un point de collecte, n’importe où sur cette route, pour minimiser la somme des distances que les cinq habitants devront parcourir jusqu’à lui. Où faut-il le placer, et quelle sera cette somme minimale ?",
+      "answer": "À la position 3 km, pour une somme de 3 + 1 + 0 + 9 + 15 = 28 km. En se déplaçant de 0 à 2, on rapproche le point de quatre maisons contre une seule dont on l’éloigne ; entre 2 et 3, on le rapproche encore de trois contre deux. Au-delà de 3, il s’éloigne d’au moins trois maisons en ne se rapprochant que de deux. Le minimum unique est donc à la maison centrale, la médiane, et non à la moyenne des positions.",
+      "hint": "Observe comment la somme change quand tu déplaces légèrement le point entre deux maisons."
     }
   },
   {
@@ -1258,9 +1258,9 @@
   {
     "publication_date": "2026-06-07",
     "payload": {
-      "question": "Un escalier compte 12 marches. Combien de façons différentes permettent d’atteindre la deuxième marche en faisant uniquement des pas de une ou de deux marches, sans redescendre ?",
-      "answer": "2 façons : deux pas de une marche, ou un pas de deux marches. La hauteur totale de l’escalier ne change pas la question.",
-      "hint": "Arrêtez-vous à la deuxième marche, sans monter davantage."
+      "question": "Dix jetons identiques doivent former trois tas non vides, de tailles toutes différentes. Déplacer les tas sur la table ne crée pas une nouvelle répartition. Combien de répartitions différentes peut-on faire ?",
+      "answer": "4 : les tailles sont (1,2,7), (1,3,6), (1,4,5) et (2,3,5). Pour ne pas compter les déplacements des tas, on les range par taille croissante. Si le plus petit vaut 1, trois possibilités subsistent ; s’il vaut 2, il ne reste que (2,3,5). Avec un minimum de 3, les tailles distinctes seraient au moins 3,4,5 et totaliseraient 12.",
+      "hint": "Rangez mentalement les tas du plus petit au plus grand avant de les compter."
     }
   },
   {
@@ -1282,9 +1282,9 @@
   {
     "publication_date": "2026-06-10",
     "payload": {
-      "question": "Une suite commence par 14, 17, 22, 29. On ajoute successivement les nombres impairs 3, 5, 7, puis 9. Quel est le terme suivant ?",
-      "answer": "38, car 29 + 9 = 38.",
-      "hint": "La règle d’addition est donnée : poursuivez-la."
+      "question": "Cinq événements ont lieu à des instants tous différents : ouverture de la salle O, arrivée d’Ana A, dépôt du dossier D, arrivée de Bilal B et fermeture F. Ana arrive après l’ouverture mais avant le dépôt. Bilal arrive après le dépôt. La fermeture a lieu avant l’arrivée de Bilal mais après celle d’Ana. Peut-on déterminer l’ordre complet ? Si non, donne tous les ordres possibles.",
+      "answer": "Il y a deux ordres possibles : O, A, D, F, B et O, A, F, D, B. Les contraintes imposent O avant A, A avant D, D avant B, et A avant F avant B. Seul l’ordre relatif de D et F reste indéterminé. Le dépôt peut donc avoir lieu avant ou après la fermeture, aucune règle ne l’interdisant.",
+      "hint": "Distingue ce qui est strictement imposé de ce que le récit te pousse seulement à supposer."
     }
   },
   {
@@ -1314,9 +1314,9 @@
   {
     "publication_date": "2026-06-14",
     "payload": {
-      "question": "Un sac contient 4 billes rouges et 6 billes bleues. Sans regarder, combien faut-il en tirer au minimum pour être certain d’en avoir deux de la même couleur ?",
-      "answer": "3 billes. Les deux premières peuvent être de couleurs différentes ; la troisième partage nécessairement sa couleur avec l’une des deux.",
-      "hint": "Il n’y a que deux couleurs."
+      "question": "Sur une grille, un robot va de (0 ; 0) à (4 ; 4), uniquement par des pas d’une unité vers la droite ou vers le haut. À aucun moment son nombre de pas vers le haut ne doit dépasser son nombre de pas vers la droite. Combien de trajets respecte-t-il ?",
+      "answer": "14. Les huit pas peuvent se répartir de 70 façons sans contrainte. Les chemins qui franchissent la diagonale se mettent en correspondance, par réflexion du début du chemin jusqu’au premier franchissement, avec les suites ayant trois pas à droite et cinq vers le haut : il y en a 56. Il reste donc 70 − 56 = 14. On retrouve aussi ce résultat en comptant, case par case, seulement les cases où y ≤ x.",
+      "hint": "Place le nombre de façons d’atteindre chaque case autorisée en additionnant les deux cases précédentes."
     }
   },
   {
@@ -1338,9 +1338,9 @@
   {
     "publication_date": "2026-06-17",
     "payload": {
-      "question": "Je suis un entier positif. Mon triple augmenté de 3 vaut 18. Qui suis-je ?",
-      "answer": "5. En soustrayant 3, on obtient 15, puis on divise par trois.",
-      "hint": "Effectuez les opérations inverses dans l’ordre inverse."
+      "question": "Un coffre contient l’un des quatre objets A, B, C ou D. Tu poses cinq questions oui/non, toutes préparées à l’avance ; pour chacune, tu peux choisir librement quels objets doivent entraîner « oui ». Au maximum une réponse sera inversée, sans que tu saches laquelle. Peut-on malgré cela identifier l’objet avec certitude ? Donne cinq questions qui le permettent.",
+      "answer": "Oui. Associe les réponses exactes 00000 à A, 11100 à B, 10011 à C et 01111 à D, où 1 signifie oui. Les questions sont donc : « B ou C ? », « B ou D ? », « B ou D ? », « C ou D ? », « C ou D ? ». Les distances entre deux suites exactes sont respectivement 3, 3, 4, 4, 3 et 3 : au moins trois réponses les distinguent toujours. Avec au plus une réponse inversée, la suite reçue se trouve à distance 0 ou 1 d’une seule suite exacte ; choisis cet objet. Deux objets différents ne peuvent donc jamais produire la même suite reçue.",
+      "hint": "Deux objets doivent avoir des réponses exactes assez différentes pour qu’une seule inversion ne puisse les confondre."
     }
   },
   {
@@ -1362,9 +1362,9 @@
   {
     "publication_date": "2026-06-20",
     "payload": {
-      "question": "Un objet coûte 230 euros. Son prix augmente de 20 %, puis diminue de 20 % sur le nouveau prix. Le prix final est-il revenu au prix initial ?",
-      "answer": "Non, il vaut 220,80 euros, soit 96 % du prix initial, Les coefficients 1,20 et 0,80 ont pour produit 0,96,",
-      "hint": "Multipliez les coefficients plutôt que d’additionner les pourcentages."
+      "question": "On répartit douze jetons identiques dans quatre boîtes nommées A, B, C et D. Chaque boîte doit contenir au moins un jeton et au plus quatre. Combien de répartitions différentes respectent ces règles ?",
+      "answer": "31. Imaginez d’abord quatre jetons dans chaque boîte, soit seize. Une répartition correspond à retirer au total quatre jetons, sans en retirer plus de trois d’une boîte. Sans cette limite, les retraits de quatre jetons dans quatre boîtes sont au nombre de 35 : les profils sont (4,0,0,0), de 4 façons ; (3,1,0,0), de 12 façons ; (2,2,0,0), de 6 façons ; (2,1,1,0), de 12 façons ; (1,1,1,1), une fois. Les quatre profils qui vident une boîte sont interdits : 35 − 4 = 31.",
+      "hint": "Partez de boîtes pleines et comptez les jetons qu’il faut retirer."
     }
   },
   {
@@ -1386,9 +1386,9 @@
   {
     "publication_date": "2026-06-23",
     "payload": {
-      "question": "Je suis un entier positif. Mon triple augmenté de 9 vaut 42. Qui suis-je ?",
-      "answer": "11. En soustrayant 9, on obtient 33, puis on divise par trois.",
-      "hint": "Effectuez les opérations inverses dans l’ordre inverse."
+      "question": "Une équipe choisit parmi quatre modules A, B, C et D. Elle prend exactement un des deux modules A et B. Si elle prend A, elle doit prendre C ; si elle prend B, elle doit prendre D. Elle ne peut pas prendre C et D ensemble. Elle prend C. Quels modules prend-elle forcément et lesquels sont forcément absents ?",
+      "answer": "A et C sont présents ; B et D absents. C exclut D. Si B était présent, D le serait aussi : B est absent. L’obligation de choisir exactement un de A et B impose alors A. Les quatre modules sont donc complètement déterminés.",
+      "hint": "Utilise d’abord l’incompatibilité entre C et D, puis remonte les obligations."
     }
   },
   {
@@ -1410,9 +1410,9 @@
   {
     "publication_date": "2026-06-26",
     "payload": {
-      "question": "Un cycliste parcourt 17 km à l’aller puis la même distance au retour. Il roule à 12 km/h à l’aller et à 24 km/h au retour, sans pause. Quelle est sa vitesse moyenne sur l’ensemble du trajet ?",
-      "answer": "16 km/h. Pour une distance d à chaque étape, le temps total vaut d/12 + d/24 = d/8. La distance totale 2d divisée par ce temps donne 16.",
-      "hint": "La moyenne des vitesses n’est pas la moyenne arithmétique quand les durées diffèrent."
+      "question": "Un plan traverse l’intérieur d’un cube et le découpe en deux morceaux. La section obtenue est un polygone. Quel est le nombre maximal de côtés de ce polygone, et pourquoi ce maximum peut-il être atteint ?",
+      "answer": "Six côtés. Chaque côté de la section appartient à une face du cube, qui n’en possède que six. On peut rencontrer les six faces : par exemple, dans un cube de coordonnées comprises entre 0 et 1, le plan x + y + z = 1,5 coupe chaque face suivant un segment et forme un hexagone. Le maximum est donc bien six.",
+      "hint": "Associe chaque côté de la section à une face du cube."
     }
   },
   {
@@ -1434,9 +1434,9 @@
   {
     "publication_date": "2026-06-29",
     "payload": {
-      "question": "Une boîte contient 8 chaussettes noires et autant de blanches. Dans le noir, combien de chaussettes faut-il prendre au minimum pour être certain d’obtenir une paire de même couleur ?",
-      "answer": "3. Avec deux chaussettes, les couleurs peuvent différer. Avec trois, deux ont nécessairement la même couleur.",
-      "hint": "Raisonnez dans le cas le moins favorable."
+      "question": "Un lot est placé uniformément au hasard derrière l’une de trois portes. Tu choisis une porte. Un animateur qui connaît la cachette ouvre ensuite une autre porte sans lot ; s’il a le choix entre deux portes vides, il choisit chacune avec probabilité 1/2. Il te propose toujours de garder ta porte ou de passer à l’autre porte fermée. Quelle stratégie maximise tes chances, et avec quelle probabilité de gagner ?",
+      "answer": "Change de porte : tu gagnes avec probabilité 2/3. Ta première porte avait 1/3 de chances de contenir le lot, et l’intervention informée de l’animateur ne change pas cet événement. Si ton premier choix était mauvais, ce qui arrive dans 2 cas sur 3, l’animateur est forcé d’ouvrir l’autre porte vide : changer mène au lot. Si ton premier choix était bon, changer perd. Garder gagne donc avec probabilité 1/3, changer avec 2/3.",
+      "hint": "Sépare les cas où ton premier choix était bon de ceux où il était mauvais."
     }
   },
   {
@@ -1458,9 +1458,9 @@
   {
     "publication_date": "2026-07-02",
     "payload": {
-      "question": "Une urne contient 28 jetons numérotés de 1 à 28. On en tire un au hasard, avec la même chance pour chaque jeton. Quelle est la probabilité de tirer le numéro 27 ?",
-      "answer": "1/28. Un seul jeton porte le numéro demandé parmi 28 jetons équiprobables.",
-      "hint": "Comptez les issues favorables et le nombre total d’issues."
+      "question": "Un message utilise uniquement les lettres A, B et C. Chaque A est remplacé par 0, chaque B par 01 et chaque C par 11, puis tous les morceaux sont collés sans séparateur. On reçoit 011011101101. Quel est le message d’origine ? Expliquez pourquoi un autre découpage ne pourrait pas donner un autre message.",
+      "answer": "ACBCACB : le découpage est 0 | 11 | 01 | 11 | 0 | 11 | 01. Chaque 0 commence nécessairement un A ou un B, car le code de C ne contient aucun 0. Entre ce 0 et le suivant, comptez les 1 : s’ils sont en nombre pair, le 0 doit coder A et tous les 1 se groupent ensuite par deux en C ; s’ils sont en nombre impair, le premier 1 complète B et les autres codent des C. Le même raisonnement vaut jusqu’à la fin du signal. Les blocs sont ici 011, 0111, 011 et 01, donnant AC, BC, AC et B ; chaque choix est forcé.",
+      "hint": "Repérez les blocs de 1 séparés par les 0 ; leurs longueurs peuvent imposer le découpage."
     }
   },
   {
@@ -1482,9 +1482,9 @@
   {
     "publication_date": "2026-07-05",
     "payload": {
-      "question": "Un objet coûte 200 euros. Son prix augmente de 20 %, puis diminue de 20 % sur le nouveau prix. Le prix final est-il revenu au prix initial ?",
-      "answer": "Non, il vaut 192,00 euros, soit 96 % du prix initial, Les coefficients 1,20 et 0,80 ont pour produit 0,96,",
-      "hint": "Multipliez les coefficients plutôt que d’additionner les pourcentages."
+      "question": "Un règlement affirme : « Toute personne portant un badge vert possède un ticket. Tout possesseur d’un ticket est autorisé à entrer. Aucune personne autorisée à entrer ne porte de badge vert. Au moins une personne porte un badge vert. » Ces quatre affirmations peuvent-elles être vraies en même temps ?",
+      "answer": "Non. La personne dont le badge vert existe doit avoir un ticket, donc être autorisée à entrer. Mais aucune personne autorisée ne peut porter un badge vert. Elle devrait donc à la fois porter et ne pas porter ce badge. Sans l’affirmation d’existence, les trois premières règles seraient compatibles si aucun badge vert n’était porté.",
+      "hint": "Suis le parcours de la personne dont l’existence est garantie par la dernière phrase."
     }
   },
   {
@@ -1506,9 +1506,9 @@
   {
     "publication_date": "2026-07-08",
     "payload": {
-      "question": "Un cycliste parcourt 33 km à l’aller puis la même distance au retour. Il roule à 12 km/h à l’aller et à 24 km/h au retour, sans pause. Quelle est sa vitesse moyenne sur l’ensemble du trajet ?",
-      "answer": "16 km/h. Pour une distance d à chaque étape, le temps total vaut d/12 + d/24 = d/8. La distance totale 2d divisée par ce temps donne 16.",
-      "hint": "La moyenne des vitesses n’est pas la moyenne arithmétique quand les durées diffèrent."
+      "question": "Une plaque carrée de 10 cm de côté est entaillée au milieu d’un bord. On retire un petit carré de 2 cm de côté, entièrement situé contre ce bord et sans toucher les coins de la plaque. Quel est le périmètre de la plaque restante ?",
+      "answer": "44 cm. Le périmètre initial mesure 40 cm. Le segment extérieur de 2 cm disparaît, mais les trois autres côtés de l’encoche, totalisant 6 cm, deviennent accessibles. Le nouveau contour mesure donc 40 − 2 + 6 = 44 cm.",
+      "hint": "Suis le nouveau bord autour de l’encoche et compare-le au segment qui a disparu."
     }
   },
   {
@@ -1530,9 +1530,9 @@
   {
     "publication_date": "2026-07-11",
     "payload": {
-      "question": "Un sac contient 28 billes rouges et 30 billes bleues. Sans regarder, combien faut-il en tirer au minimum pour être certain d’en avoir deux de la même couleur ?",
-      "answer": "3 billes. Les deux premières peuvent être de couleurs différentes ; la troisième partage nécessairement sa couleur avec l’une des deux.",
-      "hint": "Il n’y a que deux couleurs."
+      "question": "Dans une population, 1 personne sur 100 a une certaine condition. Un test est positif chez 90 % des personnes qui l’ont et chez 10 % de celles qui ne l’ont pas. On choisit une personne uniformément au hasard dans cette population, et son test est positif. Quelle est la probabilité qu’elle ait réellement la condition ?",
+      "answer": "1/12, soit environ 8,33 %. Sur 10 000 personnes présentant ces proportions, 100 ont la condition : 90 ont un test positif. Parmi les 9 900 autres, 990 ont aussi un test positif. Il y a donc 1 080 tests positifs, dont seulement 90 vrais positifs : 90/1 080 = 1/12. Le taux de faux positifs s’applique au groupe beaucoup plus nombreux sans la condition.",
+      "hint": "Raisonne sur une population de 10 000 personnes et compte tous les tests positifs."
     }
   },
   {
@@ -1554,9 +1554,9 @@
   {
     "publication_date": "2026-07-14",
     "payload": {
-      "question": "Une corde de 72 mètres est découpée en morceaux de 3 mètres. Une coupe ne traverse qu’une seule épaisseur. Combien de coupes faut-il ?",
-      "answer": "23 coupes. Il faut 24 morceaux ; chaque coupe augmente leur nombre de un.",
-      "hint": "Le premier morceau existe avant la première coupe."
+      "question": "Trouvez toutes les paires d’entiers positifs a et b, avec a inférieur ou égal à b, pour lesquelles 1/a + 1/b = 1/6. Les deux nombres peuvent être égaux. Comment être certain de ne rien oublier ?",
+      "answer": "Les cinq paires sont (7,42), (8,24), (9,18), (10,15) et (12,12). En multipliant par 6ab, on obtient ab = 6a + 6b, puis (a − 6)(b − 6) = 36. Les deux nombres sont supérieurs à 6 ; il suffit donc des paires de facteurs positifs de 36 dans l’ordre croissant : (1,36), (2,18), (3,12), (4,9), (6,6). On ajoute 6 aux deux composantes.",
+      "hint": "Essayez de transformer l’équation en un produit de deux expressions entières."
     }
   },
   {
@@ -1578,9 +1578,9 @@
   {
     "publication_date": "2026-07-17",
     "payload": {
-      "question": "Une corde de 87 mètres est découpée en morceaux de 3 mètres. Une coupe ne traverse qu’une seule épaisseur. Combien de coupes faut-il ?",
-      "answer": "28 coupes. Il faut 29 morceaux ; chaque coupe augmente leur nombre de un.",
-      "hint": "Le premier morceau existe avant la première coupe."
+      "question": "Pour accéder à la salle secrète, il faut posséder une clé et connaître un mot de passe. Tout membre du groupe Bleu possède une clé ; certains membres du groupe Bleu connaissent le mot de passe. Zoé appartient au groupe Bleu. Peut-on affirmer que Zoé peut entrer, qu’elle ne peut pas entrer, ou aucune des deux conclusions ? Justifie avec deux situations compatibles avec le texte.",
+      "answer": "Aucune des deux conclusions n’est certaine. Zoé possède une clé, mais les « certains membres » qui connaissent le mot de passe peuvent l’inclure ou non. Première situation compatible : Zoé connaît le mot de passe et le règlement autorise l’accès à tous ceux qui remplissent les deux conditions ; elle entre. Deuxième : un autre membre connaît le mot de passe, Zoé non ; elle ne peut pas entrer. De plus, « il faut » donne des conditions nécessaires, pas une garantie d’accès lorsqu’elles sont remplies.",
+      "hint": "« Certains » ne signifie ni « tous » ni « tous sauf Zoé » ; examine aussi le sens de « il faut »."
     }
   },
   {
@@ -1602,9 +1602,9 @@
   {
     "publication_date": "2026-07-20",
     "payload": {
-      "question": "Un cycliste parcourt 39 km à l’aller puis la même distance au retour. Il roule à 12 km/h à l’aller et à 24 km/h au retour, sans pause. Quelle est sa vitesse moyenne sur l’ensemble du trajet ?",
-      "answer": "16 km/h. Pour une distance d à chaque étape, le temps total vaut d/12 + d/24 = d/8. La distance totale 2d divisée par ce temps donne 16.",
-      "hint": "La moyenne des vitesses n’est pas la moyenne arithmétique quand les durées diffèrent."
+      "question": "Un triangle rectangle a des côtés perpendiculaires de 6 cm et 8 cm. On place un carré à l’intérieur : un sommet coïncide avec l’angle droit, deux côtés suivent les côtés perpendiculaires du triangle et le sommet opposé touche l’hypoténuse. Quelle est la longueur du côté du carré ?",
+      "answer": "24/7 cm, soit environ 3,43 cm. Si le côté vaut s, le sommet opposé du carré a pour coordonnées (s ; s), en choisissant les côtés du triangle comme axes. L’hypoténuse vérifie x/6 + y/8 = 1. Donc s/6 + s/8 = 1, soit 7s/24 = 1 et s = 24/7.",
+      "hint": "Le petit triangle au-dessus ou à côté du carré est semblable au triangle entier."
     }
   },
   {
@@ -1626,9 +1626,9 @@
   {
     "publication_date": "2026-07-23",
     "payload": {
-      "question": "Un cycliste parcourt 24 km à l’aller puis la même distance au retour. Il roule à 12 km/h à l’aller et à 24 km/h au retour, sans pause. Quelle est sa vitesse moyenne sur l’ensemble du trajet ?",
-      "answer": "16 km/h. Pour une distance d à chaque étape, le temps total vaut d/12 + d/24 = d/8. La distance totale 2d divisée par ce temps donne 16.",
-      "hint": "La moyenne des vitesses n’est pas la moyenne arithmétique quand les durées diffèrent."
+      "question": "On lance une pièce équilibrée jusqu’à obtenir deux « pile » consécutifs, puis on s’arrête. Tous les lancers sont indépendants. En moyenne, combien de lancers faut-il, en comptant ceux du dernier couple ?",
+      "answer": "6 lancers. Appelons E l’attente moyenne sans pile déjà utilisable, et F l’attente quand le dernier lancer est pile. Du premier état, un lancer donne pile ou face avec la même probabilité : E = 1 + (F + E)/2. Du second, le lancer suivant donne pile et termine, ou donne face et ramène au départ : F = 1 + E/2. La première équation donne E = 2 + F ; en substituant, E = 3 + E/2, donc E = 6. Le recouvrement des essais empêche de traiter des couples indépendants de deux lancers.",
+      "hint": "Il faut distinguer le moment où le dernier lancer était pile du moment où il ne l’était pas."
     }
   },
   {
@@ -1650,9 +1650,9 @@
   {
     "publication_date": "2026-07-26",
     "payload": {
-      "question": "Un rectangle a un périmètre de 104 cm. Sa longueur dépasse sa largeur de 2 cm. Quelle est son aire ?",
-      "answer": "675 cm². La demi-somme des côtés vaut 52 ; les côtés mesurent 25 et 27 cm.",
-      "hint": "Cherchez deux nombres dont la somme et la différence sont connues."
+      "question": "Deux carrés parfaits ont une différence de 2025. Combien de paires d’entiers strictement positifs x et y, avec x plus grand que y, satisfont x² − y² = 2025 ?",
+      "answer": "7 paires : (1013,1012), (339,336), (205,200), (117,108), (75,60), (53,28) et (51,24). Comme (x − y)(x + y) = 2025, chaque paire de facteurs positifs distincts de 2025 fournit une solution, les deux facteurs étant impairs. Les paires de facteurs de premier membre inférieur à 45 sont (1,2025), (3,675), (5,405), (9,225), (15,135), (25,81) et (27,75). La paire (45,45) donnerait y = 0 et est exclue.",
+      "hint": "La différence de deux carrés se transforme en produit de leur somme et de leur différence."
     }
   },
   {
@@ -1682,9 +1682,9 @@
   {
     "publication_date": "2026-07-30",
     "payload": {
-      "question": "Je suis un entier positif. Mon triple augmenté de 27 vaut 114. Qui suis-je ?",
-      "answer": "29. En soustrayant 27, on obtient 87, puis on divise par trois.",
-      "hint": "Effectuez les opérations inverses dans l’ordre inverse."
+      "question": "Une machine possède deux interrupteurs A et B. Elle est éteinte quand les deux sont baissés et allumée quand les deux sont relevés. Seules trois règles sont envisagées : elle est allumée exactement quand A est relevé ; exactement quand au moins un interrupteur est relevé ; ou exactement quand les deux sont relevés. Ces observations permettent-elles de choisir une règle ? Peut-on prévoir avec certitude son état si A est relevé et B baissé ?",
+      "answer": "Non aux deux questions. Les trois règles prédisent une machine éteinte avec les deux interrupteurs baissés et allumée avec les deux relevés : les observations ne les distinguent donc pas. Lorsque A est relevé et B baissé, les deux premières règles prédisent allumé, mais la troisième prédit éteint. Un état où les interrupteurs diffèrent apporterait une information absente des observations initiales.",
+      "hint": "Compare les prédictions des trois règles dans chacun des états effectivement observés."
     }
   },
   {
@@ -1706,9 +1706,9 @@
   {
     "publication_date": "2026-08-02",
     "payload": {
-      "question": "Un sac contient 31 billes rouges et 33 billes bleues. Sans regarder, combien faut-il en tirer au minimum pour être certain d’en avoir deux de la même couleur ?",
-      "answer": "3 billes. Les deux premières peuvent être de couleurs différentes ; la troisième partage nécessairement sa couleur avec l’une des deux.",
-      "hint": "Il n’y a que deux couleurs."
+      "question": "Un petit disque de rayon 1 cm roule sans glisser autour de l’extérieur d’un disque fixe de rayon 3 cm. Il effectue un tour complet autour du grand disque et revient à son point de départ. Combien de tours sur lui-même a-t-il faits, par rapport à une direction fixe de la table ?",
+      "answer": "Quatre tours. Le centre du petit disque suit un cercle de rayon 3 + 1 = 4 cm, de longueur 8π cm. Sans glissement, sa rotation par rapport à la table correspond à cette longueur divisée par sa propre circonférence 2π cm : cela donne 4. Le rapport des rayons, 3, omet le tour supplémentaire lié à la révolution autour du disque fixe.",
+      "hint": "La trajectoire du centre du petit disque n’a pas le même rayon que le grand disque."
     }
   },
   {
@@ -1730,9 +1730,9 @@
   {
     "publication_date": "2026-08-05",
     "payload": {
-      "question": "Un objet coûte 70 euros. Son prix augmente de 20 %, puis diminue de 20 % sur le nouveau prix. Le prix final est-il revenu au prix initial ?",
-      "answer": "Non, il vaut 67,20 euros, soit 96 % du prix initial, Les coefficients 1,20 et 0,80 ont pour produit 0,96,",
-      "hint": "Multipliez les coefficients plutôt que d’additionner les pourcentages."
+      "question": "Une pièce donne pile avec une probabilité p inconnue, fixe et strictement comprise entre 0 et 1. Ses lancers sont indépendants. Comment utiliser ses lancers pour départager deux joueurs avec exactement la même probabilité de victoire, sans connaître p, quitte à recommencer certains essais ?",
+      "answer": "Lance la pièce par paires. Attribue pile–face au premier joueur et face–pile au second ; si les deux résultats sont identiques, recommence une nouvelle paire. Les probabilités des deux couples retenus sont p(1−p) et (1−p)p, donc égales. Une paire est retenue avec probabilité 2p(1−p) > 0 ; la répétition finit donc presque sûrement par donner un vainqueur, et chacun gagne avec probabilité 1/2.",
+      "hint": "Cherche deux suites de lancers qui ont la même probabilité pour toute valeur de p."
     }
   },
   {
@@ -1754,9 +1754,9 @@
   {
     "publication_date": "2026-08-08",
     "payload": {
-      "question": "Une suite commence par 26, 29, 34, 41. On ajoute successivement les nombres impairs 3, 5, 7, puis 9. Quel est le terme suivant ?",
-      "answer": "50, car 41 + 9 = 50.",
-      "hint": "La règle d’addition est donnée : poursuivez-la."
+      "question": "Un entier possède exactement douze diviseurs positifs, en comptant 1 et le nombre lui-même. Quel est le plus petit entier possible ? Par exemple, les diviseurs positifs de 6 sont 1, 2, 3 et 6.",
+      "answer": "60, dont les diviseurs sont 1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30 et 60. Si un nombre se décompose en puissances de nombres premiers, chaque exposant e offre e + 1 choix dans un diviseur. Pour obtenir douze diviseurs, les schémas d’exposants possibles sont 11 ; 5 et 1 ; 3 et 2 ; ou 2, 1 et 1. En attribuant les plus grands exposants aux plus petits nombres premiers, leurs plus petits représentants sont 2¹¹ = 2048 ; 2⁵ × 3 = 96 ; 2³ × 3² = 72 ; et 2² × 3 × 5 = 60. Le minimum est donc 60.",
+      "hint": "Construisez les diviseurs à partir des choix possibles pour chaque facteur premier."
     }
   },
   {
@@ -1778,9 +1778,9 @@
   {
     "publication_date": "2026-08-11",
     "payload": {
-      "question": "Un escalier compte 7 marches. Combien de façons différentes permettent d’atteindre la deuxième marche en faisant uniquement des pas de une ou de deux marches, sans redescendre ?",
-      "answer": "2 façons : deux pas de une marche, ou un pas de deux marches. La hauteur totale de l’escalier ne change pas la question.",
-      "hint": "Arrêtez-vous à la deuxième marche, sans monter davantage."
+      "question": "Trois dossiers physiques distincts X, Y et Z portent initialement les étiquettes « urgent », « normal » et « archive », respectivement. On échange d’abord les étiquettes de X et Y. Puis on échange les étiquettes du dossier actuellement marqué « urgent » et de Z. Enfin on échange les étiquettes de X et Z. Quelle étiquette porte chaque dossier à la fin ?",
+      "answer": "X porte « urgent », Y porte « archive » et Z porte « normal ». Après le premier échange : X normal, Y urgent, Z archive. Le dossier urgent est alors Y ; on échange Y et Z : X normal, Y archive, Z urgent. Le dernier échange entre X et Z donne X urgent, Y archive, Z normal. Il faut suivre les dossiers physiques séparément de leurs étiquettes mobiles.",
+      "hint": "Fais une ligne par dossier et une colonne par échange ; une étiquette n’est pas l’identité du dossier."
     }
   },
   {
@@ -1802,9 +1802,9 @@
   {
     "publication_date": "2026-08-14",
     "payload": {
-      "question": "Un sac contient 6 billes rouges et 8 billes bleues. Sans regarder, combien faut-il en tirer au minimum pour être certain d’en avoir deux de la même couleur ?",
-      "answer": "3 billes. Les deux premières peuvent être de couleurs différentes ; la troisième partage nécessairement sa couleur avec l’une des deux.",
-      "hint": "Il n’y a que deux couleurs."
+      "question": "On forme un anneau avec une longue bande de papier en lui donnant un demi-tour avant de coller ses extrémités : c’est un ruban de Möbius. On découpe ensuite tout le long de sa ligne médiane, à égale distance des bords, jusqu’à revenir au point de départ. Combien de rubans séparés obtient-on, et quelles sont leurs caractéristiques ?",
+      "answer": "Un seul ruban, deux fois plus long et deux fois moins large, avec deux tours complets de torsion. La ligne médiane parcourt le ruban sans séparer deux côtés indépendants : après la coupe, les deux moitiés restent raccordées en une seule boucle. Celle-ci est cette fois orientable et possède deux bords. Les deux tours complets correspondent à quatre demi-tours.",
+      "hint": "Suis mentalement un côté de la coupe au niveau du raccord collé."
     }
   },
   {
@@ -1826,9 +1826,9 @@
   {
     "publication_date": "2026-08-17",
     "payload": {
-      "question": "Un escalier compte 21 marches. Combien de façons différentes permettent d’atteindre la deuxième marche en faisant uniquement des pas de une ou de deux marches, sans redescendre ?",
-      "answer": "2 façons : deux pas de une marche, ou un pas de deux marches. La hauteur totale de l’escalier ne change pas la question.",
-      "hint": "Arrêtez-vous à la deuxième marche, sans monter davantage."
+      "question": "Quatre lettres distinctes doivent aller dans quatre enveloppes portant les adresses correspondantes. On mélange les lettres uniformément parmi les 24 placements possibles, une lettre par enveloppe. Quelle est la probabilité qu’aucune lettre ne soit dans la bonne enveloppe ?",
+      "answer": "3/8. Parmi les 24 placements, ceux où personne ne reçoit sa propre lettre sont les dérangements. Par inclusion-exclusion, leur nombre est 4! − 4×3! + 6×2! − 4×1! + 1 = 24 − 24 + 12 − 4 + 1 = 9. La probabilité est donc 9/24 = 3/8. On peut aussi les répartir en trois échanges de deux paires et six cycles de longueur quatre.",
+      "hint": "Les placements où une lettre est correcte se recoupent ; attention à ne pas compter deux fois leurs intersections."
     }
   },
   {
@@ -1850,9 +1850,9 @@
   {
     "publication_date": "2026-08-20",
     "payload": {
-      "question": "Une urne contient 10 jetons numérotés de 1 à 10. On en tire un au hasard, avec la même chance pour chaque jeton. Quelle est la probabilité de tirer le numéro 9 ?",
-      "answer": "1/10. Un seul jeton porte le numéro demandé parmi 10 jetons équiprobables.",
-      "hint": "Comptez les issues favorables et le nombre total d’issues."
+      "question": "Un écran affiche 0,1234343434… : après les deux premiers chiffres 12, le groupe 34 se répète indéfiniment. Quelle fraction irréductible représente exactement ce nombre ?",
+      "answer": "611/4950. Si x = 0,123434…, alors 100x = 12,343434… et 10000x = 1234,343434…. La soustraction élimine les décimales : 9900x = 1222, donc x = 1222/9900 = 611/4950. Le numérateur 611 = 13 × 47 ne partage aucun facteur avec 4950, donc la fraction est irréductible.",
+      "hint": "Décalez la virgule de façon que deux écritures possèdent exactement la même partie décimale."
     }
   },
   {
@@ -1874,9 +1874,9 @@
   {
     "publication_date": "2026-08-23",
     "payload": {
-      "question": "Une corde de 24 mètres est découpée en morceaux de 3 mètres. Une coupe ne traverse qu’une seule épaisseur. Combien de coupes faut-il ?",
-      "answer": "7 coupes. Il faut 8 morceaux ; chaque coupe augmente leur nombre de un.",
-      "hint": "Le premier morceau existe avant la première coupe."
+      "question": "Un robot garde deux nombres A et B, initialement A = 2 et B = 5. À chaque tour, il remplace d’abord A par A + B, puis B par le nouveau A moins l’ancien B. Après trois tours, quels nombres garde-t-il ? Et que se passerait-il si les deux remplacements utilisaient tous les deux les anciennes valeurs ?",
+      "answer": "En mettant à jour successivement : (A, B) devient (7, 2), puis (9, 7), puis (16, 9). En effet, la nouvelle valeur de B est l’ancien A. Si les deux remplacements utilisaient les anciennes valeurs, on aurait la règle (A, B) → (A + B, A − B), donnant (7, −3), puis (4, 10), puis (14, −6). Le moment où l’on lit A change donc complètement le résultat.",
+      "hint": "Note explicitement les anciennes valeurs et les nouvelles ; le second calcul lit-il A avant ou après son changement ?"
     }
   },
   {
@@ -1898,9 +1898,9 @@
   {
     "publication_date": "2026-08-26",
     "payload": {
-      "question": "Deux nombres entiers positifs consécutifs ont pour somme 67. Quel est le plus petit ?",
-      "answer": "33. Si le premier vaut x, le second vaut x + 1 : 2x + 1 = 67.",
-      "hint": "Soustrayez un à la somme, puis divisez par deux."
+      "question": "Trois maisons et trois puits sont représentés par six points distincts sur une feuille plane. Chaque maison doit être reliée à chacun des trois puits par un trait. Les traits ne doivent ni se croiser ni traverser une autre maison ou un autre puits ; aucun tunnel, pont ou passage hors de la feuille n’est permis. Est-ce possible ?",
+      "answer": "Non. Le réseau demandé est biparti : toute face d’un dessin sans croisement aurait au moins quatre côtés. Avec 6 sommets et 9 liaisons, la formule d’Euler imposerait 5 faces, extérieur compris. Il faudrait alors au moins 4 × 5 = 20 incidences de côtés, mais les 9 liaisons n’en fournissent que 18, chaque liaison bordant deux faces. C’est impossible. C’est l’obstruction classique du graphe K3,3.",
+      "hint": "Considère les régions que les traits devraient délimiter sur la feuille, y compris la région extérieure."
     }
   },
   {
@@ -1922,9 +1922,9 @@
   {
     "publication_date": "2026-08-29",
     "payload": {
-      "question": "Un rectangle a un périmètre de 56 cm. Sa longueur dépasse sa largeur de 2 cm. Quelle est son aire ?",
-      "answer": "195 cm². La demi-somme des côtés vaut 28 ; les côtés mesurent 13 et 15 cm.",
-      "hint": "Cherchez deux nombres dont la somme et la différence sont connues."
+      "question": "Cent voyageurs ont chacun une place numérotée et montent dans l’ordre de leur numéro. Le premier choisit une place uniformément au hasard parmi les cent. Chaque suivant prend sa place si elle est libre ; sinon, il choisit uniformément parmi les places libres. Quelle est la probabilité que le centième trouve sa propre place libre ?",
+      "answer": "1/2. Tant qu’aucun voyageur déplacé ne choisit la place 1 ou la place 100, la chaîne de déplacements continue, et ces deux places restent libres. La première des deux à être choisie décide tout : si c’est la place 1, la chaîne s’arrête et la place 100 reste disponible ; si c’est la place 100, son propriétaire la perd. À chaque choix pertinent, les places 1 et 100 sont traitées symétriquement. Chacune a donc une probabilité 1/2 d’être la première choisie.",
+      "hint": "La plupart des numéros de place ne font que prolonger une chaîne. Deux numéros seulement décident de son issue."
     }
   },
   {
@@ -1946,9 +1946,9 @@
   {
     "publication_date": "2026-09-01",
     "payload": {
-      "question": "Deux nombres entiers positifs consécutifs ont pour somme 29. Quel est le plus petit ?",
-      "answer": "14. Si le premier vaut x, le second vaut x + 1 : 2x + 1 = 29.",
-      "hint": "Soustrayez un à la somme, puis divisez par deux."
+      "question": "Trois suites sont entrelacées : la première occupe les places 1, 4, 7…, la deuxième les places 2, 5, 8…, la troisième les places 3, 6, 9…. Deux ajoutent chacune un nombre constant à chaque étape ; la dernière multiplie par un nombre constant. Voici le début : 2, 20, 128, 5, 16, 64, 8, 12, 32. Quels sont les trois termes suivants ?",
+      "answer": "11, 8, 16. La première sous-suite est 2, 5, 8 : elle ajoute 3 et donne 11. La deuxième est 20, 16, 12 : elle retranche 4 et donne 8. La troisième est 128, 64, 32 : elle multiplie par 1/2 et donne 16. Leurs prochains termes reprennent le même ordre.",
+      "hint": "Recopiez les termes en trois colonnes, selon leur place."
     }
   },
   {
@@ -1978,9 +1978,9 @@
   {
     "publication_date": "2026-09-05",
     "payload": {
-      "question": "Je suis un entier positif. Mon triple augmenté de 16 vaut 70. Qui suis-je ?",
-      "answer": "18. En soustrayant 16, on obtient 54, puis on divise par trois.",
-      "hint": "Effectuez les opérations inverses dans l’ordre inverse."
+      "question": "Trois personnes Ana, Bilal et Cléo détiennent chacune exactement un objet différent : une clé, une carte ou un jeton. Ana ne détient pas la clé ; Bilal ne détient pas la carte. Quel unique renseignement supplémentaire parmi les suivants suffit à tout déterminer : « Cléo n’a pas le jeton », « Ana a la carte », « Bilal a le jeton » ?",
+      "answer": "Seul « Bilal a le jeton » suffit : Ana ne peut alors prendre ni le jeton déjà attribué ni la clé interdite ; elle prend la carte et Cléo la clé. « Ana a la carte » laisse Bilal et Cléo se partager clé et jeton. « Cléo n’a pas le jeton » laisse notamment Ana carte, Bilal jeton, Cléo clé, ou Ana jeton, Bilal clé, Cléo carte. Le problème demande un renseignement qui impose une solution unique.",
+      "hint": "Énumère les possibilités restantes pour chacun des trois renseignements pris séparément."
     }
   },
   {
@@ -2002,9 +2002,9 @@
   {
     "publication_date": "2026-09-08",
     "payload": {
-      "question": "Un sac contient 27 billes rouges et 29 billes bleues. Sans regarder, combien faut-il en tirer au minimum pour être certain d’en avoir deux de la même couleur ?",
-      "answer": "3 billes. Les deux premières peuvent être de couleurs différentes ; la troisième partage nécessairement sa couleur avec l’une des deux.",
-      "hint": "Il n’y a que deux couleurs."
+      "question": "Dans un triangle ABC, D est le milieu de BC. E est placé sur AB avec AE égal au tiers de AB. Les segments AD et CE se coupent en G. Quel est le rapport AG/GD ?",
+      "answer": "1 : G est le milieu de AD. Une vérification par coordonnées suffit, car les rapports sur une droite sont conservés : posons A = (0 ; 0), B = (3 ; 0) et C = (0 ; 3). Alors D = (1,5 ; 1,5) et E = (1 ; 0). Un point de AD s’écrit (1,5t ; 1,5t). Son appartenance à CE donne 1,5t = 3 − 4,5t, donc t = 1/2. On obtient AG = GD.",
+      "hint": "On peut choisir un triangle particulièrement simple pour calculer un rapport qui ne dépend pas de sa forme."
     }
   },
   {
@@ -2026,9 +2026,9 @@
   {
     "publication_date": "2026-09-11",
     "payload": {
-      "question": "Un cycliste parcourt 34 km à l’aller puis la même distance au retour. Il roule à 12 km/h à l’aller et à 24 km/h au retour, sans pause. Quelle est sa vitesse moyenne sur l’ensemble du trajet ?",
-      "answer": "16 km/h. Pour une distance d à chaque étape, le temps total vaut d/12 + d/24 = d/8. La distance totale 2d divisée par ce temps donne 16.",
-      "hint": "La moyenne des vitesses n’est pas la moyenne arithmétique quand les durées diffèrent."
+      "question": "Tu possèdes 2 jetons. À chaque lancer indépendant d’une pièce équilibrée, tu gagnes un jeton sur pile et en perds un sur face. Le jeu s’arrête dès que tu atteins 0 ou 5 jetons. Quelle est la probabilité d’atteindre 5 avant 0 ?",
+      "answer": "2/5. Si u(k) est la probabilité d’atteindre 5 avant 0 avec k jetons, alors u(0)=0, u(5)=1 et u(k)=(u(k−1)+u(k+1))/2 pour k de 1 à 4. Les écarts entre deux valeurs voisines sont donc égaux : u(k)=k/5, d’où u(2)=2/5. L’arrêt survient presque sûrement : toute série de cinq lancers identiques le force, et une telle série finit presque sûrement par arriver. La solution de ces équations décrit donc bien toute l’issue du jeu.",
+      "hint": "Compare la probabilité de gagner depuis un état à celles des deux états voisins."
     }
   },
   {
@@ -2058,9 +2058,9 @@
   {
     "publication_date": "2026-09-15",
     "payload": {
-      "question": "Un cycliste parcourt 29 km à l’aller puis la même distance au retour. Il roule à 12 km/h à l’aller et à 24 km/h au retour, sans pause. Quelle est sa vitesse moyenne sur l’ensemble du trajet ?",
-      "answer": "16 km/h. Pour une distance d à chaque étape, le temps total vaut d/12 + d/24 = d/8. La distance totale 2d divisée par ce temps donne 16.",
-      "hint": "La moyenne des vitesses n’est pas la moyenne arithmétique quand les durées diffèrent."
+      "question": "On numérote l’alphabet A = 0, B = 1, …, Z = 25. Pour chiffrer une lettre, on multiplie son numéro par un entier secret a, puis on ajoute un entier secret b ; on conserve le reste après division par 26. Les entiers a et b sont entre 0 et 25. Sachant que A devient I et B devient N, quel mot de trois lettres est chiffré par SLC ?",
+      "answer": "CLE. A a pour numéro 0, donc b = 8 puisque I vaut 8. B vaut 1 et N vaut 13, d’où a + 8 laisse un reste de 13 : a = 5. Pour décoder S (18), L (11) et C (2), on cherche x tel que 5x + 8 ait le bon reste. On trouve respectivement x = 2, 11 et 4, donc C, L et E. Il n’existe pas deux solutions pour une lettre : 5 est premier avec 26, donc la multiplication par 5 permute les vingt-six restes.",
+      "hint": "Utilisez les deux lettres connues pour retrouver les deux réglages de la machine."
     }
   },
   {
@@ -2082,9 +2082,9 @@
   {
     "publication_date": "2026-09-18",
     "payload": {
-      "question": "Une corde de 69 mètres est découpée en morceaux de 3 mètres. Une coupe ne traverse qu’une seule épaisseur. Combien de coupes faut-il ?",
-      "answer": "22 coupes. Il faut 23 morceaux ; chaque coupe augmente leur nombre de un.",
-      "hint": "Le premier morceau existe avant la première coupe."
+      "question": "Deux entiers, éventuellement égaux, sont choisis entre 2 et 99 inclus. Alice connaît leur somme, Bilal leur produit ; ils connaissent les bornes et raisonnent parfaitement. Bilal dit : « Je ne peux pas les déterminer. » Alice répond : « Je le savais déjà. » Bilal reprend : « Maintenant, je les connais. » Alice conclut : « Maintenant, moi aussi. » Quels sont les deux entiers ?",
+      "answer": "4 et 13. On peut vérifier exhaustivement les couples 2 ≤ a ≤ b ≤ 99. L’affirmation d’Alice signifie que chaque couple de sa somme a un produit partagé avec un autre couple ; seules les sommes 11, 17, 23, 27, 29, 35, 37, 41, 47 et 53 passent ce filtre. Bilal connaît ensuite son couple seulement si son produit ne correspond plus qu’à un seul couple dans cette liste filtrée. Parmi ces couples nouvellement identifiables, la somme 17 est la seule à ne conserver qu’un couple : (4, 13), de produit 52. En particulier, l’autre décomposition autorisée de 52, (2, 26), a pour somme 28, éliminée par l’annonce d’Alice.",
+      "hint": "Range les couples à la fois par somme et par produit, puis applique une élimination après chaque annonce."
     }
   },
   {
@@ -2106,9 +2106,9 @@
   {
     "publication_date": "2026-09-21",
     "payload": {
-      "question": "Une boîte contient 20 chaussettes noires et autant de blanches. Dans le noir, combien de chaussettes faut-il prendre au minimum pour être certain d’obtenir une paire de même couleur ?",
-      "answer": "3. Avec deux chaussettes, les couleurs peuvent différer. Avec trois, deux ont nécessairement la même couleur.",
-      "hint": "Raisonnez dans le cas le moins favorable."
+      "question": "Un carré de 8 cases sur 8 perd une seule case, à un emplacement quelconque. Dispose-t-on toujours d’un pavage exact des 63 cases restantes avec 21 pièces en forme de L, chacune couvrant trois cases d’un carré de 2 sur 2 ? Les pièces peuvent être tournées, sans se chevaucher.",
+      "answer": "Oui. Partage le plateau en quatre carrés de 4 sur 4. Un seul contient la case manquante. Pose un L au centre, en couvrant une case dans chacun des trois autres quarts : chaque quart possède alors exactement une case indisponible. Recommence la même construction dans chaque quart. On aboutit à des carrés de 2 sur 2 privés d’une case, chacun couvert par un seul L. La méthode fonctionne pour toute position du trou.",
+      "hint": "Essaie de transformer le grand problème en quatre problèmes de même forme, mais plus petits."
     }
   },
   {
@@ -2130,9 +2130,9 @@
   {
     "publication_date": "2026-09-24",
     "payload": {
-      "question": "Une boîte contient 11 chaussettes noires et autant de blanches. Dans le noir, combien de chaussettes faut-il prendre au minimum pour être certain d’obtenir une paire de même couleur ?",
-      "answer": "3. Avec deux chaussettes, les couleurs peuvent différer. Avec trois, deux ont nécessairement la même couleur.",
-      "hint": "Raisonnez dans le cas le moins favorable."
+      "question": "Une machine donne à chaque utilisation l’un de trois symboles, A, B ou C, chacun avec probabilité 1/3, indépendamment des utilisations précédentes. On continue jusqu’à avoir vu les trois symboles au moins une fois. Quel est le nombre moyen d’utilisations nécessaires ?",
+      "answer": "11/2, soit 5,5 utilisations. Le premier symbole est obtenu en une utilisation. Ensuite, une utilisation donne un deuxième symbole distinct avec probabilité 2/3 : l’attente moyenne est 1/(2/3)=3/2. Une fois deux symboles connus, le dernier apparaît avec probabilité 1/3 : l’attente moyenne est 3. En additionnant les trois étapes, on obtient 1 + 3/2 + 3 = 11/2. L’espérance d’une attente de probabilité de succès q vaut 1/q, car E = 1 + (1−q)E.",
+      "hint": "Sépare l’attente du premier symbole, celle d’un deuxième différent, puis celle du dernier manquant."
     }
   },
   {
@@ -2162,9 +2162,9 @@
   {
     "publication_date": "2026-09-28",
     "payload": {
-      "question": "Un cycliste parcourt 23 km à l’aller puis la même distance au retour. Il roule à 12 km/h à l’aller et à 24 km/h au retour, sans pause. Quelle est sa vitesse moyenne sur l’ensemble du trajet ?",
-      "answer": "16 km/h. Pour une distance d à chaque étape, le temps total vaut d/12 + d/24 = d/8. La distance totale 2d divisée par ce temps donne 16.",
-      "hint": "La moyenne des vitesses n’est pas la moyenne arithmétique quand les durées diffèrent."
+      "question": "Un nombre secret entier est compris entre 11 et 200 inclus. Le plus grand nombre qui divise à la fois ce nombre et 84 sans reste est exactement 14. Combien de nombres secrets conviennent, et lesquels ?",
+      "answer": "Cinq : 14, 70, 98, 154 et 182. Le nombre doit valoir 14k, avec k entre 1 et 14. Comme 84 = 14 × 6, le plus grand diviseur commun est exactement 14 si k n’a aucun facteur commun avec 6 : il ne doit être divisible ni par 2 ni par 3. Parmi 1 à 14, il reste 1, 5, 7, 11 et 13, qui donnent les cinq nombres annoncés.",
+      "hint": "Exprimez le nombre secret comme un multiple de 14, puis regardez les facteurs supplémentaires partagés avec 84."
     }
   },
   {
@@ -2186,9 +2186,9 @@
   {
     "publication_date": "2026-10-01",
     "payload": {
-      "question": "Un sac contient 26 billes rouges et 28 billes bleues. Sans regarder, combien faut-il en tirer au minimum pour être certain d’en avoir deux de la même couleur ?",
-      "answer": "3 billes. Les deux premières peuvent être de couleurs différentes ; la troisième partage nécessairement sa couleur avec l’une des deux.",
-      "hint": "Il n’y a que deux couleurs."
+      "question": "Deux interrupteurs X et Y sont chacun ouverts ou fermés. Quatre capteurs doivent indiquer respectivement : « X est fermé », « Y est fermé », « X et Y sont dans des états différents », et « X et Y sont tous les deux fermés ». Les trois premiers capteurs affichent faux ; le quatrième affiche vrai. Exactement un capteur affiche une information erronée. Quels sont les états de X et Y et quel capteur se trompe ?",
+      "answer": "X et Y sont tous deux ouverts ; le quatrième capteur est erroné. Si X et Y étaient fermés, les deux premiers capteurs seraient erronés. S’ils avaient des états différents, le capteur correspondant à l’interrupteur fermé et le troisième seraient déjà erronés. Il ne reste que deux interrupteurs ouverts : les trois premiers « faux » sont alors corrects et le quatrième « vrai » est faux.",
+      "hint": "Essaie les quatre combinaisons d’états et compte les informations erronées pour chacune."
     }
   },
   {
@@ -2210,9 +2210,9 @@
   {
     "publication_date": "2026-10-04",
     "payload": {
-      "question": "Un sac contient 16 billes rouges et 18 billes bleues. Sans regarder, combien faut-il en tirer au minimum pour être certain d’en avoir deux de la même couleur ?",
-      "answer": "3 billes. Les deux premières peuvent être de couleurs différentes ; la troisième partage nécessairement sa couleur avec l’une des deux.",
-      "hint": "Il n’y a que deux couleurs."
+      "question": "Dix cubes de 1 cm d’arête forment un escalier d’une seule rangée : quatre colonnes voisines ont respectivement des hauteurs de 1, 2, 3 et 4 cubes. Les cubes sont jointifs et alignés. Quelle est l’aire extérieure totale de cet assemblage, dessous compris ?",
+      "answer": "36 cm². Séparés, les dix cubes auraient 60 faces extérieures. Les contacts verticaux sont au nombre de 0 + 1 + 2 + 3 = 6 ; les contacts entre colonnes valent 1 + 2 + 3 = 6. Chacun de ces 12 contacts cache deux faces. Il reste donc 60 − 24 = 36 faces de 1 cm².",
+      "hint": "Les faces en contact sont les seules qui ne font plus partie de la surface extérieure."
     }
   },
   {
@@ -2234,9 +2234,9 @@
   {
     "publication_date": "2026-10-07",
     "payload": {
-      "question": "Une urne contient 29 jetons numérotés de 1 à 29. On en tire un au hasard, avec la même chance pour chaque jeton. Quelle est la probabilité de tirer le numéro 28 ?",
-      "answer": "1/29. Un seul jeton porte le numéro demandé parmi 29 jetons équiprobables.",
-      "hint": "Comptez les issues favorables et le nombre total d’issues."
+      "question": "Trois offres de valeurs toutes différentes sont présentées dans un ordre uniformément aléatoire. À chaque offre, tu vois seulement si elle est meilleure que celles déjà vues ; tu dois l’accepter immédiatement ou la refuser définitivement. Tu veux choisir la meilleure des trois et, si tu refuses les deux premières, tu dois prendre la dernière. Quelle stratégie maximise ta probabilité de réussir, et quelle est cette probabilité ?",
+      "answer": "Refuse la première ; prends la deuxième si elle dépasse la première, sinon prends la troisième. Cette stratégie réussit dans trois des six ordres possibles : faible–moyenne–forte échoue, faible–forte–moyenne réussit, moyenne–faible–forte réussit, moyenne–forte–faible réussit, forte–faible–moyenne échoue et forte–moyenne–faible échoue. Sa probabilité est donc 1/2. Accepter la première ne donne que 1/3. Après l’avoir refusée, si la deuxième est meilleure, elle est la meilleure globale avec probabilité 2/3 ; l’accepter est préférable à attendre. Si elle est moins bonne, elle ne peut gagner : il faut attendre. La stratégie est donc optimale.",
+      "hint": "Après la première offre, les deux cas utiles sont « la deuxième est meilleure » et « la deuxième est moins bonne »."
     }
   },
   {
@@ -2258,9 +2258,9 @@
   {
     "publication_date": "2026-10-10",
     "payload": {
-      "question": "Un objet coûte 150 euros. Son prix augmente de 20 %, puis diminue de 20 % sur le nouveau prix. Le prix final est-il revenu au prix initial ?",
-      "answer": "Non, il vaut 144,00 euros, soit 96 % du prix initial, Les coefficients 1,20 et 0,80 ont pour produit 0,96,",
-      "hint": "Multipliez les coefficients plutôt que d’additionner les pourcentages."
+      "question": "On additionne 1/(1 × 2) + 1/(2 × 3) + 1/(3 × 4) + … + 1/(99 × 100). Quelle est la valeur exacte de la somme ? Trouvez une méthode qui évite d’additionner les quatre-vingt-dix-neuf fractions séparément.",
+      "answer": "99/100. Chaque terme 1/(n(n + 1)) est égal à 1/n − 1/(n + 1). La somme devient 1 − 1/2 + 1/2 − 1/3 + … + 1/99 − 1/100. Tous les termes intermédiaires s’annulent ; il reste 1 − 1/100 = 99/100.",
+      "hint": "Essayez d’écrire chaque fraction comme la différence de deux fractions plus simples."
     }
   },
   {
@@ -2282,9 +2282,9 @@
   {
     "publication_date": "2026-10-13",
     "payload": {
-      "question": "Un rectangle a un périmètre de 100 cm. Sa longueur dépasse sa largeur de 2 cm. Quelle est son aire ?",
-      "answer": "624 cm². La demi-somme des côtés vaut 50 ; les côtés mesurent 24 et 26 cm.",
-      "hint": "Cherchez deux nombres dont la somme et la différence sont connues."
+      "question": "Une équipe compte Ana, Bilal, Cléo, Diego et Emma. Deux rapports fiables disent : « Parmi Ana, Bilal et Cléo, exactement deux ont réussi le test » et « Parmi Bilal, Cléo et Diego, exactement un a réussi ». On apprend ensuite qu’Emma et Diego ont eu le même résultat. Qui a forcément réussi, qui a forcément échoué, et que reste-t-il à déterminer ?",
+      "answer": "Ana a réussi ; Diego et Emma ont échoué. En soustrayant les nombres de réussites des deux groupes, qui partagent Bilal et Cléo, on obtient que la réussite d’Ana dépasse celle de Diego de 1 : Ana a donc réussi et Diego non. Bilal et Cléo totalisent exactement une réussite ; on ne sait pas lequel a réussi. Emma a échoué comme Diego.",
+      "hint": "Les deux groupes ont deux personnes communes ; compare ce qu’apportent les deux personnes différentes."
     }
   },
   {
@@ -2306,9 +2306,9 @@
   {
     "publication_date": "2026-10-16",
     "payload": {
-      "question": "Je suis un entier positif. Mon triple augmenté de 23 vaut 98. Qui suis-je ?",
-      "answer": "25. En soustrayant 23, on obtient 75, puis on divise par trois.",
-      "hint": "Effectuez les opérations inverses dans l’ordre inverse."
+      "question": "Trois blocs rigides identiques mesurent chacun 12 cm de long. On les empile à plat dans la même direction au bord d’une table, un seul bloc reposant sur la table, sans colle ni contrepoids. Leur masse est uniformément répartie ; on cherche la limite juste avant le basculement. Quel surplomb horizontal maximal le bord du bloc supérieur peut-il atteindre au-delà du bord de la table ?",
+      "answer": "11 cm. À la limite, le centre du bloc supérieur est au bord du deuxième : son décalage maximal est 12/2 = 6 cm. Le centre de masse des deux blocs supérieurs doit rester soutenu par le troisième : leur décalage supplémentaire maximal est 12/4 = 3 cm. Enfin le centre de masse des trois blocs doit rester au bord de la table : le dernier décalage vaut 12/6 = 2 cm. Le surplomb maximal est donc 6 + 3 + 2 = 11 cm. On peut s’en approcher autant qu’on veut en restant légèrement en retrait des positions limites.",
+      "hint": "Vérifie successivement l’équilibre du bloc du haut, des deux blocs du haut, puis de l’ensemble."
     }
   },
   {
@@ -2330,9 +2330,9 @@
   {
     "publication_date": "2026-10-19",
     "payload": {
-      "question": "Une suite commence par 30, 33, 38, 45. On ajoute successivement les nombres impairs 3, 5, 7, puis 9. Quel est le terme suivant ?",
-      "answer": "54, car 45 + 9 = 54.",
-      "hint": "La règle d’addition est donnée : poursuivez-la."
+      "question": "Huit nombres tous différents sont cachés dans huit cases. La seule opération autorisée compare les valeurs de deux cases et indique laquelle est la plus grande. Quel nombre minimal de comparaisons suffit dans le pire cas à connaître à la fois la plus petite et la plus grande valeur ?",
+      "answer": "10 comparaisons. Compare d’abord les cases deux par deux : 4 comparaisons produisent quatre gagnants et quatre perdants. Le maximum est parmi les gagnants et se trouve en 3 comparaisons ; le minimum est parmi les perdants et se trouve en 3 autres. Total : 4+3+3=10. Pour la nécessité, chaque nombre doit être exclu du rôle de minimum ou de maximum, et tous sauf les deux extrêmes doivent être exclus des deux rôles : 14 exclusions sont nécessaires. Une comparaison peut faire deux exclusions nouvelles seulement quand elle confronte deux nombres encore jamais comparés ; un adversaire peut ensuite imposer au plus une exclusion nouvelle par comparaison. Il peut donc n’y avoir que quatre doubles exclusions, ce qui exige au moins 14−4=10 comparaisons.",
+      "hint": "Une première comparaison entre deux nombres les range déjà dans deux groupes utiles différents."
     }
   },
   {
@@ -2354,9 +2354,9 @@
   {
     "publication_date": "2026-10-22",
     "payload": {
-      "question": "Dans une salle, 31 personnes se serrent chacune la main une fois avec toutes les autres. Combien de poignées de main sont échangées ?",
-      "answer": "465. Chaque personne salue 30 autres personnes ; on divise le produit par deux pour ne pas compter chaque paire deux fois.",
-      "hint": "Comptez les paires sans tenir compte de leur ordre."
+      "question": "On veut placer les nombres de 1 à 9 dans une grille de trois cases sur trois, chacun une seule fois. Les trois lignes, les trois colonnes et les deux diagonales doivent toutes avoir la même somme. Est-il possible que le nombre 1 occupe un coin ? Justifiez sans essayer toutes les grilles.",
+      "answer": "Non. La somme des neuf nombres vaut 45 ; comme les trois lignes ont la même somme, chacune vaut 15, et c’est donc aussi la somme commune des colonnes et des diagonales. Un coin appartient à une ligne, une colonne et une diagonale. S’il contient 1, les deux autres nombres de chacune de ces trois lignes doivent totaliser 14. Ces trois paires utilisent six cases différentes et donc six nombres différents. Or, parmi les nombres de 2 à 9, les seules paires de nombres distincts qui totalisent 14 sont (5,9) et (6,8). Il faudrait trois paires disjointes et seules deux existent : impossible.",
+      "hint": "Combien de lignes, colonnes ou diagonales passent par un même coin, et quelle somme doivent y former les deux autres cases ?"
     }
   },
   {
@@ -2378,9 +2378,9 @@
   {
     "publication_date": "2026-10-25",
     "payload": {
-      "question": "Un sac contient 32 billes rouges et 34 billes bleues. Sans regarder, combien faut-il en tirer au minimum pour être certain d’en avoir deux de la même couleur ?",
-      "answer": "3 billes. Les deux premières peuvent être de couleurs différentes ; la troisième partage nécessairement sa couleur avec l’une des deux.",
-      "hint": "Il n’y a que deux couleurs."
+      "question": "On sélectionne exactement deux candidats parmi A, B, C, D et E. A et B doivent soit être sélectionnés ensemble, soit être tous les deux écartés. Si C est sélectionné, D l’est aussi. E ne peut être choisi avec personne d’autre. Quelles sont toutes les sélections autorisées ?",
+      "answer": "Les seules sélections sont {A, B} et {C, D}. E est impossible, puisqu’il faut deux personnes et qu’il ne peut accompagner personne. Si A ou B est choisi, l’autre doit l’être aussi, ce qui remplit les deux places. Sinon, A et B sont exclus et il faut choisir C et D, les seuls candidats restants. Cette sélection respecte bien l’implication de C vers D.",
+      "hint": "Commence par le candidat incompatible avec toute autre personne, puis sépare les cas où A est choisi ou non."
     }
   },
   {
@@ -2402,9 +2402,9 @@
   {
     "publication_date": "2026-10-28",
     "payload": {
-      "question": "Deux nombres entiers positifs consécutifs ont pour somme 69. Quel est le plus petit ?",
-      "answer": "34. Si le premier vaut x, le second vaut x + 1 : 2x + 1 = 69.",
-      "hint": "Soustrayez un à la somme, puis divisez par deux."
+      "question": "Un rayon part du coin inférieur gauche d’un rectangle de 6 cm de large et 4 cm de haut, à 45° vers le haut et la droite. Il se réfléchit sur les côtés comme sur des miroirs. Quel est le premier coin qu’il atteint après son départ, et combien de fois a-t-il touché un côté avant ce coin, sans compter les coins ?",
+      "answer": "Il atteint le coin supérieur gauche après trois réflexions. Déplions les réflexions en juxtaposant des rectangles : le rayon suit y = x. Un coin est atteint lorsque x est multiple de 6 et y multiple de 4 ; le premier est (12 ; 12). Le repliement donne x = 0 et y = 4. Avant cela, les frontières sont rencontrées en y = 4, x = 6 et y = 8 : trois contacts, sans autre coin intermédiaire.",
+      "hint": "Au lieu de faire rebondir le rayon, prolonge sa ligne dans des copies réfléchies du rectangle."
     }
   },
   {
@@ -2434,9 +2434,9 @@
   {
     "publication_date": "2026-11-01",
     "payload": {
-      "question": "Un escalier compte 10 marches. Combien de façons différentes permettent d’atteindre la deuxième marche en faisant uniquement des pas de une ou de deux marches, sans redescendre ?",
-      "answer": "2 façons : deux pas de une marche, ou un pas de deux marches. La hauteur totale de l’escalier ne change pas la question.",
-      "hint": "Arrêtez-vous à la deuxième marche, sans monter davantage."
+      "question": "Une seule machine doit traiter quatre commandes de durées 8, 3, 2 et 5 minutes. Toutes sont disponibles au départ et aucune ne peut être interrompue. On veut minimiser la somme des temps d’attente avant le début de chaque commande, et non l’heure de fin de la dernière. Dans quel ordre les traiter et quelle est la somme minimale ?",
+      "answer": "Dans l’ordre 2, 3, 5 puis 8 minutes. Les attentes sont 0, 2, 5 et 10 minutes, pour une somme de 17. Si deux tâches voisines de durées a>b sont dans cet ordre, les intervertir ne change pas les attentes des autres commandes mais diminue de a−b celle du second départ. Tout ordre qui n’est pas croissant peut donc être amélioré. L’ordre croissant est optimal.",
+      "hint": "Compare le temps d’attente produit par deux commandes voisines quand on inverse leur ordre."
     }
   },
   {
@@ -2458,9 +2458,9 @@
   {
     "publication_date": "2026-11-04",
     "payload": {
-      "question": "Un escalier compte 30 marches. Combien de façons différentes permettent d’atteindre la deuxième marche en faisant uniquement des pas de une ou de deux marches, sans redescendre ?",
-      "answer": "2 façons : deux pas de une marche, ou un pas de deux marches. La hauteur totale de l’escalier ne change pas la question.",
-      "hint": "Arrêtez-vous à la deuxième marche, sans monter davantage."
+      "question": "Choisissez n’importe quel nombre de trois chiffres et recopiez-le juste après lui-même : par exemple, 472 devient 472472. Divisez le nombre à six chiffres par 7, puis le résultat par 11, puis le nouveau résultat par 13. Pourquoi ces divisions tombent-elles toujours juste, et quel résultat reste-t-il ?",
+      "answer": "Il reste exactement le nombre choisi au départ. Si ce nombre est n, sa répétition vaut 1000n + n = 1001n. Or 1001 = 7 × 11 × 13. Les trois divisions successives enlèvent donc les trois facteurs de 1001, sans reste à aucune étape, et laissent n.",
+      "hint": "Écrivez le nombre obtenu en fonction du nombre de départ plutôt que d’essayer plusieurs exemples."
     }
   },
   {
