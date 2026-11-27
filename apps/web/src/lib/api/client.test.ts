@@ -8,7 +8,7 @@ const entry = {
   publication_date: "2026-11-05",
   payload: { term: "Test", definition: "Définition", example: "Exemple" },
 } satisfies DailyEntry;
-const scope = "http://localhost:8000";
+const scope = (process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000").replace(/\/$/, "");
 const today: TodayResponse = {
   date: entry.publication_date,
   items: [
