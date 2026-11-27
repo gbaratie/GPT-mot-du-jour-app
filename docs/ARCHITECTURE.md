@@ -137,13 +137,22 @@ chargés sont consommés localement et leurs publications peuvent être réutili
 en cas de panne réseau après rechargement. Sans stockage disponible, la session continue de fonctionner.
 
 Le cache `localStorage` est versionné, séparé par URL d’API et limité à 200
-réponses/publications. Une publication datée est conservée sept jours ; les
-réponses « aujourd’hui » sont toujours revalidées auprès du serveur avant affichage ;
-les listes d’archives ont une fraîcheur de 60 secondes.
+réponses/publications. Une publication datée est conservée sept jours. Au retour
+sur l’accueil ou une collection, les dernières cartes enregistrées s’affichent
+immédiatement avec leur date de publication et un message d’actualisation. Les
+réponses « aujourd’hui » sont toujours revalidées en arrière-plan auprès du
+serveur, sans déduire la date actuelle de l’horloge du navigateur. Une première
+carte encore intacte est actualisée ; un parcours commencé reste en place.
+Les archives se chargent indépendamment et ne bloquent pas la carte principale ;
+leurs listes ont une fraîcheur de 60 secondes.
 Une réponse expirée de moins de sept jours peut dépanner en cas de panne réseau
 ou d’erreur serveur, avec un message explicite. Les erreurs 4xx ne sont pas
 masquées. Les réponses « aujourd’hui » conservent la date fournie par l’API.
-Il s’agit du cache des données, pas d’un mode PWA hors ligne du site lui-même.
+Une panne conserve les cartes déjà affichées avec une possibilité de réessayer ;
+le retour de la connexion déclenche aussi une nouvelle tentative. Les données
+persistées mal formées ou expirées sont ignorées. Il s’agit du cache des données,
+pas d’un mode PWA hors ligne du site lui-même : une première visite nécessite
+une connexion, et les fichiers du site doivent pouvoir être chargés.
 
 Après 3,5 secondes d’attente réseau, une notification refermable explique que le
 service peut redémarrer après une pause. Elle disparaît à la fin des appels lents.
@@ -151,10 +160,15 @@ Le front ne peut pas distinguer un démarrage à froid d’une connexion lente e
 prétend donc pas le diagnostiquer. Le délai d’expiration est de 90 secondes pour
 laisser le temps au service de redémarrer ; les erreurs restent réessayables.
 
-Le tirage consomme un lot choisi aléatoirement dans toute l’histoire publiée de
-la collection. Quand il est vide, le front demande un nouveau lot au serveur,
-sans privilégier les seuls éléments déjà en cache. Le cache devient le secours
-en cas de panne. Pendant la recherche d’une nouvelle carte, un squelette remplace
+Le tirage consomme des lots choisis aléatoirement dans toute l’histoire publiée de
+la collection. Une réserve de 24 cartes de découverte maximum est conservée
+entre les visites, en plus des publications déjà consultées. Les cartes
+enregistrées non vues récemment sont utilisables immédiatement (douze maximum
+au démarrage), pendant qu’un lot est demandé en arrière-plan. La réserve est complétée lorsqu’il reste au
+plus trois cartes, sans remplacer la prévisualisation déjà affichée. Les dates
+en réserve sont exclues du tirage suivant ; les lots reçus sont fusionnés sans
+doublons. Quand aucune carte n’est disponible localement, la navigation attend
+la requête en cours. Pendant la recherche d’une nouvelle carte, un squelette remplace
 la précédente. Le geste transforme la carte entière et toute interruption du
 pointeur restaure sa position. Couverture éditoriale 2026 : voir `docs/content/2026.md`.
 
