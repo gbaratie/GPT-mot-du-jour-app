@@ -3,6 +3,7 @@
 import Link from "next/link";
 import DiscoveryDeck from "./DiscoveryDeck";
 import CardFeedback from "./CardFeedback";
+import CachedContentNotice from "./CachedContentNotice";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import {
@@ -26,6 +27,8 @@ type Result = {
   history: DailyEntry[];
   entryError: string | null;
   historyError: boolean;
+  entryLoading: boolean;
+  historyLoading: boolean;
 };
 
 function errorMessage(error: unknown): string {
@@ -50,7 +53,15 @@ function CollectionView({ collection, day }: { collection: Collection; day: stri
   const router = useRouter();
   const valid = day === null || isDate(day);
   const [draft, setDraft] = useState(day ?? "");
-  const [result, setResult] = useState<Result | null>(null);
+  const [result, setResult] = useState<Result>({
+    entry: null,
+    history: [],
+    entryError: null,
+    historyError: false,
+    entryLoading: true,
+    historyLoading: true,
+  });
+  const [cacheStatus, setCacheStatus] = useState<"refreshing" | "offline" | null>(null);
   const [attempt, setAttempt] = useState(0);
   const [moreError, setMoreError] = useState(false);
   const [loadingMore, setLoadingMore] = useState(false);
@@ -59,20 +70,59 @@ function CollectionView({ collection, day }: { collection: Collection; day: stri
   useEffect(() => {
     if (!valid) return;
     const controller = new AbortController();
-    Promise.allSettled([
-      api.entry(collection.slug, day, controller.signal),
-      api.history(collection.slug, day, controller.signal),
-    ]).then(([entry, history]) => {
+    const savedEntry = api.cachedEntry(collection.slug, day);
+    const savedHistory = api.cachedHistory(collection.slug, day);
+    // Apply browser storage after hydration, ignoring an abandoned effect.
+    queueMicrotask(() => {
       if (controller.signal.aborted) return;
-      setHasMore(history.status === "fulfilled" && history.value.length === 10);
+      setCacheStatus(savedEntry && day === null ? "refreshing" : null);
+      setHasMore(savedHistory?.length === 10);
       setResult({
-        entry: entry.status === "fulfilled" ? entry.value : null,
-        history: history.status === "fulfilled" ? history.value : [],
-        entryError: entry.status === "rejected" ? errorMessage(entry.reason) : null,
-        historyError: history.status === "rejected",
+        entry: savedEntry ?? null,
+        history: savedHistory ?? [],
+        entryError: null,
+        historyError: false,
+        entryLoading: !savedEntry,
+        historyLoading: !savedHistory,
       });
     });
-    return () => controller.abort();
+    // The publication can be read while the independent archive request is pending.
+    api.entry(collection.slug, day, controller.signal, { fallback: false }).then(
+      (entry) => {
+        if (controller.signal.aborted) return;
+        setResult((current) => ({ ...current, entry, entryLoading: false }));
+        setCacheStatus(null);
+      },
+      (failure) => {
+        if (controller.signal.aborted) return;
+        const rejected = failure instanceof ApiError && failure.status < 500;
+        const retained = savedEntry && !rejected;
+        setCacheStatus(retained ? "offline" : null);
+        setResult((current) => ({
+          ...current,
+          entry: retained ? savedEntry : null,
+          entryError: retained ? null : errorMessage(failure),
+          entryLoading: false,
+        }));
+      },
+    );
+    api.history(collection.slug, day, controller.signal).then(
+      (history) => {
+        if (controller.signal.aborted) return;
+        setHasMore(history.length === 10);
+        setResult((current) => ({ ...current, history, historyLoading: false }));
+      },
+      () => {
+        if (controller.signal.aborted) return;
+        setResult((current) => ({ ...current, historyError: true, historyLoading: false }));
+      },
+    );
+    const reconnect = () => setAttempt((value) => value + 1);
+    window.addEventListener("online", reconnect);
+    return () => {
+      controller.abort();
+      window.removeEventListener("online", reconnect);
+    };
   }, [collection.slug, day, valid, attempt]);
 
   function navigate(selected: string | null) {
@@ -81,15 +131,13 @@ function CollectionView({ collection, day }: { collection: Collection; day: stri
   }
 
   async function loadMore() {
-    if (!result?.history.length) return;
+    if (!result.history.length) return;
     const before = result.history[result.history.length - 1].publication_date;
     setLoadingMore(true);
     setMoreError(false);
     try {
       const history = await api.history(collection.slug, before);
-      setResult((current) =>
-        current ? { ...current, history: [...current.history, ...history] } : current,
-      );
+      setResult((current) => ({ ...current, history: [...current.history, ...history] }));
       setHasMore(history.length === 10);
     } catch {
       setMoreError(true);
@@ -136,7 +184,7 @@ function CollectionView({ collection, day }: { collection: Collection; day: stri
       </Stack>
       {!valid ? (
         <Alert severity="warning">Date invalide. Utilisez le format AAAA-MM-JJ.</Alert>
-      ) : !result ? (
+      ) : result.entryLoading ? (
         <Skeleton
           role="status"
           aria-label="Chargement de la publication"
@@ -145,20 +193,18 @@ function CollectionView({ collection, day }: { collection: Collection; day: stri
         />
       ) : (
         <>
-          {result.entry ? (
-            <DiscoveryDeck
-              key={result.entry.publication_date}
-              slug={collection.slug}
-              locale={collection.locale}
-              initial={result.entry}
+          {cacheStatus && (
+            <CachedContentNotice
+              refreshing={cacheStatus === "refreshing"}
+              onRetry={() => setAttempt((value) => value + 1)}
             />
-          ) : (
+          )}
+          {result.entryError && (
             <Alert
               severity="info"
               action={
                 <Button
                   onClick={() => {
-                    setResult(null);
                     setAttempt(attempt + 1);
                   }}
                 >
@@ -169,14 +215,14 @@ function CollectionView({ collection, day }: { collection: Collection; day: stri
               {result.entryError}
             </Alert>
           )}
-          {!result.entry && (
-            <DiscoveryDeck slug={collection.slug} locale={collection.locale} initial={null} />
-          )}
+          <DiscoveryDeck slug={collection.slug} locale={collection.locale} initial={result.entry} />
           <Box className="archive-section">
             <Typography variant="h2" sx={{ mb: 3 }}>
               Les jours précédents
             </Typography>
-            {result.historyError ? (
+            {result.historyLoading ? (
+              <Skeleton role="status" aria-label="Chargement des archives" height={120} />
+            ) : result.historyError ? (
               <Alert severity="warning">Les archives ne sont pas disponibles pour le moment.</Alert>
             ) : !result.history.length ? (
               <Typography color="text.secondary">

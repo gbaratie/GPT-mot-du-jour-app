@@ -15,10 +15,11 @@ import {
   Stack,
   Typography,
 } from "@mui/material";
-import { api } from "@/lib/api/client";
+import { api, ApiError } from "@/lib/api/client";
 import type { TodayResponse } from "@/lib/api/types";
 import CardIcon from "./CardIcon";
 import DiscoveryDeck from "./DiscoveryDeck";
+import CachedContentNotice from "./CachedContentNotice";
 import { collections } from "@/collections/catalog";
 
 export default function Home() {
@@ -26,15 +27,38 @@ export default function Home() {
   const [today, setToday] = useState<TodayResponse | null>(null);
   const [error, setError] = useState(false);
   const [attempt, setAttempt] = useState(0);
+  const [cacheStatus, setCacheStatus] = useState<"refreshing" | "offline" | null>(null);
   useEffect(() => {
     const controller = new AbortController();
+    const saved = api.cachedToday();
+    // Apply browser storage after hydration, ignoring an abandoned effect.
+    queueMicrotask(() => {
+      if (controller.signal.aborted) return;
+      setError(false);
+      if (saved) setToday(saved);
+      setCacheStatus(saved ? "refreshing" : null);
+    });
     api
-      .today(controller.signal)
-      .then(setToday)
-      .catch(() => {
-        if (!controller.signal.aborted) setError(true);
+      .today(controller.signal, { fallback: false })
+      .then((fresh) => {
+        if (controller.signal.aborted) return;
+        setToday(fresh);
+        setCacheStatus(null);
+        setError(false);
+      })
+      .catch((failure) => {
+        if (controller.signal.aborted) return;
+        const rejected = failure instanceof ApiError && failure.status < 500;
+        if (rejected) setToday(null);
+        setCacheStatus(saved && !rejected ? "offline" : null);
+        setError(true);
       });
-    return () => controller.abort();
+    const reconnect = () => setAttempt((value) => value + 1);
+    window.addEventListener("online", reconnect);
+    return () => {
+      controller.abort();
+      window.removeEventListener("online", reconnect);
+    };
   }, [attempt]);
 
   return (
@@ -65,7 +89,13 @@ export default function Home() {
           )}
         </ToggleButtonGroup>
       )}
-      {error ? (
+      {cacheStatus && (
+        <CachedContentNotice
+          refreshing={cacheStatus === "refreshing"}
+          onRetry={() => setAttempt((value) => value + 1)}
+        />
+      )}
+      {error && !today ? (
         <Alert
           severity="warning"
           action={
